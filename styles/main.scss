@@ -18,6 +18,8 @@ $regular_font: {{site.data.settings.fonts.regular_font}};
 $bold_font: {{site.data.settings.fonts.bold_font}};
 $extra_bold_font: {{site.data.settings.fonts.extra_bold_font}};
 
+$button-font-size: {{site.data.settings.buttons.button-font-size}};
+
 h1, h2, h3 {font-family: $header-font-family;}
 
 p {font-family: $paragraph-font-family;}

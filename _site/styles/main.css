@@ -1,5 +1,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; text-decoration: none; }
 
+a::after { color: inherit; }
+
 .right { text-align: right; }
 
 .left { text-align: left; }
@@ -22,7 +24,7 @@ p { font-family: "Nunito", sans-serif; }
 
 nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 200; color: #707070; transition: .5s ease all; }
 
-nav a:hover, nav a:focus, .navbar-link h2:hover, .navbar-link h2:focus { color: #F5AEA8; font-weight: 600; transition: .5s ease all; }
+nav a:hover, nav a:focus, .navbar-link h2:hover, .navbar-link h2:focus { color: #F5AEA8; text-decoration: underline; transition: .5s ease all; }
 
 nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 1rem; }
 
@@ -34,15 +36,17 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .navbar-menu-desktop { margin: auto; width: 100vw; }
 
-.banner-cta-button { border: 2px solid #479AA1; border-radius: 5px; padding: 1rem 2rem; font-family: "Raleway", sans-serif; font-size: .8rem; text-transform: uppercase; }
+.banner-cta-button { color: #FFF; border: 2px solid #FFF; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
-.banner-cta-button:hover { background-color: #FFF; transition: .4s all; }
+.banner-cta-button h3 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
+
+.banner-cta-button:hover { background-color: #F5AEA8; transition: .4s all; }
 
 .header-banner { position: relative; display: flex; justify-content: center; align-items: center; z-index: 1; }
 
 .header-text-box { position: absolute; padding: 5% 0%; }
 
-.header-text-box h1 { font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; color: #FFF; letter-spacing: 5px; }
+.header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; color: #FFF; letter-spacing: 5px; }
 
 .header-banner img { max-width: 100%; object-fit: cover; }
 
