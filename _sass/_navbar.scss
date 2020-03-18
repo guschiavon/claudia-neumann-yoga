@@ -15,8 +15,8 @@ nav a,
   &:hover,
   &:focus {
     color: $secondary-color;
-    text-decoration: underline;
     transition: .5s ease all;
+    text-decoration: underline;
   }
 }
 

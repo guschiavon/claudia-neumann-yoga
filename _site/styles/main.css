@@ -28,7 +28,7 @@ p { font-family: "Nunito", sans-serif; }
 
 nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 200; color: #707070; transition: .5s ease all; }
 
-nav a:hover, nav a:focus, .navbar-link h2:hover, .navbar-link h2:focus { color: #F5AEA8; text-decoration: underline; transition: .5s ease all; }
+nav a:hover, nav a:focus, .navbar-link h2:hover, .navbar-link h2:focus { color: #F5AEA8; transition: .5s ease all; text-decoration: underline; }
 
 nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 1rem; }
 
@@ -44,13 +44,13 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .banner-cta-button h3 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
 
-.banner-cta-button:hover { background-color: #F5AEA8; transition: .4s all; }
+.banner-cta-button:hover, .banner-cta-button:focus { background-color: #F5AEA8; transition: .4s all; }
 
-.learnmore-button { color: #707070; border: 2px solid #707070; border-radius: 5px; padding: .8rem; transition: .3s all; }
+.learnmore-button { color: #707070; border: 1px solid #707070; border-radius: 5px; padding: .6rem; transition: .3s all; display: inline-block; }
 
-.learnmore-button a { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
+.learnmore-button h3 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: .8rem; text-transform: uppercase; }
 
-.learnmore-button:hover { color: #479AA1; background-color: #FFF; transition: .3s all; }
+.learnmore-button:hover, .learnmore-button:focus { color: #479AA1; background-color: #FFF; transition: .3s all; }
 
 .header-banner { position: relative; display: flex; justify-content: center; align-items: center; z-index: 1; background: #479aa1; background: linear-gradient(180deg, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%), url("/assets/images/placeholder 009.jpg"); background-size: cover; }
 
