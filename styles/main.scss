@@ -1,0 +1,27 @@
+---
+---
+// Main SCSS file
+@import "_resets";
+@import "_utility";
+
+$primary-color: {{site.data.settings.colors.primary_color}};
+$secondary-color: {{site.data.settings.colors.secondary_color}};
+$accent-color: {{site.data.settings.colors.accent_color}};
+$dark-color: {{site.data.settings.colors.dark_color}};
+$light-color: {{site.data.settings.colors.light_color}};
+
+$header-font-family: {{site.data.settings.fonts.header_font_family}};
+$paragraph-font-family: {{site.data.settings.fonts.paragraph_font_family}};
+
+$light_font: {{site.data.settings.fonts.light_font}};
+$regular_font: {{site.data.settings.fonts.regular_font}};
+$bold_font: {{site.data.settings.fonts.bold_font}};
+$extra_bold_font: {{site.data.settings.fonts.extra_bold_font}};
+
+h1, h2, h3 {font-family: $header-font-family;}
+
+p {font-family: $paragraph-font-family;}
+
+@import "_navbar";
+@import "_buttons";
+@import "_header";

@@ -1,0 +1,48 @@
+.navbar {
+  padding: .1% 2%;
+  position: fixed;
+  background-color: $light-color;
+  z-index: 2;
+}
+
+nav a,
+.navbar-link h2 {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+  font-weight: $light-font;
+  color: $dark-color;
+  transition: .5s ease all;
+  &:hover,
+  &:focus {
+    color: $secondary-color;
+    font-weight: $bold_font;
+    transition: .5s ease all;
+  }
+}
+
+nav a {
+  font-size: 1rem;
+  padding: .2rem .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.navbar span {font-weight: $bold-font;}
+
+.navbar-link {
+  h2, img {
+    max-width: 100px;
+    display:inline;
+    padding: .5rem 1rem;
+  }
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu-desktop {
+  margin:auto;
+  width: 100vw;
+}

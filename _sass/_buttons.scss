@@ -1,0 +1,13 @@
+.banner-cta-button {
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-family: $header-font-family;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+
+.banner-cta-button:hover {
+  background-color: $light-color;
+  transition: .4s all;
+}

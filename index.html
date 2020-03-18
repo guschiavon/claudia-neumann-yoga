@@ -1,0 +1,227 @@
+---
+page_title: Claudia Neumann Yoga
+add_banner_button: true
+banner-cta-button_url: 'https://www.google.com'
+banner-cta-button_text: Learn More
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{page_title}}
+    </title>
+
+    <!-- Gridlex framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
+    <!-- Google Font embed codes; these are being pulled from the settings.yml file allowing the editor to change them as they wish -->
+     {{ site.data.settings.fonts.heading_font_code_block }}
+     {{ site.data.settings.fonts.paragraph_font_code_block }}
+
+    <!-- Media Query metatag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main stylesheet, keep at bottom of head -->
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar grid-spaceBetween-noGutter">
+        <div class="navbar-logo col-6-left-middle">
+          <a href="/" class="navbar-link">
+            <img src="assets/images/Yogismile_Logo_color_transparent.png" alt="Yogismile by Claudia Neumann">
+          </a>
+          <a href="/" class="navbar-link">
+            <h2>
+              <span>Claudia Neumann</span> Yoga
+            </h2>
+          </a>
+        </div>
+        <nav class="navbar-menu-desktop flex-center col-6-middle mobile-hide">
+          <a href="/about">
+            About
+          </a>
+          <a href="/yoga">
+            Practice
+          </a>
+          <a href="/reiki">
+            Heal
+          </a>
+          <a href="/retreats">
+            Grow
+          </a>
+          <a href="/blog">
+            Health
+          </a>
+          <a href="/contact">
+            Contact
+          </a>
+        </nav>
+      </div>
+      <div class="header-banner full-height">
+        <img src="/assets/images/placeholder 009.jpg" alt="">
+        <div class="header-text-box">
+          <h1>
+            Happiness is inside you.
+          </h1>
+          <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
+          {% if page.add_banner_button == true %}
+          {% include banner-cta-button.html %}
+          {% endif %}
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="grid-noGutter">
+          <div class="col-middle">
+            <img src="assets/images/placeholder 010.jpg" alt="Claudia Neumann Yoga">
+          </div>
+          <div class="col-middle">
+            <h2 class="editable">
+              Brief bio
+            </h2>
+          </div>
+          <div class="col-middle">
+            <p class="col-middle-right editable">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- triple feature box section -->
+    <section>
+      <div class="grid-noGutter">
+        <div class="col-4_sm-12 feature-box">
+          <div class="flex-center">
+            <h2 class="editable">
+              Yoga
+            </h2>
+            <a href="#" class="learnmore-button">
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="col-4_sm-12 feature-box">
+          <div class="flex-center">
+            <h2 class="editable">
+              Healing
+            </h2>
+            <a href="#" class="learnmore-button">
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="col-4_sm-12 feature-box">
+          <div class="flex-center">
+            <h2 class="editable">
+              Retreats
+            </h2>
+            <a href="#" class="learnmore-button">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- upcoming retreat section -->
+    <section class="grid-noGutter padding-outer full-height">
+      <div class="col-6_sm-12 padding-inner section-lg-feature-image">
+        <img src="assets/images/placeholder 006.jpg" alt="">
+      </div>
+      <div class="col-6_sm-12 padding-inner">
+        <h2 class="editable">
+          Upcoming retreat
+        </h2>
+        <!-- later change these to Liquid tags so to pull the last retreat information from the colletion -->
+        <h3 class="editable">
+          Location: Algarve, Portugal
+        </h3>
+        <h3 class="editable">
+          Dates: 8-15th July, 2020
+        </h3>
+        <p class="editable">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="#" class="learnmore-button">
+          Join waiting list
+        </a>
+      </div>
+    </section>
+    <!-- Community yoga section -->
+    <section class="full-width-banner half-height" style="background-image: url('/assets/images/placeholder 004.jpg');">
+      <div class="padding-inner">
+        <div class="">
+          <h2>
+            Community
+          </h2>
+          <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a href="#" class="schedule-button">
+            Check the schedule
+          </a>
+        </div>
+        <div class="logo-float-right">
+          <img src="assets/images/Yogismile_Logo_color_transparent.png" alt="Yogismile Logo">
+        </div>
+      </div>
+    </section>
+    <section class="half-height">
+      <video src="#" autoplay poster="posterimage.jpg">
+
+      </video>
+    </section>
+    <footer class="padding-outer">
+      <div class="grid-noGutter">
+        <div class="grid col-6_sm-12">
+          <img class="footer-logo" src="assets/images/Yogismile_Logo_color_transparent.png" alt="">
+          <h2 class="footer-title">
+            Claudia Neumann Yoga
+          </h2>
+          <div class="col-4">
+            <div class="footer-social-icon">
+              <a href="#">
+                Facebook
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="footer-social-icon">
+              <a href="#">
+                Instagram
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="footer-social-icon">
+              <a href="#">
+                YouTube
+              </a>
+            </div>
+          </div>
+          <a href="mailto:hello@claudianeumann.yoga">
+            hello@claudianeumann.yoga
+          </a>
+        </div>
+        <div class="col-6_sm-12 footer-form">
+          <h2 class="editable">
+            Grow together
+          </h2>
+          <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="name" value="">
+            <input type="email" name="email" value="">
+            <button type="button" name="button" class="form-send-button">
+              Join
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
