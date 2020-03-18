@@ -16,6 +16,10 @@ a::after { color: inherit; }
 
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
+.padding-inner { padding: 3%; }
+
+.padding-outer { padding: 5%; }
+
 h1, h2, h3 { font-family: "Raleway", sans-serif; }
 
 p { font-family: "Nunito", sans-serif; }
@@ -47,5 +51,15 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 .header-text-box { position: absolute; padding: 5% 0%; }
 
 .header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; color: #FFF; letter-spacing: 5px; }
+
+.intro-section { display: inline-block; }
+
+.thumb-profile-pic { overflow: hidden; margin-bottom: 2rem; }
+
+.thumb-profile-pic img { width: 150px; height: 150px; object-fit: contain; border-radius: 100%; }
+
+.intro-section h2 { text-transform: uppercase; font-weight: 200; font-size: 2rem; margin-bottom: 2rem; letter-spacing: 2px; }
+
+.intro-section p { line-height: 1.5; max-width: 70%; margin: auto; }
 
 /*# sourceMappingURL=main.css.map */

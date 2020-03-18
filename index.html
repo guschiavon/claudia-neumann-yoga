@@ -3,6 +3,8 @@ page_title: Claudia Neumann Yoga
 add_banner_button: true
 banner-cta-button_url: 'https://www.google.com'
 banner-cta-button_text: Learn More
+include-profile-thumb_image: true
+thumb-profile-pic: assets/images/placeholder 010.jpg
 ---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -74,18 +76,19 @@ banner-cta-button_text: Learn More
       </div>
     </header>
     <main>
-      <section>
-        <div class="grid-noGutter">
-          <div class="col-middle">
-            <img src="assets/images/placeholder 010.jpg" alt="Claudia Neumann Yoga">
+      <section class="intro-section padding-outer">
+        <div class="flex-center grid-noGutter">
+          <!-- Maybe best is to make this an "Include" so to use the same code for other sections -->
+          {% if page.include-profile-thumb_image == true %}
+          <div class="col-12 thumb-profile-pic flex-center">
+            <img src="{{page.thumb-profile-pic}}" alt="Claudia Neumann Yoga">
           </div>
-          <div class="col-middle">
+          {% endif %}
+          <div class="col-12 center">
             <h2 class="editable">
               Brief bio
             </h2>
-          </div>
-          <div class="col-middle">
-            <p class="col-middle-right editable">
+            <p class="editable">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
