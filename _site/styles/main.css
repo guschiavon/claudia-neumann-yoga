@@ -30,7 +30,7 @@ p { font-family: "Nunito", sans-serif; }
 
 .navbar { padding: .1% 2%; position: fixed; background-color: #FFF; z-index: 2; }
 
-nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 200; color: #707070; transition: .5s ease all; }
+nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; letter-spacing: 2px; font-weight: 200; color: #707070; transition: .5s ease all; }
 
 nav a:hover, nav a:focus, .navbar-link h2:hover, .navbar-link h2:focus { color: #F5AEA8; transition: .5s ease all; text-decoration: underline; }
 

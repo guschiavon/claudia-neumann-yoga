@@ -1,7 +1,7 @@
 ---
 page_title: Claudia Neumann Yoga
 add_banner_button: true
-banner-cta-button_url: 'https://www.google.com'
+banner-cta-button_url: '/'
 banner-cta-button_text: Learn More
 include-profile-thumb_image: true
 thumb-profile-pic: assets/images/placeholder 010.jpg
@@ -9,60 +9,13 @@ feature-box-1_image: assets/images/placeholder 003.jpg
 feature-box-2_image: assets/images/placeholder 007.jpg
 feature-box-3_image: assets/images/placeholder 008.jpg
 ---
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>
-      {{page_title}}
-    </title>
-
-    <!-- Gridlex framework -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <!-- Google Font embed codes; these are being pulled from the settings.yml file allowing the editor to change them as they wish -->
-     {{ site.data.settings.fonts.heading_font_code_block }}
-     {{ site.data.settings.fonts.paragraph_font_code_block }}
-
-    <!-- Media Query metatag for responsive design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Main stylesheet, keep at bottom of head -->
-    <link rel="stylesheet" href="/styles/main.css">
-  </head>
+{% include head.html %}
 
   <body>
     <header>
-      <div class="navbar grid-spaceBetween-noGutter">
-        <div class="navbar-logo col-6-left-middle">
-          <a href="/" class="navbar-link">
-            <img src="assets/images/Yogismile_Logo_color_transparent.png" alt="Yogismile by Claudia Neumann">
-          </a>
-          <a href="/" class="navbar-link">
-            <h2>
-              <span>Claudia Neumann</span> Yoga
-            </h2>
-          </a>
-        </div>
-        <nav class="navbar-menu-desktop flex-center col-6-middle mobile-hide">
-          <a href="/about">
-            About
-          </a>
-          <a href="/yoga">
-            Practice
-          </a>
-          <a href="/reiki">
-            Heal
-          </a>
-          <a href="/retreats">
-            Grow
-          </a>
-          <a href="/blog">
-            Health
-          </a>
-          <a href="/contact">
-            Contact
-          </a>
-        </nav>
-      </div>
+
+      {% include desktop-navbar.html %}
+
       <div class="header-banner full-height">
         <!-- <img src="/assets/images/placeholder 009.jpg" alt=""> -->
         <div class="header-text-box">
