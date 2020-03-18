@@ -8,15 +8,16 @@
     text-transform: uppercase;
     font-weight: $light-font;
     font-size: 2rem;
+    letter-spacing: 2px;
     margin-bottom: 2rem;
   }
 }
 
-.triple-features {padding: 1% 5%;}
+.triple-features {
+  padding: 3% 5%;
+}
 
 .feature-box {
-  // background-color: $secondary-color;
-  // box-shadow: opacity(rgba(40, 40, 40, .3));
   position: relative;
   overflow: hidden;
   object-fit: cover;

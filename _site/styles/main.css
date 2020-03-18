@@ -4,13 +4,17 @@ a { color: inherit; }
 
 img { max-width: 100%; }
 
+h1, h2, h3 { font-family: "Raleway", sans-serif; }
+
+p { font-family: "Nunito", sans-serif; }
+
 .right { text-align: right; }
 
 .left { text-align: left; }
 
 .center { text-align: center; }
 
-.full-height { height: 100vh; }
+.full-height { height: 85vh; }
 
 .half-height { height: 50vh; }
 
@@ -22,9 +26,7 @@ img { max-width: 100%; }
 
 .padding-outer { padding: 5%; }
 
-h1, h2, h3 { font-family: "Raleway", sans-serif; }
-
-p { font-family: "Nunito", sans-serif; }
+.bg-dark { background-color: #707070; }
 
 .navbar { padding: .1% 2%; position: fixed; background-color: #FFF; z-index: 2; }
 
@@ -50,7 +52,7 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .learnmore-button { color: #FFF; border: 1px solid #FFF; border-radius: 5px; padding: .6rem; transition: .3s all; display: inline-block; }
 
-.learnmore-button h3 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: .8rem; text-transform: uppercase; }
+.learnmore-button h3 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: .7rem; text-transform: uppercase; }
 
 .learnmore-button:hover, .learnmore-button:focus { color: #479AA1; background-color: #FFF; transition: .3s all; }
 
@@ -72,9 +74,9 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .box-content { text-align: center; padding: 6rem; z-index: 1; height: 250px; }
 
-.box-content h2 { color: #FFF; text-transform: uppercase; font-weight: 200; font-size: 2rem; margin-bottom: 2rem; }
+.box-content h2 { color: #FFF; text-transform: uppercase; font-weight: 200; font-size: 2rem; letter-spacing: 2px; margin-bottom: 2rem; }
 
-.triple-features { padding: 1% 5%; }
+.triple-features { padding: 3% 5%; }
 
 .feature-box { position: relative; overflow: hidden; object-fit: cover; }
 
