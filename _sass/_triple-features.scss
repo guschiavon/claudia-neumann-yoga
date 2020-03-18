@@ -1,0 +1,16 @@
+.box-content {
+  text-align: center;
+  padding: 6rem;
+  h2 {
+    text-transform: uppercase;
+    font-weight: $light-font;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.triple-features {padding: 1% 5%;}
+
+.feature-box {
+  background-color: $secondary-color;
+}

@@ -1,6 +1,6 @@
 * { box-sizing: border-box; margin: 0; padding: 0; text-decoration: none; }
 
-a::after { color: inherit; }
+a { color: inherit; }
 
 .right { text-align: right; }
 
@@ -46,6 +46,12 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .banner-cta-button:hover { background-color: #F5AEA8; transition: .4s all; }
 
+.learnmore-button { color: #707070; border: 2px solid #707070; border-radius: 5px; padding: .8rem; transition: .3s all; }
+
+.learnmore-button a { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
+
+.learnmore-button:hover { color: #479AA1; background-color: #FFF; transition: .3s all; }
+
 .header-banner { position: relative; display: flex; justify-content: center; align-items: center; z-index: 1; background: #479aa1; background: linear-gradient(180deg, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%), url("/assets/images/placeholder 009.jpg"); background-size: cover; }
 
 .header-text-box { position: absolute; padding: 5% 0%; }
@@ -61,5 +67,13 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 .intro-section h2 { text-transform: uppercase; font-weight: 200; font-size: 2rem; margin-bottom: 2rem; letter-spacing: 2px; }
 
 .intro-section p { line-height: 1.5; max-width: 70%; margin: auto; }
+
+.box-content { text-align: center; padding: 6rem; }
+
+.box-content h2 { text-transform: uppercase; font-weight: 200; font-size: 2rem; margin-bottom: 2rem; }
+
+.triple-features { padding: 1% 5%; }
+
+.feature-box { background-color: #F5AEA8; }
 
 /*# sourceMappingURL=main.css.map */
