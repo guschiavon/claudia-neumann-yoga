@@ -2,6 +2,8 @@
 
 a { color: inherit; }
 
+img { max-width: 100%; }
+
 .right { text-align: right; }
 
 .left { text-align: left; }
@@ -40,7 +42,7 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .navbar-menu-desktop { margin: auto; width: 100vw; }
 
-.banner-cta-button { color: #FFF; border: 2px solid #FFF; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
+.banner-cta-button { color: #FFF; border: 1px solid #FFF; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
 .banner-cta-button h3 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
 
@@ -68,12 +70,14 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .intro-section p { line-height: 1.5; max-width: 70%; margin: auto; }
 
-.box-content { text-align: center; padding: 6rem; }
+.box-content { text-align: center; padding: 6rem; z-index: 1; }
 
 .box-content h2 { text-transform: uppercase; font-weight: 200; font-size: 2rem; margin-bottom: 2rem; }
 
 .triple-features { padding: 1% 5%; }
 
-.feature-box { background-color: #F5AEA8; }
+.feature-box { position: relative; overflow: hidden; object-fit: cover; }
+
+.feature-box img { position: absolute; }
 
 /*# sourceMappingURL=main.css.map */
