@@ -1,2 +1,1 @@
-# claudia-neumann-yoga
- Claudia Neumann Yoga website
+# Claudia Neumann Yoga website
