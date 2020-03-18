@@ -2,7 +2,9 @@
   text-align: center;
   padding: 6rem;
   z-index: 1;
+  height: 250px;
   h2 {
+    color: $light-color;
     text-transform: uppercase;
     font-weight: $light-font;
     font-size: 2rem;
@@ -14,10 +16,12 @@
 
 .feature-box {
   // background-color: $secondary-color;
-  position:relative;
+  // box-shadow: opacity(rgba(40, 40, 40, .3));
+  position: relative;
   overflow: hidden;
   object-fit: cover;
   img {
     position:absolute;
+    filter: brightness(.5);
   }
 }
