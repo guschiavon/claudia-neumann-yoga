@@ -4,6 +4,10 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+// This works for gradient but it's not flexible for changing image in front matter... find solution
+  background: rgb(71,154,161);
+  background: linear-gradient(180deg, rgba(71,154,161,1) 0%, rgba(245,174,168,0.19511554621848737) 100%),url('/assets/images/placeholder 009.jpg');
+  background-size: cover;
 }
 
 .header-text-box {
@@ -20,7 +24,7 @@
   }
 }
 
-.header-banner img {
-  max-width: 100%;
-  object-fit: cover;
-}
+// .header-banner img {
+//   max-width: 100%;
+//   object-fit: cover;
+// }
