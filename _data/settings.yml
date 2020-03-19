@@ -28,6 +28,9 @@ buttons:
   cta-button-font-size: 1rem
   learnmore-button-font-size: .7rem
 
+calendars:
+  calendly_url: 'https://www.calendly.com'
+
 social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
