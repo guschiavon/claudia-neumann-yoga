@@ -1,5 +1,5 @@
 basic_settings:
-  site_logo: assets/images/yogismile-logo.png
+  site_logo: /assets/images/yogismile-logo.png
 
 colors:
   # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax
