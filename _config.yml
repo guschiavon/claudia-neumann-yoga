@@ -2,8 +2,3 @@ sass:
     sass_dir: _sass
 cloudcannon:
   data: true
-collections:
-  studios:
-    output: true
-  retreats:
-    output: true  
