@@ -7,7 +7,7 @@ include-profile-thumb_image: true
 include-feature-video: true
 feature-video_url: 'https://youtube.com'
 feature-video-cover_image:
-thumb-profile-pic: assets/images/placeholder 010.jpg
+thumb-profile-pic_image: assets/images/placeholder 010.jpg
 feature-box-1_image: assets/images/placeholder 003.jpg
 feature-box-2_image: assets/images/placeholder 007.jpg
 feature-box-3_image: assets/images/placeholder 008.jpg
@@ -41,7 +41,7 @@ feature-retreat_image: assets/images/placeholder 008.jpg
           <!-- Maybe best is to make this an "Include" so to use the same code for other sections -->
           {% if page.include-profile-thumb_image == true %}
           <div class="col-12 thumb-profile-pic flex-center">
-            <img src="{{page.thumb-profile-pic}}" alt="Claudia Neumann Yoga">
+            <img src="{{page.thumb-profile-pic_image}}" alt="Claudia Neumann Yoga">
           </div>
           {% endif %}
           <div class="col-12 center">
