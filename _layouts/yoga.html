@@ -8,7 +8,7 @@ layout: default
         <h3>
           Overview
         </h3>
-        {{content}}
+        {{ content }}
       </div>
     </div>
     <div class="col-6_sm-12 overview-img-box">
@@ -16,31 +16,18 @@ layout: default
     </div>
   </div>
   <div class="grid-noGutter">
-    <div class="col-6_sm-12-middle flex-center overview">
+    <div class="col-6_sm-12-middle flex-center overview bg-dark">
       <h2>
         Practical info
       </h2>
     </div>
     <div class="col-6_sm-12 practical-info">
       <div class="padding-outer">
-        <h3>
-          Duration:
-        </h3>
-        <p>
-          {{page.class-duration}}
-        </p>
-        <h3>
-          Flow type:
-        </h3>
-        <p>
-          {{page.class-flow-type_text}}
-        </p>
-        <h3>
-          Recommended for:
-        </h3>
-        <p>
-          {{page.class-recommended-for_text}}
-        </p>
+        {% if page.info-box == 'yoga' %}
+          {% include yoga-info.html %}
+        {% elsif page.info-box == 'retreat' %}
+          {% include retreat-info.html %}
+        {% endif %}
       </div>
     </div>
   </div>
