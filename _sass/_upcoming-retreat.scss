@@ -1,0 +1,23 @@
+.retreat-feature {
+  height: 650px;
+}
+
+.section-lg-feature-image {
+  max-height: 500px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.retreat-feature-content {
+  h2, h3 {
+    margin-bottom: 1rem;
+    font-family: $header-font-family;
+    font-weight: $regular_font;
+    text-transform: uppercase;
+  }
+  p {
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}

@@ -5,11 +5,11 @@
   border-radius: $button-border-radius;
   padding: 1rem 2rem;
   display: inline-block;
-  h3 {
+  h4 {
     font-family: $header-font-family;
     font-weight: $regular-font;
     letter-spacing: 2px;
-    font-size: $button-font-size;
+    font-size: $cta-button-font-size;
     text-transform: uppercase;
   }
 }
@@ -27,12 +27,20 @@
   padding: .6rem;
   transition: .3s all;
   display: inline-block;
-  h3 {
+  h4 {
     font-family: $header-font-family;
     font-weight: $regular-font;
     letter-spacing: 2px;
-    font-size: .7rem;
+    font-size: $learnmore-button-font-size;
     text-transform: uppercase;
+  }
+}
+
+.bg-light .learnmore-button {
+  background-color: $secondary-color;
+  border: 1px solid $secondary-color;
+  &:hover {
+    color: $secondary-color;
   }
 }
 

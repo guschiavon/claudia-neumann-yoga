@@ -19,5 +19,6 @@ fonts:
   extra_bold_font: 700
 
 buttons:
-  button-font-size: 1rem
   button-border-radius: 5px
+  cta-button-font-size: 1rem
+  learnmore-button-font-size: .7rem
