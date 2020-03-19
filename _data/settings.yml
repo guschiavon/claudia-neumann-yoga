@@ -33,6 +33,18 @@ social:
   instagram_url: 'https://instagram.com'
   youtube_url: 'https://youtube.com'
 
+yoga-style:
+  - Vinyasa
+  - Corporate
+  - Yin
+  - Hatha
+  - Meditation
+
+studios:
+  - Studio 1
+  - Studio 2
+  - Studio 3
+
 nav-menu:
   menu-1-name: About
   menu-2-name: Yoga
