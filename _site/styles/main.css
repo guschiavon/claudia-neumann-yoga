@@ -70,9 +70,11 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .form-send-button { padding: .8rem; letter-spacing: 2px; color: #FFF; font-family: "Raleway", sans-serif; font-size: 1rem; text-transform: uppercase; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; }
 
-.header-banner { position: relative; display: flex; justify-content: center; align-items: center; z-index: 1; background: #479aa1; background: linear-gradient(180deg, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%), url("/assets/images/placeholder 009.jpg"); background-size: cover; }
+.header-banner { position: relative; display: flex; justify-content: center; align-items: center; }
 
-.header-text-box { position: absolute; padding: 5% 0%; }
+.header-banner:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to bottom, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%); /* W3C */ background-size: cover; }
+
+.header-text-box { position: absolute; padding: 5% 0%; z-index: 1; }
 
 .header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; color: #FFF; letter-spacing: 5px; }
 

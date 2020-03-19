@@ -3,16 +3,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-// This works for gradient but it's not flexible for changing image in front matter... need to find solution
-  background: rgb(71,154,161);
-  background: linear-gradient(180deg, rgba(71,154,161,1) 0%, rgba(245,174,168,0.19511554621848737) 100%),url('/assets/images/placeholder 009.jpg');
-  background-size: cover;
+  // z-index: 1;
+  &:after {
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    display:inline-block;
+    background: linear-gradient(to bottom, rgba(71,154,161,1) 0%,rgba(245,174,168,0.19511554621848737) 100%); /* W3C */
+    background-size: cover;
+  }
 }
+
 
 .header-text-box {
   position: absolute;
   padding: 5% 0%;
+  z-index: 1;
   h1 {
     margin-bottom: 2rem;
     font-size: $heading1-font-size;
