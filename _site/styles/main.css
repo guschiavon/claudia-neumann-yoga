@@ -30,7 +30,7 @@ p { font-family: "Nunito", sans-serif; font-size: 1.2rem; line-height: 1.7; }
 
 .bg-light { background-color: #FFF; }
 
-.navbar { padding: .1% 2%; position: fixed; background-color: #FFF; z-index: 2; }
+.navbar { padding: .1% 3%; position: fixed; background-color: #FFF; z-index: 2; }
 
 nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; letter-spacing: 2px; font-weight: 200; color: #707070; transition: .5s ease all; }
 
@@ -102,7 +102,9 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .retreat-feature .learnmore-button h4 { font-size: 1rem; }
 
-.section-lg-feature-image { max-height: 500px; object-fit: cover; overflow: hidden; }
+.section-lg-feature-image { max-height: 500px; object-fit: cover; overflow: hidden; padding: 0 6%; }
+
+.retreat-feature-content { padding: 0 6%; }
 
 .retreat-feature-content h2, .retreat-feature-content h3 { margin-bottom: 1rem; font-family: "Raleway", sans-serif; font-weight: 400; text-transform: uppercase; }
 
