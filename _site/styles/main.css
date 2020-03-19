@@ -102,9 +102,9 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .retreat-feature .learnmore-button h4 { font-size: 1rem; }
 
-.section-lg-feature-image { max-height: 500px; object-fit: cover; overflow: hidden; padding: 0 6%; }
+.section-lg-feature-image { max-height: 500px; object-fit: cover; overflow: hidden; padding: 3% 6%; }
 
-.retreat-feature-content { padding: 0 6%; }
+.retreat-feature-content { padding: 3% 6%; }
 
 .retreat-feature-content h2, .retreat-feature-content h3 { margin-bottom: 1rem; font-family: "Raleway", sans-serif; font-weight: 400; text-transform: uppercase; }
 

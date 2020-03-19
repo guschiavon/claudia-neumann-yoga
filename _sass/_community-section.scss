@@ -2,7 +2,9 @@
   min-height: 500px;
   object-fit: fill;
   position: relative;
-  img { position: absolute; }
+  img {
+    position: absolute;
+  }
 }
 
 .full-width-banner-content {
