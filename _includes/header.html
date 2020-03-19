@@ -1,0 +1,16 @@
+<header>
+  {% include desktop-navbar.html %}
+  <div class="header-banner full-height">
+    <div class="header-text-box">
+      <h1>
+      {{page.banner_title}}
+      </h1>
+      <div class="flex-center">
+        <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
+        {% if page.add_banner_button == true %}
+        {% include banner-cta-button.html %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</header>

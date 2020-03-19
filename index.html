@@ -1,5 +1,7 @@
 ---
+layout: default
 page_title: Claudia Neumann Yoga
+banner_title: Happiness is inside you.
 add_banner_button: true
 banner-cta-button_url: '/'
 banner-cta-button_text: Learn More
@@ -9,32 +11,17 @@ feature-video_url: 'https://youtube.com'
 feature-video-cover_image:
 thumb-profile-pic_image: assets/images/placeholder 010.jpg
 feature-box-1_image: assets/images/placeholder 003.jpg
+feature-box-1-title: Yoga
+feature-box-1_url: /yoga
 feature-box-2_image: assets/images/placeholder 007.jpg
+feature-box-2-title: Healing
+feature-box-2_url: /reiki
 feature-box-3_image: assets/images/placeholder 008.jpg
+feature-box-3-title: Retreats
+feature-box-1_url: /retreats
 feature-retreat_image: assets/images/placeholder 008.jpg
 ---
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  {% include head.html %}
 
-  <body>
-    <header>
-      {% include desktop-navbar.html %}
-      <div class="header-banner full-height">
-        <!-- <img src="/assets/images/placeholder 009.jpg" alt=""> -->
-        <div class="header-text-box">
-          <h1>
-            Happiness is inside you.
-          </h1>
-          <div class="flex-center">
-            <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
-            {% if page.add_banner_button == true %}
-            {% include banner-cta-button.html %}
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </header>
     <main>
       <section class="intro-section padding-outer">
         <div class="flex-center grid-noGutter">
@@ -55,52 +42,9 @@ feature-retreat_image: assets/images/placeholder 008.jpg
         </div>
       </section>
     </main>
+
     <!-- triple feature box section -->
-    <section class="triple-features bg-dark">
-      <div class="grid-spaceBetween">
-        <div class="col-4_md-12 feature-box flex-center">
-          <!-- <div class="feature-box-img"> -->
-            <img src="{{page.feature-box-1_image}}" alt="Yoga by Claudia Neumann">
-          <!-- </div> -->
-          <div class="box-content">
-            <h2 class="editable">
-              Yoga
-            </h2>
-            <a href="/yoga" class="learnmore-button">
-              <h4>
-                Learn More
-              </h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-4_md-12 feature-box flex-center">
-          <img src="{{page.feature-box-2_image}}" alt="Reiki sessions by Claudia Neumann">
-          <div class="box-content">
-            <h2 class="editable">
-              Healing
-            </h2>
-            <a href="/reiki" class="learnmore-button">
-              <h4>
-                Learn More
-              </h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-4_md-12 feature-box flex-center">
-          <img src="{{page.feature-box-3_image}}" alt="Retreats by Claudia Neumann">
-          <div class="box-content">
-            <h2 class="editable">
-              Retreats
-            </h2>
-            <a href="/retreats" class="learnmore-button">
-              <h4>
-                Learn More
-              </h4>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    {% include triple-feature.html %}
 
     <!-- upcoming retreat section -->
     <section class="grid-noGutter padding-outer retreat-feature bg-light">
@@ -159,8 +103,3 @@ feature-retreat_image: assets/images/placeholder 008.jpg
     {% if page.include-feature-video == true %}
       {% include feature-video.html%}
     {% endif %}
-
-    {% include footer.html %}
-
-  </body>
-</html>
