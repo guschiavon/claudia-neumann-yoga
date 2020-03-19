@@ -1,0 +1,27 @@
+.full-width-banner {
+  height: 500px;
+  object-fit: fill;
+  position: relative;
+  img { position: absolute; }
+}
+
+.full-width-banner-content {
+  position: absolute;
+  max-width: 70%;
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: $regular_font;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.logo-overlay-right {
+  position: absolute;
+  width: 250px;
+  height: auto;
+  right: 60px;
+  bottom: 30px;
+}

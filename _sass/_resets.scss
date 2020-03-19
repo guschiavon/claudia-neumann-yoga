@@ -5,6 +5,9 @@
   text-decoration: none;
 }
 
-a {color: inherit;}
+a {
+  color: inherit;
+  display: inline-block;
+}
 
 img {max-width: 100%;}

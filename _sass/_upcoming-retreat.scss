@@ -1,5 +1,11 @@
 .retreat-feature {
   height: 650px;
+  .learnmore-button {
+    padding: .9rem 1.2rem;
+    h4 {
+      font-size: 1rem;
+    }
+  }
 }
 
 .section-lg-feature-image {
@@ -16,7 +22,6 @@
     text-transform: uppercase;
   }
   p {
-    line-height: 1.7;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
