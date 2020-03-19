@@ -27,28 +27,15 @@ $cta-button-font-size: {{site.data.settings.buttons.cta-button-font-size}};
 $learnmore-button-font-size: {{site.data.settings.buttons.learnmore-button-font-size}};
 $button-border-radius: {{site.data.settings.buttons.button-border-radius}};
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: $header-font-family;
-  text-transform: uppercase;
-}
-
-p {
-  font-family: $paragraph-font-family;
-  font-size: $paragraph-font-size;
-  line-height: $paragraph-line-height;
-}
-
+@import "_universal";
 @import "_utility";
 
 @import "_navbar";
 @import "_buttons";
 @import "_header";
+@import "_footer";
 @import "_intro-section";
 @import "_triple-features";
 @import "_upcoming-retreat";
-@import "_community-section.scss";
-@import "_footer";
+@import "_community-section";
 @import "_schedule-calendar";

@@ -1,0 +1,13 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $paragraph-font-family;
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
+}
