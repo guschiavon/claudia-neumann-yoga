@@ -110,6 +110,8 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .retreat-feature-content p { margin-bottom: 2rem; margin-top: 2rem; }
 
+.retreat-feature-content h3 { color: #479AA1; }
+
 .full-width-banner { min-height: 500px; object-fit: fill; position: relative; }
 
 .full-width-banner img { position: absolute; }

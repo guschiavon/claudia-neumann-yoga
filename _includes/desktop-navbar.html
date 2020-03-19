@@ -1,5 +1,5 @@
-    <div class="navbar grid-spaceBetween-noGutter">
-      <div class="navbar-logo col-6-left-middle">
+    <div class="navbar grid-noGutter-spaceBetween">
+      <div class="navbar-logo col-6-middle">
         <a href="/" class="navbar-link">
           <img src="assets/images/Yogismile_Logo_color_transparent.png" alt="Yogismile by Claudia Neumann">
         </a>
@@ -9,24 +9,24 @@
           </h2>
         </a>
       </div>
-      <nav class="navbar-menu-desktop flex-center col-6-middle mobile-hide">
+      <nav class="navbar-menu-desktop center col-6-middle mobile-hide">
         <a href="/about">
-          About
+          {{site.data.settings.nav-menu.menu-1-name}}
         </a>
         <a href="/yoga">
-          Practice
+          {{site.data.settings.nav-menu.menu-2-name}}
         </a>
         <a href="/reiki">
-          Heal
+          {{site.data.settings.nav-menu.menu-3-name}}
         </a>
         <a href="/retreats">
-          Grow
+          {{site.data.settings.nav-menu.menu-4-name}}
         </a>
         <a href="/blog">
-          Health
+          {{site.data.settings.nav-menu.menu-5-name}}
         </a>
         <a href="/contact">
-          Contact
+          {{site.data.settings.nav-menu.menu-6-name}}
         </a>
       </nav>
     </div>

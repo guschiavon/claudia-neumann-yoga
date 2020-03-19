@@ -32,3 +32,11 @@ social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
   youtube_url: 'https://youtube.com'
+
+nav-menu:
+  menu-1-name: About
+  menu-2-name: Yoga
+  menu-3-name: Heal
+  menu-4-name: Grow
+  menu-5-name: Health
+  menu-6-name: Contact
