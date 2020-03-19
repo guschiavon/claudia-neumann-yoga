@@ -26,6 +26,11 @@ footer {
   font-family: $header-font-family;
   font-size: 1rem;
   color: $light-color;
+  transition: .3s all;
+  &:hover {
+    color: $secondary-color;
+    transition: .3s all;
+  }
 }
 
 .footer-social-icon {

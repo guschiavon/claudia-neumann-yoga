@@ -68,7 +68,7 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .schedule-button:hover, .schedule-button:focus { background-color: #FFF; color: #479AA1; border-color: #479AA1; transition: .3s all; }
 
-.form-send-button { padding: .8rem; color: #FFF; font-family: "Raleway", sans-serif; font-size: 1rem; text-transform: uppercase; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; }
+.form-send-button { padding: .8rem; letter-spacing: 2px; color: #FFF; font-family: "Raleway", sans-serif; font-size: 1rem; text-transform: uppercase; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; }
 
 .header-banner { position: relative; display: flex; justify-content: center; align-items: center; z-index: 1; background: #479aa1; background: linear-gradient(180deg, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%), url("/assets/images/placeholder 009.jpg"); background-size: cover; }
 
@@ -128,7 +128,9 @@ footer { height: 450px; background-color: #707070; }
 
 .social-box { display: inline-block; margin-bottom: 1rem; }
 
-.email-link { display: block; font-family: "Raleway", sans-serif; font-size: 1rem; color: #FFF; }
+.email-link { display: block; font-family: "Raleway", sans-serif; font-size: 1rem; color: #FFF; transition: .3s all; }
+
+.email-link:hover { color: #F5AEA8; transition: .3s all; }
 
 .footer-social-icon { width: 50px; height: auto; }
 
