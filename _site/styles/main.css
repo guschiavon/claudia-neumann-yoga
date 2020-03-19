@@ -116,7 +116,9 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .section-feature-content h3 { color: #479AA1; }
 
-.full-width-banner { min-height: 500px; object-fit: fill; position: relative; }
+.community-section { position: relative; }
+
+.full-width-banner { height: 50vh; object-fit: fill; overflow: hidden; position: relative; }
 
 .full-width-banner img { position: absolute; }
 
@@ -126,7 +128,7 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .full-width-banner-content p { margin-bottom: 2rem; }
 
-.logo-overlay-right { position: absolute; width: 250px; height: auto; right: 60px; bottom: 30px; }
+.logo-overlay-right { position: absolute; width: 180px; height: auto; right: 60px; bottom: 30px; }
 
 footer { height: 450px; background-color: #707070; }
 

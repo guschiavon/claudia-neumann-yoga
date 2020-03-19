@@ -1,7 +1,9 @@
+.community-section { position: relative; }
 
 .full-width-banner {
-  min-height: 500px;
+  height: 50vh;
   object-fit: fill;
+  overflow: hidden;
   position: relative;
   img {
     position: absolute;
@@ -23,7 +25,7 @@
 
 .logo-overlay-right {
   position: absolute;
-  width: 250px;
+  width: 180px;
   height: auto;
   right: 60px;
   bottom: 30px;
