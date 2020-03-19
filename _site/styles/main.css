@@ -20,6 +20,8 @@ p { font-family: "Nunito", sans-serif; font-size: 1.2rem; line-height: 1.7; }
 
 .third-height { height: 33vh; }
 
+.responsive-banner-image { width: 100%; height: auto; }
+
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
 .padding-inner { padding: 3%; }
