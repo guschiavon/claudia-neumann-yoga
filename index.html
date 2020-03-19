@@ -4,8 +4,9 @@ add_banner_button: true
 banner-cta-button_url: '/'
 banner-cta-button_text: Learn More
 include-profile-thumb_image: true
-include-feature-video: false
+include-feature-video: true
 feature-video_url: 'https://youtube.com'
+feature-video-cover_image: 
 thumb-profile-pic: assets/images/placeholder 010.jpg
 feature-box-1_image: assets/images/placeholder 003.jpg
 feature-box-2_image: assets/images/placeholder 007.jpg
@@ -152,7 +153,7 @@ feature-retreat_image: assets/images/placeholder 008.jpg
         </div>
       </div>
     </section> -->
-    
+
     {% if page.include-feature-video == true %}
       {% include feature-video.html%}
     {% endif %}
