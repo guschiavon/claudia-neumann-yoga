@@ -33,39 +33,6 @@ layout: default
   </div>
 </section>
 
-<!-- testimonials section -->
-<section class="testimonials padding-inner">
-  <div class="testimonial-text-content center">
-    <h2>
-      Testimonials
-    </h2>
-    <span>"</span>
-    <p class="editable">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <span>"</span>
-  </div>
-</section>
-
+{% include testimonials.html %}
 {% include yoga-page-schedule.html %}
-
-<section class="community-section">
- <div class="full-width-banner">
-   <img src="/assets/images/placeholder 002.jpg" class="responsive-banner-image" alt="">
-   <div class="padding-outer">
-     <div class="full-width-banner-content padding-inner">
-       <h2>
-         Private sessions
-       </h2>
-       <p class="editable">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-       </p>
-       <a href="{{site.data.settings.calendars.yoga_calendly_url}}" class="schedule-button">
-         <h4 class="editable">
-           Schedule private session
-         </h4>
-       </a>
-     </div>
-   </div>
- </div>
-</section>
+{% include private-session-section.html %}

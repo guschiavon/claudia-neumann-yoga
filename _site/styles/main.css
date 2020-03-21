@@ -146,7 +146,7 @@ form { width: 80%; margin: auto; }
 
 .section-feature-content h3 { color: #479AA1; }
 
-.community-section { position: relative; }
+.community-section, .private-session-section { position: relative; }
 
 .full-width-banner { height: 50vh; object-fit: fill; overflow: hidden; position: relative; }
 
