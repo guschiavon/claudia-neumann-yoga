@@ -34,5 +34,10 @@ layout: default
 </section>
 
 {% include testimonials.html %}
-{% include yoga-page-schedule.html %}
-{% include private-session-section.html %}
+
+{% if page.private == false %}
+    {% include yoga-page-schedule.html %}
+    {% include private-session-section.html %}
+  {% elsif page.private == true %}
+    {% include book-private-session.html %}
+{% endif %}
