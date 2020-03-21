@@ -32,7 +32,8 @@ buttons:
   learnmore-button-font-size: .7rem
 
 calendars:
-  calendly_url: 'https://www.calendly.com'
+  reiki_calendly_url: 'https://www.calendly.com'
+  yoga_calendly_url: 'https://www.calendly.com'
 
 social:
   facebook_url: 'https://facebook.com'
@@ -45,11 +46,6 @@ yoga-styles:
   - Yin
   - Hatha
   - Meditation
-
-studios:
-  - Studio 1
-  - Studio 2
-  - Studio 3
 
 nav-menu:
   menu-1-name: About

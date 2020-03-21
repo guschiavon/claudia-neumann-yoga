@@ -1,0 +1,112 @@
+<!-- Yoga style class schedule -->
+
+<section id="schedule" class="schedule-calendar padding-outer">
+  <div class="schedule-text-box">
+    <h2>
+      Class schedule
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <div class="page-schedule-calendar-box padding-inner grid-spaceBetween">
+    <div class="cal-column col-3">
+      <h2>
+        Day
+      </h2>
+    </div>
+    <div class="cal-column col-3">
+      <h2>
+        Time
+      </h2>
+    </div>
+    <div class="cal-column col-3">
+      <h2>
+        Location
+      </h2>
+    </div>
+    <div class="cal-column col-3">
+      <h2>
+        Add to cal
+      </h2>
+    </div>
+    {% if page.monday == true %}
+    <div class="cal-row col-3">
+      <h3>
+        Monday
+      </h3>
+    </div>
+    <div class="cal-row col-3">
+      <h3 class="editable">
+        Input hour
+      </h3>
+    </div>
+    <div class="cal-row col-3">
+      <a href="studio-1-map-url">
+        <h3>
+          {{site.data.settings.studios.studio}}
+        </h3>
+      </a>
+    </div>
+    <div class="cal-row col-3">
+      <a href="add-to-cal-code">
+        <h3>
+          Click to add
+        </h3>
+      </a>
+    </div>
+    {% endif %}
+    {% if page.tuesday == true %}
+    <div class="cal-row col-3">
+      <h3>
+        Tuesday
+      </h3>
+    </div>
+    <div class="cal-row col-3">
+      <h3 class="editable">
+        Input hour
+      </h3>
+    </div>
+    <div class="cal-row col-3">
+      <a href="studio-1-map-url">
+        <h3>
+          {{site.data.settings.studios}}
+        </h3>
+      </a>
+    </div>
+    <div class="cal-row col-3">
+      <a href="add-to-cal-code">
+        <h3>
+          Click to add
+        </h3>
+      </a>
+    </div>
+    {% endif %}
+    {% if page.wednesday == true %}
+    <div class="cal-row col-3">
+      <h3>
+        Wednesday
+      </h3>
+    </div>
+    <div class="cal-row col-3">
+      <h3 class="editable">
+        Input hour
+      </h3>
+    </div>
+    <div class="cal-row col-3">
+      <a href="studio-1-map-url">
+        <h3>
+          {{site.data.settings.studios}}
+        </h3>
+      </a>
+    </div>
+    <div class="cal-row col-3">
+      <a href="add-to-cal-code">
+        <h3>
+          Click to add
+        </h3>
+      </a>
+    </div>
+    {% endif %}
+  </div>
+</section>
