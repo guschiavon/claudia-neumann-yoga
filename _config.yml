@@ -7,9 +7,9 @@ collections:
     output: true
   retreats:
     output: true
-page_blocks: []
+faqs: []
 _array_structures:
-  page_blocks:
+  faqs:
     - label: Inclusions
       icon: text
       value:
