@@ -3,37 +3,39 @@ layout: default
 ---
 
 <!-- Later make this an include with Liquid tags on classes to differentiate Yoga from Retreat -->
-<section>
-  <div class="grid-noGutter">
-    <div class="col-6_sm-12-middle overview">
-      <div class="padding-outer center">
-        <h3>
-          Overview
-        </h3>
-        {{ content }}
+<main>
+  <section>
+    <div class="grid-noGutter">
+      <div class="col-6_sm-12-middle overview">
+        <div class="padding-outer center">
+          <h3>
+            Overview
+          </h3>
+          {{ content }}
+        </div>
+      </div>
+      <div class="col-6_sm-12 overview-img-box">
+        <img src="{{page.box-1_image}}" alt="">
       </div>
     </div>
-    <div class="col-6_sm-12 overview-img-box">
-      <img src="{{page.box-1_image}}" alt="">
-    </div>
-  </div>
-  <div class="grid-noGutter">
-    <div class="col-6_sm-12-middle flex-center overview bg-dark">
-      <h2>
-        Practical info
-      </h2>
-    </div>
-    <div class="col-6_sm-12 practical-info">
-      <div class="padding-outer">
-        {% if page._hidden_info-box == 'yoga' %}
+    <div class="grid-noGutter">
+      <div class="col-6_sm-12-middle flex-center overview bg-dark">
+        <h2>
+          Practical info
+        </h2>
+      </div>
+      <div class="col-6_sm-12 practical-info">
+        <div class="padding-outer">
+          {% if page._hidden_info-box == 'yoga' %}
           {% include yoga-info.html %}
-        {% elsif page._hidden_info-box == 'retreat' %}
+          {% elsif page._hidden_info-box == 'retreat' %}
           {% include retreat-info.html %}
-        {% endif %}
+          {% endif %}
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>  
+</main>
 
 {% include testimonials.html %}
 
