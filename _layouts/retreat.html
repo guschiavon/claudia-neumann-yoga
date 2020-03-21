@@ -1,6 +1,6 @@
 ---
 layout: default
-page_blocks:
+faq:
 ---
 
 <!-- Later make this an include with Liquid tags on classes to differentiate Yoga from Retreat -->
@@ -41,9 +41,9 @@ page_blocks:
 {% include testimonials.html %}
 
 <!-- FAQ section -->
-{% for faq in page.page_blocks %}
+{% for block in page.page_blocks %}
   {% case faq._id %}
     {% when 'inclusions' %}
-      {% include faq-inclusions.html faq=faq %}
+      {% include faq-inclusions.html block=block %}
   {% endcase %}
 {% endfor %}
