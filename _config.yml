@@ -5,3 +5,5 @@ cloudcannon:
 collections:
   yoga:
     output: true
+  retreats:
+    output: true  
