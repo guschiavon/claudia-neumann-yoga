@@ -41,9 +41,9 @@ faq:
 {% include testimonials.html %}
 
 <!-- FAQ section -->
-{% for block in page.page_blocks %}
+{% for faq in page.faq %}
   {% case faq._id %}
     {% when 'inclusions' %}
-      {% include faq-inclusions.html block=block %}
+      {% include faq-inclusions.html faq=faq %}
   {% endcase %}
 {% endfor %}
