@@ -14,29 +14,29 @@ _array_structures:
       icon: text
       value:
         _id: inclusions
-        inclusions_description:
+        inclusions_description_html:
     - label: Exclusions
       icon: text
       value:
         _id: exclusions
-        exclusions_description:
+        exclusions_description_html:
     - label: Accommodation
       icon: text
       value:
         _id: accommodation
-        accommodation_description:
+        accommodation_description_html:
     - label: What to bring
       icon: text
       value:
         _id: what-to-bring
-        what-to-bring_description:
+        what-to-bring_description_html:
     - label: Special requests
       icon: text
       value:
         _id: special-requests
-        special-requests_description:
+        special-requests_description_html:
     - label: Weather
       icon: text
       value:
         _id: weather
-        weather_description:
+        weather_description_html:
