@@ -23,9 +23,9 @@ layout: default
     </div>
     <div class="col-6_sm-12 practical-info">
       <div class="padding-outer">
-        {% if page.info-box == 'yoga' %}
+        {% if page._hidden_info-box == 'yoga' %}
           {% include yoga-info.html %}
-        {% elsif page.info-box == 'retreat' %}
+        {% elsif page._hidden_info-box == 'retreat' %}
           {% include retreat-info.html %}
         {% endif %}
       </div>
