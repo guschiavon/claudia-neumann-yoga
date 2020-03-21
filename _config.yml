@@ -12,31 +12,37 @@ _array_structures:
   faqs:
     - label: Inclusions
       icon: text
+      description: Add or edit the Inclusions FAQ field
       value:
         _id: inclusions
         inclusions_description_html:
     - label: Exclusions
       icon: text
+      description: Add or edit the Exclusions FAQ field
       value:
         _id: exclusions
         exclusions_description_html:
     - label: Accommodation
       icon: text
+      description: Add or edit the Accommodation FAQ field
       value:
         _id: accommodation
         accommodation_description_html:
     - label: What to bring
       icon: text
+      description: Add or edit the What to Bring FAQ field
       value:
         _id: what-to-bring
         what-to-bring_description_html:
     - label: Special requests
       icon: text
+      description: Add or edit the Special Requests FAQ field
       value:
         _id: special-requests
         special-requests_description_html:
     - label: Weather
       icon: text
+      description: Add or edit the Weather FAQ field
       value:
         _id: weather
         weather_description_html:
