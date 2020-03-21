@@ -1,6 +1,5 @@
 ---
 layout: default
-faqs:
 ---
 
 <!-- Later make this an include with Liquid tags on classes to differentiate Yoga from Retreat -->
@@ -45,5 +44,15 @@ faqs:
   {% case faq._id %}
     {% when 'inclusions' %}
       {% include faq-inclusions.html faq=faq %}
+    {% when 'exclusions' %}
+      {% include faq-exclusions.html faq=faq %}
+    {% when 'accommodation' %}
+      {% include faq-accommodation.html faq=faq %}
+    {% when 'what-to-bring' %}
+      {% include faq-what-to-bring.html faq=faq %}
+    {% when 'special-requests' %}
+      {% include faq-special-requests.html faq=faq %}
+    {% when 'weather' %}
+      {% include faq-weather.html faq=faq %}
   {% endcase %}
 {% endfor %}
