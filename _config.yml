@@ -7,3 +7,36 @@ collections:
     output: true
   retreats:
     output: true
+page_blocks: []
+_array_structures:
+  faq:
+    - label: Inclusions
+      icon: text
+      value:
+        _id: inclusions
+        inclusions_description:
+    - label: Exclusions
+      icon: text
+      value:
+        _id: exclusions
+        exclusions_description:
+    - label: Accommodation
+      icon: text
+      value:
+        _id: accommodation
+        accommodation_description:
+    - label: What to bring
+      icon: text
+      value:
+        _id: what-to-bring
+        what-to-bring_description:
+    - label: Special requests
+      icon: text
+      value:
+        _id: special-requests
+        special-requests_description:
+    - label: Weather
+      icon: text
+      value:
+        _id: weather
+        weather_description:
