@@ -1,5 +1,5 @@
 basic_settings:
-  site_logo: /assets/images/yogismile-logo.png
+  site_logo_image: /assets/images/yogismile-logo.png
 
 colors:
   # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax
@@ -40,17 +40,16 @@ social:
   instagram_url: 'https://instagram.com'
   youtube_url: 'https://youtube.com'
 
-yoga-styles:
-  - Vinyasa
-  - Corporate
-  - Yin
-  - Hatha
-  - Meditation
-
 nav-menu:
   menu-1-name: About
+  menu-1-link_url: /about
   menu-2-name: Yoga
+  menu-2-link_url: /yoga
   menu-3-name: Heal
+  menu-3-link_url: /reiki
   menu-4-name: Grow
+  menu-4-link_url: /retreats
   menu-5-name: Health
+  menu-5-link_url: /blog
   menu-6-name: Contact
+  menu-6-link_url: /contact
