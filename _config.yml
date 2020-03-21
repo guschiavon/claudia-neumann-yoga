@@ -9,7 +9,7 @@ collections:
     output: true
 page_blocks: []
 _array_structures:
-  faq:
+  page_blocks:
     - label: Inclusions
       icon: text
       value:
