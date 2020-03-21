@@ -72,6 +72,8 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .form-send-button { padding: .8rem; letter-spacing: 2px; color: #FFF; font-family: "Raleway", sans-serif; font-size: 1rem; text-transform: uppercase; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; }
 
+.form-send-button:hover { filter: brightness(1.2); }
+
 .header-banner { position: relative; display: flex; justify-content: center; align-items: center; }
 
 .header-banner:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to bottom, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%); /* W3C */ background-size: cover; }
@@ -80,13 +82,13 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; color: #FFF; letter-spacing: 5px; }
 
-footer { height: 450px; background-color: #707070; }
+footer { height: 450px; background-color: #3e3e3e; }
 
 .footer-logo { width: 80px; height: 80px; margin-bottom: 1rem; }
 
 .footer-title { font-size: 1.5rem; margin-bottom: 3rem; color: #FFF; font-weight: 200; }
 
-.social-box { display: inline-block; margin-bottom: 1rem; }
+.social-box { display: inline-block; margin-bottom: 1rem; margin-right: 1rem; }
 
 .email-link { display: block; font-family: "Raleway", sans-serif; font-size: 1rem; color: #FFF; transition: .3s all; }
 
@@ -94,7 +96,7 @@ footer { height: 450px; background-color: #707070; }
 
 .footer-social-icon { width: 50px; height: auto; }
 
-.footer-social-icon .fab { font-size: 2.5rem; padding: .3rem; margin-right: .8rem; color: #FFF; transition: .3s all; }
+.footer-social-icon .fab { font-size: 2.5rem; padding: .3rem; color: #FFF; transition: .3s all; }
 
 .fab:hover { color: #479AA1; transition: .3s all; }
 

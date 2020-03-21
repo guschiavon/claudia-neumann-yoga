@@ -86,4 +86,5 @@
   border: none;
   border-radius: $button-border-radius;
   width: inherit;
+  &:hover { filter: brightness(1.2);}
 }
