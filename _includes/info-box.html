@@ -1,0 +1,18 @@
+<div class="grid-noGutter">
+  <div class="col-6_sm-12-middle flex-center overview bg-dark">
+    <h2>
+      Practical info
+    </h2>
+  </div>
+  <div class="col-6_sm-12 practical-info">
+    <div class="padding-outer">
+      {% if page._hidden_info-box == 'yoga' %}
+        {% include yoga-info.html %}
+      {% elsif page._hidden_info-box == 'retreat' %}
+        {% include retreat-info.html %}
+      {% else %}
+        {% include offering-info.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>
