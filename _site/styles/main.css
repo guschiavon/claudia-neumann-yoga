@@ -150,7 +150,7 @@ form { width: 80%; margin: auto; }
 
 .community-section, .private-session-section { position: relative; }
 
-.full-width-banner { height: 50vh; object-fit: fill; overflow: hidden; position: relative; }
+.full-width-banner { height: 500px; object-fit: fill; overflow: hidden; position: relative; }
 
 .full-width-banner img { position: absolute; }
 

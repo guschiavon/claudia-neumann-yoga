@@ -27,9 +27,9 @@ layout: default
       <div class="col-6_sm-12 practical-info">
         <div class="padding-outer">
           {% if page._hidden_info-box == 'yoga' %}
-          {% include yoga-info.html %}
+            {% include yoga-info.html %}
           {% elsif page._hidden_info-box == 'retreat' %}
-          {% include retreat-info.html %}
+            {% include retreat-info.html %}
           {% endif %}
         </div>
       </div>
@@ -40,19 +40,73 @@ layout: default
 {% include testimonials.html %}
 
 <!-- FAQ section -->
-{% for faq in page.faqs %}
-  {% case faq._id %}
-    {% when 'faq-1' %}
-      {% include faq-1.html faq=faq %}
-    {% when 'faq-2' %}
-      {% include faq-2.html faq=faq %}
-    {% when 'faq-3' %}
-      {% include faq-3.html faq=faq %}
-    {% when 'faq-4' %}
-      {% include faq-4.html faq=faq %}
-    {% when 'faq-5' %}
-      {% include faq-5.html faq=faq %}
-    {% when 'faq-6' %}
-      {% include faq-6.html faq=faq %}
-  {% endcase %}
-{% endfor %}
+<section class="grid-noGutter">
+  <div class="col-6_md-12 faqs-section">
+    <div class="padding-outer">
+      {% for faq in page.faqs %}
+        {% case faq._id %}
+          {% when 'faq-1' %}
+            {% include faq-1.html faq=faq %}
+          {% when 'faq-2' %}
+            {% include faq-2.html faq=faq %}
+          {% when 'faq-3' %}
+            {% include faq-3.html faq=faq %}
+          {% when 'faq-4' %}
+            {% include faq-4.html faq=faq %}
+          {% when 'faq-5' %}
+            {% include faq-5.html faq=faq %}
+          {% when 'faq-6' %}
+            {% include faq-6.html faq=faq %}
+        {% endcase %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="col-6_md-12-middle flex-center">
+    <h2>
+      FAQ
+    </h2>
+  </div>
+</section>
+
+<section class="location-highlights">
+  <div class="full-width-banner">
+    <img src="{{page.location-highlights-background_image}}" alt="{{page.location-highlights-background-image-alt-text}}" class="responsive-banner-image">
+    <div class="padding-outer">
+      <div class="full-width-banner-content padding-inner">
+        <h2>
+          About {{page.retreat-location}}
+        </h2>
+        <p>
+          {{page.location-description_html}}
+        </p>
+        <h3>
+          Highlights
+        </h3>
+        <h4>
+          {{page.highlight-1}}
+        </h4>
+        <h4>
+          {{page.highlight-2}}
+        </h4>
+        <h4>
+          {{page.highlight-3}}
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA section -->
+<section class="cta-section">
+  <div class="flex-center half-height">
+    <div class="cta-section-content center">
+      <h2>
+        Join me now
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
+      {% include banner-cta-button.html %}
+    </div>
+  </div>
+</section>
