@@ -110,7 +110,7 @@ form { width: 80%; margin: auto; }
 
 .footer-form p, .cta-form p { margin-bottom: 1.5rem; margin-left: auto; margin-right: auto; width: 70%; font-size: 1rem; }
 
-.footer-form input, .cta-form input { padding: .8rem; border-radius: 5px; border: none; width: inherit; margin-bottom: 1rem; }
+.footer-form input, .cta-form input { padding: .8rem; border-radius: 5px; border: none; width: inherit; margin-bottom: 1rem; font-size: .9rem; }
 
 .footer-form .message, .cta-form .message { height: 4rem; }
 
