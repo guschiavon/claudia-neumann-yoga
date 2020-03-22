@@ -20,7 +20,7 @@
   transition: .4s all;
 }
 
-.learnmore-button {
+.learn-more-button {
   color: $light-color;
   border: 1px solid $light-color;
   border-radius: $button-border-radius;
@@ -31,12 +31,12 @@
     font-family: $header-font-family;
     font-weight: $regular-font;
     letter-spacing: 2px;
-    font-size: $learnmore-button-font-size;
+    font-size: $learn-more-button-font-size;
     text-transform: uppercase;
   }
 }
 
-.bg-light .learnmore-button {
+.bg-light .learn-more-button {
   background-color: $secondary-color;
   border: 1px solid $secondary-color;
   &:hover {
@@ -44,8 +44,8 @@
   }
 }
 
-.learnmore-button:hover,
-.learnmore-button:focus {
+.learn-more-button:hover,
+.learn-more-button:focus {
   color: $primary-color;
   background-color: $light-color;
   transition: .3s all;

@@ -31,7 +31,7 @@ fonts:
 buttons:
   button-border-radius: 5px
   cta-button-font-size: 1rem
-  learnmore-button-font-size: .7rem
+  learn-more-button-font-size: .7rem
 
 calendars:
   reiki_calendly_url: 'https://www.calendly.com'

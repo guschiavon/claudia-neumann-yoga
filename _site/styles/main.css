@@ -54,15 +54,15 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .banner-cta-button:hover, .banner-cta-button:focus { background-color: #F5AEA8; transition: .4s all; }
 
-.learnmore-button { color: #FFF; border: 1px solid #FFF; border-radius: 5px; padding: .6rem; transition: .3s all; display: inline-block; }
+.learn-more-button { color: #FFF; border: 1px solid #FFF; border-radius: 5px; padding: .6rem; transition: .3s all; display: inline-block; }
 
-.learnmore-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 0.7rem; text-transform: uppercase; }
+.learn-more-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 0.7rem; text-transform: uppercase; }
 
-.bg-light .learnmore-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
+.bg-light .learn-more-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
 
-.bg-light .learnmore-button:hover { color: #F5AEA8; }
+.bg-light .learn-more-button:hover { color: #F5AEA8; }
 
-.learnmore-button:hover, .learnmore-button:focus { color: #479AA1; background-color: #FFF; transition: .3s all; }
+.learn-more-button:hover, .learn-more-button:focus { color: #479AA1; background-color: #FFF; transition: .3s all; }
 
 .schedule-button { color: #FFF; background-color: #479AA1; border: 1px solid #FFF; border-radius: 5px; padding: 1rem 2rem; display: inline-block; transition: .3s all; }
 
@@ -134,9 +134,9 @@ form { width: 80%; margin: auto; }
 
 .section-feature { min-height: 650px; }
 
-.section-feature .learnmore-button { padding: .9rem 1.2rem; }
+.section-feature .learn-more-button { padding: .9rem 1.2rem; }
 
-.section-feature .learnmore-button h4 { font-size: 1rem; }
+.section-feature .learn-more-button h4 { font-size: 1rem; }
 
 .section-lg-feature-image { max-height: 500px; object-fit: cover; overflow: hidden; padding: 3% 6%; }
 
