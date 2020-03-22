@@ -12,55 +12,117 @@ certifications:
     certification-logo_image: /assets/images/yoga-alliance.png
     certification-date: June 2018
     certification-teacher: Meghan Currie
+affiliates:
+  - affiliate-name: Doterra
+    affiliate-description: Organic essential oils
+    affiliate-link_url: https://www.doterra.com
 ---
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  {% include head.html %}
-  <body>
-    <header id="top" class="full-height">
-      {% include desktop-navbar.html %}
-      <section class="about-header">
-        <div class="grid-noGutter">
-          <div class="col-6_sm-12 section-lg-feature-image">
-            <img src="{{page.header_image}}" alt="">
-          </div>
-          <div class="col-6_sm-12">
-            <p class="editable">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
+{% include head.html %}
+<body>
+  <header id="top" class="full-height">
+    {% include desktop-navbar.html %}
+    <section class="about-header">
+      <div class="grid-noGutter">
+        <div class="col-6_sm-12 section-lg-feature-image">
+          <img src="{{page.header_image}}" alt="">
         </div>
-      </section>
-      <section class="bg-primary">
-        <div class="grid-noGutter-spaceAround">
-          <div class="col-12 center">
-            <h2 class="editable">
-              Certifications
-            </h2>
+        <div class="col-6_sm-12">
+          <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+  <section class="bg-dark">
+    <div class="grid-noGutter-spaceAround">
+      <div class="col-12 center">
+        <h2 class="editable">
+          Certifications
+        </h2>
+      </div>
+      {% for certification in page.certifications %}
+      <div class="col-4 certification-item">
+        <div class="certification-content center">
+          <div class="cert-logo">
+            <img src="{{certification.certification-logo_image}}" style="width:80px;height:auto;"alt="">
           </div>
-          {% for certification in page.certifications %}
-          <div class="col-4 certification-item">
-            <div class="certification-content center">
-              <div class="cert-logo">
-                <img src="{{certification.certification-logo_image}}" style="width:80px;height:auto;"alt="">
-              </div>
-              <h4>
-                {{certification.certification-name}}
-              </h4>
-              <h4>
-                {{certification.certification-provider}}
-              </h4>
-              <h4>
-                {{certification.certification-date}}
-              </h4>
-              <h4>
-                {{certification.certification-teacher}}
-              </h4>
-            </div>
+          <h4>
+            {{certification.certification-name}}
+          </h4>
+          <h4>
+            {{certification.certification-provider}}
+          </h4>
+          <h4>
+            {{certification.certification-date}}
+          </h4>
+          <h4>
+            {{certification.certification-teacher}}
+          </h4>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  <section class="inspiration">
+    <div class="grid-noGutter">
+      <div class="col-6_sm-12-middle flex-center overview bg-dark">
+        <h2>
+          What inspires me
+        </h2>
+      </div>
+      <div class="col-6_sm-12-middle practical-info">
+        <div class="padding-outer">
+          <h3 class="editable">
+            Books:
+          </h3>
+          <p class="editable">
+            Some content about books here
+          </p>
+          <h3 class="editable">
+            Music:
+          </h3>
+          <p class="editable">
+            Some of your favorite artists go here
+          </p>
+          <h3 class="editable">
+            Podcasts
+          </h3>
+          <p class="editable">
+            Share some of your favorite podcasts here
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid-noGutter-reverse">
+      <div class="col-6_sm-12-middle flex-center overview bg-dark">
+        <h2 class="editable">
+          Who I support
+        </h2>
+      </div>
+      <div class="col-6_sm-12-middle practical-info">
+        <div class="padding-outer">
+          <p class="editable">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          {% for affiliate in page.affiliates %}
+          <div class="affiliate-info">
+            <a href="{{affiliate.affiliate-link_url}}">
+              <h3>
+                {{affiliate.affiliate-name}}
+              </h3>
+            </a>
+            <p>
+              {{affiliate.affiliate-description}}
+            </p>
           </div>
           {% endfor %}
         </div>
-      </section>
-    </header>
-  </body>
+      </div>
+    </div>
+  </section>
+  {% include footer.html %}
+</body>
 </html>
