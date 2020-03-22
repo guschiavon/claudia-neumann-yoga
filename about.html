@@ -1,0 +1,64 @@
+---
+page_title: About Me
+header_image: /assets/images/placeholder 010.jpg
+certifications:
+  - certification-name: YTT 200hr
+    certification-provider: Yoga Alliance
+    certification-date: April 2018
+    certification-teacher: Elena Brower
+  - certification-name: YTT 300hr
+    certification-provider: Yoga Institute
+    certification-date: June 2018
+    certification-teacher: Meghan Currie
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include head.html %}
+  <body>
+    <header id="top" class="full-height">
+      {% include desktop-navbar.html %}
+      <section class="about-header">
+        <div class="grid-noGutter">
+          <div class="col-6_sm-12 section-lg-feature-image">
+            <img src="{{page.header_image}}" alt="">
+          </div>
+          <div class="col-6_sm-12">
+            <p class="editable">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary">
+        <div class="grid-noGutter-spaceAround">
+          <div class="col-12 center">
+            <h2 class="editable">
+              Certifications
+            </h2>
+          </div>
+          {% for certification in page.certifications %}
+          <div class="col-4 certification-item">
+            <div class="certification-content center">
+              <div class="cert-logo">
+                <img src="#" alt="">
+              </div>
+              <h4>
+                {{certification.certification-name}}
+              </h4>
+              <h4>
+                {{certification.certification-provider}}
+              </h4>
+              <h4>
+                {{certification.certification-date}}
+              </h4>
+              <h4>
+                {{certification.certification-teacher}}
+              </h4>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
