@@ -34,14 +34,14 @@ layout: default
         </div>
       </div>
     </div>
-  </section>  
+  </section>
 </main>
 
 {% include testimonials.html %}
 
-{% if page.private == false %}
+{% if page.show_private_section == false %}
     {% include yoga-page-schedule.html %}
     {% include private-session-section.html %}
-  {% elsif page.private == true %}
+  {% elsif page.show_private_section == true %}
     {% include book-private-session.html %}
 {% endif %}
