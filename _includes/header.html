@@ -8,7 +8,7 @@
       </h1>
       <div class="flex-center">
         <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
-        {% if page.add_banner_button == true or page.private == true %}
+        {% if page.add_banner_button == true or page._hidden_private == true %}
           {% include banner-cta-button.html %}
         {% endif %}
       </div>

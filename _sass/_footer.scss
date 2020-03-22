@@ -58,7 +58,7 @@ form {
   margin: auto;
 }
 
-.footer-form {
+.footer-form, .cta-form {
   text-align: center;
   color: $light-color;
   h2 {
@@ -79,4 +79,5 @@ form {
     width: inherit;
     margin-bottom: 1rem;
   }
+  .message {height: 4rem;}
 }

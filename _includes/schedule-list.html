@@ -40,7 +40,7 @@
       {% endif %} -->
 
     </div>
-
+    <!-- Create a list called monday to represent contents from _yoga folder that contain Monday as value on the Front Matter Array Yoga->Schedule->Day -->
   {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
 
     <div class="cal-column col-2">
@@ -49,9 +49,13 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for monday in monday %}
-        {% for class in monday.schedule %}
+      <!-- For item yoga in the new list monday -->
+      {% for yoga in monday %}
+      <!-- and for the item class in array yoga.schedule -->
+        {% for class in yoga.schedule %}
+        <!-- and only if the array class.day is equal to Monday -->
           {% if class.day == 'Monday' %}
+          <!-- for all classes in the class array 'classes', print this code -->
             {% for class in class.classes %}
               <h3>
                 {{class.time}}
@@ -63,8 +67,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for monday in monday %}
-        {% for class in monday.schedule %}
+      {% for yoga in monday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
               <h3>
@@ -77,8 +81,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for monday in monday %}
-        {% for class in monday.schedule %}
+      {% for yoga in monday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -93,8 +97,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for monday in monday %}
-        {% for class in monday.schedule %}
+      {% for yoga in monday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
@@ -118,8 +122,8 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for tuesday in tuesday %}
-        {% for class in tuesday.schedule %}
+      {% for yoga in tuesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
               <h3>
@@ -132,8 +136,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for tuesday in tuesday %}
-        {% for class in tuesday.schedule %}
+      {% for yoga in tuesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
               <h3>
@@ -146,8 +150,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for tuesday in tuesday %}
-        {% for class in tuesday.schedule %}
+      {% for yoga in tuesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -162,8 +166,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for tuesday in tuesday %}
-        {% for class in tuesday.schedule %}
+      {% for yoga in tuesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
@@ -186,8 +190,8 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for wednesday in wednesday %}
-        {% for class in wednesday.schedule %}
+      {% for yoga in wednesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <h3>
@@ -200,8 +204,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for wednesday in wednesday %}
-        {% for class in wednesday.schedule %}
+      {% for yoga in wednesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <h3>
@@ -214,8 +218,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for wednesday in wednesday %}
-        {% for class in wednesday.schedule %}
+      {% for yoga in wednesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -230,8 +234,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for wednesday in wednesday %}
-        {% for class in wednesday.schedule %}
+      {% for yoga in wednesday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
@@ -254,8 +258,8 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for thursday in thursday %}
-        {% for class in thursday.schedule %}
+      {% for yoga in thursday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
               <h3>
@@ -268,8 +272,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for thursday in thursday %}
-        {% for class in thursday.schedule %}
+      {% for yoga in thursday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
               <h3>
@@ -282,8 +286,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for thursday in thursday %}
-        {% for class in thursday.schedule %}
+      {% for yoga in thursday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -298,8 +302,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for thursday in thursday %}
-        {% for class in thursday.schedule %}
+      {% for yoga in thursday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
@@ -322,8 +326,8 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for friday in friday %}
-        {% for class in friday.schedule %}
+      {% for yoga in friday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
               <h3>
@@ -336,8 +340,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for friday in friday %}
-        {% for class in friday.schedule %}
+      {% for yoga in friday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
               <h3>
@@ -350,8 +354,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for friday in friday %}
-        {% for class in friday.schedule %}
+      {% for yoga in friday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -366,8 +370,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for friday in friday %}
-        {% for class in friday.schedule %}
+      {% for yoga in friday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
@@ -390,8 +394,8 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for saturday in saturday %}
-        {% for class in saturday.schedule %}
+      {% for yoga in saturday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
               <h3>
@@ -404,8 +408,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for saturday in saturday %}
-        {% for class in saturday.schedule %}
+      {% for yoga in saturday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
               <h3>
@@ -418,8 +422,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for saturday in saturday %}
-        {% for class in saturday.schedule %}
+      {% for yoga in saturday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -434,8 +438,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for saturday in saturday %}
-        {% for class in saturday.schedule %}
+      {% for yoga in saturday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
@@ -458,8 +462,8 @@
       </h3>
     </div>
     <div class="cal-column col-2">
-      {% for sunday in sunday %}
-        {% for class in sunday.schedule %}
+      {% for yoga in sunday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
               <h3>
@@ -472,8 +476,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for sunday in sunday %}
-        {% for class in sunday.schedule %}
+      {% for yoga in sunday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
               <h3>
@@ -486,8 +490,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for sunday in sunday %}
-        {% for class in sunday.schedule %}
+      {% for yoga in sunday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
               <a href="{{class.studio_url}}">
@@ -502,8 +506,8 @@
       <!--  -->
     </div>
     <div class="cal-column col-2">
-      {% for sunday in sunday %}
-        {% for class in sunday.schedule %}
+      {% for yoga in sunday %}
+        {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">

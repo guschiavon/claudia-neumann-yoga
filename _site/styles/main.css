@@ -104,13 +104,15 @@ footer { height: 450px; background-color: #3e3e3e; }
 
 form { width: 80%; margin: auto; }
 
-.footer-form { text-align: center; color: #FFF; }
+.footer-form, .cta-form { text-align: center; color: #FFF; }
 
-.footer-form h2 { font-weight: 200; margin-bottom: 1rem; }
+.footer-form h2, .cta-form h2 { font-weight: 200; margin-bottom: 1rem; }
 
-.footer-form p { margin-bottom: 1.5rem; margin-left: auto; margin-right: auto; width: 70%; font-size: 1rem; }
+.footer-form p, .cta-form p { margin-bottom: 1.5rem; margin-left: auto; margin-right: auto; width: 70%; font-size: 1rem; }
 
-.footer-form input { padding: .8rem; border-radius: 5px; border: none; width: inherit; margin-bottom: 1rem; }
+.footer-form input, .cta-form input { padding: .8rem; border-radius: 5px; border: none; width: inherit; margin-bottom: 1rem; }
+
+.footer-form .message, .cta-form .message { height: 4rem; }
 
 .intro-section { display: inline-block; }
 

@@ -1,3 +1,99 @@
 ---
 layout: default
 ---
+<main>
+  <section class="intro-section padding-outer">
+    <div class="flex-center grid-noGutter">
+      <div class="col-12 center">
+        <h2 class="editable">
+          Overview
+        </h2>
+          {{content}}
+      </div>
+    </div>
+  </section>
+</main>
+
+<section class="highlights">
+  <div class="padding-inner">
+    <div class="grid-noGutter">
+      <div class="col-12 center">
+        <h2>
+          Benefits
+        </h2>
+      </div>
+      <div class="col-4">
+        <div class="highlight-icon center">
+          <i class="fas fa-heart"></i>
+        </div>
+        <p class="padding-inner">
+          {{page.highlight-1_html}}
+        </p>
+      </div>
+      <div class="col-4">
+        <div class="highlight-icon center">
+          <i class="fas fa-heart"></i>
+        </div>
+        <p class="padding-inner">
+          {{page.highlight-2_html}}
+        </p>
+      </div>
+      <div class="col-4">
+        <div class="highlight-icon center">
+          <i class="fas fa-heart"></i>
+        </div>
+        <p class="padding-inner">
+          {{page.highlight-3_html}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include testimonials.html %}
+
+<div class="grid-noGutter">
+  <div class="col-6_sm-12-middle flex-center overview bg-dark">
+    <h2>
+      Practical info
+    </h2>
+  </div>
+  <div class="col-6_sm-12 practical-info">
+    <div class="padding-outer">
+      {% if page._hidden_info-box == 'yoga' %}
+        {% include yoga-info.html %}
+      {% elsif page._hidden_info-box == 'retreat' %}
+        {% include retreat-info.html %}
+      {% else %}
+        {% include offering-info.html %}
+      {% endif %}
+    </div>
+  </div>
+</div>
+<!-- CTA section -->
+<section class="cta-section bg-dark">
+  <div class="flex-center half-height">
+    <div class="cta-section-content center">
+      <h2>
+        Schedule session now
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+      </p>
+      {% include banner-cta-button.html %}
+    </div>
+  </div>
+  <div class="cta-form">
+    <p class="editable">
+      Not sure if this therapy is for you? Still have some questions about the process? Do you have specific requests? Contact me and we will go through all your questions:
+    </p>
+    <form action="index.html" method="post">
+      <input type="text" name="name" placeholder="NAME" />
+      <input type="email" name="email" placeholder="EMAIL" />
+      <input type="textarea" name="message" placeholder="MESSAGE" class="message">
+      <button type="button" name="button" class="form-send-button">
+        Join me
+      </button>
+    </form>
+  </div>
+</section>
