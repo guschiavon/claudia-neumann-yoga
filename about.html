@@ -4,10 +4,12 @@ header_image: /assets/images/placeholder 010.jpg
 certifications:
   - certification-name: YTT 200hr
     certification-provider: Yoga Alliance
+    certification-logo_image: /assets/images/yoga-alliance.png
     certification-date: April 2018
     certification-teacher: Elena Brower
   - certification-name: YTT 300hr
     certification-provider: Yoga Institute
+    certification-logo_image: /assets/images/yoga-alliance.png
     certification-date: June 2018
     certification-teacher: Meghan Currie
 ---
@@ -40,7 +42,7 @@ certifications:
           <div class="col-4 certification-item">
             <div class="certification-content center">
               <div class="cert-logo">
-                <img src="/assets/images/yoga-alliance.png" style="width:80px;height:auto;"alt="">
+                <img src="{{certification.certification-logo_image}}" style="width:80px;height:auto;"alt="">
               </div>
               <h4>
                 {{certification.certification-name}}
