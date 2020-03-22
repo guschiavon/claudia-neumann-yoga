@@ -1,0 +1,12 @@
+{% for faq in page.faqs %}
+  {% if faq._id == "faq-2" %}
+  <div class="faq-accordion">
+    <h3>
+      {{faq.faq-2-title}}
+    </h3>
+    <p>
+      {{faq.faq-2_description_html}}
+    </p>
+  </div>
+  {% endif %}
+{% endfor %}

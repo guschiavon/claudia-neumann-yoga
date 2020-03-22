@@ -10,39 +10,45 @@ collections:
 faqs: []
 _array_structures:
   faqs:
-    - label: Inclusions
+    - label: FAQ 1
       icon: text
-      description: Add or edit the Inclusions FAQ field
+      description: Add or edit Frequently Asked Question
       value:
-        _id: inclusions
-        inclusions_description_html:
-    - label: Exclusions
+        _id: faq-1
+        faq-1-title:
+        faq-1_description_html:
+    - label: FAQ 2
       icon: text
-      description: Add or edit the Exclusions FAQ field
+      description: Add or edit Frequently Asked Question
       value:
-        _id: exclusions
-        exclusions_description_html:
-    - label: Accommodation
+        _id: faq-2
+        faq-2-title:
+        faq-2_description_html:
+    - label: FAQ 3
       icon: text
-      description: Add or edit the Accommodation FAQ field
+      description: Add or edit Frequently Asked Question
       value:
-        _id: accommodation
-        accommodation_description_html:
-    - label: What to bring
+        _id: faq-3
+        faq-3-title:
+        faq-3_description_html:
+    - label: FAQ 4
       icon: text
-      description: Add or edit the What to Bring FAQ field
+      description: Add or edit Frequently Asked Question
       value:
-        _id: what-to-bring
-        what-to-bring_description_html:
-    - label: Special requests
+        _id: faq-4
+        faq-4-title:
+        faq-4_description_html:
+    - label: FAQ 5
       icon: text
-      description: Add or edit the Special Requests FAQ field
+      description: Add or edit Frequently Asked Question
       value:
-        _id: special-requests
-        special-requests_description_html:
-    - label: Weather
+        _id: faq-5
+        faq-5-title:
+        faq-5_description_html:
+    - label: FAQ 6
       icon: text
-      description: Add or edit the Weather FAQ field
+      description: Add or edit Frequently Asked Question
       value:
-        _id: weather
-        weather_description_html:
+        _id: faq-6
+        faq-6-title:
+        faq-6_description_html:
