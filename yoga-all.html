@@ -49,11 +49,104 @@ private-session_image: assets/images/placeholder 004.jpg
   <div class="schedule-calendar-box padding-inner grid-spaceBetween">
     <div class="cal-column col-2">
       <h2>
-        Day
+        DAY
       </h2>
+    </div>
+    <div class="cal-column col-2">
+      <h2>
+        TIME
+      </h2>
+    </div>
+    <div class="cal-column col-2">
+      <h2>
+        STYLE
+      </h2>
+    </div>
+    <div class="cal-column col-2">
+      <h2>
+        LOCATION
+      </h2>
+    </div>
+    <div class="cal-column col-2">
+      <h2>
+        ADD TO CAL
+      </h2>
+    </div>
+    <div class="" style="margin:1px">
+      {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
+      <!-- {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
+      {% if friday ==  %}
+        <p>bob</p>
+      {% endif %} -->
+
+    </div>
+
+
+    <div class="cal-column col-2">
       <h3>
         Monday
       </h3>
+    </div>
+    <div class="cal-column col-2">
+      {% for monday in monday %}
+        {% for class in monday.schedule %}
+          {% if class.day == 'Monday' %}
+            {% for class in class.classes %}
+              <h3>
+                {{class.time}}
+              </h3>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <!--  -->
+    </div>
+    <div class="cal-column col-2">
+      {% for monday in monday %}
+        {% for class in monday.schedule %}
+          {% if class.day == 'Monday' %}
+            {% for class in class.classes %}
+              <h3>
+                {{class.style}}
+              </h3>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      <!--  -->
+    </div>
+    <div class="cal-column col-2">
+      {% for monday in monday %}
+        {% for class in monday.schedule %}
+          {% if class.day == 'Monday' %}
+            {% for class in class.classes %}
+        <a href="{{class.studio_url}}">
+          <h3>
+            {{class.studio}}
+          </h3>
+        </a>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+      <!--  -->
+    </div>
+    <div class="cal-column col-2">
+      {% for class in monday %}
+        {% if day.name == 'Monday' %}
+        <a href="{{class.add-to-cal}}">
+          <h3>
+            {{class.add-to-cal}}
+          </h3>
+        </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+<!--
+    <h3 class="editable">
+      10-11am
+    </h3>
+
       <h3>
         Tuesday
       </h3>
@@ -100,7 +193,7 @@ private-session_image: assets/images/placeholder 004.jpg
       </h3>
     </div>
     <div class="cal-column col-2">
-      <!-- try to enable a drop-down menu for selecting the flow type -->
+      try to enable a drop-down menu for selecting the flow type
       <h2>
         Style
       </h2>
@@ -126,7 +219,7 @@ private-session_image: assets/images/placeholder 004.jpg
         Yin
       </h3>
     </div>
-<!-- later try to enable automatic pull of info for these fields, maybe a drop-down? -->
+later try to enable automatic pull of info for these fields, maybe a drop-down?
     <div class="cal-column col-2">
       <h2>
         Location
@@ -206,8 +299,8 @@ private-session_image: assets/images/placeholder 004.jpg
           Click to add
         </h3>
       </a>
-    </div>
-  </div>
+    </div> -->
+  <!-- </div> -->
 </section>
 
 {% include community-section.html %}

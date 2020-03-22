@@ -10,45 +10,20 @@ collections:
 faqs: []
 _array_structures:
   faqs:
-    - label: FAQ 1
+    - label: FAQ
       icon: text
       description: Add or edit Frequently Asked Question
       value:
-        _id: faq-1
-        faq-1-title:
-        faq-1_description_html:
-    - label: FAQ 2
-      icon: text
-      description: Add or edit Frequently Asked Question
-      value:
-        _id: faq-2
-        faq-2-title:
-        faq-2_description_html:
-    - label: FAQ 3
-      icon: text
-      description: Add or edit Frequently Asked Question
-      value:
-        _id: faq-3
-        faq-3-title:
-        faq-3_description_html:
-    - label: FAQ 4
-      icon: text
-      description: Add or edit Frequently Asked Question
-      value:
-        _id: faq-4
-        faq-4-title:
-        faq-4_description_html:
-    - label: FAQ 5
-      icon: text
-      description: Add or edit Frequently Asked Question
-      value:
-        _id: faq-5
-        faq-5-title:
-        faq-5_description_html:
-    - label: FAQ 6
-      icon: text
-      description: Add or edit Frequently Asked Question
-      value:
-        _id: faq-6
-        faq-6-title:
-        faq-6_description_html:
+        _id: faq
+        faq-title:
+        faq_description_html:
+# class-schedule: []
+# _array_structures:
+#   class-schedule:
+#     - label: Class Schedule
+#     icon: text
+#     description: Add or edit Frequently Asked Question
+#     value:
+#       _id: faq
+#       faq-title:
+#         faq_description_html:

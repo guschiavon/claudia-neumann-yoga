@@ -45,18 +45,8 @@ layout: default
     <div class="padding-outer">
       {% for faq in page.faqs %}
         {% case faq._id %}
-          {% when 'faq-1' %}
-            {% include faq-1.html faq=faq %}
-          {% when 'faq-2' %}
-            {% include faq-2.html faq=faq %}
-          {% when 'faq-3' %}
-            {% include faq-3.html faq=faq %}
-          {% when 'faq-4' %}
-            {% include faq-4.html faq=faq %}
-          {% when 'faq-5' %}
-            {% include faq-5.html faq=faq %}
-          {% when 'faq-6' %}
-            {% include faq-6.html faq=faq %}
+          {% when 'faq' %}
+            {% include faq-accordion.html faq=faq %}
         {% endcase %}
       {% endfor %}
     </div>
