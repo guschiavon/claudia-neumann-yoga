@@ -14,7 +14,7 @@ add_testimonials: false
     </h2>
     <div class="grid-noGutter-spaceBetween">
       {% for retreat in site.retreats offset:1 %}
-      {% if date < {{page.expiry_date}} %}
+
       <div class="col-6_sm-12 padding-inner retreat-box">
         <a href="{{retreat.url}}">
           <div class="retreat-thumb">
@@ -34,7 +34,6 @@ add_testimonials: false
           More
         </a>
       </div>
-      {% endif %}
       {% endfor %}
     </div>
   </section>
@@ -48,27 +47,27 @@ add_testimonials: false
           Locations
         </h2>
       </div>
-      <div class="col-4">
+      <div class="col-4_md-12">
         <div class="location-thumb center">
           <img src="{{page.location-1-thumbnail_image}}" alt="">
         </div>
-        <p class="padding-inner editable">
+        <p class="padding-inner editable center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
         </p>
       </div>
-      <div class="col-4">
+      <div class="col-4_md-12">
         <div class="location-thumb center">
           <img src="{{page.location-2-thumbnail_image}}" alt="">
         </div>
-        <p class="padding-inner editable">
+        <p class="padding-inner editable center">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
       </div>
-      <div class="col-4">
+      <div class="col-4_md-12">
         <div class="location-thumb center">
           <img src="{{page.location-3-thumbnail_image}}" alt="">
         </div>
-        <p class="padding-inner editable">
+        <p class="padding-inner editable center">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
         </p>
       </div>
