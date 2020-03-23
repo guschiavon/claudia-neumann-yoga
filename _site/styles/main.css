@@ -48,6 +48,14 @@ nav a { font-size: 1rem; padding: .2rem .5rem; margin-left: 1rem; margin-right: 
 
 .navbar-menu-desktop { margin: auto; width: 100vw; }
 
+.dropdown { position: relative; display: inline-block; }
+
+.dropdown-content { display: none; position: absolute; background-color: #f1f1f1; min-width: 4rem; padding: 0 .7rem; z-index: 1000; }
+
+.dropdown-content a { display: block; margin-bottom: .3rem; margin-top: .3rem; }
+
+.dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content { display: block; }
+
 .banner-cta-button { color: #FFF; border: 1px solid #FFF; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
 .banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; font-size: 1rem; text-transform: uppercase; }
