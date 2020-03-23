@@ -9,8 +9,6 @@ collections:
     output: true
   offerings:
     output: true
-  archive:
-    output: true
 faqs: []
 _array_structures:
   faqs:
