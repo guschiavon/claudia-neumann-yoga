@@ -22,7 +22,9 @@ layout: default
   </section>
 </main>
 
-{% include testimonials.html %}
+{% if page.add_testimonials == true %}
+  {% include testimonials.html %}
+{% endif %}
 
 {% if page.show_private_section == false %}
     {% include schedule-list.html %}
