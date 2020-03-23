@@ -14,6 +14,7 @@ add_testimonials: false
     </h2>
     <div class="grid-noGutter-spaceBetween">
       {% for retreat in site.retreats offset:1 %}
+      {% if date < {{page.expiry_date}} %}
       <div class="col-6_sm-12 padding-inner retreat-box">
         <a href="{{retreat.url}}">
           <div class="retreat-thumb">
@@ -33,6 +34,7 @@ add_testimonials: false
           More
         </a>
       </div>
+      {% endif %}
       {% endfor %}
     </div>
   </section>

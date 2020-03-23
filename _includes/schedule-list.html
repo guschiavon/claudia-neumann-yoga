@@ -1,9 +1,9 @@
 <section id="schedule" class="schedule-calendar padding-outer">
   <div class="schedule-text-box">
-    <h2>
-      Class schedule
+    <h2 class="editable">
+      Let's practice!
     </h2>
-    <p>
+    <p class="editable">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
   </div>
@@ -19,17 +19,17 @@
       </h2>
     </div>
     <div class="cal-column col-2">
-      <h2>
+      <h2 class="editable">
         Style
       </h2>
     </div>
     <div class="cal-column col-2">
-      <h2>
+      <h2 class="editable">
         Location
       </h2>
     </div>
     <div class="cal-column col-2">
-      <h2>
+      <h2 class="editable">
         Add to cal
       </h2>
     </div>
@@ -40,10 +40,14 @@
       {% endif %} -->
 
     </div>
+    <!-- {% if page.layout == 'yoga' %}
+      {% assign style = site.yoga | where_exp: "yoga.yoga-style", "Yin" %}
+      {% assign monday = style | contains:"yoga.schedule.day", "Monday" %}
+    {% else %} -->
+    <!-- {% endif %} -->
     <!-- Create a list called monday to represent contents from _yoga folder that contain Monday as value on the Front Matter Array Yoga->Schedule->Day -->
-  {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
-
-    <div class="cal-column col-2">
+    {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
+    <div class="cal-column col-2-middle">
       <h3>
         Monday
       </h3>
@@ -116,7 +120,7 @@
 
   {% assign tuesday = site.yoga | contains:"yoga.schedule.day", "Tuesday" %}
 
-    <div class="cal-column col-2">
+    <div class="cal-column col-2-middle">
       <h3>
         Tuesday
       </h3>
@@ -184,7 +188,7 @@
     </div>
   {% assign wednesday = site.yoga | contains:"yoga.schedule.day", "Wednesday" %}
 
-    <div class="cal-column col-2">
+    <div class="cal-column col-2-middle">
       <h3>
         Wednesday
       </h3>
@@ -252,7 +256,7 @@
     </div>
   {% assign thursday = site.yoga | contains:"yoga.schedule.day", "Thursday" %}
 
-    <div class="cal-column col-2">
+    <div class="cal-column col-2-middle">
       <h3>
         Thursday
       </h3>
@@ -320,7 +324,7 @@
     </div>
   {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
 
-    <div class="cal-column col-2">
+    <div class="cal-column col-2-middle">
       <h3>
         Friday
       </h3>
@@ -388,7 +392,7 @@
     </div>
   {% assign saturday = site.yoga | contains:"yoga.schedule.day", "Saturday" %}
 
-    <div class="cal-column col-2">
+    <div class="cal-column col-2-middle">
       <h3>
         Saturday
       </h3>
@@ -456,7 +460,7 @@
     </div>
   {% assign sunday = site.yoga | contains:"yoga.schedule.day", "Sunday" %}
 
-    <div class="cal-column col-2">
+    <div class="cal-column col-2-middle">
       <h3>
         Sunday
       </h3>
