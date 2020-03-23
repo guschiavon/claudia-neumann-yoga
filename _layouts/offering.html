@@ -16,7 +16,9 @@ layout: default
 
 {% include highlights.html %}
 
-{% include testimonials.html %}
+{% if page.add_testimonials == true %}
+  {% include testimonials.html %}
+{% endif %}
 
 {% include info-box.html %}
 

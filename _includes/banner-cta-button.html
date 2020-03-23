@@ -1,5 +1,15 @@
+{% unless page.header == 'retreats'%}
 <a href="{{page.banner-cta-button_url}}" class="banner-cta-button">
   <h4>
     {{page.banner-cta-button_text}}
   </h4>
 </a>
+
+{% else %}
+
+<a href="{{site.retreats.first.banner-cta-button_url}}" class="banner-cta-button">
+  <h4>
+    {{site.retreats.first.banner-cta-button_text}}
+  </h4>
+</a>
+{% endunless %}

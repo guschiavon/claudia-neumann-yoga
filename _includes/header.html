@@ -1,3 +1,4 @@
+{% unless page._hidden_header == 'retreats'%}
 <header id="top">
   {% include desktop-navbar.html %}
   <div class="header-banner">
@@ -15,3 +16,28 @@
     </div>
   </div>
 </header>
+
+{% else %}
+
+<!-- this is the header for the Retreats All page which pulls information from the first retreat in the Retreats folder -->
+<header id="top">
+  {% include desktop-navbar.html %}
+  <div class="header-banner">
+    <img src="{{site.retreats.first.banner_image}}" class="responsive-banner-image" alt="{{site.retreats.first.banner_image-alt-text}}">
+    <div class="header-text-box">
+      <h1>
+        {{site.retreats.first.banner_heading}}
+      </h1>
+      <div class="flex-center">
+      <p>
+        {{site.retreats.first.retreat-recommended-for_html}}
+      </p>  <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
+
+        {% include banner-cta-button.html %}
+
+      </div>
+    </div>
+  </div>
+</header>
+
+{% endunless %}

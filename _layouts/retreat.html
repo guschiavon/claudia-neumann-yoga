@@ -21,8 +21,9 @@ layout: default
     {% include info-box.html %}
   </section>
 </main>
-
-{% include testimonials.html %}
+{% if page.add_testimonials == true %}
+  {% include testimonials.html %}
+{% endif %}
 
 <!-- FAQ section -->
 <section class="grid-noGutter">

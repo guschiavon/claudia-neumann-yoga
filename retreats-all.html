@@ -1,0 +1,79 @@
+---
+layout: default
+_hidden_header: retreats
+location-1-thumbnail_image: /assets/images/placeholder 005.jpg
+location-2-thumbnail_image: /assets/images/placeholder 003.jpg
+location-3-thumbnail_image: /assets/images/placeholder 004.jpg
+add_testimonials: false
+---
+
+<main>
+  <section class="retreats-showcase center">
+    <h2>
+      All Retreats
+    </h2>
+    <div class="grid-noGutter-spaceBetween">
+      {% for retreat in site.retreats offset:1 %}
+      <div class="col-6_sm-12 padding-inner retreat-box">
+        <a href="{{retreat.url}}">
+          <div class="retreat-thumb">
+            <img src="{{retreat.banner_image}}" alt="{{retreat.banner_image-alt-text}}">
+            <h3>
+              {{retreat.banner_heading}}
+            </h3>
+          </div>
+        </a>
+        <p>
+          {{retreat.retreat-recommended-for_html}}
+        </p>
+        <h3>
+          {{retreat.retreat-date}}
+        </h3>
+        <a href="{{retreat.url}}" class="learn-more-button">
+          Learn more
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+</main>
+
+<section class="highlights">
+  <div class="padding-inner">
+    <div class="grid-noGutter">
+      <div class="col-12 center">
+        <h2>
+          Locations
+        </h2>
+      </div>
+      <div class="col-4">
+        <div class="location-thumb center">
+          <img src="{{page.location-1-thumbnail_image}}" alt="">
+        </div>
+        <p class="padding-inner editable">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
+      </div>
+      <div class="col-4">
+        <div class="location-thumb center">
+          <img src="{{page.location-2-thumbnail_image}}" alt="">
+        </div>
+        <p class="padding-inner editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+      </div>
+      <div class="col-4">
+        <div class="location-thumb center">
+          <img src="{{page.location-3-thumbnail_image}}" alt="">
+        </div>
+        <p class="padding-inner editable">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if page.add_testimonials == true %}
+  {% include testimonials.html %}
+{% endif %}
