@@ -1,14 +1,10 @@
-
-// a {
-//   color: inherit;
-//   display: inline-block;
-// }
-
 .navbar {
   padding: .1% 3%;
   position: fixed;
   background-color: $light-color;
   z-index: 2;
+  top: 0;
+  left: 0;
 }
 
 nav a,
