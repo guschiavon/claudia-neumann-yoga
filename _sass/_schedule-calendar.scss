@@ -20,15 +20,9 @@
 .schedule-calendar-box {
   background-color: #efefef;
 }
-//
-// .cal-row {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-//   margin-bottom: 1.2rem;
-//   min-width: inherit;
-//   h3 {
-//     padding: 0 5rem;
-//     min-width: inherit;
-//   }
-// }
+
+hr.col-12 {
+  padding: 0;
+  margin-bottom: 1.5rem;
+  border: 2px solid $dark-color;
+}
