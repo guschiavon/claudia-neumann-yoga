@@ -1,0 +1,94 @@
+---
+layout: default
+_hidden_community: true
+page_title: Yogismile Community
+banner_heading: Yogismile Community Events
+banner_image: /assets/images/placeholder 008.jpg
+confirmation-button_url: https://www.calendly.com
+event-location_url: https://maps.google.com
+event-map_url: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15783.365800663072!2d115.27190454999999!3d-8.514770500000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23d9eef3cf653%3A0x156d7efc0ba1ac1c!2sThe%20Yoga%20Barn!5e0!3m2!1sen!2sid!4v1585199497191!5m2!1sen!2sid
+add_testimonials: false
+feature-video_url: https://www.youtube.com/embed/oX6I6vs1EFs
+facilitators:
+  - name: Claudia
+    thumb: /assets/images/placeholder 012.jpg
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+---
+<main>
+  <section>
+    <div class="flex-center bg-primary third-height padding-outer">
+      <p class="center editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </section>
+</main>
+
+<section class="flex-center half-height padding-outer">
+  <div class="event-description">
+    <h3 class="center editable">
+      This week's event:
+    </h3>
+    <h2 class="center editable">
+      Ecstatic dance
+    </h2>
+    <p class="center editable">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <a href="{{page.confirmation-button_url}}" class="learn-more-button editable">
+      RSVP
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="grid-noGutter-spaceAround">
+    {% for facilitator in page.facilitators %}
+    <div class="col-3 center facilitator-card">
+      <div class="padding-inner facilitator-thumb">
+          <img src="{{facilitator.thumb}}" alt="{{facilitator.name}}">
+      </div>
+      <h3>
+        {{facilitator.name}}
+      </h3>
+      <p>
+        {{facilitator.bio}}
+      </p>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>
+
+<section class="bg-dark flex-center half-height">
+  <div class="practical-info">
+    <h2 class="editable">
+      Practical info
+    </h2>
+    <h3 class="center editable">
+      Date:
+    </h3>
+    <h3 class="center editable">
+      Time:
+    </h3>
+    <a href="{{page.event-location_url}}">
+      <h3 class="center editable">
+        Location:
+      </h3>
+    </a>
+    <a href="{{page.confirmation-button_url}}" class="learn-more-button editable">
+      Let's do it!
+    </a>
+  </div>
+</section>
+<map>
+  <iframe src="{{page.event-map_url}}" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</map>
+
+{% if page.add_testimonials == true %}
+  {% include testimonials.html %}
+{% endif %}
+
+{% unless page.feature-video_url == empty %}
+  {% include feature-video.html%}
+{% endunless %}
