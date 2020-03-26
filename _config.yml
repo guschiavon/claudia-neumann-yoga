@@ -9,6 +9,14 @@ collections:
     output: true
   offerings:
     output: true
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      _options:
+        banner_image:
+          width: 2000
 faqs: []
 _array_structures:
   faqs:
