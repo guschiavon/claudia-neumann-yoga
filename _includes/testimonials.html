@@ -1,23 +1,17 @@
 <!-- testimonials section -->
 
 <!-- Testimonials have to pull different data for each type of template: create an array or collection? -->
-<section class="testimonials padding-inner">
-  <div class="owl-carousel">
-    <div class="testimonial-text-content center">
-      {%for testimonial in page.testimonials%}
-      <h2>
-        Testimonials
-      </h2>
-      <div class="col-2 right">
-        &OpenCurlyDoubleQuote;
-      </div>
-      <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<section class="testimonials grid-spaceAround padding-inner">
+  {% for testimonial in page.testimonials %}
+  <div class="col-4_sm-12 testimonial-box">
+    <div class="testimonial-text-content grid center">
+      <p class="col-12">
+        {{testimonial.content}}
       </p>
-      <div class="col-2 right">
-        &CloseCurlyDoubleQuote;
-      </div>
-      {%endfor%}
+      <h3 class="col-12 right">
+        {{testimonial.reviewer}}
+      </h3>
     </div>
   </div>
+  {% endfor %}
 </section>

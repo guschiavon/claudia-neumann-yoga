@@ -30,3 +30,5 @@ _array_structures:
         _id: faq
         faq-title:
         faq_description_html:
+
+uploads_dir: "/assets/images/:title"
