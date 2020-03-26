@@ -1,0 +1,29 @@
+.info-box {
+  min-height: 200px;
+}
+
+.practical-info {
+  padding: 10%;
+  .banner-cta-button {
+    background-color: $primary-color;
+    &:hover {
+      color: $primary-color;
+      background-color: $light-color;
+      border-color: $primary-color;
+    }
+  }
+  h3, p {margin-bottom: 1rem;}
+}
+
+.intro-section,
+.overview {
+  h3 {
+    margin-bottom: 1rem;
+    font-weight: $light_font;
+  }
+}
+
+.object-price {
+  font-size: 1.5rem;
+  color: $secondary-color;
+}

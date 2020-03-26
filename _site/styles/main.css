@@ -6,7 +6,7 @@ img { max-width: 100%; }
 
 h1, h2, h3, h4 { font-family: "Raleway", sans-serif; text-transform: uppercase; }
 
-p { font-family: "Nunito", sans-serif; font-size: 1.2rem; line-height: 1.7; }
+p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .right { text-align: right; }
 
@@ -187,6 +187,20 @@ form { width: 80%; margin: auto; }
 .schedule-calendar-box { background-color: #efefef; }
 
 hr.col-12 { padding: 0; margin-bottom: 1.5rem; border: 2px solid #707070; }
+
+.info-box { min-height: 200px; }
+
+.practical-info { padding: 10%; }
+
+.practical-info .banner-cta-button { background-color: #479AA1; }
+
+.practical-info .banner-cta-button:hover { color: #479AA1; background-color: #FFF; border-color: #479AA1; }
+
+.practical-info h3, .practical-info p { margin-bottom: 1rem; }
+
+.intro-section h3, .overview h3 { margin-bottom: 1rem; font-weight: 200; }
+
+.object-price { font-size: 1.5rem; color: #F5AEA8; }
 
 @media (max-width: 600px) { .mobile-hide { display: none; }
   .schedule-calendar-box h3 { font-size: .9rem; } }
