@@ -34,19 +34,15 @@
       </h2>
     </div>
     <div class="" style="margin:1px">
-      <!-- {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
-      {% if friday ==  %}
-        <p>bob</p>
-      {% endif %} -->
 
     </div>
-    <!-- {% if page.layout == 'yoga' %}
-      {% assign style = site.yoga | where_exp: "yoga.yoga-style", "Yin" %}
-      {% assign monday = style | contains:"yoga.schedule.day", "Monday" %}
-    {% else %} -->
-    <!-- {% endif %} -->
+
+
     <!-- Create a list called monday to represent contents from _yoga folder that contain Monday as value on the Front Matter Array Yoga->Schedule->Day -->
+
+
     {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
+
     <div class="cal-column col-2-middle">
       <h3>
         Monday
@@ -117,7 +113,7 @@
     </div>
     <div class="" style="margin:1px">
     </div>
-
+    <hr>
   {% assign tuesday = site.yoga | contains:"yoga.schedule.day", "Tuesday" %}
 
     <div class="cal-column col-2-middle">
@@ -186,6 +182,7 @@
     </div>
     <div class="" style="margin:1px">
     </div>
+    <hr>
   {% assign wednesday = site.yoga | contains:"yoga.schedule.day", "Wednesday" %}
 
     <div class="cal-column col-2-middle">
@@ -243,7 +240,7 @@
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
-                <h3>
+                <h3 class="editable">
                   Click to add
                 </h3>
               </a>
@@ -254,6 +251,7 @@
     </div>
     <div class="" style="margin:1px">
     </div>
+    <hr>
   {% assign thursday = site.yoga | contains:"yoga.schedule.day", "Thursday" %}
 
     <div class="cal-column col-2-middle">
@@ -322,6 +320,7 @@
     </div>
     <div class="" style="margin:1px">
     </div>
+    <hr>
   {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
 
     <div class="cal-column col-2-middle">
@@ -390,8 +389,8 @@
     </div>
     <div class="" style="margin:1px">
     </div>
+    <hr>
   {% assign saturday = site.yoga | contains:"yoga.schedule.day", "Saturday" %}
-
     <div class="cal-column col-2-middle">
       <h3>
         Saturday
@@ -458,6 +457,8 @@
     </div>
     <div class="" style="margin:1px">
     </div>
+
+    <hr>
   {% assign sunday = site.yoga | contains:"yoga.schedule.day", "Sunday" %}
 
     <div class="cal-column col-2-middle">
