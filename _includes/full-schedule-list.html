@@ -8,6 +8,9 @@
     </p>
   </div>
   <div class="schedule-calendar-box padding-inner grid-spaceBetween">
+    <div class="col-1">
+<!-- spacer column -->
+    </div>
     <div class="cal-column col-2">
       <h2>
         Day
@@ -33,8 +36,8 @@
         Add to cal
       </h2>
     </div>
-    <div class="" style="margin:1px">
-
+    <div class="col-1">
+<!-- spacer column -->
     </div>
 
 
@@ -42,7 +45,9 @@
 
 
     {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
-
+    <div class="col-1">
+<!-- spacer column -->
+    </div>
     <div class="cal-column col-2-middle">
       <h3>
         Monday
@@ -111,11 +116,14 @@
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="" style="margin:1px">
+    <div class="col-1">
+<!-- spacer column -->
     </div>
-    <hr>
-  {% assign tuesday = site.yoga | contains:"yoga.schedule.day", "Tuesday" %}
 
+  {% assign tuesday = site.yoga | contains:"yoga.schedule.day", "Tuesday" %}
+  <div class="col-1">
+<!-- spacer column -->
+  </div>
     <div class="cal-column col-2-middle">
       <h3>
         Tuesday
@@ -180,11 +188,14 @@
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="" style="margin:1px">
+    <div class="col-1">
+<!-- spacer column -->
     </div>
-    <hr>
-  {% assign wednesday = site.yoga | contains:"yoga.schedule.day", "Wednesday" %}
 
+  {% assign wednesday = site.yoga | contains:"yoga.schedule.day", "Wednesday" %}
+  <div class="col-1">
+<!-- spacer column -->
+  </div>
     <div class="cal-column col-2-middle">
       <h3>
         Wednesday
@@ -249,11 +260,14 @@
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="" style="margin:1px">
+    <div class="col-1">
+<!-- spacer column -->
     </div>
-    <hr>
-  {% assign thursday = site.yoga | contains:"yoga.schedule.day", "Thursday" %}
 
+  {% assign thursday = site.yoga | contains:"yoga.schedule.day", "Thursday" %}
+  <div class="col-1">
+<!-- spacer column -->
+  </div>
     <div class="cal-column col-2-middle">
       <h3>
         Thursday
@@ -318,11 +332,14 @@
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="" style="margin:1px">
+    <div class="col-1">
+<!-- spacer column -->
     </div>
-    <hr>
-  {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
 
+  {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
+  <div class="col-1">
+<!-- spacer column -->
+  </div>
     <div class="cal-column col-2-middle">
       <h3>
         Friday
@@ -387,10 +404,14 @@
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="" style="margin:1px">
+    <div class="col-1">
+<!-- spacer column -->
     </div>
-    <hr>
+
   {% assign saturday = site.yoga | contains:"yoga.schedule.day", "Saturday" %}
+  <div class="col-1">
+<!-- spacer column -->
+  </div>
     <div class="cal-column col-2-middle">
       <h3>
         Saturday
@@ -455,12 +476,14 @@
         {% endfor %}
       {% endfor %}
     </div>
-    <div class="" style="margin:1px">
+    <div class="col-1">
+<!-- spacer column -->
     </div>
 
-    <hr>
   {% assign sunday = site.yoga | contains:"yoga.schedule.day", "Sunday" %}
-
+  <div class="col-1">
+<!-- spacer column -->
+  </div>
     <div class="cal-column col-2-middle">
       <h3>
         Sunday
@@ -524,5 +547,8 @@
           {% endif %}
         {% endfor %}
       {% endfor %}
+    </div>
+    <div class="col-1">
+<!-- spacer column -->
     </div>
 </section>
