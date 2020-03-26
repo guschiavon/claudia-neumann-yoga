@@ -2,9 +2,19 @@
 layout: default
 page_title: Retreats
 _hidden_header: retreats
-location-1-thumbnail_image: /assets/images/placeholder 005.jpg
-location-2-thumbnail_image: /assets/images/placeholder 003.jpg
-location-3-thumbnail_image: /assets/images/placeholder 004.jpg
+locations:
+  - location-name: Portugal
+    location-thumbnail_image: /assets/images/placeholder 005.jpg
+    location-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    target_url: /retreats/portugal-2020
+  - location-name: Marocco
+    location-thumbnail_image: /assets/images/placeholder 003.jpg
+    location-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    target_url: /retreats/morrocco-2021
+  - location-name: Bali
+    location-thumbnail_image: /assets/images/placeholder 004.jpg
+    location-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    target_url: /retreats/bali-2021
 add_testimonials: false
 ---
 
@@ -48,33 +58,23 @@ add_testimonials: false
     <div class="grid-noGutter">
       <div class="col-12 center">
         <h2>
-          Locations
+          locations
         </h2>
       </div>
+      {% for location in page.locations %}
       <div class="col-4_md-12">
-        <div class="location-thumb center">
-          <img src="{{page.location-1-thumbnail_image}}" alt="">
-        </div>
-        <p class="padding-inner editable center">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-        </p>
+        <a href="{{location.target_url}}#location">
+          <div class="location-thumb center">
+            <img src="{{location.location-thumbnail_image}}" alt="">
+          </div>
+          <h3> {{location.location-name}} </h3>
+          <p class="padding-inner center">
+            {{location.location-overview}}
+          </p>
+        </a>
       </div>
-      <div class="col-4_md-12">
-        <div class="location-thumb center">
-          <img src="{{page.location-2-thumbnail_image}}" alt="">
-        </div>
-        <p class="padding-inner editable center">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
-      </div>
-      <div class="col-4_md-12">
-        <div class="location-thumb center">
-          <img src="{{page.location-3-thumbnail_image}}" alt="">
-        </div>
-        <p class="padding-inner editable center">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-        </p>
-      </div>
+
+      {% endfor %}
     </div>
   </div>
 </section>
