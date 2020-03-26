@@ -1,5 +1,6 @@
 ---
 layout: default
+page_title: Retreats
 _hidden_header: retreats
 location-1-thumbnail_image: /assets/images/placeholder 005.jpg
 location-2-thumbnail_image: /assets/images/placeholder 003.jpg
@@ -13,8 +14,9 @@ add_testimonials: false
       All Retreats
     </h2>
     <div class="grid-noGutter-spaceBetween">
-      {% for retreat in site.retreats offset:1 %}
 
+      {% for retreat in site.retreats offset:1 %}
+      {% if retreat.display == false %}
       <div class="col-6_sm-12 padding-inner retreat-box">
         <a href="{{retreat.url}}">
           <div class="retreat-thumb">
@@ -34,7 +36,9 @@ add_testimonials: false
           More
         </a>
       </div>
+      {% endif %}
       {% endfor %}
+
     </div>
   </section>
 </main>
