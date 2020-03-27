@@ -48,7 +48,6 @@ nav a {
 
 .navbar-menu-desktop {
   margin: auto;
-  // width: 100vw;
 }
 
 .dropdown {
@@ -70,9 +69,27 @@ nav a {
   }
 }
 
+.mobile-nav-container {
+  background-color: $light-color;
+  display: none;
+  .dropdown-content {
+    background-color: none;
+  }
+}
+
 .dropdown:hover,
 .dropdown:focus {
   .dropdown-content {
     display: block;
   }
+}
+
+.burger-menu {
+  display: none;
+  position: absolute;
+  padding: 1rem 1.5rem;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  color: #666;
 }

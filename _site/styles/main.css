@@ -63,7 +63,13 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .dropdown-content a { display: block; margin-bottom: .3rem; margin-top: .3rem; }
 
+.mobile-nav-container { background-color: #f1f1f1; display: none; }
+
+.mobile-nav-container .dropdown-content { background-color: none; }
+
 .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content { display: block; }
+
+.burger-menu { display: none; position: absolute; padding: 1rem 1.5rem; top: 0; right: 0; font-size: 2rem; color: #666; }
 
 .banner-cta-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
@@ -99,11 +105,11 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 header { margin-top: 90px; }
 
-.header-banner { position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+.header-banner { position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden; height: 75vh; }
 
 .header-banner:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to bottom, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%); /* W3C */ background-size: cover; }
 
-.header-banner img { object-fit: cover; height: 65vh; }
+.header-banner img { object-fit: cover; }
 
 .header-text-box { position: absolute; padding: 5% 0%; z-index: 1; color: #f1f1f1; }
 
@@ -285,8 +291,7 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .location-card { margin: auto; }
 
-@media (max-width: 600px) { .mobile-hide { display: none; }
-  .schedule-calendar-box h3 { font-size: .9rem; }
+@media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
   .header-banner { height: 60vh; }
   .navbar-link h2 { font-size: 1rem; }
@@ -294,10 +299,13 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
   .navbar-link h2, .navbar-link img { padding: .5rem; }
   header { margin-top: 70px; }
   .intro-section p { max-width: 90%; }
-  .thumb-profile-pic img { width: 100px; height: 100px; } }
+  .thumb-profile-pic img { width: 100px; height: 100px; }
+  .header-banner img { height: 65vh; } }
 
-@media (max-width: 1024px) { .footer-branding { text-align: center; }
-  .footer-form { margin-bottom: 3rem; } }
+@media (max-width: 1024px) { .mobile-hide { display: none; }
+  .footer-branding { text-align: center; }
+  .footer-form { margin-bottom: 3rem; }
+  .burger-menu { display: inline-block; } }
 
 @media (max-width: 1500px) { nav a { font-size: .8rem; margin-left: .5rem; margin-right: .5rem; } }
 

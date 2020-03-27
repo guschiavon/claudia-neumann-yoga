@@ -6,6 +6,7 @@ header { margin-top: 90px; }
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  height: 75vh;
   &:after {
     content:'';
     position:absolute;
@@ -19,7 +20,7 @@ header { margin-top: 90px; }
   }
   img {
     object-fit: cover;
-    height: 65vh;
+    // height: 65vh;
   }
 }
 

@@ -53,7 +53,7 @@
         Monday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       <!-- For item yoga in the new list monday -->
       {% for yoga in monday %}
       <!-- and for the item class in array yoga.schedule -->
@@ -71,7 +71,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in monday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
@@ -85,7 +85,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in monday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
@@ -101,14 +101,14 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in monday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3>
-                  Click to add
+                  Add now
                 </h3>
               </a>
             {% endfor %}
@@ -130,7 +130,7 @@
         Tuesday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in tuesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
@@ -144,7 +144,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in tuesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
@@ -158,7 +158,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in tuesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
@@ -174,14 +174,14 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in tuesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3>
-                  Click to add
+                  Add now
                 </h3>
               </a>
             {% endfor %}
@@ -202,7 +202,7 @@
         Wednesday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
@@ -216,7 +216,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
@@ -230,7 +230,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
@@ -246,14 +246,14 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3 class="editable">
-                  Click to add
+                  Add now
                 </h3>
               </a>
             {% endfor %}
@@ -274,7 +274,8 @@
         Thursday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in thursday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
@@ -288,7 +289,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in thursday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
@@ -302,7 +303,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in thursday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
@@ -318,14 +319,14 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in thursday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3>
-                  Click to add
+                  Add now
                 </h3>
               </a>
             {% endfor %}
@@ -346,7 +347,7 @@
         Friday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -360,7 +361,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -374,7 +375,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -390,14 +391,14 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3>
-                  Click to add
+                  Add now
                 </h3>
               </a>
             {% endfor %}
@@ -469,7 +470,7 @@
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3>
-                  Click to add
+                  Add to cal
                 </h3>
               </a>
             {% endfor %}
@@ -490,7 +491,7 @@
         Sunday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
@@ -504,7 +505,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
@@ -518,7 +519,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
@@ -534,14 +535,14 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}">
                 <h3>
-                  Click to add
+                  Add now
                 </h3>
               </a>
             {% endfor %}
