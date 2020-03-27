@@ -11,10 +11,17 @@ nav a,
 .navbar-link h2 {
   font-family: $header-font-family;
   text-transform: uppercase;
-  letter-spacing: 2px;
   font-weight: $light-font;
   color: $dark-color;
   transition: .5s ease all;
+}
+
+nav a {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  padding: .2rem .5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   &:hover,
   &:focus {
     color: $secondary-color;
@@ -23,19 +30,12 @@ nav a,
   }
 }
 
-nav a {
-  font-size: 1rem;
-  padding: .2rem .5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .navbar span {font-weight: $bold-font;}
 
 .navbar-link {
   h2, img {
     max-width: 100px;
-    display:inline;
+    display: inline;
     padding: .5rem 1rem;
   }
 }
@@ -46,7 +46,7 @@ nav a {
 }
 
 .navbar-menu-desktop {
-  margin:auto;
+  margin: auto;
   width: 100vw;
 }
 

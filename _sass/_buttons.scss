@@ -1,3 +1,16 @@
+@mixin button-text-style {
+  font-family: $header-font-family;
+  font-weight: $regular-font;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+@mixin cta-font-size {
+  font-size: $cta-button-font-size;
+}
+@mixin learn-more-font-size {
+  font-size: $learn-more-button-font-size;
+}
 
 .banner-cta-button {
   color: $light_color;
@@ -6,17 +19,34 @@
   padding: 1rem 2rem;
   display: inline-block;
   h4 {
-    font-family: $header-font-family;
-    font-weight: $regular-font;
-    letter-spacing: 2px;
-    font-size: $cta-button-font-size;
-    text-transform: uppercase;
+    @include button-text-style;
+    @include cta-font-size;
+  }
+}
+
+.bg-secondary .banner-cta-button {
+  color: $secondary-color;
+  background-color: $light-color;
+  border: 1px solid $light-color;
+  border-radius: $button-border-radius;
+  padding: 1rem 2rem;
+  display: inline-block;
+  h4 {
+    @include button-text-style;
+    @include cta-font-size;
   }
 }
 
 .banner-cta-button:hover,
 .banner-cta-button:focus, {
   background-color: $secondary-color;
+  transition: .4s all;
+}
+.bg-secondary .banner-cta-button:hover,
+.bg-secondary .banner-cta-button:focus,
+.bg-primary .banner-cta-button:hover,
+.bg-primary .banner-cta-button:focus, {
+  color: $light-color;
   transition: .4s all;
 }
 
@@ -28,11 +58,8 @@
   transition: .3s all;
   display: inline-block;
   h4 {
-    font-family: $header-font-family;
-    font-weight: $regular-font;
-    letter-spacing: 2px;
-    font-size: $learn-more-button-font-size;
-    text-transform: uppercase;
+    @include button-text-style;
+    @include learn-more-font-size;
   }
 }
 
@@ -60,11 +87,7 @@
   display: inline-block;
   transition: .3s all;
   h4 {
-    font-family: $header-font-family;
-    font-weight: $regular-font;
-    letter-spacing: 2px;
-    font-size: $cta-button-font-size;
-    text-transform: uppercase;
+    @include button-text-style;
   }
   &:hover,
   &:focus {
@@ -77,14 +100,16 @@
 
 .form-send-button {
   padding: .8rem;
-  letter-spacing: 2px;
   color: $light-color;
-  font-family: $header-font-family;
-  font-size: $cta-button-font-size;
-  text-transform: uppercase;
   background-color: $secondary-color;
   border: none;
   border-radius: $button-border-radius;
   width: inherit;
-  &:hover { filter: brightness(1.2);}
+  h4 {
+    @include button-text-style;
+    @include cta-font-size;
+  }
+  &:hover {
+    filter: brightness(1.2);
+  }
 }

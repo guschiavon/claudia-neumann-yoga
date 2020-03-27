@@ -32,8 +32,8 @@ $(document).ready(function() {
 
     } else {
       $('#cerrartodas').hide();
-      var abiertas = $('.close').length
-      console.log(abiertas);
+      var opened = $('.close').length
+      console.log(opened);
     }
   }); //Close Function Click
 

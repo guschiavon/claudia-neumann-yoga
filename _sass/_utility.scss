@@ -22,8 +22,23 @@
 
 .bg-dark {
   background-color: $dark-color;
+  color: $light-color;
 }
 
-.bg-light { background-color: $light-color;}
+.bg-light {
+  background-color: $light-color;
+  color: $dark-color;
+}
 
-.hide {display: none;}
+.bg-primary {
+  background-color: $primary-color;
+  color: $light-color;
+}
+.bg-secondary {
+  background-color: $secondary-color;
+  color: $light-color;
+}
+
+.hide {
+  display: none;
+}
