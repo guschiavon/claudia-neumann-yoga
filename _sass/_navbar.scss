@@ -69,7 +69,7 @@ nav a {
   }
 }
 
-.mobile-nav-container {
+.mobile-nav {
   background-color: $light-color;
   display: none;
   .dropdown-content {
@@ -93,3 +93,8 @@ nav a {
   font-size: 2rem;
   color: #666;
 }
+.active {
+  color: $secondary-color;
+}
+
+.reveal {display: flex;}

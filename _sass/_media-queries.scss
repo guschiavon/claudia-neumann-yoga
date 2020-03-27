@@ -21,9 +21,12 @@
   .header-banner img {
     height: 65vh;
   }
+  form {
+    width: 90%;
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .mobile-hide { display: none; }
   .footer-branding {
     text-align: center;
@@ -32,13 +35,22 @@
   .burger-menu {
     display: inline-block;
   }
+  .footer-logo {margin-top: 2rem;}
 }
 
-@media (max-width: 1500px) {
-
+@media (max-width: 1024px) {
   nav a {
     font-size: .8rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    margin-left: .2rem;
+    margin-right: .2rem;
+  }
+  .footer-form {
+    margin-bottom: 2rem;
+    h2 {
+      margin-top: 2rem;
+    }
+  }
+  .footer-branding {
+    text-align: center;
   }
 }

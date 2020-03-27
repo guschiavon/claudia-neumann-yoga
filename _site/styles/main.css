@@ -63,13 +63,17 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .dropdown-content a { display: block; margin-bottom: .3rem; margin-top: .3rem; }
 
-.mobile-nav-container { background-color: #f1f1f1; display: none; }
+.mobile-nav { background-color: #f1f1f1; display: none; }
 
-.mobile-nav-container .dropdown-content { background-color: none; }
+.mobile-nav .dropdown-content { background-color: none; }
 
 .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content { display: block; }
 
 .burger-menu { display: none; position: absolute; padding: 1rem 1.5rem; top: 0; right: 0; font-size: 2rem; color: #666; }
+
+.active { color: #F5AEA8; }
+
+.reveal { display: flex; }
 
 .banner-cta-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
@@ -291,6 +295,14 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .location-card { margin: auto; }
 
+.cta-section-content h2 { margin-bottom: 2rem; }
+
+.cta-section-content p { width: 60%; margin: auto; margin-bottom: 2rem; }
+
+.cta-form { padding: 5%; }
+
+.cta-form form, .cta-form p { width: 60%; }
+
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
   .header-banner { height: 60vh; }
@@ -300,13 +312,18 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
   header { margin-top: 70px; }
   .intro-section p { max-width: 90%; }
   .thumb-profile-pic img { width: 100px; height: 100px; }
-  .header-banner img { height: 65vh; } }
+  .header-banner img { height: 65vh; }
+  form { width: 90%; } }
 
-@media (max-width: 1024px) { .mobile-hide { display: none; }
+@media (max-width: 1023px) { .mobile-hide { display: none; }
   .footer-branding { text-align: center; }
   .footer-form { margin-bottom: 3rem; }
-  .burger-menu { display: inline-block; } }
+  .burger-menu { display: inline-block; }
+  .footer-logo { margin-top: 2rem; } }
 
-@media (max-width: 1500px) { nav a { font-size: .8rem; margin-left: .5rem; margin-right: .5rem; } }
+@media (max-width: 1024px) { nav a { font-size: .8rem; margin-left: .2rem; margin-right: .2rem; }
+  .footer-form { margin-bottom: 2rem; }
+  .footer-form h2 { margin-top: 2rem; }
+  .footer-branding { text-align: center; } }
 
 /*# sourceMappingURL=main.css.map */
