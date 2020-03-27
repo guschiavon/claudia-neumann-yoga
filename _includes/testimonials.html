@@ -1,16 +1,15 @@
-<!-- testimonials section -->
-
-<!-- Testimonials have to pull different data for each type of template: create an array or collection? -->
 <section class="testimonials grid-spaceAround padding-inner">
   {% for testimonial in page.testimonials %}
-  <div class="col-4_sm-12 testimonial-box">
-    <div class="testimonial-text-content grid center">
-      <p class="col-12">
-        {{testimonial.content}}
-      </p>
-      <h3 class="col-12 right">
-        {{testimonial.reviewer}}
-      </h3>
+  <div class="col-8_sm-12">
+    <div class=" testimonial-box">
+      <blockquote class="testimonial-text-content grid">
+        <p class="col-12">
+          {{testimonial.content}}
+        </p>
+        <h3 class="col-12 right">
+          - {{testimonial.reviewer}}
+        </h3>
+      </blockquote>
     </div>
   </div>
   {% endfor %}
