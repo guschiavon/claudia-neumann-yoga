@@ -9,7 +9,7 @@ colors:
   secondary_color: '#F5AEA8'
   accent_color: '#D9D9D9'
   dark_color: '#707070'
-  light_color: '#FFF'
+  light_color: '#f1f1f1'
 
 fonts:
   # font family must add DOUBLE QUOTES to respect YAML syntax
