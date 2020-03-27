@@ -21,7 +21,7 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .third-height { height: 33vh; }
 
-.responsive-banner-image { width: 100%; height: auto; }
+.responsive-banner-image { max-width: none; height: auto; }
 
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
@@ -99,9 +99,11 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 header { margin-top: 90px; }
 
-.header-banner { position: relative; display: flex; justify-content: center; align-items: center; }
+.header-banner { position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden; }
 
 .header-banner:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to bottom, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%); /* W3C */ background-size: cover; }
+
+.header-banner img { object-fit: cover; height: 65vh; }
 
 .header-text-box { position: absolute; padding: 5% 0%; z-index: 1; color: #f1f1f1; }
 

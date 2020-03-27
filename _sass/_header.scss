@@ -5,7 +5,7 @@ header { margin-top: 90px; }
   display: flex;
   justify-content: center;
   align-items: center;
-  // z-index: 1;
+  overflow: hidden;
   &:after {
     content:'';
     position:absolute;
@@ -16,6 +16,10 @@ header { margin-top: 90px; }
     display:inline-block;
     background: linear-gradient(to bottom, rgba(71,154,161,1) 0%,rgba(245,174,168,0.19511554621848737) 100%); /* W3C */
     background-size: cover;
+  }
+  img {
+    object-fit: cover;
+    height: 65vh;
   }
 }
 
