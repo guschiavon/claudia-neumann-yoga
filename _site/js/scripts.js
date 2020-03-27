@@ -1,13 +1,57 @@
+var clics = 0;
+
 $(document).ready(function() {
 
-  console.log('Hello from jQuery');
 
-  var question = $('.faq');
-  var answer = $('.faq-accordion');
+// Accordion script by @SebaGarcia
 
- $(question).click(function(){
-    $(answer).slideUp();
-    $(this).next().slideToggle('fast');
-  });
+  $('.faq-a').hide();
+  $('#cerrartodas').hide();
 
+  $('.faq-q').click(function() {
+
+    $(this).next('.faq-a').toggle(function() {
+
+      $(this).next('.faq-a');
+
+    }, function() {
+
+      $(this).next('.faq-a').fadeIn('fast');
+
+    });
+
+    if ($(this).hasClass('close')) {
+      $(this).removeClass('close');
+    } else {
+      $(this).addClass('close');
+    };
+
+    if ($('.close').length >= 3) {
+
+      $('#cerrartodas').fadeIn('fast');
+
+    } else {
+      $('#cerrartodas').hide();
+      var abiertas = $('.close').length
+      console.log(abiertas);
+    }
+  }); //Close Function Click
+
+}); //Close Function Ready
+
+$('#cerrartodas').click(function() {
+  $('.faq-a').fadeOut(200);
+  $('.faq-q').removeClass('close');
+  $('#cerrartodas').fadeOut('fast');
 });
+
+
+// $(document).ready(function() {
+//
+//   console.log('Hello from jQuery');
+//
+//   $(".faq").click(function(){
+//       $(".faq-accordion").toggle(200);
+//     });
+//
+// });
