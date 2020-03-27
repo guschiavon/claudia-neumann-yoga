@@ -63,7 +63,9 @@
   }
 }
 
-.bg-light .learn-more-button {
+
+.bg-light .learn-more-button,
+.retreat-card .learn-more-button {
   background-color: $secondary-color;
   border: 1px solid $secondary-color;
   &:hover {
@@ -105,10 +107,8 @@
   border: none;
   border-radius: $button-border-radius;
   width: inherit;
-  h4 {
-    @include button-text-style;
-    @include cta-font-size;
-  }
+  @include button-text-style;
+  @include cta-font-size;
   &:hover {
     filter: brightness(1.2);
   }

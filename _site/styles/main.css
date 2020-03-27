@@ -81,9 +81,9 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .learn-more-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; }
 
-.bg-light .learn-more-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
+.bg-light .learn-more-button, .retreat-card .learn-more-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
 
-.bg-light .learn-more-button:hover { color: #F5AEA8; }
+.bg-light .learn-more-button:hover, .retreat-card .learn-more-button:hover { color: #F5AEA8; }
 
 .learn-more-button:hover, .learn-more-button:focus { color: #479AA1; background-color: #f1f1f1; transition: .3s all; }
 
@@ -93,9 +93,7 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .schedule-button:hover, .schedule-button:focus { background-color: #f1f1f1; color: #479AA1; border-color: #479AA1; transition: .3s all; }
 
-.form-send-button { padding: .8rem; color: #f1f1f1; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; }
-
-.form-send-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
+.form-send-button { padding: .8rem; color: #f1f1f1; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
 
 .form-send-button:hover { filter: brightness(1.2); }
 
@@ -105,9 +103,11 @@ header { margin-top: 90px; }
 
 .header-banner:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to bottom, #479aa1 0%, rgba(245, 174, 168, 0.195116) 100%); /* W3C */ background-size: cover; }
 
-.header-text-box { position: absolute; padding: 5% 0%; z-index: 1; }
+.header-text-box { position: absolute; padding: 5% 0%; z-index: 1; color: #f1f1f1; }
 
-.header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; color: #f1f1f1; letter-spacing: 5px; }
+.header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 5px; }
+
+.header-text-box p { margin-bottom: 2rem; }
 
 footer { background-color: #3e3e3e; }
 
@@ -185,7 +185,7 @@ form { width: 80%; margin: auto; }
 
 .full-width-banner img { position: absolute; }
 
-.full-width-banner-content { position: absolute; max-width: 70%; z-index: 1; }
+.full-width-banner-content { position: absolute; max-width: 70%; z-index: 1; color: #f1f1f1; }
 
 .full-width-banner-content h2 { font-size: 2rem; margin-bottom: 2rem; font-weight: 400; }
 
@@ -221,7 +221,9 @@ hr.col-12 { padding: 0; margin-bottom: 1.5rem; border: 2px solid #707070; }
 
 .practical-info h3, .practical-info p { margin-bottom: 1rem; }
 
-.intro-section h3, .overview h3 { margin-bottom: 1rem; font-weight: 200; }
+.intro-section h3, .overview h3 { margin-bottom: 1rem; font-weight: 200; font-size: 1.6rem; color: #479AA1; }
+
+.intro-section p, .overview p { margin-bottom: 2rem; }
 
 .object-price { font-size: 1.5rem; color: #F5AEA8; }
 
@@ -250,6 +252,36 @@ blockquote.testimonial-text-content p { font-size: 1.6rem; }
 blockquote.testimonial-text-content h3 { font-weight: 200; font-size: 1.5rem; }
 
 blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }
+
+.retreats-showcase { padding: 5% 3%; }
+
+.retreats-showcase h2 { font-size: 2rem; font-weight: 400; letter-spacing: 2px; }
+
+.retreat-box { padding: 10%; }
+
+.retreat-card { border-radius: 10px; background-color: #f1f1f1; box-shadow: 0px 2px 10px 0px #707070; padding-bottom: 1.5rem; }
+
+.retreat-card p, .retreat-card h3 { margin-bottom: 1.5rem; font-weight: 200; }
+
+.retreat-card p { padding: 0 3%; }
+
+.retreat-thumb { width: 100%; height: 180px; position: relative; overflow: hidden; border-radius: 10px 10px 0 0; }
+
+.retreat-thumb img { object-fit: cover; object-position: -50% 0; }
+
+.retreat-thumb h3 { color: #f1f1f1; font-weight: 200; position: absolute; }
+
+.location-thumb-large { height: 600px; position: relative; overflow: hidden; }
+
+.location-thumb-large h3 { position: absolute; color: #f1f1f1; font-weight: 200; }
+
+.location-thumb { height: 220px; position: relative; overflow: hidden; }
+
+.location-thumb img { max-width: none; object-fit: cover; }
+
+.location-thumb h3 { color: #f1f1f1; font-weight: 200; position: absolute; }
+
+.location-card { margin: auto; }
 
 @media (max-width: 600px) { .mobile-hide { display: none; }
   .schedule-calendar-box h3 { font-size: .9rem; } }

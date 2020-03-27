@@ -9,11 +9,11 @@
       </h1>
       <div class="flex-center">
         <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
-        {% if page.add_banner_button == true or page._hidden_private == true %}
+        {% if page.add_banner_button == true %}
           {% include banner-cta-button.html %}
         {% endif %}
         {% if page._hidden_community == true %}
-        <img src="{{site.data.settings.basic_settings.site_logo_image}}" alt="">
+        <img src="{{site.data.settings.basic_settings.site_logo_image}}" alt="" class="community-banner-logo">
         {% endif %}
       </div>
     </div>
@@ -31,10 +31,10 @@
       <h1>
         {{site.retreats.first.banner_heading}}
       </h1>
-      <div class="flex-center">
+      <div>
       <p>
         {{site.retreats.first.retreat-recommended-for_html}}
-      </p>  <!-- The link redirect of the button has to be declared on front matter on a per-page basis -->
+      </p> 
 
         {% include banner-cta-button.html %}
 
