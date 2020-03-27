@@ -6,6 +6,7 @@
   padding: 2rem 3rem;
   background-color: $light-color;
   border-radius: 10px;
+  margin-bottom: 2rem;
 }
 
 blockquote.testimonial-text-content {
@@ -13,6 +14,10 @@ blockquote.testimonial-text-content {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   p { font-size: 1.6rem; }
+  h3 {
+    font-weight: $light_font;
+    font-size: 1.5rem;
+  }
 }
 
 blockquote:before {
