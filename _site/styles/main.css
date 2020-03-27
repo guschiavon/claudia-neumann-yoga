@@ -41,7 +41,7 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .hide { display: none; }
 
-.navbar { padding: .1% 3%; position: fixed; background-color: #f1f1f1; z-index: 2; top: 0; left: 0; }
+.navbar { padding: .1% 3%; position: fixed; background-color: #f1f1f1; z-index: 2; top: 0; left: 0; width: 100vw; }
 
 nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 200; color: #707070; transition: .5s ease all; }
 
@@ -55,7 +55,7 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .navbar-logo { display: flex; align-items: center; }
 
-.navbar-menu-desktop { margin: auto; width: 100vw; }
+.navbar-menu-desktop { margin: auto; }
 
 .dropdown { position: relative; display: inline-block; }
 
@@ -284,7 +284,15 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 .location-card { margin: auto; }
 
 @media (max-width: 600px) { .mobile-hide { display: none; }
-  .schedule-calendar-box h3 { font-size: .9rem; } }
+  .schedule-calendar-box h3 { font-size: .9rem; }
+  .header-banner h1 { font-size: 1.3rem; text-align: center; }
+  .header-banner { height: 60vh; }
+  .navbar-link h2 { font-size: 1rem; }
+  .navbar-link img { width: 65px; }
+  .navbar-link h2, .navbar-link img { padding: .5rem; }
+  header { margin-top: 70px; }
+  .intro-section p { max-width: 90%; }
+  .thumb-profile-pic img { width: 100px; height: 100px; } }
 
 @media (max-width: 1024px) { .footer-branding { text-align: center; }
   .footer-form { margin-bottom: 3rem; } }

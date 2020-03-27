@@ -26,8 +26,8 @@ layout: default
 {% endif %}
 
 <!-- FAQ section -->
-<section class="grid-noGutter-spaceAround">
-  <div class="col-6_md-12 faqs-section">
+<section class="grid-noGutter-spaceAround bg-light half-height">
+  <div class="col-6_md-12-middle faqs-section">
     <div class="padding-outer">
       {% for faq in page.faqs %}
         {% case faq._id %}
@@ -37,10 +37,13 @@ layout: default
       {% endfor %}
     </div>
   </div>
-  <div class="col-6_md-12-middle flex-center">
+  <div class="col-6_md-12-middle center">
     <h2>
       FAQ
     </h2>
+    <p>
+      Click on the item to learn more
+    </p>
   </div>
 </section>
 

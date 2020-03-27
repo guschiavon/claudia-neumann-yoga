@@ -1,6 +1,24 @@
 @media (max-width: 600px) {
   .mobile-hide { display: none; }
   .schedule-calendar-box h3 {font-size: .9rem;}
+  .header-banner h1 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .header-banner {height: 60vh;}
+  .navbar-link h2 {font-size: 1rem;}
+  .navbar-link img {width: 65px;}
+  .navbar-link {
+    h2, img {
+      padding: .5rem;
+    }
+  }
+  header {margin-top: 70px;}
+  .intro-section p {max-width: 90%;}
+  .thumb-profile-pic img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 1024px) {
