@@ -18,11 +18,11 @@ nav a,
 }
 
 nav a {
-  font-size: 1rem;
+  font-size: .9rem;
   letter-spacing: 2px;
   padding: .2rem .5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: .7rem;
+  margin-right: .7rem;
   &:hover,
   &:focus {
     color: $secondary-color;

@@ -47,7 +47,7 @@ div.hide { display: none; }
 
 nav a, .navbar-link h2 { font-family: "Raleway", sans-serif; text-transform: uppercase; font-weight: 200; color: #707070; transition: .5s ease all; }
 
-nav a { font-size: 1rem; letter-spacing: 2px; padding: .2rem .5rem; margin-left: 1rem; margin-right: 1rem; }
+nav a { font-size: .9rem; letter-spacing: 2px; padding: .2rem .5rem; margin-left: .7rem; margin-right: .7rem; }
 
 nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decoration: underline; }
 
@@ -376,5 +376,7 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
   .footer-form { margin-bottom: 2rem; }
   .footer-form h2 { margin-top: 2rem; }
   .footer-branding { text-align: center; } }
+
+@media (max-width: 1280px) { nav a { margin-left: .2rem; margin-right: .2rem; } }
 
 /*# sourceMappingURL=main.css.map */
