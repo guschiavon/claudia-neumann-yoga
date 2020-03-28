@@ -197,11 +197,11 @@ form { width: 80%; margin: auto; }
 
 .community-section:after, .private-session-section:after { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to right, rgba(60, 60, 60, 0.5) 0%, rgba(60, 60, 60, 0.2) 100%); /* W3C */ background-size: cover; }
 
-.full-width-banner { height: 500px; overflow: hidden; position: relative; }
+.full-width-banner { height: 550px; overflow: hidden; position: relative; }
 
 .full-width-banner img { position: absolute; }
 
-.full-width-banner-content { position: absolute; max-width: 70%; z-index: 1; color: #f1f1f1; }
+.full-width-banner-content { position: absolute; max-width: 75%; z-index: 1; color: #f1f1f1; }
 
 .full-width-banner-content h2 { font-size: 2rem; margin-bottom: 2rem; font-weight: 400; }
 
@@ -304,6 +304,12 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 .location-thumb { height: 280px; padding: 20px; position: relative; overflow: hidden; }
 
 .location-thumb h3 { color: #f1f1f1; font-weight: 200; position: absolute; font-size: 3rem; }
+
+.location-highlights h4 { font-weight: 200; margin-bottom: .5rem; }
+
+.location-highlights hr { color: #F5AEA8; }
+
+.location-highlights .full-width-banner-content { background-color: rgba(60, 60, 60, 0.6); }
 
 .zoom { transition: .3s all; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
 

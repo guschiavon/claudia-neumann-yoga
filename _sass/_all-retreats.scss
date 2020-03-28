@@ -82,6 +82,20 @@
   }
 }
 
+.location-highlights {
+  h4 {
+    font-weight: $light_font;
+    margin-bottom: .5rem;
+  }
+  hr {
+    color: $secondary-color;
+  }
+}
+
+.location-highlights .full-width-banner-content {
+  background-color: rgba(60,60,60, .6);
+}
+
 .zoom {
   transition: .3s all;
   position: absolute;
