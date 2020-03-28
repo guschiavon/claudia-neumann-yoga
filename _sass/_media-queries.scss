@@ -28,6 +28,11 @@
 
 @media (max-width: 1023px) {
   .mobile-hide { display: none; }
+  .header-text-box p {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
   .footer-branding {
     text-align: center;
   }

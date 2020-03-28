@@ -72,7 +72,11 @@ nav a {
 .mobile-nav {
   background-color: $light-color;
   display: block;
+  position: fixed;
+  left: 0;
+  width: 100%;
   padding: 2rem;
+  z-index: 9;
   .dropdown-content {
     text-align: left;
     padding: .5rem;
@@ -103,6 +107,7 @@ nav a {
   right: 0;
   font-size: 2rem;
   color: #666;
+  z-index: 10;
 }
 .active {
   color: $secondary-color;
