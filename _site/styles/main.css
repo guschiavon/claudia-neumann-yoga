@@ -29,6 +29,8 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .padding-outer { padding: 5%; }
 
+.padding-side-5 { padding: 0 5%; }
+
 .bg-dark { background-color: #707070; color: #f1f1f1; }
 
 .bg-light { background-color: #f1f1f1; color: #707070; }
@@ -275,6 +277,8 @@ blockquote.testimonial-text-content h3 { font-weight: 200; font-size: 1.5rem; }
 
 blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }
 
+.highlights h2 { margin-bottom: 3rem; font-size: 2rem; font-weight: 400; }
+
 .retreats-showcase { padding: 5% 3%; }
 
 .retreats-showcase h2 { font-size: 2rem; font-weight: 400; letter-spacing: 2px; }
@@ -289,21 +293,21 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .retreat-thumb { width: 100%; height: 180px; position: relative; overflow: hidden; border-radius: 10px 10px 0 0; }
 
-.retreat-thumb img { object-fit: cover; object-position: -50% 0; }
+.retreat-thumb h3 { color: #f1f1f1; font-weight: 200; font-size: 2rem; position: absolute; z-index: 1; }
 
-.retreat-thumb h3 { color: #f1f1f1; font-weight: 200; position: absolute; }
+.retreat-thumb::after { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: inline-block; background: linear-gradient(to right, rgba(60, 60, 60, 0.4) 0%, rgba(60, 60, 60, 0.12) 100%); /* W3C */ background-size: cover; }
 
-.location-thumb-large { height: 600px; position: relative; overflow: hidden; }
+.location-thumb-large { height: 600px; padding: 20px; position: relative; overflow: hidden; }
 
-.location-thumb-large h3 { position: absolute; color: #f1f1f1; font-weight: 200; }
+.location-thumb-large h3 { position: absolute; color: #f1f1f1; font-weight: 200; font-size: 3rem; }
 
-.location-thumb { height: 220px; position: relative; overflow: hidden; }
+.location-thumb { height: 280px; padding: 20px; position: relative; overflow: hidden; }
 
-.location-thumb img { max-width: none; object-fit: cover; }
+.location-thumb h3 { color: #f1f1f1; font-weight: 200; position: absolute; font-size: 3rem; }
 
-.location-thumb h3 { color: #f1f1f1; font-weight: 200; position: absolute; }
+.zoom { transition: .3s all; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; object-position: center; }
 
-.location-card { margin: auto; }
+.location-thumb:hover .zoom, .location-thumb:focus .zoom, .location-thumb-large:hover .zoom, .location-thumb-large:focus .zoom { transform: scale(1.1); }
 
 .cta-section-content h2 { margin-bottom: 2rem; }
 

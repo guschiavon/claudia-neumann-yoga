@@ -17,7 +17,7 @@ location-3-target_url: /retreats/bali-2021
 add_testimonials: false
 ---
 
-<main>
+<main class="retreats-background">
   <section class="retreats-showcase center">
     <h2>
       All Retreats
@@ -31,7 +31,7 @@ add_testimonials: false
           <div class="retreat-box">
             <div class="retreat-card">
               <div class="retreat-thumb flex-center">
-                <img src="{{retreat.banner_image}}" alt="{{retreat.banner_image-alt-text}}">
+                <img src="{{retreat.banner_image}}" class="responsive-img" alt="{{retreat.banner_image-alt-text}}">
                 <h3>
                   {{retreat.banner_heading}}
                 </h3>
@@ -56,69 +56,52 @@ add_testimonials: false
 
     </div>
   </section>
-</main>
 
 <section class="highlights">
   <div class="padding-inner">
     <div class="grid-noGutter">
       <div class="col-12 center">
-        <h2>
-          locations
+        <h2 class="editable">
+          Explore the locations
         </h2>
       </div>
-      <a href="{{page.location-1-target_url}}#location" class="col-6_md-12-middle padding-inner">
-        <div class="location-box">
-          <div class="location-card">
-            <div class="location-thumb-large flex-center">
-              <img src="{{page.location-1-thumbnail_image}}" alt="">
-              <h3>
-                  {{page.location-1-name}}
-              </h3>
-            </div>
-            <!-- <p class="padding-inner center">
-              {{page.location-1-overview}}
-            </p> -->
+      <a href="{{page.location-1-target_url}}#location" class="col-6_md-12-middle">
+        <div class="padding-side-5">
+          <div class="location-thumb-large flex-center">
+            <img src="{{page.location-1-thumbnail_image}}" class="responsive-img zoom" alt="">
+            <h3>
+              {{page.location-1-name}}
+            </h3>
           </div>
         </div>
       </a>
-      <div class="col-6_md-12 grid-spaceAround">
+      <div class="col-6_md-12 grid-spaceAround-noGutter">
         <a href="{{page.location-2-target_url}}#location" class="col-12">
-          <div class="location-box">
-            <div class="location-card">
-              <div class="location-thumb flex-center">
-                <img src="{{page.location-2-thumbnail_image}}" alt="">
-                <h3>
-                  {{page.location-2-name}}
-                </h3>
-              </div>
-              <!-- <p class="padding-inner center">
-                {{page.location-2-overview}}
-              </p> -->
+          <div class="">
+            <div class="location-thumb flex-center">
+              <img src="{{page.location-2-thumbnail_image}}" class="responsive-img zoom" alt="">
+              <h3>
+                {{page.location-2-name}}
+              </h3>
             </div>
           </div>
         </a>
-        <a href="{{page.location-3-target_url}}#location" class="col-12-middle padding-inner">
-          <div class="location-box">
-            <div class="location-card">
-              <div class="location-thumb flex-center">
-                <img src="{{page.location-3-thumbnail_image}}" alt="">
-                <h3>
-                  {{page.location-3-name}}
-                </h3>
-              </div>
-              <!-- <p class="padding-inner center">
-                {{page.location-3-overview}}
-              </p> -->
+        <a href="{{page.location-3-target_url}}#location" class="col-12-bottom">
+          <div class="">
+            <div class="location-thumb flex-center">
+              <img src="{{page.location-3-thumbnail_image}}" class="responsive-img zoom" alt="">
+              <h3>
+                {{page.location-3-name}}
+              </h3>
             </div>
           </div>
         </a>
       </div>
-      <!-- {% for location in page.locations %} -->
-      <!-- {% endfor %} -->
     </div>
   </div>
 </section>
+</main>
 
 {% if page.add_testimonials == true %}
-  {% include testimonials.html %}
+{% include testimonials.html %}
 {% endif %}

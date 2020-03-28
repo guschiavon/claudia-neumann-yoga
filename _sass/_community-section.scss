@@ -1,5 +1,6 @@
 .community-section, .private-session-section {
   position: relative;
+  // Follows is the overlay content
   &:after {
     content:'';
     position:absolute;

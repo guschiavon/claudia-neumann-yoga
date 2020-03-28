@@ -3,6 +3,12 @@
   overflow: hidden;
 }
 
+.highlights h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: $regular_font;
+}
+
 .retreats-showcase {
   padding: 5% 3%;
   h2 {
@@ -32,39 +38,62 @@
   height: 180px;
   @include relative-hidden;
   border-radius: 10px 10px 0 0;
-  img {
-    object-fit: cover;
-    object-position: -50% 0;
-  }
   h3 {
     color: $light-color;
     font-weight: $light_font;
+    font-size: 2rem;
     position: absolute;
+    z-index: 1;
   }
+}
+.retreat-thumb::after {
+  content: "";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background: linear-gradient(to right, rgba(60,60,60,.4) 0%,rgba(60,60,60,.12) 100%); /* W3C */
+  background-size: cover;
 }
 
 .location-thumb-large {
   height: 600px;
+  padding: 20px;
   @include relative-hidden;
   h3 {
     position: absolute;
     color: $light-color;
     font-weight: $light_font;
+    font-size: 3rem;
   }
 }
 
 .location-thumb {
-  height: 220px;
+  height: 280px;
+  padding: 20px;
   @include relative-hidden;
-  img {
-    max-width: none;
-    object-fit: cover;
-  }
   h3 {
     color: $light-color;
     font-weight: $light_font;
     position: absolute;
+    font-size: 3rem;
   }
 }
 
-.location-card {margin: auto;}
+.zoom {
+  transition: .3s all;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-position: center;
+}
+
+.location-thumb:hover .zoom,
+.location-thumb:focus .zoom,
+.location-thumb-large:hover .zoom,
+.location-thumb-large:focus .zoom { transform: scale(1.1); }

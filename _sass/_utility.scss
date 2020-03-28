@@ -19,8 +19,9 @@
   justify-content: center;
 }
 
-.padding-inner { padding: 3%; }
-.padding-outer { padding: 5%; }
+.padding-inner    { padding: 3%; }
+.padding-outer    { padding: 5%; }
+.padding-side-5   { padding: 0 5%; }
 
 .bg-dark {
   background-color: $dark-color;
