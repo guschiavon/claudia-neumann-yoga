@@ -241,6 +241,14 @@ hr.col-12 { padding: 0; margin-bottom: 1.5rem; border: 2px solid #707070; }
 
 .object-price { font-size: 1.5rem; color: #F5AEA8; }
 
+.certification-content { padding: 4%; }
+
+.certification-content .cert-logo { margin: auto; padding-bottom: 1rem; width: 80px; height: auto; filter: grayscale(1); }
+
+.certification-content h2 { padding-bottom: .5rem; }
+
+.certification-content h4 { font-weight: 200; padding-bottom: .6rem; }
+
 .faq { border: 1px solid #707070; border-radius: 4px; padding: 1rem 2rem; max-width: 80%; margin: auto; margin-bottom: 1rem; transition: .3s all; }
 
 .faq:hover { transition: .3s all; border-color: #f1f1f1; color: #f1f1f1; background-color: #F5AEA8; }
@@ -311,9 +319,17 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .responsive-img { width: 100%; height: 100%; object-fit: cover; }
 
-.about-logo { width: 80px; }
+.about-logo { width: 80px; margin: auto; }
+
+.highlight-heading { position: relative; }
+
+.highlight-heading img { position: absolute; width: 300px; z-index: -1; }
 
 .offset-frame { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); background-color: #479AA1; position: absolute; top: -20px; left: -20px; z-index: -1; }
+
+.about-header h2, .about-header p { margin-bottom: 2rem; }
+
+.about-header h2 { font-weight: 200; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }

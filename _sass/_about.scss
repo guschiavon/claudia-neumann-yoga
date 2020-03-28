@@ -19,13 +19,32 @@
 
 .about-logo {
   width: 80px;
+  margin: auto;
+}
+
+.highlight-heading {
+  position: relative;
+  img {
+    position: absolute;
+    width: 300px;
+    z-index: -1;
+  }
 }
 
 .offset-frame {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   background-color: $primary-color;
   position: absolute;
-  top:-20px;
-  left:-20px;
+  top: -20px;
+  left: -20px;
   z-index: -1;
+}
+
+.about-header {
+  h2, p {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-weight: $light_font;
+  }
 }
