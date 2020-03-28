@@ -171,7 +171,7 @@ form { width: 80%; margin: auto; }
 
 .triple-features { padding: 3% 5%; }
 
-.feature-box { position: relative; overflow: hidden; object-fit: cover; }
+.feature-box { position: relative; overflow: hidden; }
 
 .feature-box img { position: absolute; filter: brightness(0.5); }
 

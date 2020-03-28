@@ -44,7 +44,7 @@
     <!-- Create a list called monday to represent contents from _yoga folder that contain Monday as value on the Front Matter Array Yoga->Schedule->Day -->
 
 
-    
+
     {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
 
     <div class="col-1 mobile-hide">
@@ -92,7 +92,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -108,7 +108,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3>
                   Add now
                 </h3>
@@ -165,7 +165,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -181,7 +181,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3>
                   Add now
                 </h3>
@@ -237,7 +237,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -253,7 +253,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3 class="editable">
                   Add now
                 </h3>
@@ -310,7 +310,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -326,7 +326,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3>
                   Add now
                 </h3>
@@ -382,7 +382,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -398,7 +398,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3>
                   Add now
                 </h3>
@@ -454,7 +454,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -470,7 +470,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3>
                   Add to cal
                 </h3>
@@ -526,7 +526,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}">
+              <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
@@ -542,7 +542,7 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}">
+              <a href="{{class.add-to-cal}}" target="_blank">
                 <h3>
                   Add now
                 </h3>
