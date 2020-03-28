@@ -71,9 +71,20 @@ nav a {
 
 .mobile-nav {
   background-color: $light-color;
-  display: none;
+  display: block;
+  padding: 2rem;
   .dropdown-content {
-    background-color: none;
+    text-align: left;
+    padding: .5rem;
+  }
+  ul li {
+    list-style: none;
+    font-family: inherit;
+    padding: 1rem;
+    a {
+      font-size: 1rem;
+      color: $primary-color;
+    }
   }
 }
 
@@ -96,5 +107,3 @@ nav a {
 .active {
   color: $secondary-color;
 }
-
-.reveal {display: flex;}

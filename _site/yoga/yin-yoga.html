@@ -89,38 +89,44 @@
 
   <div class="mobile-nav hide">
   <nav class="mobile-navbar center">
-    <a href="/about">
-      About
-    </a>
-    <div class="dropdown">
-      <a href="/yoga-all" class="dropdown-button">
-        Yoga
-      </a>
-      <div class="dropdown-content left">
-        <a href="/yoga/vinyasa-yoga"> Vinyasa </a>
-        <a href="/yoga/yin-yoga"> Yin </a>
-        <a href="/yoga/corporate-yoga"> Corporate </a>
-        <a href="/yoga/private-session"> Private </a>
-      </div>
-    </div>
-    <a href="/offerings/reiki">
-      Heal
-    </a>
-    <div class="dropdown">
-      <a href="/retreats-all">
-        Grow
-      </a>
-      <div class="dropdown-content left">
+    <ul>
+      <li>
+        <a href="/about">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="/yoga-all">
+          Yoga
+        </a>
+      </li>
+      <li>
+        <a href="/offerings/reiki">
+          Heal
+        </a>
+      </li>
+      <li>
+        <a href="/retreats-all">
+          Grow
+        </a>
+      </li>
+      <li>
         <a href="/retreats-all"> Retreats </a>
+      </li>
+      <li>
         <a href="/community"> Community </a>
-      </div>
-    </div>
-    <a href="/blog">
-      Health
-    </a>
-    <a href="#footer">
-      Contact
-    </a>
+      </li>
+      <li>
+        <a href="/blog">
+          Health
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          Contact
+        </a>
+      </li>
+    </ul>
   </nav>
 </div>
 
@@ -464,6 +470,73 @@
 </footer>
 
 
-      <script src="/js/scripts.js"></script>
+      
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+  $(document).ready(function() {
+
+    console.log('hello from jquery');
+
+    $(".burger-menu").click(function(){
+
+      $(".mobile-nav").toggleClass("hide");
+
+      $(this).toggleClass("active");
+
+      console.log("burger clicked");
+      
+    }); //Closes Click Burger function
+
+  }); //Closes Ready function
+
+</script>
+
+<script>
+
+  var clics = 0;
+
+  $(document).ready(function() {
+
+  // Accordion script by @SebaGarcia
+
+    $('.faq-a').hide();
+    $('#cerrartodas').hide();
+
+    $('.faq-q').click(function() {
+
+      $(this).next('.faq-a').toggle(function() {
+
+        $(this).next('.faq-a');
+
+      }, function() {
+
+        $(this).next('.faq-a').fadeIn('fast');
+
+      });
+
+      if ($(this).hasClass('close')) {
+        $(this).removeClass('close');
+      } else {
+        $(this).addClass('close');
+      };
+
+      if ($('.close').length >= 3) {
+
+        $('#cerrartodas').fadeIn('fast');
+
+      } else {
+        $('#cerrartodas').hide();
+        var opened = $('.close').length
+        console.log(opened);
+      }
+    }); //Close Function Click
+
+  }); //Close Function Ready
+
+</script>
+
+      <!-- <script src="/js/scripts.js"></script> -->
     </body>
   </html>

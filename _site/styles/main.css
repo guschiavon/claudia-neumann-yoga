@@ -39,7 +39,7 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .bg-reset { background-color: white; }
 
-.hide { display: none; }
+div.hide { display: none; }
 
 .navbar { padding: .1% 3%; position: fixed; background-color: #f1f1f1; z-index: 2; top: 0; left: 0; width: 100vw; }
 
@@ -63,17 +63,19 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .dropdown-content a { display: block; margin-bottom: .3rem; margin-top: .3rem; }
 
-.mobile-nav { background-color: #f1f1f1; display: none; }
+.mobile-nav { background-color: #f1f1f1; display: block; padding: 2rem; }
 
-.mobile-nav .dropdown-content { background-color: none; }
+.mobile-nav .dropdown-content { text-align: left; padding: .5rem; }
+
+.mobile-nav ul li { list-style: none; font-family: inherit; padding: 1rem; }
+
+.mobile-nav ul li a { font-size: 1rem; color: #479AA1; }
 
 .dropdown:hover .dropdown-content, .dropdown:focus .dropdown-content { display: block; }
 
 .burger-menu { display: none; position: absolute; padding: 1rem 1.5rem; top: 0; right: 0; font-size: 2rem; color: #666; }
 
 .active { color: #F5AEA8; }
-
-.reveal { display: flex; }
 
 .banner-cta-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
