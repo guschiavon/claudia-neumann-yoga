@@ -345,6 +345,8 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .affiliate-info a:hover { text-decoration: underline; }
 
+.highlight-icon { font-size: 2rem; padding: 2rem 0; }
+
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
   .header-banner { height: 60vh; }
