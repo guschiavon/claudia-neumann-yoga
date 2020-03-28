@@ -1,0 +1,31 @@
+.about-header {
+  margin-top: 2rem;
+}
+
+.responsive-frame {
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: $secondary-color;
+  position: relative;
+  margin: auto;
+}
+// The 100% value makes the image fill the space responsively
+.responsive-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-logo {
+  width: 80px;
+}
+
+.offset-frame {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: $primary-color;
+  position: absolute;
+  top:-20px;
+  left:-20px;
+  z-index: -1;
+}

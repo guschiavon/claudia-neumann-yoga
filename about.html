@@ -23,12 +23,19 @@ affiliates:
 <body>
   <header id="top">
     {% include desktop-navbar.html %}
-    <section class="about-header">
+    {% include mobile-nav.html %}
+    <section class="about-header padding-outer center">
       <div class="grid-noGutter-middle">
-        <div class="col-6_sm-12 section-lg-feature-image">
-          <img src="{{page.header_image}}" alt="">
+        <div class="col-6_sm-12">
+          <!-- Put the frame inside the column otherwise Gridlex overrides the padding values -->
+          <div class="responsive-frame">
+            <svg class="offset-frame" height="400" width="300">
+            </svg>
+            <!-- Give the size to the image, not the container. Using 100% for width and height makes it fill the whole space responsively -->
+            <img src="{{page.header_image}}" class="responsive-img" alt="">
+          </div>
         </div>
-        <div class="col-6_sm-12 center">
+        <div class="col-6_sm-12 center padding-inner">
           <h2 class="editable">
             Insert favorite quote here
           </h2>
@@ -36,7 +43,7 @@ affiliates:
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <div class="about-logo">
-            <img src="{{site.data.settings.basic_settings.site_logo_image}}" style="max-width: 80px;"alt="">
+            <img src="{{site.data.settings.basic_settings.site_logo_image}}" alt="">
           </div>
         </div>
       </div>
@@ -130,5 +137,6 @@ affiliates:
     </div>
   </section>
   {% include footer.html %}
+  {% include scripts.html %}
 </body>
 </html>
