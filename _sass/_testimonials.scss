@@ -13,7 +13,9 @@ blockquote.testimonial-text-content {
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
-  p { font-size: 1.6rem; }
+  p {
+    font-size: 1.3rem;
+  }
   h3 {
     font-weight: $light_font;
     font-size: 1.5rem;
