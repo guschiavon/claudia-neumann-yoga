@@ -121,7 +121,7 @@ header { margin-top: 90px; }
 
 .header-text-box { position: absolute; padding: 5% 0%; z-index: 1; color: #f1f1f1; }
 
-.header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 5px; }
+.header-text-box h1 { margin-bottom: 2rem; font-size: 3rem; text-transform: uppercase; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 5px; text-align: center; }
 
 .header-text-box p { margin-bottom: 2rem; }
 
@@ -345,7 +345,13 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .affiliate-info a:hover { text-decoration: underline; }
 
-.highlight-icon { font-size: 2rem; padding: 2rem 0; }
+.highlight-icon { font-size: 2rem; padding: 2rem 0; color: #777; }
+
+.highlights p { max-width: 80%; margin: auto; }
+
+.highlights h2 { font-weight: 200; }
+
+.cta-form form { max-width: 75%; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }

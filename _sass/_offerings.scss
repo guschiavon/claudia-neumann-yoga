@@ -1,4 +1,19 @@
 .highlight-icon {
   font-size: 2rem;
   padding: 2rem 0;
+  color: #777;
+}
+
+.highlights {
+  p {
+    max-width: 80%;
+    margin: auto;
+  }
+  h2 {
+    font-weight: $light_font;
+  }
+}
+
+.cta-form form {
+  max-width: 75%;
 }
