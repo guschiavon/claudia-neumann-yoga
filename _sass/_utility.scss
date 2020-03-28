@@ -6,7 +6,8 @@
 .half-height  {height: 50vh;}
 .third-height {height: 33vh;}
 
-.responsive-banner-image {
+// The 100% value makes the image fill the space responsively; set the container's width, height and padding (if required)
+.responsive-img {
   width: 100%;
   height: 100%;
   object-fit: cover;

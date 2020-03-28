@@ -21,7 +21,7 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .third-height { height: 33vh; }
 
-.responsive-banner-image { width: 100%; height: 100%; object-fit: cover; }
+.responsive-img { width: 100%; height: 100%; object-fit: cover; }
 
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
@@ -317,8 +317,6 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .responsive-frame { padding: 20px; width: 300px; height: 400px; background-color: #F5AEA8; position: relative; margin: auto; }
 
-.responsive-img { width: 100%; height: 100%; object-fit: cover; }
-
 .about-logo { width: 80px; margin: auto; }
 
 .highlight-heading { position: relative; }
@@ -327,11 +325,15 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .offset-frame { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); background-color: #479AA1; position: absolute; top: -20px; left: -20px; z-index: -1; }
 
-.about-header h2, .about-header p { margin-bottom: 2rem; }
+.about-header h2, .about-header p { margin-bottom: 2rem; margin-top: 2rem; }
 
 .about-header h2 { font-weight: 200; }
 
 .inspiration .overview { padding: 20%; }
+
+.affiliate-info h3 { font-weight: 400; color: #479AA1; }
+
+.affiliate-info a:hover { text-decoration: underline; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
