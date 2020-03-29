@@ -386,7 +386,8 @@ img.community-banner-logo { width: 200px; }
   header { margin-top: 70px; }
   .intro-section p { max-width: 90%; }
   .thumb-profile-pic img { width: 100px; height: 100px; }
-  .header-banner img { height: 65vh; }
+  .header-banner .responsive-img { height: 65vh; }
+  .community-banner-logo { height: 180px; }
   form { width: 90%; } }
 
 @media (max-width: 1023px) { .mobile-hide { display: none; }
