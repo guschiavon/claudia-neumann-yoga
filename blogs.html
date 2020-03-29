@@ -27,7 +27,7 @@
   <section class="blog-latest padded-outer">
     <div class="blog-latest-banner" style="height: 300px; width: 90%; margin: auto;">
       <h3>
-        {{site.posts.last.date_to_long_string}}
+        {{site.posts.last.date | date_to_string}}
       </h3>
       <h2>
         {{site.posts.last.post-title}}
@@ -48,8 +48,11 @@
       {% for post in site.posts offset: 1 limit: 5 %}
       <div class="col-12-middle padding-inner blog-thumb">
         <img src="{{post.banner_image}}" class="responsive-img" alt="">
-        <h3>
+        <h2>
           {{post.title}}
+        </h2>
+        <h3>
+          {{post.date | date_to_string}}
         </h3>
       </div>
       <div>
