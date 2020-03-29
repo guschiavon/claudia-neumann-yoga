@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Establishing positive habits for happiness
+author: Claudia
 banner_image: /assets/images/placeholder 003.jpg
 categories: [mindfullness, meditation]
 ---

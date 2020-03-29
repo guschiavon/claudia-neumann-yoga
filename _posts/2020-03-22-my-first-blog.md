@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: My first blog post
+author: Claudia
 banner_image: /assets/images/placeholder 013.jpg
 categories: [health]
 ---

@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Benefits of Reiki explained
+author: Gus
 banner_image: /assets/images/placeholder 006.jpg
 categories: [mantras]
 ---

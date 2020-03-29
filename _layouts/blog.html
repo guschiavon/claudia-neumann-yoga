@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Yogismile Blog </title>
+    {% include head.html %}
+  </head>
+  <body>
+    <header class="center">
+      <a href="/blogs">
+        <img src="/assets/images/yogismile-logo.png" style="width:10rem;" alt="">
+        <h2 class="logo padded-1">
+          Yogismile by Claudia Neumann
+        </h2>
+      </a>
+      <nav>
+        <a href="{{site.data.blog-settings.navigation.menu-1_url}}"> Health </a>
+        <a href="{{site.data.blog-settings.navigation.menu-2_url}}"> Ayurveda </a>
+        <a href="{{site.data.blog-settings.navigation.menu-3_url}}"> Mindfulness </a>
+        <a href="{{site.data.blog-settings.navigation.menu-4_url}}"> Wanderings </a>
+      </nav>
+    </header>
+
+    <!-- all blogs -->
+<main>
+  <section class="blog-latest padded-outer">
+    <div class="blog-latest-banner" style="height: 300px; width: 90%; margin: auto;">
+      <h3>
+        {% if page._hidden_blog == home %}
+          {{page.date | date_to_string}}
+        {% else %}
+          {{site.posts.last.date | date_to_string}}
+        {% endif %}
+      </h3>
+      <h2>
+        {% if page._hidden_blog == home %}
+          {{page.title}}
+        {% else %}
+          {{site.posts.last.title}}
+        {% endif %}
+      </h2>
+      <a href="{% if page._hidden_blog == home %} {{page.url}} {% else %} {{site.posts.last.url}}  {% endif %}" class="learn-more-button">
+        <h4>
+          Read more
+        </h4>
+      </a>
+      <img src="{% if page._hidden_blog == home %} {{page.banner_image}} {% else %} {{site.posts.last.banner_image}} {% endif %}" class="responsive-img" alt="">
+    </div>
+
+  </section>
+</main>
+<section class="padding-outer">
+  <div class="grid-noGutter-spaceAround padding-inner flex-flip">
+    <div class="col-7_sm-9-middle grid-noGutter-spaceAround">
+      {{content}}
+    </div>
+    <div class="col-5_sm-3 about-column">
+      <div class="padding-outer">
+        <div class="blog-author">
+          <img src="{{site.data.blog-settings.blog_settings.profile-picture_image}}" alt="">
+        </div>
+        <h3>
+          {{site.data.blog-settings.blog_settings.blog-owner}}
+        </h3>
+        <p>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

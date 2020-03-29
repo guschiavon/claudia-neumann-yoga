@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Beautiful sanskrit mantras and their meanings
+author: Karen
 banner_image: /assets/images/placeholder 004.jpg
 categories: [meditation]
 ---

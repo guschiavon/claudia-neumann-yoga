@@ -1,87 +1,27 @@
 ---
+layout: blog
+_hidden_blog: home
+_hidden_styles: blog
 ---
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Yogismile Blog </title>
-    {% include head.html %}
-  </head>
-  <body>
-    <header class="center">
-      <a href="/">
-        <img src="assets/images/yogismile-logo.png" style="width:10rem;" alt="">
-        <h2 class="logo padded-1">
-          Yogismile by Claudia Neumann
-        </h2>
-      </a>
-      <nav>
-        <a href="#"> Health </a>
-        <a href="#"> Ayurveda </a>
-        <a href="#"> Mindfulness </a>
-        <a href="#"> Wanderings </a>
-      </nav>
-    </header>
-    <!-- all blogs -->
-<main>
-  <section class="blog-latest padded-outer">
-    <div class="blog-latest-banner" style="height: 300px; width: 90%; margin: auto;">
-      <h3>
-        {{site.posts.last.date | date_to_string}}
-      </h3>
-      <h2>
-        {{site.posts.last.post-title}}
-      </h2>
-      <a href="{{site.posts.last.url}}" class="learn-more-button">
-        <h4>
-          Read more
-        </h4>
-      </a>
-      <img src="{{site.posts.last.banner_image}}" class="responsive-img" alt="">
-    </div>
-
-  </section>
-</main>
-<section class="padding-outer">
-  <div class="grid-noGutter-spaceAround padding-inner flex-flip">
-    <div class="col-7_sm-9-middle grid-noGutter-spaceAround">
-      {% for post in site.posts offset: 1 limit: 5 %}
-      <div class="col-12-middle padding-inner blog-thumb">
-        <img src="{{post.banner_image}}" class="responsive-img" alt="">
-        <h2>
-          {{post.title}}
-        </h2>
-        <h3>
-          {{post.date | date_to_string}}
-        </h3>
-      </div>
-      <div>
-        {% for category in post.categories %}
-        <h4 class="subtle-heading">
-          {{category}}
-        </h4>
-        {% endfor %}
-        <p>
-          {{post.excerpt}}
-        </p>
-        <a class="button" href="#"> Read More </a>
-      </div>
-      {% endfor %}
-    </div>
-    <div class="col-5_sm-3 about-column">
-      <div class="padding-outer">
-        <div class="blog-author">
-          <img src="{{site.data.blog-settings.profile-picture_image}}" alt="">
-        </div>
-        <h3>
-          {{site.data.blog-settings.blog-owner}}
-        </h3>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-</body>
-</html>
+{% for post in site.posts offset: 1 limit: 5 %}
+<div class="col-12-middle padding-inner blog-thumb">
+  <img src="{{post.banner_image}}" class="responsive-img" alt="">
+  <h2>
+    {{post.title}}
+  </h2>
+  <h3>
+    {{post.date | date_to_string}}
+  </h3>
+</div>
+<div>
+  {% for category in post.categories %}
+  <h4 class="subtle-heading">
+    {{category}}
+  </h4>
+  {% endfor %}
+  <p>
+    {{post.excerpt}}
+  </p>
+  <a class="learn-more-button" href="{{post.url}}"> Read More </a>
+</div>
+{% endfor %}
