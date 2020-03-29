@@ -1,6 +1,6 @@
 @mixin button-text-style {
   font-family: $header-font-family;
-  font-weight: $regular-font;
+  font-weight: $light-font;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -57,8 +57,8 @@
   padding: .6rem;
   transition: .3s all;
   display: inline-block;
-  @include button-text-style;
   h4 {
+    @include button-text-style;
     @include learn-more-font-size;
   }
 }

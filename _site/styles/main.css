@@ -81,19 +81,19 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .banner-cta-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
-.banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
+.banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
 
 .bg-secondary .banner-cta-button { color: #F5AEA8; background-color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
 
-.bg-secondary .banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
+.bg-secondary .banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
 
 .banner-cta-button:hover, .banner-cta-button:focus { background-color: #F5AEA8; transition: .4s all; }
 
 .bg-secondary .banner-cta-button:hover, .bg-secondary .banner-cta-button:focus, .bg-primary .banner-cta-button:hover, .bg-primary .banner-cta-button:focus { color: #f1f1f1; transition: .4s all; }
 
-.learn-more-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: .6rem; transition: .3s all; display: inline-block; font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }
+.learn-more-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: .6rem; transition: .3s all; display: inline-block; }
 
-.learn-more-button h4 { font-size: 0.7rem; }
+.learn-more-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; }
 
 .bg-light .learn-more-button, .retreat-card .learn-more-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
 
@@ -103,11 +103,11 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .schedule-button { color: #f1f1f1; background-color: #479AA1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; transition: .3s all; }
 
-.schedule-button h4 { font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; }
+.schedule-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; }
 
 .schedule-button:hover, .schedule-button:focus { background-color: #f1f1f1; color: #479AA1; border-color: #479AA1; transition: .3s all; }
 
-.form-send-button { padding: .8rem; color: #f1f1f1; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; font-family: "Raleway", sans-serif; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
+.form-send-button { padding: .8rem; color: #f1f1f1; background-color: #F5AEA8; border: none; border-radius: 5px; width: inherit; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
 
 .form-send-button:hover { filter: brightness(1.2); }
 
