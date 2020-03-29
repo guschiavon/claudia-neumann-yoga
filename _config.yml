@@ -32,3 +32,4 @@ _array_structures:
         faq_description_html:
 
 uploads_dir: "/assets/images/:title"
+markdown: kramdown
