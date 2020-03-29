@@ -24,17 +24,7 @@ layout: default
 {% endif %}
 
 <!-- FAQ section -->
-<section class="grid-noGutter-spaceAround bg-light">
-  <div class="col-6_md-12-middle faqs-section">
-    <div class="padding-outer">
-      {% for faq in page.faqs %}
-        {% case faq._id %}
-          {% when 'faq' %}
-            {% include faq-accordion.html faq=faq %}
-        {% endcase %}
-      {% endfor %}
-    </div>
-  </div>
+<section class="grid-reverse-noGutter-spaceAround bg-light padding-outer">
   <div class="col-6_md-12-middle center">
     <h2>
       FAQ
@@ -42,6 +32,16 @@ layout: default
     <p>
       Click on the item to learn more
     </p>
+  </div>
+  <div class="col-6_md-12-middle faqs-section">
+    <div class="padding-inner">
+      {% for faq in page.faqs %}
+      {% case faq._id %}
+      {% when 'faq' %}
+      {% include faq-accordion.html faq=faq %}
+      {% endcase %}
+      {% endfor %}
+    </div>
   </div>
 </section>
 

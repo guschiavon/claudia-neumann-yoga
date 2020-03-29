@@ -13,13 +13,13 @@
   max-height: 500px;
   position: absolute;
   left: 10%;
+  top: 8%;
   object-fit: cover;
   overflow: hidden;
-  padding: 3% 6%;
 }
 
 .section-feature-content {
-  padding: 3% 6%;
+  // padding: 3% 6%;
   background-color: $primary-color;
   z-index: 1;
   h2, h3 {
@@ -29,6 +29,7 @@
     text-transform: uppercase;
   }
   p {
+    font-weight: $light_font;
     margin-bottom: 2rem;
     margin-top: 2rem;
   }
