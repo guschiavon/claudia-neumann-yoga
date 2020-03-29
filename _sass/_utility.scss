@@ -19,6 +19,12 @@
   justify-content: center;
 }
 
+.flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;  
+}
+
 .padding-inner    { padding: 3%; }
 .padding-outer    { padding: 5%; }
 .padding-side-5   { padding: 0 5%; }

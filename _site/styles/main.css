@@ -25,6 +25,8 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
+.flex-right { display: flex; align-items: center; justify-content: right; }
+
 .padding-inner { padding: 3%; }
 
 .padding-outer { padding: 5%; }
@@ -177,21 +179,21 @@ form { width: 80%; margin: auto; }
 
 .feature-box img { position: absolute; filter: brightness(0.5); }
 
-.section-feature { min-height: 650px; }
+.section-feature { min-height: 650px; position: relative; }
 
 .section-feature .learn-more-button { padding: .9rem 1.2rem; }
 
 .section-feature .learn-more-button h4 { font-size: 1rem; }
 
-.section-lg-feature-image { max-height: 500px; object-fit: cover; overflow: hidden; padding: 3% 6%; }
+.section-lg-feature-image { max-height: 500px; position: absolute; left: 10%; object-fit: cover; overflow: hidden; padding: 3% 6%; }
 
-.section-feature-content { padding: 3% 6%; }
+.section-feature-content { padding: 3% 6%; background-color: #479AA1; z-index: 1; }
 
 .section-feature-content h2, .section-feature-content h3 { margin-bottom: 1rem; font-family: "Raleway", sans-serif; font-weight: 400; text-transform: uppercase; }
 
 .section-feature-content p { margin-bottom: 2rem; margin-top: 2rem; }
 
-.section-feature-content h3 { color: #479AA1; }
+.section-feature-content h3 { color: #f1f1f1; }
 
 .community-section, .private-session-section { position: relative; }
 
