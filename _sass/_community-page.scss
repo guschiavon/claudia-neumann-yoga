@@ -1,0 +1,61 @@
+img.community-banner-logo {
+  width: 200px;
+}
+
+.community-page,
+.practical-info {
+  margin-bottom: 2rem;
+  p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2.3rem;
+    font-weight: $regular_font;
+    margin-bottom: 2rem;
+    letter-spacing: 5px;
+  }
+}
+
+.community-intro p {
+  font-size: 1.2rem;
+  font-weight: $light_font;
+}
+
+.event-description,
+.facilitator,
+.practical-info {
+  h3 {
+    margin-bottom: 1.5rem;
+    font-weight: $light_font;
+  }
+  hr {
+    max-width: 200px;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+.facilitator {
+  background-color: $light-color;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  .facilitator-card {
+    padding: 8%;
+  }
+  p {
+    padding: 1rem 1.3rem;
+    font-weight: $light_font;
+  }
+}
+
+.facilitator-thumb {
+  width: 150px;
+  height: 150px;
+  padding: 1.2rem;
+  margin: auto;
+  img {
+    border-radius: 50%;
+  }
+}

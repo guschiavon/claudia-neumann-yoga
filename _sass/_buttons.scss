@@ -57,8 +57,8 @@
   padding: .6rem;
   transition: .3s all;
   display: inline-block;
+  @include button-text-style;
   h4 {
-    @include button-text-style;
     @include learn-more-font-size;
   }
 }

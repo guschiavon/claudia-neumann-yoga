@@ -14,55 +14,60 @@ facilitators:
     thumb: /assets/images/placeholder 012.jpg
     bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 ---
-<main>
-  <section>
-    <div class="flex-center bg-primary third-height padding-outer">
+<main class="community-page">
+  <section class="community-intro">
+    <div class="flex-center bg-primary padding-outer">
       <p class="center editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
   </section>
+  <section class="padding-outer event-description bg-dark">
+    <div class="center">
+      <h3 class="center editable">
+        This week's event:
+      </h3>
+      <hr>
+      <h2 class="center editable">
+        Ecstatic dance
+      </h2>
+      <p class="center editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="{{page.confirmation-button_url}}" class="learn-more-button editable">
+        RSVP now
+      </a>
+    </div>
+  </section>
 </main>
 
-<section class="flex-center half-height padding-outer">
-  <div class="event-description">
-    <h3 class="center editable">
-      This week's event:
-    </h3>
-    <h2 class="center editable">
-      Ecstatic dance
-    </h2>
-    <p class="center editable">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <a href="{{page.confirmation-button_url}}" class="learn-more-button editable">
-      RSVP
-    </a>
-  </div>
-</section>
-
-<section>
+<section class="community-page">
   <div class="grid-noGutter-spaceAround">
+    <h2 class="editable col-12 center">
+      Facilitators
+    </h2>
     {% for facilitator in page.facilitators %}
-    <div class="col-3 center facilitator-card">
-      <div class="padding-inner facilitator-thumb">
-          <img src="{{facilitator.thumb}}" alt="{{facilitator.name}}">
+    <div class="col-3 facilitator">
+      <div class="center facilitator-card">
+        <div class="facilitator-thumb">
+          <img src="{{facilitator.thumb}}" class="responsive-img" alt="{{facilitator.name}}">
+        </div>
+        <h3>
+          {{facilitator.name}}
+        </h3>
+        <p>
+          {{facilitator.bio}}
+        </p>
       </div>
-      <h3>
-        {{facilitator.name}}
-      </h3>
-      <p>
-        {{facilitator.bio}}
-      </p>
     </div>
 
     {% endfor %}
   </div>
 </section>
 
-<section class="bg-dark flex-center half-height">
-  <div class="practical-info">
-    <h2 class="editable">
+<section class="bg-secondary flex-center">
+  <div class="practical-info center">
+    <h2 class="editable center">
       Practical info
     </h2>
     <h3 class="center editable">
@@ -71,11 +76,11 @@ facilitators:
     <h3 class="center editable">
       Time:
     </h3>
-    <a href="{{page.event-location_url}}">
-      <h3 class="center editable">
+    <h3 class="center editable">
+      <a href="{{page.event-location_url}}">
         Location:
-      </h3>
-    </a>
+      </a>
+    </h3>
     <a href="{{page.confirmation-button_url}}" class="learn-more-button editable">
       Let's do it!
     </a>
