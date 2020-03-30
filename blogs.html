@@ -4,8 +4,12 @@ title: Yogismile by Claudia Neumann
 _hidden_related: true
 ---
 {% for post in site.posts offset: 1 limit: 5 %}
+<<<<<<< HEAD
 <a href="{{post.url}}" class="col-12-middle">
 <div class="padding-inner blog-thumb">
+=======
+<div class="col-12-middle padding-inner blog-thumb">
+>>>>>>> parent of ab9e808... Establish categories, tags for Blogs
   <img src="{{post.banner_image}}" class="responsive-img" alt="">
   <h2>
     {{post.title}}
@@ -14,6 +18,7 @@ _hidden_related: true
     {{post.date | date_to_string}}
   </h3>
 </div>
+<<<<<<< HEAD
 </a>
 <p>
   {{ post.description | truncate: 160 }}
@@ -28,18 +33,17 @@ _hidden_related: true
   {% for category in categories %}
   <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
   {% unless forloop.last %}&nbsp;{% endunless %}
+=======
+<div>
+  {% for category in post.categories %}
+  <h4 class="subtle-heading">
+    {{category}}
+  </h4>
+>>>>>>> parent of ab9e808... Establish categories, tags for Blogs
   {% endfor %}
+  <p>
+    {{post.excerpt}}
+  </p>
+  <a class="learn-more-button" href="{{post.url}}"> Read More </a>
 </div>
-<div class="post-tags">
-  {% if post %}
-  {% assign tags = post.tags %}
-  {% else %}
-  {% assign tags = page.tags %}
-  {% endif %}
-  {% for tag in tags %}
-  <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
-  {% unless forloop.last %}&nbsp;{% endunless %}
-  {% endfor %}
-</div>
-
 {% endfor %}
