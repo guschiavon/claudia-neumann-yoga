@@ -53,13 +53,40 @@
   <main>
     <section class="padding-outer">
       <div class="grid-noGutter-spaceAround padding-inner">
-        <div class="col-7_sm-9-middle grid-noGutter-spaceAround">
+        <div class="col-8_sm-9-middle grid-noGutter-spaceAround">
           <div class="col-12">
             {{content}}
+            {% unless page._hidden_blog == home %}
+            <div class="related-content grid-noGutter">
+              <h3 class="col-12">
+                You will also like:
+              </h3>
+              {% for post in site.related_posts limit:4 %}
+                {% assign match = false %}
+                {% for category in post.categories %}
+                  {% if page.categories contains category %}
+                    {% assign match = true %}
+                  {% endif %}
+                {% endfor %}
+                {% if match %}
+                <div class="col-6 grid-noGutter-spaceAround">
+                  <a href="{{ post.url }}">
+                    <div class="blog-thumb">
+                      <img src="{{post.banner_image}}" alt="">
+                      <h3>
+                        {{ post.title }}
+                      </h3>
+                    </div>
+                  </a>
+                </div>
+                {% endif %}
+              {% endfor %}
+              {% endunless %}
+            </div>
           </div>
         </div>
         <!-- Author column -->
-        <div class="col-5_sm-3 grid-noGutter about-column">
+        <div class="col-4_sm-3 grid-noGutter about-column">
           <div class="padding-outer">
             <div class="blog-author">
               <!-- image as div background image on CSS -->
