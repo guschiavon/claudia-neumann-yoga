@@ -1,15 +1,7 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of e0b33da... Set up Markdown syntax for posts
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Yogismile Blog </title>
-    {% include head.html %}
-  </head>
+  {% include head-blog.html %}
   <body>
     <header class="center">
       <a href="/blogs">
@@ -33,9 +25,7 @@
         </a>
 
 
-        <!-- <a href="/categories#Ayurveda"> Ayurveda </a>
-        <a href="{{site.data.blog-settings.navigation.menu-3_url}}"> Mindfulness </a>
-        <a href="{{site.data.blog-settings.navigation.menu-4_url}}"> Wanderings </a> -->
+
       </nav>
     </header>
 
@@ -65,8 +55,7 @@
       <img src="{% if page._hidden_blog == home %} {{page.banner_image}} {% else %} {{site.posts.first.banner_image}} {% endif %}" class="responsive-img" alt="">
     </div>
 
-<<<<<<< HEAD
-=======
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -115,27 +104,27 @@
       <img src="{% if page._hidden_blog == home %} {{page.banner_image}} {% else %} {{site.posts.last.banner_image}} {% endif %}" class="responsive-img" alt="">
     </div>
 
-=======
->>>>>>> parent of e0b33da... Set up Markdown syntax for posts
+
   </section>
 </main>
 <section class="padding-outer">
   <div class="grid-noGutter-spaceAround padding-inner flex-flip">
     <div class="col-7_sm-9-middle grid-noGutter-spaceAround">
-      {{content}}
+      <div class="col-12">
+        {{content}}
+      </div>
     </div>
-<<<<<<< HEAD
+
     <div class="col-5_sm-3 about-column" style="position:fixed;">
       <div class="padding-outer">
         <div class="blog-author">
           <img src="{{site.data.blog-settings.blog_settings.profile-picture_image}}" alt="">
->>>>>>> parent of ab9e808... Establish categories, tags for Blogs
-=======
+
     <div class="col-5_sm-3 grid-noGutter about-column">
       <div class="padding-outer">
         <div class="blog-author">
           <img src="{{site.data.blog-settings.blog_settings.profile-picture_image}}" alt="">
->>>>>>> parent of e0b33da... Set up Markdown syntax for posts
+
         </div>
         <h3>
           {{site.data.blog-settings.blog_settings.blog-owner}}
@@ -144,17 +133,16 @@
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
       <div class="col-5_sm-3 grid-noGutter about-column">
         <div class="padding-outer">
           <div class="blog-author">
             <!-- image as div background image on CSS -->
           </div>
-=======
+
       <div class="col-12 tag-box">
         <div class="padding-inner">
->>>>>>> parent of e0b33da... Set up Markdown syntax for posts
+
           <h3>
             Tags
           </h3>
@@ -167,8 +155,7 @@
           {% endfor %}
         </div>
       </div>
-=======
->>>>>>> parent of ab9e808... Establish categories, tags for Blogs
+
     </div>
   </div>
 </section>

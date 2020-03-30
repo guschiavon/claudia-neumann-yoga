@@ -33,13 +33,11 @@ _array_structures:
 
 uploads_dir: "/assets/images/:title"
 markdown: kramdown
-<<<<<<< HEAD
 
 # removes the date from the permalink
-permalink: '/:title'
+permalink: '/:title/'
 
-=======
->>>>>>> parent of e0b33da... Set up Markdown syntax for posts
+
 plugins:
   - jekyll-archives
 jekyll-archives:
