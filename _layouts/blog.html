@@ -4,7 +4,7 @@
 {% include head-blog.html %}
 <body>
   <header class="center">
-    <a href="/blogs">
+    <a href="/yogismile">
       <img src="/assets/images/yogismile-logo.png" style="width:10rem;" alt="">
       <h2 class="logo padded-1">
         Yogismile by Claudia Neumann
@@ -71,7 +71,7 @@
                 </h3>
                 {% for tag in site.tags %}
                 {% capture tag_name %}
-                {{tag | first }}
+                {{ tag | first }}
                 {% endcapture %}
 
                 <a href="/tags/#{{ tag_name | slugify }}"> {{ tag_name }} </a>
