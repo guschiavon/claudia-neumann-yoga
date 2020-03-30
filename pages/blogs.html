@@ -8,18 +8,16 @@ _hidden_styles: blog
 
 {% for post in site.posts offset: 1 limit: 5 %}
 
-
+<div class="">
   <a href="{{post.url}}">
     <div class="padding-inner blog-thumb">
-      <div class="padding-inner blog-thumb">
-        <img src="{{post.banner_image}}" class="responsive-img" alt="">
-        <h2>
-          {{post.title}}
-        </h2>
-        <h3>
-          {{post.date | date_to_string}}
-        </h3>
-      </div>
+      <img src="{{post.banner_image}}" class="responsive-img" alt="">
+      <h2>
+        {{post.title}}
+      </h2>
+      <h3>
+        {{post.date | date_to_string}}
+      </h3>
     </div>
   </a>
   <div class="blog-description">
@@ -39,16 +37,18 @@ _hidden_styles: blog
       Read more
     </h4>
   </a>
+</div>
 
-<div class="post-categories">
+<div class="post-tags">
+  <!-- This creates the list of the tags of each post -->
     {% if post %}
-    {% assign tags = post.tags %}
+      {% assign tags = post.tags %}
     {% else %}
-    {% assign tags = page.tags %}
+      {% assign tags = page.tags %}
     {% endif %}
-    {% for tag in tags %}
+      {% for tag in tags %}
     <a href="{{site.baseurl}}/{{tag_name}}/#{{tag | slugize}}">{{tag}}</a>
-    {% unless forloop.last %}&nbsp;{% endunless %}
+      {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
   </div>
 
