@@ -4,6 +4,7 @@ _hidden_blog: home
 _hidden_styles: blog
 ---
 {% for post in site.posts offset: 1 limit: 5 %}
+
 <div class="col-12-middle padding-inner blog-thumb">
   <img src="{{post.banner_image}}" class="responsive-img" alt="">
   <h2>
@@ -13,15 +14,27 @@ _hidden_styles: blog
     {{post.date | date_to_string}}
   </h3>
 </div>
-<div>
-  {% for category in post.categories %}
-  <h4 class="subtle-heading">
-    {{category}}
-  </h4>
+<div class="post-categories">
+  {% if post %}
+  {% assign categories = post.categories %}
+  {% else %}
+  {% assign categories = page.categories %}
+  {% endif %}
+  {% for category in categories %}
+  <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
-  <p>
-    {{post.excerpt}}
-  </p>
-  <a class="learn-more-button" href="{{post.url}}"> Read More </a>
 </div>
+<div class="post-tags">
+  {% if post %}
+  {% assign tags = post.tags %}
+  {% else %}
+  {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">{{tag}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
+
 {% endfor %}
