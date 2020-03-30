@@ -1,7 +1,7 @@
 basic_settings:
   site_name: Claudia Neumann Yoga
   site_logo_image: /assets/images/yogismile-logo.png
-  contact-email: 'hello@claudianeumann.yoga'
+  contact-email: 'happy@claudianeumann.yoga'
 
 colors:
   # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax
