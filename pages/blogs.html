@@ -2,7 +2,7 @@
 layout: blog
 title: Yogismile by Claudia Neumann
 permalink: /yogismile
-_hidden_blog: home
+_hidden_blog: true
 _hidden_styles: blog
 ---
 
@@ -34,7 +34,11 @@ _hidden_styles: blog
       {% endfor %}
     </div>
   </div>
-  <a href="{{post.url}}" class="learn-more-button"> Read more </a>
+  <a href="{{post.url}}" class="learn-more-button">
+    <h4>
+      Read more
+    </h4>
+  </a>
 
 <div class="post-categories">
     {% if post %}

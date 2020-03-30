@@ -29,25 +29,25 @@
   <section class="blog-latest padded-outer">
     <div class="blog-latest-banner" style="height: 300px; width: 90%; margin: auto;">
       <h3>
-        {% if page._hidden_blog == home %}
-        {{page.date | date_to_string}}
+        {% if page._hidden_blog == true %}
+        {{site.posts.first.date | date_to_string}}
         {% else %}
-        {{site.posts.last.date | date_to_string}}
+        {{page.date | date_to_string}}
         {% endif %}
       </h3>
       <h2>
-        {% if page._hidden_blog == home %}
-        {{page.title}}
+        {% if page._hidden_blog == true %}
+        {{site.posts.first.title}}
         {% else %}
-        {{site.posts.last.title}}
+        {{page.title}}
         {% endif %}
       </h2>
-      <a href="{% if page._hidden_blog == home %} {{page.url}} {% else %} {{site.posts.last.url}}  {% endif %}" class="learn-more-button">
+      <a href="{% if page._hidden_blog == true %} {{site.posts.first.url}} {% else %} {{page.url}} {% endif %}" class="learn-more-button">
         <h4>
           Read more
         </h4>
       </a>
-      <img src="{% if page._hidden_blog == home %} {{page.banner_image}} {% else %} {{site.posts.last.banner_image}} {% endif %}" class="responsive-img" alt="">
+      <img src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img" alt="">
     </div>
   </section>
   <main>
@@ -56,7 +56,7 @@
         <div class="col-8_sm-9-middle grid-noGutter-spaceAround">
           <div class="col-12">
             {{content}}
-            {% unless page._hidden_blog == home %}
+            {% unless page._hidden_blog == true %}
             <div class="related-content grid-noGutter">
               <h3 class="col-12">
                 You will also like:
@@ -81,8 +81,13 @@
                 </div>
                 {% endif %}
               {% endfor %}
-              {% endunless %}
             </div>
+              {% endunless %}
+            <a href="#top" class="learn-more-button">
+              <h4>
+                Back to top
+              </h4>
+            </a>
           </div>
         </div>
         <!-- Author column -->
@@ -103,6 +108,9 @@
 
                 <a href="/tags/#{{ tag_name | slugify }}"> {{ tag_name }} </a>
                 {% endfor %}
+              </div>
+              <div class="vertical-ad-banner">
+                <img src="/assets/images/placeholder 011.jpg" class="responsive-img" alt="">
               </div>
             </div>
           </div>
