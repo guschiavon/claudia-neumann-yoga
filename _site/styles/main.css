@@ -381,11 +381,11 @@ img.community-banner-logo { width: 200px; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
-  .header-banner { height: 60vh; }
-  .navbar-link h2 { font-size: 1rem; }
-  .navbar-link img { width: 65px; }
+  .header-banner { height: 55vh; }
+  .navbar-link h2 { font-size: .8rem; }
+  .navbar-link img { width: 60px; }
   .navbar-link h2, .navbar-link img { padding: .5rem; }
-  header { margin-top: 70px; }
+  header { margin-top: 60px; }
   .intro-section p { max-width: 90%; }
   .thumb-profile-pic img { width: 100px; height: 100px; }
   .header-banner .responsive-img { height: 65vh; }
