@@ -40,7 +40,7 @@ uploads_dir: "/assets/images/:title"
 markdown: kramdown
 
 # removes the date from the permalink
-permalink: '/:title/'
+permalink: '/:title'
 
 plugins:
   - jekyll-archives
