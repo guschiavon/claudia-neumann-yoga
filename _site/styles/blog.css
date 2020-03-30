@@ -112,4 +112,36 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .form-send-button:hover { filter: brightness(1.2); }
 
+footer { background-color: #3e3e3e; }
+
+.footer-brand-link { display: block; }
+
+.footer-logo { width: 80px; height: 80px; margin-bottom: 1rem; }
+
+.footer-title { font-size: 1.5rem; margin-bottom: 3rem; color: #f1f1f1; font-weight: 200; }
+
+.social-box { display: inline-block; margin-bottom: 1rem; margin-right: 1rem; }
+
+.email-link { display: block; font-family: "Raleway", sans-serif; font-size: 1rem; color: #f1f1f1; transition: .3s all; }
+
+.email-link:hover { color: #F5AEA8; transition: .3s all; }
+
+.footer-social-icon { width: 50px; height: auto; }
+
+.footer-social-icon .fab { font-size: 2.5rem; padding: .3rem; color: #f1f1f1; transition: .3s all; }
+
+.fab:hover { color: #479AA1; transition: .3s all; }
+
+form { width: 80%; margin: auto; }
+
+.footer-form, .cta-form { text-align: center; color: #f1f1f1; }
+
+.footer-form h2, .cta-form h2 { font-weight: 200; margin-bottom: 1rem; }
+
+.footer-form p, .cta-form p { margin-bottom: 1.5rem; margin-left: auto; margin-right: auto; width: 70%; font-size: 1rem; }
+
+.footer-form input, .cta-form input { padding: .8rem; border-radius: 5px; border: none; width: inherit; margin-bottom: 1rem; font-size: .9rem; }
+
+.footer-form .message, .cta-form .message { height: 4rem; }
+
 /*# sourceMappingURL=blog.css.map */
