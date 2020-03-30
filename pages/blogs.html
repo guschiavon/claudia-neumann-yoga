@@ -1,0 +1,52 @@
+---
+layout: blog
+_hidden_blog: home
+_hidden_styles: blog
+---
+
+{% for post in site.posts offset: 1 limit: 5 %}
+
+
+<a href="{{post.url}}" class="col-12-middle">
+  <div class="padding-inner blog-thumb">
+    <div class="col-12-middle padding-inner blog-thumb">
+      <img src="{{post.banner_image}}" class="responsive-img" alt="">
+      <h2>
+        {{post.title}}
+      </h2>
+      <h3>
+        {{post.date | date_to_string}}
+      </h3>
+    </div>
+
+
+  </a>
+  <p>
+    {{ post.description | truncate: 160 }}
+  </p>
+  <a href="{{post.url}}" class="learn-more-button"> Read more </a>
+
+  <div class="post-categories">
+    {% if post %}
+    {% assign categories = post.categories %}
+    {% else %}
+    {% assign categories = page.categories %}
+    {% endif %}
+    {% for category in categories %}
+    <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+
+    <div>
+      {% for category in post.categories %}
+      <h4 class="subtle-heading">
+        {{category}}
+      </h4>
+      {% endfor %}
+      <p>
+        {{post.excerpt}}
+      </p>
+      <a class="learn-more-button" href="{{post.url}}"> Read More </a>
+    </div>
+
+{% endfor %}
+<!-- {% endfor %} -->
