@@ -1,7 +1,9 @@
 sass:
     sass_dir: _sass
+
 cloudcannon:
   data: true
+
 collections:
   yoga:
     output: true
@@ -9,6 +11,7 @@ collections:
     output: true
   offerings:
     output: true
+
 defaults:
   -
     scope:
@@ -31,10 +34,17 @@ _array_structures:
         faq-title:
         faq_description_html:
 
+# sets the upload directory for images
 uploads_dir: "/assets/images/:title"
+
 markdown: kramdown
+
+# removes the date from the permalink
+permalink: '/:title/'
+
 plugins:
   - jekyll-archives
+
 jekyll-archives:
   enabled: []
   layout: archive
