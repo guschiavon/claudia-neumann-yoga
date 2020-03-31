@@ -1,0 +1,38 @@
+---
+---
+// Blog SCSS file
+@import "_resets";
+
+$primary-color: {{site.data.blog-settings.colors.primary_color}};
+$secondary-color: {{site.data.blog-settings.colors.secondary_color}};
+$accent-color: {{site.data.blog-settings.colors.accent_color}};
+$dark-color: {{site.data.blog-settings.colors.dark_color}};
+$light-color: {{site.data.blog-settings.colors.light_color}};
+
+$header-font-family: {{site.data.blog-settings.fonts.header_font_family}};
+$paragraph-font-family: {{site.data.blog-settings.fonts.paragraph_font_family}};
+
+$light_font: {{site.data.blog-settings.fonts.light_font}};
+$regular_font: {{site.data.blog-settings.fonts.regular_font}};
+$bold_font: {{site.data.blog-settings.fonts.bold_font}};
+$extra_bold_font: {{site.data.blog-settings.fonts.extra_bold_font}};
+
+// font sizes
+$heading1-font-size: {{site.data.blog-settings.fonts.heading1-font-size}};
+$heading2-font-size: {{site.data.blog-settings.fonts.heading2-font-size}};
+$heading3-font-size: {{site.data.blog-settings.fonts.heading3-font-size}};
+$paragraph-font-size: {{site.data.blog-settings.fonts.paragraph-font-size}};
+$paragraph-line-height: {{site.data.blog-settings.fonts.paragraph-line-height}};
+$cta-button-font-size: {{site.data.blog-settings.buttons.cta-button-font-size}};
+$learn-more-button-font-size: {{site.data.blog-settings.buttons.learn-more-button-font-size}};
+$button-border-radius: {{site.data.blog-settings.buttons.button-border-radius}};
+
+@import "_universal";
+@import "_utility";
+@import "_buttons";
+@import "_navbar";
+
+@import "_blog";
+
+@import "_footer";
+@import "_media-queries";
