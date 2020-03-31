@@ -57,7 +57,7 @@
   <main>
     <section class="padding-outer">
       <div class="grid-noGutter-spaceAround">
-        <div class="col-8_sm-9 grid-noGutter-spaceAround">
+        <div class="col-8_md-12 grid-noGutter-spaceAround">
           <div class="col-12 blog-content">
             {% unless page._hidden_blog == true or page._hidden_archive == true %}
             <div class="blog-info">
@@ -76,19 +76,19 @@
             {{content}}
             <!-- the UNLESS is for the blog home -->
             {% unless page._hidden_blog == true or page._hidden_archive == true %}
-            <div class="col-12 grid-noGutter-spaceAround center">
+            <div class="center grid-noGutter-spaceAround">
               <div class="social">
                 <h3 class="col-12 editable">
                   Liked it? Share it:
                 </h3>
                 <div class="col-6 grid-spaceAround">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" class="col-3 social-share">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" target="_blank" class="col-3 social-share">
                     <i class="fab fa-facebook"></i>
                   </a>
                   <a href="https://api.whatsapp.com/send?text=https%3A%2F%2Fyogismile.claudianeumann.yoga{{page.url}}" class="col-3 social-share">
                     <i class="fab fa-whatsapp"></i>
                   </a>
-                  <a href="#" class="col-3 social-share">
+                  <a href="#" class="col-3 social-share" target="_blank">
                     <i class="fab fa-facebook-messenger"></i>
                   </a>
                   <a href="mailto:?&subject=Loved%20this%20artcile&body={{page.url}}" class="col-3 social-share">
@@ -133,33 +133,36 @@
               </div>
             </div>
             {% endunless %}
-
-            <a href="#top" class="learn-more-button editable">
-              Back to top
-            </a>
+            <div class="col-12 flex-center">
+              <a href="#top" class="learn-more-button editable">
+                Back to top
+              </a>
+            </div>
 
           </div>
         </div>
         <!-- Author Bio column -->
-        <div class="col-4_sm-3 grid-noGutter about-column">
+        <div class="col-4_md-12 about-column">
           <div class="padding-outer sticky">
-            <div class="blog-author">
-              <!-- image as div background image on CSS -->
-            </div>
-            <div class="col-12 tag-box">
-              <div class="padding-inner">
-                <h3>
-                  Tags
-                </h3>
-                {% for tag in site.tags %}
-                {% capture tag_name %}
-                {{ tag | first }}
-                {% endcapture %}
-
-                <a href="/tags/#{{ tag_name | slugify }}"> {{ tag_name }} </a>
-                {% endfor %}
+            <div class="grid-noGutter">
+              <div class="col-12 blog-author">
+                <!-- image as div background image on CSS -->
               </div>
-              <div class="vertical-ad-banner">
+              <div class="col-12">
+                <div class="tag-box padding-inner">
+                  <h3>
+                    Tags
+                  </h3>
+                  {% for tag in site.tags %}
+                  {% capture tag_name %}
+                  {{ tag | first }}
+                  {% endcapture %}
+
+                  <a href="/tags/#{{ tag_name | slugify }}"> {{ tag_name }} </a>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="col-12 vertical-ad-banner">
                 <img src="https://via.placeholder.com/300x600" class="responsive-img" alt="">
               </div>
             </div>
