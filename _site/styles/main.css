@@ -387,7 +387,7 @@ header.blog-header h2 span { font-weight: 400; }
 
 body.bg-blog { background-color: #cce6e8; }
 
-.blog-latest-banner { position: relative; height: 350px; width: 90%; margin: auto; }
+.blog-latest-banner { position: relative; height: 350px; padding: 0 5rem; }
 
 .blog-banner-content { position: absolute; padding: 0 5rem; }
 

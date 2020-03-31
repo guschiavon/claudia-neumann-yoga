@@ -21,8 +21,7 @@ body.bg-blog {
 .blog-latest-banner {
   position: relative;
   height: 350px;
-  width: 90%;
-  margin: auto;
+  padding: 0 5rem; 
 }
 
 .blog-banner-content {
@@ -70,7 +69,7 @@ height: 250px;
 padding-right: 4rem;
 padding-bottom: 1rem;
 position: relative;
-    
+
   h2 {
     font-weight: $regular_font;
     font-size: 2rem;
