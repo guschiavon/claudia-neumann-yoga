@@ -36,13 +36,21 @@ header.blog-header {
   }
 }
 
+.blog-preview {
+  margin-bottom: 3rem;
+}
+
 .blog-thumb {
   position: relative;
   width: 90%;
   height: 250px;
+  margin-bottom: 1rem;
   h2 {
     font-weight: $regular_font;
     font-size: 2rem;
+  }
+  h3 {
+    font-weight: $regular_font;
   }
 }
 
@@ -55,12 +63,27 @@ header.blog-header {
   width: 90%;
 }
 
+.blog-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
 .post-categories,
 .post-tags {
   h3,
   h4 {
-    display: inline;
+    display: inline-block;
+    margin: .3rem 0;
   }
+  h3 {
+    font-weight: $regular_font;
+    font-size: 1rem;
+  }
+}
+
+.category {
+  color: $secondary-color;
+  font-weight: $light_font;
 }
 
 .post-tags a {
@@ -70,4 +93,25 @@ header.blog-header {
   background-color: $light-color;
   border-radius: 3px;
   font-size: .6rem;
+}
+
+.about-column div.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.related-content {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  h3 {
+    padding: .5rem 0;
+  }
+  hr {
+    background-color: #479AA1;
+    height: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    width: 12rem;
+  }
 }

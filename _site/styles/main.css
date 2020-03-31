@@ -391,17 +391,35 @@ header.blog-header h2 span { font-weight: 400; }
 
 .blog-banner-content h3 { font-weight: 200; margin-bottom: 1rem; }
 
-.blog-thumb { position: relative; width: 90%; height: 250px; }
+.blog-preview { margin-bottom: 3rem; }
+
+.blog-thumb { position: relative; width: 90%; height: 250px; margin-bottom: 1rem; }
 
 .blog-thumb h2 { font-weight: 400; font-size: 2rem; }
+
+.blog-thumb h3 { font-weight: 400; }
 
 .blog-thumb-content { position: absolute; padding: 1.5rem 3rem; }
 
 .blog-description { width: 90%; }
 
-.post-categories h3, .post-categories h4, .post-tags h3, .post-tags h4 { display: inline; }
+.blog-content p { margin-bottom: 1.5rem; line-height: 1.7; }
+
+.post-categories h3, .post-categories h4, .post-tags h3, .post-tags h4 { display: inline-block; margin: .3rem 0; }
+
+.post-categories h3, .post-tags h3 { font-weight: 400; font-size: 1rem; }
+
+.category { color: #F5AEA8; font-weight: 200; }
 
 .post-tags a { display: inline; padding: .3rem .5rem; margin-right: .5rem; background-color: #f1f1f1; border-radius: 3px; font-size: .6rem; }
+
+.about-column div.sticky { position: sticky; top: 0; }
+
+.related-content { margin-top: 3rem; margin-bottom: 4rem; }
+
+.related-content h3 { padding: .5rem 0; }
+
+.related-content hr { background-color: #479AA1; height: 5px; border: none; border-radius: 5px; margin-bottom: 2rem; width: 12rem; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }

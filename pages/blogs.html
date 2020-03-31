@@ -27,9 +27,9 @@ _hidden_styles: blog
       Categories:
     </h3>
     {% for category in post.categories %}
-    <h4>
+    <h3 class="category">
       {{category}}
-    </h4>
+    </h3>
     {% endfor %}
   </div>
   <div class="post-tags">
@@ -53,9 +53,7 @@ _hidden_styles: blog
     </p>
   </div>
   <a href="{{post.url}}" class="learn-more-button">
-
       Read more
-    
   </a>
 </div>
 
