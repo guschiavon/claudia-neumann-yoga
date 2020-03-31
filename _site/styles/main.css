@@ -403,7 +403,7 @@ body.bg-blog { background-color: #cce6e8; }
 
 .blog-preview { margin-bottom: 3rem; }
 
-.blog-thumb { position: relative; width: 90%; height: 250px; margin-bottom: 1rem; }
+.blog-thumb { height: 250px; padding-right: 4rem; padding-bottom: 1rem; position: relative; }
 
 .blog-thumb h2 { font-weight: 400; font-size: 2rem; }
 
