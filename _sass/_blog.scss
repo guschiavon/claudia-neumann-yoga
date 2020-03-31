@@ -115,3 +115,13 @@ header.blog-header {
     width: 12rem;
   }
 }
+
+.social {
+  padding: 1rem 2rem;
+  background-color: lighten($primary-color, 50);
+  border-radius: 10px;
+}
+.social-share {
+  font-size: 2.5rem;
+  color: #dfdfdf;
+}
