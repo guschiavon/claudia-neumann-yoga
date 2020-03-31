@@ -1,47 +1,44 @@
 basic_settings:
   site_name: Claudia Neumann Yoga
   site_logo_image: /assets/images/yogismile-logo.png
-  contact-email: 'happy@claudianeumann.yoga'
-
+  contact-email: happy@claudianeumann.yoga
 colors:
-  # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax
-  primary_color: '#479AA1'
-  secondary_color: '#F5AEA8'
-  accent_color: '#D9D9D9'
+  primary_color: '#479aa1'
+  secondary_color: '#f5aea8'
+  accent_color: '#d9d9d9'
   dark_color: '#707070'
   light_color: '#f1f1f1'
-
 fonts:
-  # font family must add DOUBLE QUOTES to respect YAML syntax
-  header_font_family: "'Raleway', sans-serif;"
+  header_font_family: '''Raleway'', sans-serif;'
   heading1-font-size: 3rem
   heading2-font-size: 2rem
   heading3-font-size: 2rem
-  # code blocks must be put between SINGLE QUOTE marks to respect YAML syntax
-  heading_font_code_block: '<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,700&display=swap" rel="stylesheet">'
-  paragraph_font_family: "'Nunito', sans-serif;"
+  heading_font_code_block: >-
+    <link
+    href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,700&display=swap"
+    rel="stylesheet">
+  paragraph_font_family: '''Nunito'', sans-serif;'
   paragraph-font-size: 1rem
   paragraph-line-height: 1.7
-  paragraph_font_code_block: '<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap" rel="stylesheet">'
+  paragraph_font_code_block: >-
+    <link
+    href="https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap"
+    rel="stylesheet">
   light_font: 200
   regular_font: 400
   bold_font: 600
   extra_bold_font: 700
-
 buttons:
   button-border-radius: 5px
   cta-button-font-size: 1rem
   learn-more-button-font-size: .7rem
-
 calendars:
   reiki_calendly_url: 'https://www.calendly.com'
   yoga_calendly_url: 'https://www.calendly.com'
-
 social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
   youtube_url: 'https://youtube.com'
-
 nav-menu:
   menu-1-name: About
   menu-1-link_url: /about
