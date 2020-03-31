@@ -31,6 +31,9 @@
   <div class="header-banner">
     <img src="{{site.retreats.first.banner_image}}" srcset="{{site.retreats.first.banner_image | replace: 'images','images/srcset/800'}} 800w,
              {{site.retreats.first.banner_image | replace: 'images','images/srcset/600'}} 600w, {{site.retreats.first.banner_image | replace: 'images','images/srcset/480'}} 480w, {{site.retreats.first.banner_image | replace: 'images','images/srcset/360'}} 360w"
+             sizes="(max-width: 500px) 360px,        
+             (max-width: 600px) 480px,
+             (max-width: 800px) 600px"
     class="responsive-img" alt="{{site.retreats.first.banner_image-alt-text}}">
     <div class="header-text-box">
       <h1>
