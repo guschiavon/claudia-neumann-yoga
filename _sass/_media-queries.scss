@@ -29,6 +29,15 @@
   form {
     width: 90%;
   }
+  .facilitator-card {
+    padding: 0;
+  }
+  .facilitator p {
+    padding: 0;
+  }
+  .community-page p {
+    width: 95%;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -37,6 +46,12 @@
     margin-bottom: 2rem;
     padding: 0 2rem;
     text-align: center;
+  }
+  .navbar-link {
+    h2, span {
+      font-size: 1.1rem;
+    }
+
   }
   .footer-branding {
     text-align: center;

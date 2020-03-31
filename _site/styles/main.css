@@ -229,7 +229,7 @@ hr.col-12 { padding: 0; margin-bottom: 1.5rem; border: 2px solid #707070; }
 
 .info-box h2 { z-index: 1; font-weight: 200; color: #f1f1f1; }
 
-.practical-info { padding: 10%; }
+.practical-info { padding: 10% 5%; }
 
 .practical-info .banner-cta-button { background-color: #479AA1; }
 
@@ -466,10 +466,14 @@ body.bg-blog { background-color: #cce6e8; }
   .thumb-profile-pic img { width: 100px; height: 100px; }
   .header-banner .responsive-img { height: 65vh; }
   .community-banner-logo { height: 180px; }
-  form { width: 90%; } }
+  form { width: 90%; }
+  .facilitator-card { padding: 0; }
+  .facilitator p { padding: 0; }
+  .community-page p { width: 95%; } }
 
 @media (max-width: 1023px) { .mobile-hide { display: none; }
   .header-text-box p { margin-bottom: 2rem; padding: 0 2rem; text-align: center; }
+  .navbar-link h2, .navbar-link span { font-size: 1.1rem; }
   .footer-branding { text-align: center; }
   .footer-form { margin-bottom: 3rem; }
   .burger-menu { display: inline-block; }
