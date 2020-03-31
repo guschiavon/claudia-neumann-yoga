@@ -5,7 +5,7 @@ a { color: inherit; display: inline-block; }
 
 img { max-width: 100%; }
 
-h1, h2, h3, h4 { font-family: "Raleway", sans-serif; text-transform: uppercase; }
+h1, h2, h3, h4 { font-family: "Raleway", sans-serif; text-transform: uppercase; margin-bottom: 1rem; }
 
 p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
@@ -85,21 +85,15 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .active { color: #F5AEA8; }
 
-.banner-cta-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
+.banner-cta-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
 
-.banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
-
-.bg-secondary .banner-cta-button { color: #F5AEA8; background-color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; }
-
-.bg-secondary .banner-cta-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
+.bg-secondary .banner-cta-button { color: #F5AEA8; background-color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 1rem; }
 
 .banner-cta-button:hover, .banner-cta-button:focus { background-color: #F5AEA8; transition: .4s all; }
 
 .bg-secondary .banner-cta-button:hover, .bg-secondary .banner-cta-button:focus, .bg-primary .banner-cta-button:hover, .bg-primary .banner-cta-button:focus { color: #f1f1f1; transition: .4s all; }
 
-.learn-more-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: .7rem .9rem; transition: .3s all; display: inline-block; }
-
-.learn-more-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; }
+.learn-more-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: .7rem .9rem; transition: .3s all; display: inline-block; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; }
 
 .bg-light .learn-more-button, .retreat-card .learn-more-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
 
@@ -107,9 +101,7 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .learn-more-button:hover, .learn-more-button:focus { color: #479AA1; background-color: #f1f1f1; transition: .3s all; }
 
-.schedule-button { color: #f1f1f1; background-color: #479AA1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; transition: .3s all; }
-
-.schedule-button h4 { font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; }
+.schedule-button { color: #f1f1f1; background-color: #479AA1; border: 1px solid #f1f1f1; border-radius: 5px; padding: 1rem 2rem; display: inline-block; transition: .3s all; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; }
 
 .schedule-button:hover, .schedule-button:focus { background-color: #f1f1f1; color: #479AA1; border-color: #479AA1; transition: .3s all; }
 
@@ -261,7 +253,7 @@ hr.col-12 { padding: 0; margin-bottom: 1.5rem; border: 2px solid #707070; }
 
 .faq:hover { transition: .3s all; border-color: #f1f1f1; color: #f1f1f1; background-color: #F5AEA8; }
 
-.faq h3 { font-weight: 200; letter-spacing: 2px; }
+.faq h3 { font-weight: 200; letter-spacing: 2px; margin-bottom: 0; }
 
 .faq li, .faq p { list-style: none; font-family: "Nunito", sans-serif; margin-top: 1rem; margin-bottom: .3rem; }
 
@@ -401,11 +393,15 @@ header.blog-header h2 span { font-weight: 400; }
 
 .blog-thumb { position: relative; width: 90%; height: 250px; }
 
+.blog-thumb h2 { font-weight: 400; font-size: 2rem; }
+
 .blog-thumb-content { position: absolute; padding: 1.5rem 3rem; }
 
 .blog-description { width: 90%; }
 
-.post-categories h3, .post-categories h4, .post-categories a, .post-tags h3, .post-tags h4, .post-tags a { display: inline; }
+.post-categories h3, .post-categories h4, .post-tags h3, .post-tags h4 { display: inline; }
+
+.post-tags a { display: inline; padding: .3rem .5rem; margin-right: .5rem; background-color: #f1f1f1; border-radius: 3px; font-size: .6rem; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }

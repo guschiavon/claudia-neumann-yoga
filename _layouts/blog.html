@@ -26,7 +26,8 @@
 
     </nav>
   </header>
-  <section class="blog-latest padded-outer">
+  <section class="padded-outer">
+
     <div class="blog-latest-banner flex-left">
       <img src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img" alt="">
       <div class="blog-banner-content">
@@ -45,14 +46,13 @@
           {% endif %}
         </h2>
         {% if page._hidden_blog == true %}
-        <a href=" {{site.posts.first.url}}" class="learn-more-button">
-          <h4>
+        <a href=" {{site.posts.first.url}}" class="learn-more-button editable">
             Read more
-          </h4>
         </a>
       </div>
       {% endif %}
     </div>
+    
   </section>
   <main>
     <section class="padding-outer">
@@ -92,10 +92,10 @@
               {% endfor %}
             </div>
             {% endunless %}
-            <a href="#top" class="learn-more-button">
-              <h4>
+            <a href="#top" class="learn-more-button editable">
+
                 Back to top
-              </h4>
+
             </a>
           </div>
         </div>
@@ -119,7 +119,7 @@
                 {% endfor %}
               </div>
               <div class="vertical-ad-banner">
-                <img src="https://via.placeholder.com/800/600" class="responsive-img" alt="">
+                <img src="https://via.placeholder.com/300x600" class="responsive-img" alt="">
               </div>
             </div>
           </div>

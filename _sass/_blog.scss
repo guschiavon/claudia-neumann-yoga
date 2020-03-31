@@ -14,7 +14,6 @@ header.blog-header {
   }
 }
 
-
 .blog-latest-banner {
   position: relative;
   height: 350px;
@@ -41,6 +40,10 @@ header.blog-header {
   position: relative;
   width: 90%;
   height: 250px;
+  h2 {
+    font-weight: $regular_font;
+    font-size: 2rem;
+  }
 }
 
 .blog-thumb-content {
@@ -55,8 +58,16 @@ header.blog-header {
 .post-categories,
 .post-tags {
   h3,
-  h4,
-  a {
-  display: inline;
+  h4 {
+    display: inline;
+  }
 }
+
+.post-tags a {
+  display: inline;
+  padding: .3rem .5rem;
+  margin-right: .5rem;
+  background-color: $light-color;
+  border-radius: 3px;
+  font-size: .6rem;
 }

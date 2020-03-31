@@ -1,17 +1,17 @@
 {% unless page._hidden_header == 'retreats' %}
 {% if page.add_banner_button == true %}
 <a href="{{page.banner-cta-button_url}}" class="banner-cta-button">
-  <h4>
+
     {{page.banner-cta-button_text}}
-  </h4>
+  
 </a>
 {% endif %}
 
 {% else %}
 
-<a href="{{site.retreats.first.url}}" class="banner-cta-button">
-  <h4 class="editable">
+<a href="{{site.retreats.first.url}}" class="banner-cta-button editable">
+
     Show me more
-  </h4>
+
 </a>
 {% endunless %}

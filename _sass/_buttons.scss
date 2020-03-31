@@ -18,10 +18,8 @@
   border-radius: $button-border-radius;
   padding: 1rem 2rem;
   display: inline-block;
-  h4 {
-    @include button-text-style;
-    @include cta-font-size;
-  }
+  @include button-text-style;
+  @include cta-font-size;
 }
 
 .bg-secondary .banner-cta-button {
@@ -31,10 +29,8 @@
   border-radius: $button-border-radius;
   padding: 1rem 2rem;
   display: inline-block;
-  h4 {
-    @include button-text-style;
-    @include cta-font-size;
-  }
+  @include button-text-style;
+  @include cta-font-size;
 }
 
 .banner-cta-button:hover,
@@ -57,10 +53,8 @@
   padding: .7rem .9rem;
   transition: .3s all;
   display: inline-block;
-  h4 {
-    @include button-text-style;
-    @include learn-more-font-size;
-  }
+  @include button-text-style;
+  @include learn-more-font-size;
 }
 
 
@@ -88,9 +82,7 @@
   padding: 1rem 2rem;
   display: inline-block;
   transition: .3s all;
-  h4 {
-    @include button-text-style;
-  }
+  @include button-text-style;
   &:hover,
   &:focus {
     background-color: $light-color;
