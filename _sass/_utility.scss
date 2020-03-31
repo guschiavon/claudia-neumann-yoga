@@ -22,7 +22,13 @@
 .flex-right {
   display: flex;
   align-items: center;
-  justify-content: right;  
+  justify-content: right;
+}
+
+.flex-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 .padding-inner    { padding: 3%; }

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
-{% include head-blog.html %}
+{% include head.html %}
 <body>
-  <header class="center">
+  <header class="center blog-header">
     <a href="/yogismile">
-      <img src="/assets/images/yogismile-logo.png" style="width:10rem;" alt="">
+      <img src="/assets/images/yogismile-logo.png" alt="">
       <h2 class="logo padded-1">
-        Yogismile by Claudia Neumann
+        <span>Yogismile</span> by Claudia Neumann
       </h2>
     </a>
     <nav>
@@ -27,34 +27,36 @@
     </nav>
   </header>
   <section class="blog-latest padded-outer">
-    <div class="blog-latest-banner" style="height: 300px; width: 90%; margin: auto;">
-      <h3>
-        {% if page._hidden_blog == true %}
-        {{site.posts.first.date | date_to_string}}
-        {% else %}
-        {{page.date | date_to_string}}
-        {% endif %}
-      </h3>
-      <h2>
-        {% if page._hidden_blog == true %}
-        {{site.posts.first.title}}
-        {% else %}
-        {{page.title}}
-        {% endif %}
-      </h2>
-        {% if page._hidden_blog == true %}
-      <a href=" {{site.posts.first.url}}" class="learn-more-button">
-        <h4>
-          Read more
-        </h4>
-      </a>
-      {% endif %}
+    <div class="blog-latest-banner flex-left">
       <img src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img" alt="">
+      <div class="blog-banner-content">
+        <h3>
+          {% if page._hidden_blog == true %}
+          {{site.posts.first.date | date_to_string}}
+          {% else %}
+          {{page.date | date_to_string}}
+          {% endif %}
+        </h3>
+        <h2>
+          {% if page._hidden_blog == true %}
+          {{site.posts.first.title}}
+          {% else %}
+          {{page.title}}
+          {% endif %}
+        </h2>
+        {% if page._hidden_blog == true %}
+        <a href=" {{site.posts.first.url}}" class="learn-more-button">
+          <h4>
+            Read more
+          </h4>
+        </a>
+      </div>
+      {% endif %}
     </div>
   </section>
   <main>
     <section class="padding-outer">
-      <div class="grid-noGutter-spaceAround padding-inner">
+      <div class="grid-noGutter-spaceAround">
         <div class="col-8_sm-9-middle grid-noGutter-spaceAround">
           <div class="col-12">
             {{content}}
@@ -117,7 +119,7 @@
                 {% endfor %}
               </div>
               <div class="vertical-ad-banner">
-                <img src="/assets/images/placeholder 011.jpg" class="responsive-img" alt="">
+                <img src="https://via.placeholder.com/800/600" class="responsive-img" alt="">
               </div>
             </div>
           </div>

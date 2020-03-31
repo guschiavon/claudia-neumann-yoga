@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <title>
-      {{page.page_title}}
+      {{page.page_title}}{{page.title}}
     </title>
     <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 
@@ -40,7 +40,5 @@
 
     <!-- Main stylesheet, keep at bottom of head -->
     <link rel="stylesheet" href="/styles/main.css">
-    {% if page._hidden_styles == 'blog' %}
-    <link rel="stylesheet" href="/styles/blog.css">
-    {% endif %}
+
   </head>

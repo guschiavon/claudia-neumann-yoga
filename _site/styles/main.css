@@ -9,6 +9,8 @@ h1, h2, h3, h4 { font-family: "Raleway", sans-serif; text-transform: uppercase; 
 
 p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 
+a { font-family: "Raleway", sans-serif; }
+
 .right { text-align: right; }
 
 .left { text-align: left; }
@@ -26,6 +28,8 @@ p { font-family: "Nunito", sans-serif; font-size: 1rem; line-height: 1.7; }
 .flex-center { display: flex; align-items: center; justify-content: center; }
 
 .flex-right { display: flex; align-items: center; justify-content: right; }
+
+.flex-left { display: flex; align-items: center; justify-content: left; }
 
 .padding-inner { padding: 3%; }
 
@@ -378,6 +382,30 @@ img.community-banner-logo { width: 200px; }
 .facilitator-thumb { width: 150px; height: 150px; padding: 1.2rem; margin: auto; }
 
 .facilitator-thumb img { border-radius: 50%; }
+
+header.blog-header { padding: 4rem; margin-top: 0; }
+
+header.blog-header img { width: 8rem; margin-bottom: .5rem; }
+
+header.blog-header h2 { font-weight: 200; margin-bottom: 1.5rem; }
+
+header.blog-header h2 span { font-weight: 400; }
+
+.blog-latest-banner { position: relative; height: 350px; width: 90%; margin: auto; }
+
+.blog-banner-content { position: absolute; padding: 0 5rem; }
+
+.blog-banner-content h2 { font-size: 4rem; letter-spacing: 3px; font-weight: 400; margin-bottom: 1rem; }
+
+.blog-banner-content h3 { font-weight: 200; margin-bottom: 1rem; }
+
+.blog-thumb { position: relative; width: 90%; height: 250px; }
+
+.blog-thumb-content { position: absolute; padding: 1.5rem 3rem; }
+
+.blog-description { width: 90%; }
+
+.post-categories h3, .post-categories h4, .post-categories a, .post-tags h3, .post-tags h4, .post-tags a { display: inline; }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
