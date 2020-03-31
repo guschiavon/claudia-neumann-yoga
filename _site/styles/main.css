@@ -95,6 +95,8 @@ nav a:hover, nav a:focus { color: #F5AEA8; transition: .5s ease all; text-decora
 
 .learn-more-button { color: #f1f1f1; border: 1px solid #f1f1f1; border-radius: 5px; padding: .7rem .9rem; transition: .3s all; display: inline-block; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; }
 
+.bg-blog .learn-more-button { color: #707070; border: 1px solid #707070; border-radius: 5px; padding: .7rem .9rem; transition: .3s all; display: inline-block; font-family: "Raleway", sans-serif; font-weight: 200; letter-spacing: 2px; text-transform: uppercase; font-size: 0.7rem; }
+
 .bg-light .learn-more-button, .retreat-card .learn-more-button { background-color: #F5AEA8; border: 1px solid #F5AEA8; }
 
 .bg-light .learn-more-button:hover, .retreat-card .learn-more-button:hover { color: #F5AEA8; }
@@ -383,6 +385,8 @@ header.blog-header h2 { font-weight: 200; margin-bottom: 1.5rem; }
 
 header.blog-header h2 span { font-weight: 400; }
 
+body.bg-blog { background-color: #cce6e8; }
+
 .blog-latest-banner { position: relative; height: 350px; width: 90%; margin: auto; }
 
 .blog-banner-content { position: absolute; padding: 0 5rem; }
@@ -390,6 +394,12 @@ header.blog-header h2 span { font-weight: 400; }
 .blog-banner-content h2 { font-size: 4rem; letter-spacing: 3px; font-weight: 400; margin-bottom: 1rem; }
 
 .blog-banner-content h3 { font-weight: 200; margin-bottom: 1rem; }
+
+.blog-info hr { background-color: #F5AEA8; border: none; border-radius: 5px; height: 5px; margin-bottom: 1.5rem; margin-bottom: 2rem; }
+
+.blog-info h2 { font-size: 2.5rem; letter-spacing: 3px; }
+
+.blog-info h3 { font-size: .8rem; letter-spacing: 3px; }
 
 .blog-preview { margin-bottom: 3rem; }
 
@@ -405,21 +415,41 @@ header.blog-header h2 span { font-weight: 400; }
 
 .blog-content p { margin-bottom: 1.5rem; line-height: 1.7; }
 
+.blog-content h2 { font-weight: 400; }
+
+.blog-content h3 { font-weight: 200; }
+
 .post-categories h3, .post-categories h4, .post-tags h3, .post-tags h4 { display: inline-block; margin: .3rem 0; }
 
 .post-categories h3, .post-tags h3 { font-weight: 400; font-size: 1rem; }
 
 .category { color: #F5AEA8; font-weight: 200; }
 
-.post-tags a { display: inline; padding: .3rem .5rem; margin-right: .5rem; background-color: #f1f1f1; border-radius: 3px; font-size: .6rem; }
+.post-tags a { display: inline; padding: .3rem .5rem; margin-right: .5rem; background-color: #f1f1f1; border: 1px solid #F5AEA8; border-radius: 3px; font-size: .6rem; transition: .3s all; }
+
+.post-tags a:hover { background-color: #F5AEA8; color: #f1f1f1; transition: .3s all; }
 
 .about-column div.sticky { position: sticky; top: 0; }
 
-.related-content { margin-top: 3rem; margin-bottom: 4rem; }
+.related-content { margin-top: 3rem; margin-bottom: 5rem; }
 
 .related-content h3 { padding: .5rem 0; }
 
+.related-content p { font-size: .8rem; }
+
 .related-content hr { background-color: #479AA1; height: 5px; border: none; border-radius: 5px; margin-bottom: 2rem; width: 12rem; }
+
+.related-content .read-more { text-transform: uppercase; margin-left: .3rem; transition: .3s all; }
+
+.related-content .read-more:hover { color: #F5AEA8; transition: .3s all; }
+
+.archive-group hr { background: #F5AEA8; border: none; border-radius: 5px; height: 5px; width: 50px; }
+
+.archive-group a:hover { color: #F5AEA8; transition: .3s all; }
+
+.archive-group h3 { font-weight: 400; }
+
+.archive-group h4 { font-weight: 200; }
 
 .social { padding: 1rem 2rem; background-color: #eff7f8; border-radius: 10px; }
 

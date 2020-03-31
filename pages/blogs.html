@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: Yogismile by Claudia Neumann
-permalink: /yogismile/
+permalink: /yogismile
 _hidden_blog: true
 _hidden_styles: blog
 ---
@@ -43,7 +43,7 @@ _hidden_styles: blog
     {% assign tags = page.tags %}
     {% endif %}
     {% for tag in tags %}
-    <a href="{{site.baseurl}}/{{tag_name}}/#{{tag | slugize}}">{{tag}}</a>
+    <a href="{{site.baseurl}}/tags/#{{tag | slugize}}">{{tag}}</a>
     {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
   </div>

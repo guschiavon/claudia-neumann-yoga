@@ -2,16 +2,6 @@ blog_settings:
   blog-owner: Claudia Neumann
   profile-picture_image: /assets/images/placeholder 010.jpg
 
-# navigation:
-#   menu-1-name: Health
-#   menu-1_url:
-#   menu-2-name: Ayurveda
-#   menu-2_url:
-#   menu-3-name: Mindfulness
-#   menu-3_url:
-#   menu-4-name: Wanderings
-#   menu-4_url:
-
 colors:
   # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax
   primary_color: '#479AA1'

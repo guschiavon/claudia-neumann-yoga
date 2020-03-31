@@ -57,6 +57,17 @@
   @include learn-more-font-size;
 }
 
+.bg-blog .learn-more-button {
+  color: $dark-color;
+  border: 1px solid $dark-color;
+  border-radius: $button-border-radius;
+  padding: .7rem .9rem;
+  transition: .3s all;
+  display: inline-block;
+  @include button-text-style;
+  @include learn-more-font-size;
+}
+
 
 .bg-light .learn-more-button,
 .retreat-card .learn-more-button {

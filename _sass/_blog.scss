@@ -14,6 +14,10 @@ header.blog-header {
   }
 }
 
+body.bg-blog {
+  background-color: lighten($primary-color, 40);
+}
+
 .blog-latest-banner {
   position: relative;
   height: 350px;
@@ -33,6 +37,25 @@ header.blog-header {
   h3 {
     font-weight: $light_font;
     margin-bottom: 1rem;
+  }
+}
+
+.blog-info {
+  hr {
+    background-color: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    height: 5px;
+    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+  h3 {
+    font-size: .8rem;
+    letter-spacing: 3px;
   }
 }
 
@@ -63,9 +86,13 @@ header.blog-header {
   width: 90%;
 }
 
-.blog-content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
+.blog-content {
+  p {
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+  }
+  h2 { font-weight: $regular_font; }
+  h3 { font-weight: $light_font; }
 }
 
 .post-categories,
@@ -91,8 +118,15 @@ header.blog-header {
   padding: .3rem .5rem;
   margin-right: .5rem;
   background-color: $light-color;
+  border: 1px solid $secondary-color;
   border-radius: 3px;
   font-size: .6rem;
+  transition: .3s all;
+  &:hover {
+    background-color: $secondary-color;
+    color: $light-color;
+    transition: .3s all;
+  }
 }
 
 .about-column div.sticky {
@@ -102,9 +136,12 @@ header.blog-header {
 
 .related-content {
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   h3 {
     padding: .5rem 0;
+  }
+  p {
+    font-size: .8rem;
   }
   hr {
     background-color: #479AA1;
@@ -113,6 +150,36 @@ header.blog-header {
     border-radius: 5px;
     margin-bottom: 2rem;
     width: 12rem;
+  }
+  .read-more {
+    text-transform: uppercase;
+    margin-left: .3rem;
+    transition: .3s all;
+    &:hover {
+      color: $secondary-color;
+      transition: .3s all;
+    }
+  }
+
+}
+
+.archive-group {
+  hr {
+    background: $secondary-color;
+    border: none;
+    border-radius: 5px;
+    height: 5px;
+    width: 50px;
+  }
+  a:hover {
+    color: $secondary-color;
+    transition: .3s all;
+  }
+  h3 {
+    font-weight: $regular_font;
+  }
+  h4 {
+    font-weight: $light_font;
   }
 }
 

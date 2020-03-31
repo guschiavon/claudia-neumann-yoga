@@ -2,7 +2,7 @@
 
 <html lang="en" dir="ltr">
 {% include head.html %}
-<body>
+<body class="bg-blog">
   <header class="center blog-header">
     <a href="/yogismile">
       <img src="/assets/images/yogismile-logo.png" alt="">
@@ -59,16 +59,30 @@
       <div class="grid-noGutter-spaceAround">
         <div class="col-8_sm-9 grid-noGutter-spaceAround">
           <div class="col-12 blog-content">
+            {% unless page._hidden_blog == true or page._hidden_archive == true %}
+            <div class="blog-info">
+              <h2>
+                {{ page.title }}
+              </h2>
+              <h3>
+                Article by: {{ page.author }}
+              </h3>
+              <h3>
+                Published on {{ page.date | date_to_string }}
+              </h3>
+              <hr>
+            </div>
+            {% endunless %}
             {{content}}
             <!-- the UNLESS is for the blog home -->
-            {% unless page._hidden_blog == true %}
+            {% unless page._hidden_blog == true or page._hidden_archive == true %}
             <div class="col-12 grid-noGutter-spaceAround center">
               <div class="social">
                 <h3 class="col-12 editable">
                   Liked it? Share it:
                 </h3>
                 <div class="col-6 grid-spaceAround">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u={{page.url}}" class="col-3 social-share">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{site.baseurl}}{{page.url}}" class="col-3 social-share">
                     <i class="fab fa-facebook"></i>
                   </a>
                   <a href="https://api.whatsapp.com/send?text=https%3A%2F%2Fyogismile.claudianeumann.yoga{{page.url}}" class="col-3 social-share">
@@ -108,6 +122,9 @@
                       <h3>
                         {{ post.title }}
                       </h3>
+                      <p>
+                        {{post.description | truncate: 90 }}<span class="read-more">Read</span>
+                      </p>
                     </div>
                   </a>
                 </div>
