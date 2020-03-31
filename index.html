@@ -50,7 +50,8 @@ feature-retreat_image: assets/images/placeholder-009.jpg
     <!-- upcoming retreat section -->
     <section class="grid-noGutter padding-outer section-feature bg-dark flex-right">
       <div class="col-6_md-12 section-lg-feature-image">
-        <img src="{{page.feature-retreat_image}}" class="responsive-img" alt="">
+        {% image_tag src=page.feature-retreat_image class="responsive-img" %}
+        <!-- <img src="{{page.feature-retreat_image}}" class="responsive-img" alt=""> -->
       </div>
       <div class="col-6_md-12 section-feature-content">
         <div class="padding-outer">

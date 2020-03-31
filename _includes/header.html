@@ -3,7 +3,7 @@
   {% include desktop-navbar.html %}
   {% include mobile-nav.html %}
   <div class="header-banner">
-    <img src="{{page.banner_image}}" class="responsive-img" alt="{{page.banner_image-alt-text}}">
+    <img src="{{page.banner_image}}" srcset="{{page.banner_image | replace: 'images','images/srcset/800'}} 800w, {{page.banner_image | replace: 'images','images/srcset/600'}} 600w, {{page.banner_image | replace: 'images','images/srcset/480'}} 480w, {{page.banner_image | replace: 'images','images/srcset/360'}} 360w" class="responsive-img" alt="{{page.banner_image-alt-text}}">
     <div class="header-text-box">
       <h1>
       {{page.banner_heading}}
@@ -14,6 +14,7 @@
           {% include banner-cta-button.html %}
         {% endif %}
         {% if page._hidden_community == true %}
+
         <img id="community-banner-logo" src="{{site.data.settings.basic_settings.site_logo_image}}" alt="" class="community-banner-logo">
         {% endif %}
       </div>
@@ -28,7 +29,9 @@
   {% include desktop-navbar.html %}
   {% include mobile-nav.html %}
   <div class="header-banner">
-    <img src="{{site.retreats.first.banner_image}}" class="responsive-img" alt="{{site.retreats.first.banner_image-alt-text}}">
+    <img src="{{site.retreats.first.banner_image}}" srcset="{{site.retreats.first.banner_image | replace: 'images','images/srcset/800'}} 800w,
+             {{site.retreats.first.banner_image | replace: 'images','images/srcset/600'}} 600w, {{site.retreats.first.banner_image | replace: 'images','images/srcset/480'}} 480w, {{site.retreats.first.banner_image | replace: 'images','images/srcset/360'}} 360w"
+    class="responsive-img" alt="{{site.retreats.first.banner_image-alt-text}}">
     <div class="header-text-box">
       <h1>
         {{site.retreats.first.banner_heading}}

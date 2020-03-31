@@ -36,10 +36,12 @@ markdown: kramdown
 
 # removes the date from the permalink
 # permalink: '/:title/'
-
+gems:
+  - jekyll-srcset
 
 plugins:
   - jekyll-archives
+  - jekyll-srcset
 jekyll-archives:
   enabled: []
   layout: archive
