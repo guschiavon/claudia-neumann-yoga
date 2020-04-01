@@ -38,6 +38,24 @@
   .community-page p {
     width: 95%;
   }
+  .blog-banner-content {
+    padding: 0 1rem;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .blog-latest-banner {
+    padding: 0 1rem;
+  }
+  .blog-thumb-content {
+    padding: 1.5rem 1rem;
+  }
+  .blog-thumb {
+    padding-right: 0;
+  }
+  .blog-description {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -49,9 +67,8 @@
   }
   .navbar-link {
     h2, span {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
-
   }
   .footer-branding {
     text-align: center;
@@ -93,9 +110,3 @@
     margin-right:.2rem;
   }
 }
-// @media (max-width: 1280px) {
-//   nav a {
-//     margin-left:.2rem;
-//     margin-right:.2rem;
-//   }
-// }

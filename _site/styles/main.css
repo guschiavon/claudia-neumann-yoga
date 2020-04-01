@@ -469,11 +469,17 @@ body.bg-blog { background-color: #cce6e8; }
   form { width: 90%; }
   .facilitator-card { padding: 0; }
   .facilitator p { padding: 0; }
-  .community-page p { width: 95%; } }
+  .community-page p { width: 95%; }
+  .blog-banner-content { padding: 0 1rem; }
+  .blog-banner-content h2 { font-size: 2rem; }
+  .blog-latest-banner { padding: 0 1rem; }
+  .blog-thumb-content { padding: 1.5rem 1rem; }
+  .blog-thumb { padding-right: 0; }
+  .blog-description { width: 100%; } }
 
 @media (max-width: 1023px) { .mobile-hide { display: none; }
   .header-text-box p { margin-bottom: 2rem; padding: 0 2rem; text-align: center; }
-  .navbar-link h2, .navbar-link span { font-size: 1.1rem; }
+  .navbar-link h2, .navbar-link span { font-size: 1rem; }
   .footer-branding { text-align: center; }
   .footer-form { margin-bottom: 3rem; }
   .burger-menu { display: inline-block; }
