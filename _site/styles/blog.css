@@ -166,7 +166,9 @@ body.bg-blog { background-color: #cce6e8; }
 
 .related-content { margin-top: 3rem; margin-bottom: 5rem; }
 
-.related-content h3 { padding: .5rem 0; }
+.related-content h3 { padding: .5rem 0; transition: .3s all; }
+
+.related-content h3:hover { color: #F5AEA8; transition: .3s all; }
 
 .related-content p { font-size: .8rem; }
 
@@ -175,6 +177,8 @@ body.bg-blog { background-color: #cce6e8; }
 .related-content .read-more { text-transform: uppercase; margin-left: .3rem; transition: .3s all; }
 
 .related-content .read-more:hover { color: #F5AEA8; transition: .3s all; }
+
+.related-preview { padding-bottom: 1rem; }
 
 .archive-group hr { background: #F5AEA8; border: none; border-radius: 5px; height: 5px; width: 50px; }
 
@@ -187,6 +191,45 @@ body.bg-blog { background-color: #cce6e8; }
 .social { padding: 1rem 2rem; background-color: #eff7f8; border-radius: 10px; }
 
 .social-share { font-size: 2.5rem; color: #dfdfdf; }
+
+@media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
+  .header-banner h1 { font-size: 1.3rem; text-align: center; }
+  .header-banner { height: 55vh; }
+  .navbar-link h2 { font-size: .8rem; }
+  .navbar-link img { width: 60px; }
+  .navbar-link h2, .navbar-link img { padding: .5rem; }
+  header { margin-top: 60px; }
+  .intro-section p { max-width: 90%; }
+  .thumb-profile-pic img { width: 100px; height: 100px; }
+  .header-banner .responsive-img { height: 65vh; }
+  .community-banner-logo { height: 180px; }
+  form { width: 90%; }
+  .facilitator-card { padding: 0; }
+  .facilitator p { padding: 0; }
+  .community-page p { width: 95%; }
+  .blog-banner-content { padding: 0 1rem; }
+  .blog-banner-content h2 { font-size: 2rem; }
+  .blog-latest-banner { padding: 0 1rem; }
+  .blog-thumb-content { padding: 1.5rem 1rem; }
+  .blog-thumb { padding-right: 0; height: 150px; }
+  .blog-description { width: 100%; } }
+
+@media (max-width: 1023px) { .mobile-hide { display: none; }
+  .header-text-box p { margin-bottom: 2rem; padding: 0 2rem; text-align: center; }
+  .navbar-link h2, .navbar-link span { font-size: 1rem; }
+  .footer-branding { text-align: center; }
+  .footer-form { margin-bottom: 3rem; }
+  .burger-menu { display: inline-block; }
+  .footer-logo { margin-top: 2rem; } }
+
+@media (max-width: 1024px) { nav a { font-size: .8rem; margin-left: .2rem; margin-right: .2rem; }
+  .footer-form { margin-bottom: 2rem; }
+  .footer-form h2 { margin-top: 2rem; }
+  .footer-branding { text-align: center; } }
+
+@media (max-width: 1126px) { .section-lg-feature-image { position: relative; top: 0; left: 0; } }
+
+@media (max-width: 1280px) { nav a { margin-left: .2rem; margin-right: .2rem; } }
 
 footer { background-color: #3e3e3e; }
 
@@ -219,44 +262,5 @@ form { width: 80%; margin: auto; }
 .footer-form input, .cta-form input { padding: .8rem; border-radius: 5px; border: none; width: inherit; margin-bottom: 1rem; font-size: .9rem; }
 
 .footer-form .message, .cta-form .message { height: 4rem; }
-
-@media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
-  .header-banner h1 { font-size: 1.3rem; text-align: center; }
-  .header-banner { height: 55vh; }
-  .navbar-link h2 { font-size: .8rem; }
-  .navbar-link img { width: 60px; }
-  .navbar-link h2, .navbar-link img { padding: .5rem; }
-  header { margin-top: 60px; }
-  .intro-section p { max-width: 90%; }
-  .thumb-profile-pic img { width: 100px; height: 100px; }
-  .header-banner .responsive-img { height: 65vh; }
-  .community-banner-logo { height: 180px; }
-  form { width: 90%; }
-  .facilitator-card { padding: 0; }
-  .facilitator p { padding: 0; }
-  .community-page p { width: 95%; }
-  .blog-banner-content { padding: 0 1rem; }
-  .blog-banner-content h2 { font-size: 2rem; }
-  .blog-latest-banner { padding: 0 1rem; }
-  .blog-thumb-content { padding: 1.5rem 1rem; }
-  .blog-thumb { padding-right: 0; }
-  .blog-description { width: 100%; } }
-
-@media (max-width: 1023px) { .mobile-hide { display: none; }
-  .header-text-box p { margin-bottom: 2rem; padding: 0 2rem; text-align: center; }
-  .navbar-link h2, .navbar-link span { font-size: 1rem; }
-  .footer-branding { text-align: center; }
-  .footer-form { margin-bottom: 3rem; }
-  .burger-menu { display: inline-block; }
-  .footer-logo { margin-top: 2rem; } }
-
-@media (max-width: 1024px) { nav a { font-size: .8rem; margin-left: .2rem; margin-right: .2rem; }
-  .footer-form { margin-bottom: 2rem; }
-  .footer-form h2 { margin-top: 2rem; }
-  .footer-branding { text-align: center; } }
-
-@media (max-width: 1126px) { .section-lg-feature-image { position: relative; top: 0; left: 0; } }
-
-@media (max-width: 1280px) { nav a { margin-left: .2rem; margin-right: .2rem; } }
 
 /*# sourceMappingURL=blog.css.map */

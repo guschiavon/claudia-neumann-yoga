@@ -21,7 +21,7 @@ body.bg-blog {
 .blog-latest-banner {
   position: relative;
   height: 350px;
-  padding: 0 5rem; 
+  padding: 0 5rem;
 }
 
 .blog-banner-content {
@@ -141,6 +141,11 @@ position: relative;
   margin-bottom: 5rem;
   h3 {
     padding: .5rem 0;
+    transition: .3s all;
+    &:hover {
+      color: $secondary-color;
+      transition: .3s all;
+    }
   }
   p {
     font-size: .8rem;
@@ -162,7 +167,9 @@ position: relative;
       transition: .3s all;
     }
   }
-
+}
+.related-preview {
+  padding-bottom: 1rem;
 }
 
 .archive-group {

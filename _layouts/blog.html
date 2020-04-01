@@ -115,18 +115,20 @@
 
                 {% if match %}
 
-                <div class="col-6 grid-noGutter-spaceAround">
-                  <a href="{{ post.url }}">
-                    <div class="blog-thumb">
-                      <img src="{{post.banner_image}}" class="responsive-img" alt="">
-                      <h3>
-                        {{ post.title }}
-                      </h3>
-                      <p>
-                        {{post.description | truncate: 90 }}<span class="read-more">Read</span>
-                      </p>
-                    </div>
-                  </a>
+                <div class="col-6_sm-12 grid-noGutter-spaceAround">
+                  <div class="related-preview">
+                    <a href="{{ post.url }}">
+                      <div class="blog-thumb">
+                        <img src="{{post.banner_image}}" class="responsive-img" alt="">
+                        <h3>
+                          {{ post.title }}
+                        </h3>
+                        <p>
+                          {{post.description | truncate: 90 }}<span class="read-more">Read</span>
+                        </p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
                 {% endif %}
                 {% endfor %}
