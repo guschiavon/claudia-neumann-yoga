@@ -73,7 +73,7 @@ nav a:hover, nav a:focus { color: #f5aea8; transition: .5s ease all; text-decora
 
 .dropdown-content a { display: block; margin-bottom: .3rem; margin-top: .3rem; }
 
-.mobile-nav { background-color: #e4e4e4; display: block; position: fixed; left: 0; width: 100%; padding: 2rem; z-index: 9; }
+.mobile-nav { background-color: #e4e4e4; display: block; position: fixed; left: 0; width: 100%; padding: 2rem; z-index: 9; overflow-y: scroll; }
 
 .mobile-nav .dropdown-content { text-align: left; padding: .5rem; }
 
@@ -213,7 +213,7 @@ form { width: 80%; margin: auto; }
 
 .schedule-calendar, .cal-column { text-align: center; }
 
-.schedule-calendar h2, .schedule-calendar h3, .schedule-calendar p, .cal-column h2, .cal-column h3, .cal-column p { margin-bottom: 2rem; font-family: "Gotu", sans-serif; }
+.schedule-calendar h2, .schedule-calendar h3, .schedule-calendar p, .cal-column h2, .cal-column h3, .cal-column p { margin-bottom: 1.5rem; font-family: "Gotu", sans-serif; }
 
 .schedule-calendar h2, .cal-column h2 { font-weight: 400; }
 
@@ -227,7 +227,7 @@ form { width: 80%; margin: auto; }
 
 hr.col-12 { padding: 0; margin-bottom: 1.5rem; border: 2px solid #707070; }
 
-.cal-column h3 { min-height: 35px; }
+.cal-column h3 { min-height: 50px; }
 
 .info-box { min-height: 200px; position: relative; }
 
@@ -505,6 +505,8 @@ body.bg-blog { background-color: #cce6e8; }
 
 .vertical-ad-banner { object-fit: cover; height: 400px; padding: 0px 5rem; }
 
+@media (max-width: 320px) { .logo-overlay-right { width: 70px; } }
+
 @media (max-width: 360px) { .burger-menu { font-size: 1.5rem; padding: 1rem; }
   .navbar { padding: 0 1%; }
   .navbar .navbar-link h2 { font-size: .9rem; }
@@ -514,7 +516,8 @@ body.bg-blog { background-color: #cce6e8; }
   .blog-info h2 { font-size: 1.5rem; } }
 
 @media (max-width: 455px) { .cta-form form, .cta-form p { width: 90%; }
-  .cta-section-content p { width: 90%; } }
+  .cta-section-content p { width: 90%; }
+  .logo-overlay-right { width: 150px; right: 10px; bottom: 10px; } }
 
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 2rem; text-align: center; }
