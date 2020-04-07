@@ -213,13 +213,15 @@ form { width: 80%; margin: auto; }
 
 .schedule-calendar, .cal-column { text-align: center; }
 
-.schedule-calendar h2, .schedule-calendar h3, .schedule-calendar p, .cal-column h2, .cal-column h3, .cal-column p { margin-bottom: 2rem; }
+.schedule-calendar h2, .schedule-calendar h3, .schedule-calendar p, .cal-column h2, .cal-column h3, .cal-column p { margin-bottom: 2rem; font-family: "Gotu", sans-serif; }
 
 .schedule-calendar h2, .cal-column h2 { font-weight: 400; }
 
 .schedule-calendar h3, .cal-column h3 { font-weight: 200; }
 
 .schedule-text-box h2 { font-size: 2rem; font-weight: 200; letter-spacing: 2px; }
+
+.schedule-text-box h2.heading { font-family: "Megrim", cursive; }
 
 .schedule-calendar-box { background-color: #efefef; }
 
@@ -359,7 +361,7 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .highlights h2 { font-weight: 200; }
 
-.cta-form form { width: 75%; }
+.cta-form form { width: 60%; }
 
 img.community-banner-logo { width: 200px; }
 

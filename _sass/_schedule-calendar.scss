@@ -2,6 +2,7 @@
   text-align: center;
   h2, h3, p {
     margin-bottom: 2rem;
+    font-family: $paragraph-font-family;
   }
   h2 {
     font-weight: $regular_font;
@@ -15,6 +16,10 @@
   font-size: $heading2-font-size;
   font-weight: $light_font;
   letter-spacing: 2px;
+}
+
+.schedule-text-box h2.heading {
+  font-family: $header-font-family;
 }
 
 .schedule-calendar-box {
