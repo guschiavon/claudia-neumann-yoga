@@ -1,0 +1,25 @@
+<!-- jQuery loaded via Google CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- FontAwesome script -->
+<script src="https://kit.fontawesome.com/b28a5faa19.js" crossorigin="anonymous"></script>
+
+<script>
+
+  $(document).ready(function() {
+
+    console.log('hello from jquery');
+
+    $(".burger-menu").click(function(){
+
+      $(".mobile-nav").toggleClass("hide");
+
+      $(this).toggleClass("active");
+
+      console.log("burger clicked");
+
+    }); //Closes Click Burger function
+
+  }); //Closes Ready function
+
+</script>

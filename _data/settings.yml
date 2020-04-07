@@ -28,6 +28,7 @@ buttons:
   cta-button-font-size: 1rem
   learn-more-button-font-size: .7rem
 calendars:
+  calendly_url: 'https://calendly.com/claudianeumannyoga'
   reiki_calendly_url: 'https://calendly.com/claudianeumannyoga/1hr-reiki-session'
   yoga_calendly_url: 'https://calendly.com/claudianeumannyoga/1-30hr-private-yoga-class'
 social:

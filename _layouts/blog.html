@@ -10,6 +10,7 @@
         <span>Yogismile</span> by Claudia Neumann
       </h2>
     </a>
+
     <nav class="mobile-hide">
 
       {% for category in site.categories %}
@@ -21,10 +22,36 @@
       {% endfor %}
 
       <a href="/">
-        To main site
+        Claudia Neumann Yoga
       </a>
-
     </nav>
+    <!-- Mobile nav -->
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="mobile-nav hide">
+      <div class="mobile-navbar center">
+        <a href="/yogismile">
+          <img src="/assets/images/yogismile-logo.png" alt="">
+          <h2 class="logo padded-1">
+            <span>Yogismile</span> by Claudia Neumann
+          </h2>
+        </a>
+
+        {% for category in site.categories %}
+        {% capture category_name %}
+        {{category | first }}
+        {% endcapture %}
+
+        <a href="/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
+        {% endfor %}
+
+        <a href="/">
+          Claudia Neumann Yoga
+        </a>
+
+      </div>
+    </div>
   </header>
   <section class="padded-outer">
 
@@ -185,5 +212,6 @@
       </section>
     </main>
     {% include footer.html %}
+    {% include blog-scripts.html %}
   </body>
 </html>

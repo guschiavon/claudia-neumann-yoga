@@ -5,6 +5,15 @@ html {
 header.blog-header {
   padding: 4rem;
   margin-top: 0;
+  position: relative;
+  .burger-menu {
+    position: fixed;
+  }
+  .mobile-nav {
+    width: 80%;
+    top: 0;
+    height: 100%
+  }
   img {
     width: 8rem;
     margin-bottom: .5rem;
@@ -17,6 +26,15 @@ header.blog-header {
     }
   }
 }
+
+.blog-header .mobile-nav {
+  a {
+    display: block;
+    padding:.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
 
 body.bg-blog {
   background-color: lighten($primary-color, 40);
@@ -141,6 +159,7 @@ position: relative;
   p {
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    padding-right: 2rem;
   }
   h2 { font-weight: $regular_font; }
   h3 { font-weight: $light_font; }

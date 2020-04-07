@@ -387,13 +387,19 @@ img.community-banner-logo { width: 200px; }
 
 html { scroll-behavior: smooth; }
 
-header.blog-header { padding: 4rem; margin-top: 0; }
+header.blog-header { padding: 4rem; margin-top: 0; position: relative; }
+
+header.blog-header .burger-menu { position: fixed; }
+
+header.blog-header .mobile-nav { width: 80%; top: 0; height: 100%; }
 
 header.blog-header img { width: 8rem; margin-bottom: .5rem; }
 
 header.blog-header h2 { font-weight: 200; margin-bottom: 1.5rem; }
 
 header.blog-header h2 span { font-weight: 400; }
+
+.blog-header .mobile-nav a { display: block; padding: .5rem; margin-bottom: 1rem; }
 
 body.bg-blog { background-color: #cce6e8; }
 
@@ -435,7 +441,7 @@ body.bg-blog { background-color: #cce6e8; }
 
 .blog-description { width: 90%; }
 
-.blog-content p { margin-bottom: 1.5rem; line-height: 1.7; }
+.blog-content p { margin-bottom: 1.5rem; line-height: 1.7; padding-right: 2rem; }
 
 .blog-content h2 { font-weight: 400; }
 
