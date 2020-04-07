@@ -383,6 +383,8 @@ img.community-banner-logo { width: 200px; }
 
 .facilitator-thumb img { border-radius: 50%; }
 
+html { scroll-behavior: smooth; }
+
 header.blog-header { padding: 4rem; margin-top: 0; }
 
 header.blog-header img { width: 8rem; margin-bottom: .5rem; }
@@ -393,9 +395,11 @@ header.blog-header h2 span { font-weight: 400; }
 
 body.bg-blog { background-color: #cce6e8; }
 
-.blog-latest-banner { position: relative; height: 350px; padding: 0 5rem; }
+.blog-latest-banner { position: relative; height: 350px; padding: 0 5%; }
 
-.blog-banner-content { position: absolute; padding: 0 5rem; }
+.blog-latest-banner img { border-radius: 2rem; }
+
+.blog-banner-content { position: absolute; border-radius: 0 2rem 2rem 0; padding: 1rem 5rem; max-width: 70%; background: linear-gradient(to right, #cce6e8 0%, rgba(255, 255, 255, 0.395116) 100%); }
 
 .blog-banner-content h2 { font-size: 4rem; letter-spacing: 3px; font-weight: 400; margin-bottom: 1rem; }
 
@@ -407,15 +411,17 @@ body.bg-blog { background-color: #cce6e8; }
 
 .blog-info h3 { font-size: .8rem; letter-spacing: 3px; }
 
-.blog-preview { margin-bottom: 3rem; }
+.blog-preview { margin-bottom: 3rem; padding-right: 3rem; }
 
-.blog-thumb { height: 250px; padding-right: 4rem; padding-bottom: 1rem; position: relative; }
+.blog-thumb { height: 250px; position: relative; }
 
 .blog-thumb h2 { font-weight: 400; font-size: 2rem; }
 
 .blog-thumb h3 { font-weight: 400; }
 
-.blog-thumb-content { position: absolute; padding: 1.5rem 3rem; }
+.blog-thumb img.responsive-img { border-radius: 2rem 2rem 0 0; }
+
+.blog-thumb-content { padding: 1.5rem 3rem; background-color: #f1f1f1; border-radius: 0 0 2rem 2rem; margin-top: -4px; }
 
 .blog-description { width: 90%; }
 
@@ -451,7 +457,9 @@ body.bg-blog { background-color: #cce6e8; }
 
 .related-content .read-more:hover { color: #f5aea8; transition: .3s all; }
 
-.related-preview { padding-bottom: 1rem; }
+.related-preview { padding-bottom: 1rem; padding-right: 1rem; }
+
+.related-preview-content { background-color: #f1f1f1; padding: 1rem 2rem; border-radius: 0 0 2rem 2rem; }
 
 .archive-group hr { background: #f5aea8; border: none; border-radius: 5px; height: 5px; width: 50px; }
 
@@ -469,13 +477,15 @@ body.bg-blog { background-color: #cce6e8; }
   .navbar { padding: 0 1%; }
   .navbar .navbar-link h2 { font-size: .9rem; } }
 
+@media (max-width: 568px) { header.blog-header { padding: .5rem; }
+  header.blog-header h2 { font-size: 1rem; } }
+
 @media (max-width: 600px) { .schedule-calendar-box h3 { font-size: .9rem; }
   .header-banner h1 { font-size: 1.3rem; text-align: center; }
   .header-banner { height: 55vh; }
   .navbar-link h2 { font-size: .8rem; }
   .navbar-link img { width: 60px; }
   .navbar-link h2, .navbar-link img { padding: .5rem; }
-  header { margin-top: 60px; }
   .intro-section p { max-width: 90%; }
   .thumb-profile-pic img { width: 100px; height: 100px; }
   .header-banner .responsive-img { height: 65vh; }
@@ -484,15 +494,16 @@ body.bg-blog { background-color: #cce6e8; }
   .facilitator-card { padding: 0; }
   .facilitator p { padding: 0; }
   .community-page p { width: 95%; }
-  .blog-banner-content { padding: 0 1rem; }
+  .blog-banner-content { padding: 1rem; }
   .blog-banner-content h2 { font-size: 2rem; }
-  .blog-latest-banner { padding: 0 1rem; }
   .blog-thumb-content { padding: 1.5rem 1rem; }
   .blog-thumb { padding-right: 0; height: 150px; }
   .blog-description { width: 100%; } }
 
 @media (max-width: 667px) { .navbar-link img { max-width: 80px; }
-  header { margin-top: 60px; } }
+  header { margin-top: 60px; }
+  .blog-preview { padding-right: 0; }
+  .blog-banner-content h2 { font-size: 2rem; } }
 
 @media (max-width: 1023px) { .mobile-hide { display: none; }
   .header-text-box p { margin-bottom: 2rem; padding: 0 2rem; text-align: center; }
@@ -506,7 +517,8 @@ body.bg-blog { background-color: #cce6e8; }
   .footer-form { margin-bottom: 2rem; }
   .footer-form h2 { margin-top: 2rem; }
   .footer-branding { text-align: center; }
-  .padding-side-5 { padding: 0; } }
+  .padding-side-5 { padding: 0; }
+  header.blog-header img { width: 3rem; } }
 
 @media (max-width: 1126px) { .section-lg-feature-image { position: relative; top: 0; left: 0; } }
 
