@@ -41,7 +41,7 @@ body.bg-blog {
 
 .blog-info {
   hr {
-    background-color: $secondary-color;
+    background-color: $accent-color;
     border: none;
     border-radius: 5px;
     height: 5px;
@@ -111,7 +111,7 @@ position: relative;
 }
 
 .category {
-  color: $secondary-color;
+  color: $accent-color;
   font-weight: $light_font;
 }
 
@@ -120,12 +120,12 @@ position: relative;
   padding: .3rem .5rem;
   margin-right: .5rem;
   background-color: $light-color;
-  border: 1px solid $secondary-color;
+  border: 1px solid $accent-color;
   border-radius: 3px;
   font-size: .6rem;
   transition: .3s all;
   &:hover {
-    background-color: $secondary-color;
+    background-color: $accent-color;
     color: $light-color;
     transition: .3s all;
   }
@@ -143,7 +143,7 @@ position: relative;
     padding: .5rem 0;
     transition: .3s all;
     &:hover {
-      color: $secondary-color;
+      color: $accent-color;
       transition: .3s all;
     }
   }
@@ -163,7 +163,7 @@ position: relative;
     margin-left: .3rem;
     transition: .3s all;
     &:hover {
-      color: $secondary-color;
+      color: $accent-color;
       transition: .3s all;
     }
   }
@@ -174,14 +174,14 @@ position: relative;
 
 .archive-group {
   hr {
-    background: $secondary-color;
+    background: $accent-color;
     border: none;
     border-radius: 5px;
     height: 5px;
     width: 50px;
   }
   a:hover {
-    color: $secondary-color;
+    color: $accent-color;
     transition: .3s all;
   }
   h3 {

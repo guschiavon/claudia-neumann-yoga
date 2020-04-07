@@ -23,7 +23,7 @@
 }
 
 .bg-secondary .banner-cta-button {
-  color: $secondary-color;
+  color: $accent-color;
   background-color: $light-color;
   border: 1px solid $light-color;
   border-radius: $button-border-radius;
@@ -35,7 +35,7 @@
 
 .banner-cta-button:hover,
 .banner-cta-button:focus, {
-  background-color: $secondary-color;
+  background-color: $accent-color;
   transition: .4s all;
 }
 .bg-secondary .banner-cta-button:hover,
@@ -71,10 +71,10 @@
 
 .bg-light .learn-more-button,
 .retreat-card .learn-more-button {
-  background-color: $secondary-color;
-  border: 1px solid $secondary-color;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
   &:hover {
-    color: $secondary-color;
+    color: $accent-color;
   }
 }
 
@@ -106,7 +106,7 @@
 .form-send-button {
   padding: .8rem;
   color: $light-color;
-  background-color: $secondary-color;
+  background-color: $accent-color;
   border: none;
   border-radius: $button-border-radius;
   width: inherit;

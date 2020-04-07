@@ -12,16 +12,16 @@ colors:
 
 fonts:
   # font family must add DOUBLE QUOTES to respect YAML syntax
-  header_font_family: "'Raleway', sans-serif;"
+  header_font_family: "'Megrim', cursive;"
   heading1-font-size: 3rem
   heading2-font-size: 2rem
   heading3-font-size: 2rem
   # code blocks must be put between SINGLE QUOTE marks to respect YAML syntax
-  heading_font_code_block: '<link href="https://fonts.googleapis.com/css?family=Raleway:200,400,600,700&display=swap" rel="stylesheet">'
-  paragraph_font_family: "'Nunito', sans-serif;"
+  heading_font_code_block: '<link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">'
+  paragraph_font_family: "'Gotu', sans-serif;"
   paragraph-font-size: 1rem
   paragraph-line-height: 1.7
-  paragraph_font_code_block: '<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap" rel="stylesheet">'
+  paragraph_font_code_block: '<link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">'
   light_font: 200
   regular_font: 400
   bold_font: 600

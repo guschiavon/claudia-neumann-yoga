@@ -1,5 +1,5 @@
 .testimonials {
-  background-image: radial-gradient($secondary-color 0%, $primary-color 100%);
+  background-image: radial-gradient($accent-color 0%, $primary-color 100%);
 }
 
 .testimonial-box {
@@ -14,11 +14,12 @@ blockquote.testimonial-text-content {
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
   p {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    font-style: italic;
   }
   h3 {
     font-weight: $light_font;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 

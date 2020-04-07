@@ -29,11 +29,7 @@ feature-retreat_image: assets/images/placeholder-009.jpg
           <!-- Maybe best is to make this an "Include" so to use the same code for other sections -->
           {% if page.include-profile-thumb_image == true %}
           <div class="col-12 thumb-profile-pic flex-center">
-            <img src="{{page.thumb-profile-pic_image}}" srcset="{{page.thumb-profile-pic_image | replace: 'images','images/srcset/800'}} 800w,
-                     {{page.thumb-profile-pic_image | replace: 'images','images/srcset/600'}} 600w, {{page.thumb-profile-pic_image | replace: 'images','images/srcset/480'}} 480w, {{page.thumb-profile-pic_image | replace: 'images','images/srcset/360'}} 360w"
-                     sizes="(max-width: 500px) 360px,
-                     (max-width: 600px) 480px,
-                     (max-width: 800px) 600px"alt="Claudia Neumann Yoga">
+            <img src="{{page.thumb-profile-pic_image}}"alt="Claudia Neumann Yoga">
           </div>
           {% endif %}
           <div class="col-12 center">
@@ -54,11 +50,7 @@ feature-retreat_image: assets/images/placeholder-009.jpg
     <!-- upcoming retreat section -->
     <section class="grid-noGutter padding-outer section-feature bg-dark flex-right">
       <div class="col-6_md-12 section-lg-feature-image">
-        <img src="{{page.feature-retreat_image}}" srcset="{{page.feature-retreat_image | replace: 'images','images/srcset/800'}} 800w,
-                 {{page.feature-retreat_image | replace: 'images','images/srcset/600'}} 600w, {{page.feature-retreat_image | replace: 'images','images/srcset/480'}} 480w, {{page.feature-retreat_image | replace: 'images','images/srcset/360'}} 360w"
-                 sizes="(max-width: 500px) 360px,
-                 (max-width: 600px) 480px,
-                 (max-width: 800px) 600px" class="responsive-img" alt="">
+        <img src="{{page.feature-retreat_image}}" class="responsive-img" alt="">
       </div>
       <div class="col-6_md-12 section-feature-content">
         <div class="padding-outer">

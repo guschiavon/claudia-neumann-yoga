@@ -25,7 +25,7 @@ nav a {
   margin-right: .7rem;
   &:hover,
   &:focus {
-    color: $secondary-color;
+    color: $accent-color;
     transition: .5s ease all;
     text-decoration: underline;
   }
@@ -110,5 +110,5 @@ nav a {
   z-index: 10;
 }
 .active {
-  color: $secondary-color;
+  color: $accent-color;
 }
