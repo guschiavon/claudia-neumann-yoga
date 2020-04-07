@@ -20,6 +20,7 @@ var clics = 0;
 $(document).ready(function() {
 
 // Accordion script by @SebaGarcia
+console.log('loaded FAQ');
 
   $('.faq-a').hide();
   $('#cerrartodas').hide();
@@ -54,3 +55,14 @@ $(document).ready(function() {
   }); //Close Function Click
 
 }); //Close Function Ready
+
+// Defer iFrame loading
+console.log('loaded defer iframe');
+
+function init() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) {
+if(vidDefer[i].getAttribute('data-src')) {
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
