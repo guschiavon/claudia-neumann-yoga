@@ -28,11 +28,20 @@ header.blog-header {
 }
 
 .blog-header .mobile-nav {
+  overflow-y: scroll;
   a {
     display: block;
     padding:.5rem;
     margin-bottom: 1rem;
   }
+}
+.archive-item:last-child { margin-bottom: 2rem; }
+
+.archive-group {
+  padding: 2rem;
+  background-color: $light-color;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 
@@ -159,6 +168,7 @@ position: relative;
   p {
     margin-bottom: 1.5rem;
     line-height: 1.7;
+    padding-top: 1rem;
     padding-right: 2rem;
   }
   h2 { font-weight: $regular_font; }

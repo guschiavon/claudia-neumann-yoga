@@ -70,7 +70,7 @@ nav a {
 }
 
 .mobile-nav {
-  background-color: $light-color;
+  background-color: darken($light-color, 5);
   display: block;
   position: fixed;
   left: 0;
