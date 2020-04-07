@@ -28,8 +28,8 @@ buttons:
   cta-button-font-size: 1rem
   learn-more-button-font-size: .7rem
 calendars:
-  reiki_calendly_url: 'https://www.calendly.com'
-  yoga_calendly_url: 'https://www.calendly.com'
+  reiki_calendly_url: 'https://calendly.com/claudianeumannyoga/1hr-reiki-session'
+  yoga_calendly_url: 'https://calendly.com/claudianeumannyoga/1-30hr-private-yoga-class'
 social:
   facebook_url: 'https://facebook.com'
   instagram_url: 'https://instagram.com'
@@ -49,7 +49,8 @@ nav-menu:
   menu-6-link_url: '#footer'
 blog-settings:
   blog-owner: Claudia Neumann
-  profile-picture_image: /assets/images/placeholder 010.jpg
+  profile-picture_image: /assets/images/placeholder-011.jpg
+  ad_image: https://via.placeholder.com/300x400
   colors:
     # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax
     primary_color: '#479AA1'

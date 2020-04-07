@@ -3,6 +3,7 @@
 // Blog SCSS file
 @import "_resets";
 
+// Colors
 $primary-color: {{site.data.settings.blog-settings.colors.primary_color}};
 $primary-shade: lighten($primary-color, 10);
 $accent-color: {{site.data.settings.blog-settings.colors.secondary_color}};
@@ -10,6 +11,7 @@ $accent-shade: lighten($accent-color, 10);
 $dark-color: {{site.data.settings.blog-settings.colors.dark_color}};
 $light-color: {{site.data.settings.blog-settings.colors.light_color}};
 
+// Fonts
 $header-font-family: {{site.data.settings.blog-settings.fonts.header_font_family}};
 $paragraph-font-family: {{site.data.settings.blog-settings.fonts.paragraph_font_family}};
 
@@ -18,15 +20,19 @@ $regular_font: {{site.data.settings.blog-settings.fonts.regular_font}};
 $bold_font: {{site.data.settings.blog-settings.fonts.bold_font}};
 $extra_bold_font: {{site.data.settings.blog-settings.fonts.extra_bold_font}};
 
-// font sizes
 $heading1-font-size: {{site.data.settings.blog-settings.fonts.heading1-font-size}};
 $heading2-font-size: {{site.data.settings.blog-settings.fonts.heading2-font-size}};
 $heading3-font-size: {{site.data.settings.blog-settings.fonts.heading3-font-size}};
 $paragraph-font-size: {{site.data.settings.blog-settings.fonts.paragraph-font-size}};
 $paragraph-line-height: {{site.data.settings.blog-settings.fonts.paragraph-line-height}};
+
+// Buttons
 $cta-button-font-size: {{site.data.settings.blog-settings.buttons.cta-button-font-size}};
 $learn-more-button-font-size: {{site.data.settings.blog-settings.buttons.learn-more-button-font-size}};
 $button-border-radius: {{site.data.settings.blog-settings.buttons.button-border-radius}};
+
+// Backgrounds
+
 
 @import "_universal";
 @import "_utility";
