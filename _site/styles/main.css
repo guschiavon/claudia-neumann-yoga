@@ -347,6 +347,10 @@ blockquote:before { color: #ccc; content: open-quote; font-size: 10em; line-heig
 
 .affiliate-info a:hover { text-decoration: underline; }
 
+.impressum ul, .impressum ol { font-family: "Gotu", sans-serif; list-style: unset; margin-bottom: 1rem; }
+
+.impressum a { padding: .5rem 0; color: #8b8b8b; }
+
 .highlight-icon { font-size: 2rem; padding: 2rem 0; color: #777; }
 
 .highlights p { max-width: 80%; margin: auto; }

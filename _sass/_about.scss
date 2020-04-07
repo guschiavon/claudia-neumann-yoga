@@ -57,3 +57,15 @@
     text-decoration: underline;
   }
 }
+
+.impressum {
+  ul, ol {
+  font-family: $paragraph-font-family;
+  list-style: unset;
+  margin-bottom: 1rem;
+}
+  a {
+    padding: .5rem 0;
+    color: darken($light-color, 40);
+  }
+}
