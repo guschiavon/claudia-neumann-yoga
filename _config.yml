@@ -40,6 +40,8 @@ markdown: kramdown
 
 plugins:
   - jekyll-archives
+  - jekyll-include-cache
+  - jekyll-sitemap
 jekyll-archives:
   enabled: []
   layout: archive
