@@ -52,7 +52,7 @@ nav-menu:
   menu-5-name: Health
   menu-5-link_url: /yogismile/
   menu-6-name: Contact
-  menu-6-link_url: '#footer'
+  menu-6-link_url: 'mailto:happy@claudianeumann.yoga'
 blog-settings:
   blog-owner: Claudia Neumann
   profile-picture_image: /assets/images/srcset/600/claudia-neumann-yoga-101.jpg
