@@ -38,6 +38,7 @@ markdown: kramdown
 # removes the date from the permalink
 # permalink: '/:title/'
 
+# Plugins & Configurations
 plugins:
   - jekyll-archives
   - jekyll-include-cache
