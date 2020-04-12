@@ -21,7 +21,7 @@ layout: compress
       {{category | first }}
       {% endcapture %}
 
-      <a href="/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
+      <a href="/yogismile/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
       {% endfor %}
 
       <a href="/">
@@ -46,7 +46,7 @@ layout: compress
         {{category | first }}
         {% endcapture %}
 
-        <a href="/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
+        <a href="/yogismile/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
         {% endfor %}
 
         <a href="/">
@@ -112,16 +112,16 @@ layout: compress
                   Liked it? Share it:
                 </h3>
                 <div class="col-6 grid-spaceAround">
-                  <a href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}" target="_blank" class="col-3 social-share">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u={{site.baseurl}}{{page.url}}" target="_blank" class="col-3 social-share">
                     <i class="fab fa-facebook"></i>
                   </a>
-                  <a href="https://api.whatsapp.com/send?text=https%3A%2F%2Fyogismile.claudianeumann.yoga{{page.url}}" class="col-3 social-share">
+                  <a href="https://api.whatsapp.com/send?text={{site.baseurl}}{{page.url}}" class="col-3 social-share">
                     <i class="fab fa-whatsapp"></i>
                   </a>
-                  <a href="#" class="col-3 social-share" target="_blank">
+                  <a href="fb-messenger://share/?link={{site.baseurl}}{{page.url}}&app_id=810491679450734" class="col-3 social-share" target="_blank">
                     <i class="fab fa-facebook-messenger"></i>
                   </a>
-                  <a href="mailto:?&subject=Loved%20this%20article&body={{page.url}}" class="col-3 social-share">
+                  <a href="mailto:?&subject=Loved%20this%20article&body={{site.baseurl}}{{page.url}}" class="col-3 social-share">
                     <i class="fas fa-envelope-square"></i>
                   </a>
                 </div>
@@ -202,7 +202,7 @@ layout: compress
                   {{ tag | first }}
                   {% endcapture %}
 
-                  <a href="/tags/#{{ tag_name | slugify }}"> {{ tag_name }} </a>
+                  <a href="/yogismile/tags/#{{ tag_name | slugify }}"> {{ tag_name }} </a>
                   {% endfor %}
                 </div>
               </div>
