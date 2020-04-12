@@ -26,6 +26,8 @@ fonts:
   regular_font: 400
   bold_font: 600
   extra_bold_font: 700
+forms:
+  formspree_url: 'https://formspree.io'
 buttons:
   button-border-radius: 5px
   cta-button-font-size: 1rem
@@ -50,10 +52,10 @@ nav-menu:
   menu-5-name: Health
   menu-5-link_url: /yogismile/
   menu-6-name: Contact
-  menu-6-link_url: '#footer'
+  menu-6-link_url: 'mailto:happy@claudianeumann.yoga'
 blog-settings:
   blog-owner: Claudia Neumann
-  profile-picture_image: /assets/images/srcset/2000/claudia-neumann-yoga-101.jpg
+  profile-picture_image: /assets/images/srcset/600/claudia-neumann-yoga-101.jpg
   ad_image: https://via.placeholder.com/300x400
   colors:
     # HEX codes have to be wrapped by SINGLE QUOTES to respect YAML syntax

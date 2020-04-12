@@ -1,4 +1,4 @@
-<footer id="footer" class="padding-outer">
+I"Þ<footer id="footer" class="padding-outer">
   <div class="grid-reverse-noGutter-spaceAround form-container">
     <div class="col-5_md-12 footer-form">
       <h2 class="editable">
@@ -7,7 +7,7 @@
       <p class="editable">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <form action="{{site.data.settings.forms.formspree_url}}" method="post">
+      <form action="https://formspree.io" method="post">
         <input type="text" name="name" value="" placeholder="NAME" />
         <input type="email" name="email" value="" placeholder="EMAIL" />
         <input type="submit" name="button" value="join me" class="form-send-button">
@@ -17,7 +17,7 @@
     </div>
     <div class="col-5_md-12-bottom footer-branding">
       <a href="#top" class="footer-brand-link">
-        <img class="footer-logo" src="{{site.data.settings.basic_settings.site_logo_image}}" alt="Yogismile by Claudia Neumann" />
+        <img class="footer-logo" src="/assets/images/yogismile-logo.png" alt="Yogismile by Claudia Neumann" />
       </a>
       <a href="#top" class="footer-brand-link">
         <h2 class="footer-title">
@@ -26,28 +26,28 @@
       </a>
       <div class="social-box">
         <div class="footer-social-icon">
-          <a href="{{site.data.settings.social.facebook_url}}" target="_blank">
+          <a href="https://facebook.com" target="_blank">
             <i class="fab fa-facebook"></i>
           </a>
         </div>
       </div>
       <div class="social-box">
         <div class="footer-social-icon">
-          <a href="{{site.data.settings.social.instagram_url}}" target="_blank">
+          <a href="https://instagram.com" target="_blank">
             <i class="fab fa-instagram"></i>
           </a>
         </div>
       </div>
       <div class="social-box">
         <div class="footer-social-icon">
-          <a href="{{site.data.settings.social.youtube_url}}" target="_blank">
+          <a href="https://youtube.com" target="_blank">
             <i class="fab fa-youtube"></i>
           </a>
         </div>
       </div>
       <div class="email-link">
-        <a href="mailto:{{site.data.settings.basic_settings.contact-email}}">
-          {{site.data.settings.basic_settings.contact-email}}
+        <a href="mailto:happy@claudianeumann.yoga">
+          happy@claudianeumann.yoga
         </a>
       </div>
       <div class="impressum">
@@ -58,3 +58,4 @@
     </div>
   </div>
 </footer>
+:ET
