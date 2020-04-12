@@ -1,6 +1,7 @@
 ---
 layout: compress
 ---
+
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -8,7 +9,7 @@ layout: compress
 <body class="bg-blog">
   <header class="center blog-header">
     <a href="/yogismile">
-      <img src="/assets/images/yogismile-logo.png" alt="">
+      <img src="/assets/images/yogismile-logo.png" alt="" />
       <h2 class="logo padded-1">
         <span>Yogismile</span> by Claudia Neumann
       </h2>
@@ -35,7 +36,7 @@ layout: compress
     <div class="mobile-nav hide">
       <div class="mobile-navbar center">
         <a href="/yogismile">
-          <img src="/assets/images/yogismile-logo.png" alt="">
+          <img src="/assets/images/yogismile-logo.png" alt="" />
           <h2 class="logo padded-1">
             <span>Yogismile</span> by Claudia Neumann
           </h2>
@@ -59,7 +60,7 @@ layout: compress
   <section class="padded-outer">
 
     <div class="blog-latest-banner flex-left">
-      <img src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img" alt="">
+      <img src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img" alt="" />
       <div class="blog-banner-content">
         <h3>
           {% if page._hidden_blog == true %}
@@ -100,7 +101,7 @@ layout: compress
               <h3>
                 Published on {{ page.date | date_to_string }}
               </h3>
-              <hr>
+              <hr />
             </div>
             {% endunless %}
             {{content}}
@@ -131,7 +132,7 @@ layout: compress
               <h3 class="editable">
                 You will also like:
               </h3>
-              <hr>
+              <hr />
               <div class="grid-noGutter">
                 <!-- Create a list of related posts that match the category on the site's posts and list up to 2 suggestions; if using tags, can provide more specific content as it narrows down the listings -->
                 {% for post in site.related_posts limit:3 %}
@@ -149,7 +150,7 @@ layout: compress
                   <div class="related-preview">
                     <a href="{{ post.url }}">
                       <div class="blog-thumb">
-                        <img src="{{post.banner_image}}" class="responsive-img" alt="">
+                        <img src="{{post.banner_image}}" class="responsive-img" alt="" />
                       </div>
                       <div class="related-preview-content">
                         <h3>
@@ -207,12 +208,12 @@ layout: compress
                 </div>
               </div>
               <div class="col-12 vertical-ad-banner">
-                <img src="{% if page.vertical-ad_image %}{{page.vertical-ad_image}} {%else%} {{site.data.settings.blog-settings.ad_image}}{%endif%}" class="responsive-img" alt="">
+                <img src="{% if page.vertical-ad_image %}{{page.vertical-ad_image}} {%else%} {{site.data.settings.blog-settings.ad_image}}{%endif%}" class="responsive-img" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div></section>
     </main>
     {% include footer.html %}
     {% include blog-scripts.html %}
