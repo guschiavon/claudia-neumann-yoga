@@ -51,10 +51,11 @@ body.bg-blog {
 
 .blog-latest-banner {
   position: relative;
-  height: 350px;
+  height: 400px;
   padding: 0 5%;
   img {
     border-radius: 2rem;
+    object-position: center;
   }
 }
 
