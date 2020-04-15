@@ -27,7 +27,7 @@ fonts:
   bold_font: 600
   extra_bold_font: 700
 forms:
-  formspree_url: 'https://formspree.io'
+  # formspree_url: 'https://formspree.io/xzbaoyal'
 buttons:
   button-border-radius: 5px
   cta-button-font-size: 1rem
@@ -51,8 +51,8 @@ nav-menu:
   menu-4-link_url: /retreats
   menu-5-name: Health
   menu-5-link_url: /yogismile/
-  menu-6-name: Contact
-  menu-6-link_url: 'mailto:happy@claudianeumann.yoga'
+  menu-6-name: Impressum
+  menu-6-link_url: /impressum
 blog-settings:
   blog-owner: Claudia Neumann
   profile-picture_image: /assets/images/srcset/600/claudia-neumann-yoga-101.jpg
