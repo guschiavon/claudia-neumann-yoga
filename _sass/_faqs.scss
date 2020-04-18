@@ -1,5 +1,6 @@
 .faq {
-  border: 1px solid $dark-color;
+  background-color: $accent-shade;
+  border: none;
   border-radius: 4px;
   padding: 1rem 2rem;
   max-width: 80%;
@@ -8,7 +9,6 @@
   transition: .3s all;
   &:hover {
     transition: .3s all;
-    border-color: $light-color;
     color: $light-color;
     background-color: $accent-color;
   }
