@@ -46,7 +46,16 @@
     margin-bottom: 2rem;
   }
 }
-
+.overview-top {
+  background-image: url(/assets/images/srcset/600/aileen-david-rae-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.overview-bottom {
+  background-image: url(/assets/images/srcset/600/allie-smith-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
 h3.object-price {
   font-size: 1.5rem;
   color: $accent-color;

@@ -24,6 +24,14 @@ defaults:
           # 16:9 aspect ratio for banner
           width: 2000
           height: 1125
+        feature-box-1_image:
+          width: 600
+        feature-box-2_image:
+          width: 600
+        feature-box-3_image:
+          width: 600
+        feature-retreat_image:
+          width: 800  
 
 faqs: []
 _array_structures:
