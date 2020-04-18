@@ -10,7 +10,9 @@
     z-index: 1;
     font-weight: $light_font;
     color: $light-color;
+    font-size: 2.5rem;
   }
+
 }
 
 .practical-info {
@@ -25,6 +27,10 @@
   }
   h3, p {
     margin-bottom: 1rem;
+  }
+  h3 {
+    color: $primary-color;
+    font-size: 1.3rem;
   }
 }
 
@@ -41,9 +47,10 @@
   }
 }
 
-.object-price {
+h3.object-price {
   font-size: 1.5rem;
   color: $accent-color;
+  font-family: $paragraph-font-family;
 }
 
 .certification-content {

@@ -2,14 +2,14 @@
   {% for testimonial in page.testimonials %}
   <div class="col-8_sm-12">
     <div class=" testimonial-box">
-      <blockquote class="testimonial-text-content grid">
+      <div class="testimonial-text-content grid">
         <p class="col-12">
           {{testimonial.content}}
         </p>
         <h3 class="col-12 right">
-          - {{testimonial.reviewer}}
+          {{testimonial.reviewer}}
         </h3>
-      </blockquote>
+      </div>
     </div>
   </div>
   {% endfor %}

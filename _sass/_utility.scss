@@ -71,4 +71,16 @@ div.hide {
 }
 .overview-img-box {
   max-height: 35rem;
+  position: relative;
+}
+.gradient-r-l {
+  content: "";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background: linear-gradient(to left, rgba(60,60,60,0.4) 60%, #f1f1f1 95%);
+  background-size: cover;
 }

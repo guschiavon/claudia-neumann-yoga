@@ -3,16 +3,14 @@
 }
 
 .testimonial-box {
-  padding: 2rem 3rem;
+  padding: 2rem;
   background-color: $light-color;
   border-radius: 10px;
   margin-bottom: 2rem;
 }
 
-blockquote.testimonial-text-content {
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+.testimonial-text-content {
+  padding: 1rem;
   p {
     font-size: 1rem;
     font-style: italic;
@@ -20,14 +18,6 @@ blockquote.testimonial-text-content {
   h3 {
     font-weight: $light_font;
     font-size: 1.3rem;
+    margin: 0;
   }
-}
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 10em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
 }
