@@ -1,63 +1,39 @@
 ---
 layout: default
 page_title: Retreats
+banner_image: /assets/images/srcset/2000/claudia-neumann-yoga-021.jpg
+banner_heading: Retreats
 permalink: /retreats
 _hidden_header: retreats
 location-1-name: Portugal
-location-1-thumbnail_image: /assets/images/placeholder-010.jpg
+location-1-thumbnail_image: /assets/images/srcset/2000/claudia-neumann-yoga-187.jpg
 location-1-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
 location-1-target_url: /retreats/portugal-2020
 location-2-name: Morrocco
-location-2-thumbnail_image: /assets/images/placeholder 006.jpg
+location-2-thumbnail_image: /assets/images/srcset/2000/claudia-neumann-yoga-188.jpg
 location-2-overview: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 location-2-target_url: /retreats/morrocco-2021
 location-3-name: Bali
-location-3-thumbnail_image: /assets/images/placeholder-007.jpg
+location-3-thumbnail_image: /assets/images/srcset/2000/claudia-neumann-yoga-181.jpg
 location-3-overview: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 location-3-target_url: /retreats/bali-2021
 add_testimonials: false
 ---
 
 <main class="retreats-background">
-  <section class="retreats-showcase center">
-    <h2>
-      All Retreats
-    </h2>
-    <div class="grid-noGutter-spaceBetween">
+  <section class="retreats-showcase">
+    <div class="grid-noGutter-spaceBetween center">
 
-      {% for retreat in site.retreats offset:1 %}
-      {% if retreat.display == true %}
-      <div class="col-6_sm-12 padding-inner">
-        <a href="{{retreat.url}}">
-          <div class="retreat-box">
-            <div class="retreat-card">
-              <div class="retreat-thumb flex-center">
-                <img src="{{retreat.banner_image}}" class="responsive-img" alt="{{retreat.banner_image-alt-text}}">
-                <h3>
-                  {{retreat.banner_heading}}
-                </h3>
-              </div>
-              <p>
-                {{retreat.retreat-recommended-for_html}}
-              </p>
-              <h3 class="date">
-                {{retreat.retreat-date}}
-              </h3>
-              <a href="{{retreat.url}}" class="learn-more-button">
-
-                  Learn more
-
-              </a>
-            </div>
-          </div>
-        </a>
-      </div>
-      {% endif %}
+      {% for retreat in site.retreats %}
+        {% if retreat.display == true %}
+          {% include retreat-card.html %}
+        {% endif %}
       {% endfor %}
 
     </div>
   </section>
 </main>
+
 <section class="highlights">
   <div class="padding-inner">
     <div class="grid-noGutter">
