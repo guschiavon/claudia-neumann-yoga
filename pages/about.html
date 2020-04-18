@@ -55,6 +55,7 @@ affiliates:
   </header>
   <section class="bg-light padding-outer">
     <div class="grid-noGutter-spaceAround">
+      <h2 class="col-12 center">Certifications</h2>
       {% for certification in page.certifications %}
       <div class="col-4 certification-item">
         <div class="certification-content center">
@@ -64,15 +65,15 @@ affiliates:
           <h2>
             {{certification.certification-name}}
           </h2>
-          <h4>
+          <p>
             {{certification.certification-provider}}
-          </h4>
-          <h4>
+          </p>
+          <p>
             {{certification.certification-date}}
-          </h4>
-          <h4>
+          </p>
+          <p>
             {{certification.certification-teacher}}
-          </h4>
+          </p>
         </div>
       </div>
       {% endfor %}

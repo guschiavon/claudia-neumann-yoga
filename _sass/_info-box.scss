@@ -1,9 +1,10 @@
 .info-box {
   min-height: 200px;
   position: relative;
+  overflow: hidden;
   img {
     position: absolute;
-    width: 350px;
+    width: 100%;
     }
   h2 {
     z-index: 1;
@@ -62,3 +63,15 @@
     padding-bottom: .6rem;
     }
   }
+
+.gradient {
+  content: "";
+  position:absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  display:inline-block;
+  background: linear-gradient(to right, rgba(60,60,60,0.4) 18%, rgba(255,255,255, 100) 95%);
+  background-size: cover;
+}

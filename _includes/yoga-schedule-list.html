@@ -8,333 +8,96 @@
     </p>
   </div>
   <div class="schedule-calendar-box padding-inner grid-spaceBetween">
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2 mobile-hide">
-      <h2>
-        <strong>Day</strong>
-      </h2>
-    </div>
-    <div class="cal-column col-2 mobile-hide">
-      <h2>
-        <strong>Time</strong>
-      </h2>
-    </div>
-    <div class="cal-column col-2 mobile-hide">
-      <h2 class="editable">
-        <strong>Style</strong>
-      </h2>
-    </div>
-    <div class="cal-column col-2 mobile-hide">
-      <h2 class="editable">
-        <strong>Location</strong>
-      </h2>
-    </div>
-    <div class="cal-column col-2 mobile-hide">
-      <h2 class="editable">
-        <strong>Add to cal</strong>
-      </h2>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
+    <div class="col-12 grid-noGutter">
+      <div class="col-1 mobile-hide">
+        <!-- spacer column -->
+      </div>
+      <div class="cal-column col-2 mobile-hide">
+        <h2>
+          <strong>Day</strong>
+        </h2>
+      </div>
+      <div class="cal-column col-2 mobile-hide">
+        <h2>
+          <strong>Time</strong>
+        </h2>
+      </div>
+      <div class="cal-column col-2 mobile-hide">
+        <h2 class="editable">
+          <strong>Style</strong>
+        </h2>
+      </div>
+      <div class="cal-column col-2 mobile-hide">
+        <h2 class="editable">
+          <strong>Location</strong>
+        </h2>
+      </div>
+      <div class="cal-column col-2 mobile-hide">
+        <h2 class="editable">
+          <strong>Add to cal</strong>
+        </h2>
+      </div>
+      <div class="col-1 mobile-hide">
+        <!-- spacer column -->
+      </div>
     </div>
 
 <!-- This forloop iterates over the page.schedule array, finds the classes that have the day of the week and prints the classes for that day of the week -->
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Monday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Monday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Monday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 
 
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Tuesday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Tuesday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Tuesday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 
 
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Wednesday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Wednesday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Wednesday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Thursday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Thursday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Thursday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Friday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Friday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Friday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Saturday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Saturday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Saturday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 
     {% for schedule in page.schedule %}
-    {% if schedule.day == 'Sunday' %}
-    {% for class in schedule.classes %}
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
-        Sunday
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.time}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <h3>
-        {{class.style}}
-      </h3>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.studio_url}}" target="_blank">
-        <h3>
-          {{class.studio}}
-        </h3>
-      </a>
-    </div>
-    <div class="cal-column col-2_md-3-middle">
-      <a href="{{class.add-to-cal}}" target="_blank">
-        <h3>
-          Add now
-        </h3>
-      </a>
-    </div>
-    <div class="col-1 mobile-hide">
-<!-- spacer column -->
-    </div>
-    {% endfor %}
-    {% endif %}
+      {% if schedule.day == 'Sunday' %}
+        {% for class in schedule.classes %}
+          {% include yoga-schedule-component.html %}
+        {% endfor %}
+      {% endif %}
     {% endfor %}
 </section>

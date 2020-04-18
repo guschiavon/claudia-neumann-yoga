@@ -1,7 +1,11 @@
 .schedule-calendar, .cal-column {
   text-align: center;
+  padding: 1.5rem;
+  // min-height: 100px;
   h2, h3, p {
-    margin-bottom: 1.5rem;
+    margin: 1rem 0;
+  }
+  h3, p {
     font-family: $paragraph-font-family;
   }
   h2 {
@@ -10,6 +14,16 @@
   h3 {
     font-weight: $light-font;
   }
+  h3.flex-center {
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
+
+.schedule-text-box {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 .schedule-text-box h2 {
@@ -26,11 +40,32 @@
   background-color: #efefef;
 }
 
-hr.col-12 {
-  padding: 0;
-  margin-bottom: 1.5rem;
-  border: 2px solid $dark-color;
+.yoga-classes:nth-child(even) {
+  background-color: $primary-shade;
+  color: $light-color;
 }
-.cal-column h3 {
-    min-height: 50px;
+
+div.cal-column.col-2_md-12-middle,
+div.cal-column.col-2_md-3-middle
+ {
+  align-self: stretch;
 }
+
+div.cal-column.col-2_md-12-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cal-column a {
+ display: block;
+}
+
+// hr.col-12 {
+//   padding: 0;
+//   margin-bottom: 1.5rem;
+//   border: 2px solid $dark-color;
+// }
+// .cal-column h3 {
+//     min-height: 50px;
+// }

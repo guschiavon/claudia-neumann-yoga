@@ -7,7 +7,7 @@
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
   </div>
-  <div class="schedule-calendar-box padding-inner grid-spaceBetween">
+  <div class="schedule-calendar-box padding-inner grid-spaceBetween-noGutter">
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
@@ -40,27 +40,24 @@
 <!-- spacer column -->
     </div>
 
-
     <!-- Create a list called monday to represent contents from _yoga folder that contain Monday as value on the Front Matter Array Yoga->Schedule->Day -->
-
-
 
     {% assign monday = site.yoga | contains:"yoga.schedule.day", "Monday" %}
 
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
+    <div class="cal-column col-2_md-12-middle bg-primary-shade">
+      <h3 class="flex-center">
         Monday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3-middle">
-      <!-- For item yoga in the new list monday -->
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
+      <!-- For item 'yoga' in the new list 'monday' -->
       {% for yoga in monday %}
-      <!-- and for the item class in array yoga.schedule -->
+      <!-- and for the array 'class' in item 'yoga.schedule' -->
         {% for class in yoga.schedule %}
-        <!-- and only if the array class.day is equal to Monday -->
+        <!-- and only if the array 'class.day' is equal to 'Monday' -->
           {% if class.day == 'Monday' %}
           <!-- for all classes in the class array 'classes', print this code -->
             {% for class in class.classes %}
@@ -73,7 +70,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in monday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
@@ -87,7 +84,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in monday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
@@ -103,7 +100,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in monday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
@@ -121,14 +118,14 @@
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-    <hr class="col-12">
+    <!-- <hr class="col-12"> -->
 
   {% assign tuesday = site.yoga | contains:"yoga.schedule.day", "Tuesday" %}
   <div class="col-1 mobile-hide">
 <!-- spacer column -->
   </div>
     <div class="cal-column col-2_md-12-middle">
-      <h3>
+      <h3 class="flex-center">
         Tuesday
       </h3>
     </div>
@@ -194,17 +191,17 @@
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-<hr class="col-12">
+<!-- <hr class="col-12"> -->
   {% assign wednesday = site.yoga | contains:"yoga.schedule.day", "Wednesday" %}
   <div class="col-1 mobile-hide">
 <!-- spacer column -->
   </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
+    <div class="cal-column col-2_md-12-middle bg-primary-shade">
+      <h3 class="flex-center">
         Wednesday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
@@ -218,7 +215,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
@@ -232,7 +229,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
@@ -248,13 +245,13 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in wednesday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <a href="{{class.add-to-cal}}" target="_blank">
-                <h3 class="editable">
+                <h3>
                   Add now
                 </h3>
               </a>
@@ -266,13 +263,13 @@
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-<hr class="col-12">
+<!-- <hr class="col-12"> -->
   {% assign thursday = site.yoga | contains:"yoga.schedule.day", "Thursday" %}
   <div class="col-1 mobile-hide">
 <!-- spacer column -->
   </div>
     <div class="cal-column col-2_md-12-middle">
-      <h3>
+      <h3 class="flex-center">
         Thursday
       </h3>
     </div>
@@ -339,17 +336,17 @@
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-<hr class="col-12">
+<!-- <hr class="col-12"> -->
   {% assign friday = site.yoga | contains:"yoga.schedule.day", "Friday" %}
   <div class="col-1 mobile-hide">
 <!-- spacer column -->
   </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
+    <div class="cal-column col-2_md-12-middle bg-primary-shade">
+      <h3 class="flex-center">
         Friday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -363,7 +360,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -377,7 +374,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -393,7 +390,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in friday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
@@ -411,17 +408,17 @@
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-<hr class="col-12">
+<!-- <hr class="col-12"> -->
   {% assign saturday = site.yoga | contains:"yoga.schedule.day", "Saturday" %}
   <div class="col-1 mobile-hide">
 <!-- spacer column -->
   </div>
     <div class="cal-column col-2_md-12-middle">
-      <h3>
+      <h3 class="flex-center">
         Saturday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in saturday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
@@ -435,7 +432,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in saturday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
@@ -449,7 +446,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in saturday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
@@ -465,7 +462,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3">
+    <div class="cal-column col-2_md-3-middle">
       {% for yoga in saturday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
@@ -483,17 +480,17 @@
     <div class="col-1 mobile-hide">
 <!-- spacer column -->
     </div>
-<hr class="col-12">
+<!-- <hr class="col-12"> -->
   {% assign sunday = site.yoga | contains:"yoga.schedule.day", "Sunday" %}
   <div class="col-1 mobile-hide">
 <!-- spacer column -->
   </div>
-    <div class="cal-column col-2_md-12-middle">
-      <h3>
+    <div class="cal-column col-2_md-12-middle bg-primary-shade">
+      <h3 class="flex-center">
         Sunday
       </h3>
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
@@ -507,7 +504,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
@@ -521,7 +518,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
@@ -537,7 +534,7 @@
       {% endfor %}
       <!--  -->
     </div>
-    <div class="cal-column col-2_md-3-middle">
+    <div class="cal-column col-2_md-3-middle bg-primary-shade">
       {% for yoga in sunday %}
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
