@@ -3,6 +3,7 @@
 
   h2, h3, p {
     margin: 1rem 0;
+    color: $dark-color;
   }
   h3, p {
     font-family: $paragraph-font-family;
@@ -46,7 +47,7 @@
 
 .yoga-classes:nth-child(even) {
   background-color: $primary-shade;
-  color: $light-color;
+  color: $dark-color;
 }
 
 div.cal-column.col-2_md-12-middle,

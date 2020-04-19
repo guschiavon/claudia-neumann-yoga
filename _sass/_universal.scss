@@ -16,3 +16,7 @@ p {
 a {
   font-family: $header-font-family;
 }
+
+.credits {
+  p, a { font-size: .5rem; }
+}

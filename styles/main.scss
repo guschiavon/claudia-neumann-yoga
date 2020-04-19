@@ -4,7 +4,7 @@
 @import "_resets";
 
 $primary-color: {{site.data.settings.colors.primary_color}};
-$primary-shade: lighten($primary-color, 10);
+$primary-shade: lighten($primary-color, 30);
 $accent-color: {{site.data.settings.colors.accent_color}};
 $accent-shade: lighten($accent-color, 10);
 $dark-color: {{site.data.settings.colors.dark_color}};
