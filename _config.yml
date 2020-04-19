@@ -31,7 +31,7 @@ defaults:
         feature-box-3_image:
           width: 600
         feature-retreat_image:
-          width: 800  
+          width: 800
 
 faqs: []
 _array_structures:
@@ -55,6 +55,7 @@ plugins:
   - jekyll-archives
   - jekyll-include-cache
   - jekyll-sitemap
+  - jekyll-srcset
 jekyll-archives:
   enabled: []
   layout: archive

@@ -3,7 +3,12 @@
   {% include desktop-navbar.html %}
   {% include mobile-nav.html %}
   <div class="header-banner">
-    <img src="{{page.banner_image}}" class="responsive-img" alt="{{page.banner_image-alt-text}}">
+    <picture>
+      <source srcset="{{page.banner_image | replace: "480", "2000"}}" media="(min-width: 1400px)">
+      <source srcset="{{page.banner_image | replace: "480", "800"}}" media="(min-width: 800px)">
+      <source srcset="{{page.banner_image | replace: "480", "600"}}" media="(min-width: 600px)">
+      <img src="{{page.banner_image}}" class="responsive-img" alt="{{page.banner_image-alt-text}}">
+    </picture>
     <div class="header-text-box">
       <h1>
       {{page.banner_heading}}
