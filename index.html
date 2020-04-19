@@ -17,10 +17,10 @@ feature-box-1_url: /yoga
 feature-box-2_image: /assets/images/srcset/600/joanna-kosinska-unsplash.jpg
 feature-box-2-title: Healing
 feature-box-2_url: /offerings/reiki
-feature-box-3_image: /assets/images/srcset/600/claudia-neumann-yoga-128.jpg
+feature-box-3_image: /assets/images/srcset/480/claudia-neumann-yoga-128.jpg
 feature-box-3-title: Retreats
 feature-box-3_url: /retreats
-feature-retreat_image: /assets/images/srcset/800/claudia-neumann-yoga-107.jpg
+feature-retreat_image: /assets/images/srcset/480/claudia-neumann-yoga-107.jpg
 ---
 
     <main>
@@ -29,7 +29,12 @@ feature-retreat_image: /assets/images/srcset/800/claudia-neumann-yoga-107.jpg
           <!-- Maybe best is to make this an "Include" so to use the same code for other sections -->
           {% if page.include-profile-thumb_image == true %}
           <div class="col-12 thumb-profile-pic flex-center ">
-            <img src="{{page.thumb-profile-pic_image}}" class="responsive-img" alt="Claudia Neumann Yoga">
+            <picture>
+              <source srcset="{{page.thumb-profile-pic_image | replace: "480", "800"}}" media="(min-width: 768px)">
+              <source srcset="{{page.thumb-profile-pic_image | replace: "480", "600"}}" media="(min-width: 600px)">
+              <img src="{{page.thumb-profile-pic_image}}" class="responsive-img" alt="">
+            </picture>
+            <!-- <img src="{{page.thumb-profile-pic_image}}" class="responsive-img" alt="Claudia Neumann Yoga"> -->
           </div>
           {% endif %}
           <div class="col-12 center">
@@ -50,7 +55,14 @@ feature-retreat_image: /assets/images/srcset/800/claudia-neumann-yoga-107.jpg
     <!-- upcoming retreat section -->
     <section class="grid-noGutter padding-outer section-feature bg-dark flex-right">
       <div class="col-6_md-12 section-lg-feature-image">
-        <img src="{{page.feature-retreat_image}}" class="responsive-img" alt="">
+        <picture>
+          <source srcset="{{page.feature-retreat_image | replace: "480", "2000"}}" media="(min-width: 801px)">
+          <source srcset="{{page.feature-retreat_image | replace: "480", "800"}}" media="(min-width: 800px)">
+          <source srcset="{{page.feature-retreat_image | replace: "480", "800"}}" media="(min-width: 768px)">
+          <source srcset="{{page.feature-retreat_image | replace: "480", "600"}}" media="(min-width: 600px)">
+          <img src="{{page.feature-retreat_image}}" class="responsive-img" alt="">
+        </picture>
+        <!-- <img src="{{page.feature-retreat_image}}" class="responsive-img" alt=""> -->
       </div>
       <div class="col-6_md-12 section-feature-content">
         <div class="padding-outer">

@@ -20,8 +20,11 @@
 .feature-box {
   position: relative;
   overflow: hidden;
+  margin-bottom: 1rem;
   img {
-    position:absolute;
-    filter: brightness(.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.7);
   }
 }
