@@ -3,7 +3,11 @@
     <div class="retreat-box">
       <div class="retreat-card">
         <div class="retreat-thumb flex-center">
-          <img src="{{retreat.banner_image}}" class="responsive-img" alt="{{retreat.banner_image-alt-text}}">
+          <picture>
+            <source srcset="{{retreat.banner_image | replace: "480", "600"}}" media="(min-width: 768px)">
+            <img src="{{retreat.banner_image}}" class="responsive-img" loading="lazy" alt="{{retreat.banner_image-alt-text}}">
+          </picture>
+          <!-- <img src="{{retreat.banner_image}}" class="responsive-img" alt="{{retreat.banner_image-alt-text}}"> -->
           <h3>
             {{retreat.banner_heading}}
           </h3>

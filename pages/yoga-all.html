@@ -3,20 +3,20 @@ layout: default
 page_title: Yoga Practices
 permalink: /yoga
 banner_heading: Yoga practices
-banner_image: /assets/images/srcset/2000/claudia-neumann-yoga-114.jpg
+banner_image: /assets/images/srcset/480/claudia-neumann-yoga-114.jpg
 add_banner_button: true
 banner-cta-button_url: '#schedule'
 banner-cta-button_text: Class schedule
-feature-box-1_image: /assets/images/srcset/2000/claudia-neumann-yoga-146.jpg
+feature-box-1_image: /assets/images/srcset/480/claudia-neumann-yoga-115.jpg
 feature-box-1-title: Corporate
 feature-box-1_url: /yoga/corporate-yoga
-feature-box-2_image: /assets/images/srcset/2000/claudia-neumann-yoga-086.jpg
+feature-box-2_image: /assets/images/srcset/480/claudia-neumann-yoga-186.jpg
 feature-box-2-title: Vinyasa
 feature-box-2_url: /yoga/vinyasa-yoga
-feature-box-3_image: /assets/images/srcset/600/ksenia-makagonova-unsplash.jpg
+feature-box-3_image: /assets/images/srcset/480/ksenia-makagonova-unsplash.jpg
 feature-box-3-title: Yin
 feature-box-3_url: /yoga/yin-yoga
-private-session_image: /assets/images/srcset/2000/claudia-neumann-yoga-154.jpg
+private-session_image: /assets/images/srcset/480/claudia-neumann-yoga-169.jpg
 ---
 
 <main>
@@ -42,7 +42,13 @@ private-session_image: /assets/images/srcset/2000/claudia-neumann-yoga-154.jpg
 
 <section class="grid-noGutter padding-outer section-feature bg-light flex-right">
   <div class="col-6_md-12 section-lg-feature-image">
-    <img src="{{page.private-session_image}}" class="responsive-img" alt="" />
+    <picture>
+      <source srcset="{{page.private-session_image | replace: "480", "800"}}" media="(min-width: 800px)">
+      <source srcset="{{page.private-session_image | replace: "480", "800"}}" media="(min-width: 768px)">
+      <source srcset="{{page.private-session_image | replace: "480", "600"}}" media="(min-width: 600px)">
+      <img src="{{page.private-session_image}}" class="responsive-img zoom" loading="lazy" alt="">
+    </picture>
+    <!-- <img src="{{page.private-session_image}}" class="responsive-img" alt="" /> -->
   </div>
   <div class="col-6_md-12 section-feature-content">
     <div class="padding-outer center">
