@@ -15,12 +15,11 @@ layout: default
       <div class="col-6_sm-12 flex-center overview-img-box mobile-hide">
         <span class="gradient-r-l"></span>
         <picture>
-          <source srcset="{{page.box-1_image | replace: "480", "800"}}" media="(min-width: 800px)">
-          <source srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 768px)">
-          <source srcset="{{page.box-1_image | replace: "480", "600"}}" media="(min-width: 600px)">
-          <img src="{{page.box-1_image}}" class="responsive-img" loading="lazy" alt="">
+          <source data-srcset="{{page.box-1_image | replace: "480", "800"}}" media="(min-width: 800px)">
+          <source data-srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 768px)">
+          <source data-srcset="{{page.box-1_image | replace: "480", "600"}}" media="(min-width: 600px)">
+          <img data-src="{{page.box-1_image}}" class="responsive-img lazyload" alt="">
         </picture>
-        <!-- <img src="{{page.box-1_image}}" class="responsive-img" loading="lazy" alt=""> -->
       </div>
     </div>
     {% include info-box.html %}
@@ -55,7 +54,7 @@ layout: default
 <!-- About Location section -->
 <section id="location" class="location-highlights">
   <div class="full-width-banner">
-    <img src="{{page.location-highlights-background_image}}" alt="{{page.location-highlights-background-image-alt-text}}" class="responsive-img">
+    <img data-src="{{page.location-highlights-background_image}}" alt="{{page.location-highlights-background-image-alt-text}}" class="responsive-img lazyload">
     <div class="padding-outer">
       <div class="full-width-banner-content padding-inner">
         <h2>

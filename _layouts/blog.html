@@ -9,7 +9,7 @@ layout: compress
 <body class="bg-blog">
   <header class="center blog-header">
     <a href="/yogismile">
-      <img src="/assets/images/yogismile-logo.png" alt="" />
+      <img src="/assets/images/srcset/480/yogismile-logo.png" alt="" />
       <h2 class="logo padded-1">
         <span>Yogismile</span> by Claudia Neumann
       </h2>
@@ -36,7 +36,7 @@ layout: compress
     <div class="mobile-nav hide">
       <div class="mobile-navbar center">
         <a href="/yogismile">
-          <img src="/assets/images/yogismile-logo.png" alt="" />
+          <img src="/assets/images/srcset/480/yogismile-logo.png" alt="" />
           <h2 class="logo padded-1">
             <span>Yogismile</span> by Claudia Neumann
           </h2>
@@ -150,7 +150,7 @@ layout: compress
                   <div class="related-preview">
                     <a href="{{ post.url }}">
                       <div class="blog-thumb">
-                        <img src="{{post.banner_image}}" class="responsive-img" alt="" />
+                        <img data-src="{{post.banner_image}}" class="responsive-img lazyload" alt="" />
                       </div>
                       <div class="related-preview-content">
                         <h3>
@@ -208,7 +208,7 @@ layout: compress
                 </div>
               </div>
               <div class="col-12 vertical-ad-banner">
-                <img src="{% if page.vertical-ad_image %}{{page.vertical-ad_image}} {%else%} {{site.data.settings.blog-settings.ad_image}}{%endif%}" class="responsive-img" alt="" />
+                <img data-src="{% if page.vertical-ad_image %}{{page.vertical-ad_image}} {%else%} {{site.data.settings.blog-settings.ad_image}}{%endif%}" class="responsive-img lazyload" alt="" />
               </div>
             </div>
           </div>
