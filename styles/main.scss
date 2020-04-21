@@ -2,8 +2,8 @@
 ---
 // Main SCSS file
 @import "_resets";
-@import url(//fonts.googleapis.com/css?family=Megrim&display=swap);
-@import url(//fonts.googleapis.com/css?family=Gotu&display=swap);
+@import url('https://fonts.googleapis.com/css?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
 
 $primary-color: {{site.data.settings.colors.primary_color}};
 $primary-shade: lighten($primary-color, 30);
