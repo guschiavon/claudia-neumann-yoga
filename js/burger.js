@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 
   console.log('mobile menu loaded');

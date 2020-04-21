@@ -4,10 +4,9 @@
       <div class="retreat-card">
         <div class="retreat-thumb flex-center">
           <picture>
-            <source srcset="{{retreat.banner_image | replace: "480", "600"}}" media="(min-width: 768px)">
-            <img src="{{retreat.banner_image}}" class="responsive-img" loading="lazy" alt="{{retreat.banner_image-alt-text}}">
+            <source data-srcset="{{retreat.banner_image | replace: "480", "600"}}" media="(min-width: 768px)">
+            <img data-src="{{retreat.banner_image}}" class="responsive-img lazyload" alt="{{retreat.banner_image-alt-text}}">
           </picture>
-          <!-- <img src="{{retreat.banner_image}}" class="responsive-img" alt="{{retreat.banner_image-alt-text}}"> -->
           <h3>
             {{retreat.banner_heading}}
           </h3>
@@ -18,11 +17,6 @@
         <h3 class="date">
           {{retreat.retreat-date}}
         </h3>
-        <!-- <a href="{{retreat.url}}" class="learn-more-button">
-
-            Learn more
-
-        </a> -->
       </div>
     </div>
   </a>

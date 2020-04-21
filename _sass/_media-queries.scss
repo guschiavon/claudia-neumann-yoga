@@ -50,9 +50,21 @@
   .full-width-banner {
     height: 700px;
   }
+  .schedule-text-box {
+    max-width: 100%;
+  }
+  .schedule-calendar {
+    width: 100%;
+    &.padding-outer {
+      padding: 2%;
+    }
+  }
 }
 @media (max-width: 600px) {
-  .schedule-calendar-box h3 {font-size: .9rem;}
+  .schedule-calendar-box h3 {
+    font-size: .7rem;
+    text-transform: unset;
+  }
   .header-banner h1 {
     font-size: 2rem;
     text-align: center;
@@ -179,6 +191,7 @@
     display: inline-block;
   }
   .footer-logo {margin-top: 2rem;}
+
 }
 
 
@@ -211,6 +224,9 @@
   }
   .header-banner {
     height: 45vh;
+  }
+  .retreat-box {
+    padding: 2%;
   }
 }
 

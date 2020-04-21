@@ -55,13 +55,12 @@ feature-retreat_image: /assets/images/srcset/480/claudia-neumann-yoga-107.jpg
     <section class="grid-noGutter padding-outer section-feature bg-dark flex-right">
       <div class="col-6_md-12 section-lg-feature-image">
         <picture>
-          <source srcset="{{page.feature-retreat_image | replace: "480", "2000"}}" media="(min-width: 801px)">
-          <source srcset="{{page.feature-retreat_image | replace: "480", "800"}}" media="(min-width: 800px)">
-          <source srcset="{{page.feature-retreat_image | replace: "480", "800"}}" media="(min-width: 768px)">
-          <source srcset="{{page.feature-retreat_image | replace: "480", "600"}}" media="(min-width: 600px)">
-          <img src="{{page.feature-retreat_image}}" class="responsive-img" loading="lazy" alt="">
+          <source data-srcset="{{page.feature-retreat_image | replace: "480", "2000"}}" media="(min-width: 801px)">
+          <source data-srcset="{{page.feature-retreat_image | replace: "480", "800"}}" media="(min-width: 800px)">
+          <source data-srcset="{{page.feature-retreat_image | replace: "480", "800"}}" media="(min-width: 768px)">
+          <source data-srcset="{{page.feature-retreat_image | replace: "480", "600"}}" media="(min-width: 600px)">
+          <img data-src="{{page.feature-retreat_image}}" class="responsive-img lazyload" alt="">
         </picture>
-        <!-- <img src="{{page.feature-retreat_image}}" class="responsive-img" alt=""> -->
       </div>
       <div class="col-6_md-12 section-feature-content">
         <div class="padding-outer">
