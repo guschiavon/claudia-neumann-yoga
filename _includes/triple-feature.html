@@ -1,13 +1,16 @@
 <section class="triple-features">
   <div class="grid-spaceBetween">
     <div class="col-4_md-12 feature-box flex-center">
-      <picture>
+      <div class="zoom">
+        <picture>
 
-        <source srcset="{{page.feature-box-1_image | replace: "480", "800"}}" media="(min-width: 800px)">
-        <source srcset="{{page.feature-box-1_image | replace: "480", "800"}}" media="(min-width: 768px)">
-        <source srcset="{{page.feature-box-1_image | replace: "480", "600"}}" media="(min-width: 600px)">
-        <img src="{{page.feature-box-1_image}}" class="responsive-img" loading="lazy" alt="">
-      </picture>
+          <!-- <source srcset="{{page.feature-box-1_image | replace: "480", "800"}}" media="(min-width: 800px)">
+            <source srcset="{{page.feature-box-1_image | replace: "480", "800"}}" media="(min-width: 768px)"> -->
+              <source srcset="{{page.feature-box-1_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                <img src="{{page.feature-box-1_image}}" class="responsive-img " loading="lazy" alt="">
+              </picture>
+
+      </div>
       <!-- <img src="{{page.feature-box-1_image}}" class="responsive-img" loading="lazy" alt="{{page.feature-box-1-alt-text}}"> -->
       <div class="box-content">
         <h2>
@@ -21,13 +24,16 @@
       </div>
     </div>
     <div class="col-4_md-12 feature-box flex-center">
-      <picture>
-        <source srcset="{{page.feature-box-2_image | replace: "480", "800"}}" media="(min-width: 800px)">
-        <source srcset="{{page.feature-box-2_image | replace: "480", "800"}}" media="(min-width: 768px)">
-        <source srcset="{{page.feature-box-2_image | replace: "480", "600"}}" media="(min-width: 600px)">
-        <img src="{{page.feature-box-2_image}}" class="responsive-img" loading="lazy" alt="">
-      </picture>
-      <!-- <img src="{{page.feature-box-2_image}}" class="responsive-img" loading="lazy" alt="{{page.feature-box-2-alt-text}}"> -->
+      <div class="zoom">
+        <picture>
+          <!-- <source srcset="{{page.feature-box-2_image | replace: "480", "800"}}" media="(min-width: 800px)">
+            <source srcset="{{page.feature-box-2_image | replace: "480", "800"}}" media="(min-width: 768px)"> -->
+              <source srcset="{{page.feature-box-2_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                <img src="{{page.feature-box-2_image}}" class="responsive-img " loading="lazy" alt="">
+              </picture>
+              <!-- <img src="{{page.feature-box-2_image}}" class="responsive-img" loading="lazy" alt="{{page.feature-box-2-alt-text}}"> -->
+
+      </div>
       <div class="box-content">
         <h2>
           {{page.feature-box-2-title}}
@@ -40,13 +46,16 @@
       </div>
     </div>
     <div class="col-4_md-12 feature-box flex-center">
-      <picture>
-        <source srcset="{{page.feature-box-3_image | replace: "480", "800"}}" media="(min-width: 800px)">
-        <source srcset="{{page.feature-box-3_image | replace: "480", "800"}}" media="(min-width: 768px)">
-        <source srcset="{{page.feature-box-3_image | replace: "480", "600"}}" media="(min-width: 600px)">
-        <img src="{{page.feature-box-3_image}}" class="responsive-img" loading="lazy" alt="">
-      </picture>
-      <!-- <img src="{{page.feature-box-3_image}}" class="responsive-img" loading="lazy" alt="{{page.feature-box-3-alt-text}}"> -->
+      <div class="zoom">
+        <picture>
+          <!-- <source srcset="{{page.feature-box-3_image | replace: "480", "800"}}" media="(min-width: 800px)">
+            <source srcset="{{page.feature-box-3_image | replace: "480", "800"}}" media="(min-width: 768px)"> -->
+              <source srcset="{{page.feature-box-3_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                <img src="{{page.feature-box-3_image}}" class="responsive-img " loading="lazy" alt="">
+              </picture>
+              <!-- <img src="{{page.feature-box-3_image}}" class="responsive-img" loading="lazy" alt="{{page.feature-box-3-alt-text}}"> -->
+
+      </div>
       <div class="box-content">
         <h2>
           {{page.feature-box-3-title}}

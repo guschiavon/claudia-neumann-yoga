@@ -12,9 +12,15 @@ layout: default
           {{ content }}
         </div>
       </div>
-      <div class="col-6_sm-12 flex-center overview-img-box">
+      <div class="col-6_sm-12 flex-center overview-img-box mobile-hide">
         <span class="gradient-r-l"></span>
-        <img src="{{page.box-1_image}}" class="responsive-img" loading="lazy" alt="">
+        <picture>
+          <source srcset="{{page.box-1_image | replace: "480", "800"}}" media="(min-width: 800px)">
+          <source srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 768px)">
+          <source srcset="{{page.box-1_image | replace: "480", "600"}}" media="(min-width: 600px)">
+          <img src="{{page.box-1_image}}" class="responsive-img" loading="lazy" alt="">
+        </picture>
+        <!-- <img src="{{page.box-1_image}}" class="responsive-img" loading="lazy" alt=""> -->
       </div>
     </div>
     {% include info-box.html %}

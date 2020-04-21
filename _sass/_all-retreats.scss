@@ -124,4 +124,7 @@
 .location-thumb:hover .zoom,
 .location-thumb:focus .zoom,
 .location-thumb-large:hover .zoom,
-.location-thumb-large:focus .zoom { transform: scale(1.02); }
+.location-thumb-large:focus .zoom {
+  transform: scale(1.02);
+  
+}

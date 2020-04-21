@@ -72,6 +72,7 @@ div.hide {
 .overview-img-box {
   max-height: 35rem;
   position: relative;
+  overflow: hidden;
 }
 .gradient-r-l {
   content: "";

@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-  console.log('hello from jquery');
+  console.log('mobile menu loaded');
 
   $(".burger-menu").click(function(){
 
@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     $(this).toggleClass("active");
 
-    console.log("burger clicked");
+    console.log("mobile menu clicked");
 
   }); //Closes Click Burger function
 
@@ -20,7 +20,7 @@ var clics = 0;
 $(document).ready(function() {
 
 // Accordion script by @SebaGarcia
-console.log('loaded FAQ');
+console.log('FAQ loaded');
 
   $('.faq-a').hide();
   $('#cerrartodas').hide();

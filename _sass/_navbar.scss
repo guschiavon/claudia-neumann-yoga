@@ -31,7 +31,11 @@ nav a {
   }
 }
 
-.navbar span {font-weight: $bold-font;}
+.navbar span {
+  font-weight: $bold-font;
+  font-family: $paragraph-font-family;
+  text-transform: uppercase;
+}
 
 .navbar-link {
   h2, img {
