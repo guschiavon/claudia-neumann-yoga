@@ -1,12 +1,11 @@
 <section class="private-session-section">
  <div class="full-width-banner">
    <picture>
-     <source srcset="{{site.data.settings.images.private-section_image | replace: "480", "800"}}" media="(min-width: 800px)">
-     <source srcset="{{site.data.settings.images.private-section_image | replace: "480", "800"}}" media="(min-width: 768px)">
-     <source srcset="{{site.data.settings.images.private-section_image | replace: "480", "600"}}" media="(min-width: 600px)">
-     <img src="{{site.data.settings.images.private-section_image}}" class="responsive-img" loading="lazy" alt="">
+     <source data-srcset="{{site.data.settings.images.private-section_image | replace: "480", "800"}}" media="(min-width: 800px)">
+     <source data-srcset="{{site.data.settings.images.private-section_image | replace: "480", "800"}}" media="(min-width: 768px)">
+     <source data-srcset="{{site.data.settings.images.private-section_image | replace: "480", "600"}}" media="(min-width: 600px)">
+     <img data-src="{{site.data.settings.images.private-section_image}}" class="responsive-img lazyload" alt="">
    </picture>
-   <!-- <img src="{{site.data.settings.images.private-section_image}}" class="responsive-img" alt=""> -->
    <div class="padding-outer">
      <div class="full-width-banner-content padding-inner">
        <h2 class="editable">

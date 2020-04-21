@@ -50,12 +50,12 @@ add_testimonials: false
         <div class="padding-side-5">
           <div class="location-thumb-large flex-center">
             <picture>
-              <source srcset="{{page.location-1-thumbnail_image | replace: "480", "800"}}" media="(min-width: 800px)">
-              <source srcset="{{page.location-1-thumbnail_image | replace: "480", "800"}}" media="(min-width: 768px)">
-              <source srcset="{{page.location-1-thumbnail_image | replace: "480", "600"}}" media="(min-width: 600px)">
-              <img src="{{page.location-1-thumbnail_image}}" class="responsive-img zoom" loading="lazy" alt="">
+              <source data-srcset="{{page.location-1-thumbnail_image | replace: "480", "800"}}" media="(min-width: 800px)">
+              <source data-srcset="{{page.location-1-thumbnail_image | replace: "480", "800"}}" media="(min-width: 768px)">
+              <source data-srcset="{{page.location-1-thumbnail_image | replace: "480", "600"}}" media="(min-width: 600px)">
+              <img data-src="{{page.location-1-thumbnail_image}}" class="responsive-img lazyload zoom" alt="">
             </picture>
-            <!-- <img src="{{page.location-1-thumbnail_image}}" class="responsive-img zoom" alt=""> -->
+            
             <h3>
               {{page.location-1-name}}
             </h3>
@@ -67,12 +67,12 @@ add_testimonials: false
           <div class="">
             <div class="location-thumb flex-center">
               <picture>
-                <source srcset="{{page.location-2-thumbnail_image | replace: "480", "800"}}" media="(min-width: 800px)">
-                <source srcset="{{page.location-2-thumbnail_image | replace: "480", "800"}}" media="(min-width: 768px)">
-                <source srcset="{{page.location-2-thumbnail_image | replace: "480", "600"}}" media="(min-width: 600px)">
-                <img src="{{page.location-2-thumbnail_image}}" class="responsive-img zoom" loading="lazy" alt="">
+                <source data-srcset="{{page.location-2-thumbnail_image | replace: "480", "800"}}" media="(min-width: 800px)">
+                <source data-srcset="{{page.location-2-thumbnail_image | replace: "480", "800"}}" media="(min-width: 768px)">
+                <source data-srcset="{{page.location-2-thumbnail_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                <img data-src="{{page.location-2-thumbnail_image}}" class="responsive-img lazyload zoom" alt="">
               </picture>
-              <!-- <img src="{{page.location-2-thumbnail_image}}" class="responsive-img zoom" alt=""> -->
+
               <h3>
                 {{page.location-2-name}}
               </h3>
@@ -83,12 +83,12 @@ add_testimonials: false
           <div class="">
             <div class="location-thumb flex-center">
               <picture>
-                <source srcset="{{page.location-3-thumbnail_image | replace: "480", "800"}}" media="(min-width: 800px)">
-                <source srcset="{{page.location-3-thumbnail_image | replace: "480", "800"}}" media="(min-width: 768px)">
-                <source srcset="{{page.location-3-thumbnail_image | replace: "480", "600"}}" media="(min-width: 600px)">
-                <img src="{{page.location-3-thumbnail_image}}" class="responsive-img zoom" loading="lazy" alt="">
+                <source data-srcset="{{page.location-3-thumbnail_image | replace: "480", "800"}}" media="(min-width: 800px)">
+                <source data-srcset="{{page.location-3-thumbnail_image | replace: "480", "800"}}" media="(min-width: 768px)">
+                <source data-srcset="{{page.location-3-thumbnail_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                <img data-src="{{page.location-3-thumbnail_image}}" class="responsive-img lazyload zoom" alt="">
               </picture>
-              <!-- <img src="{{page.location-3-thumbnail_image}}" class="responsive-img zoom" alt=""> -->
+
               <h3>
                 {{page.location-3-name}}
               </h3>

@@ -2,11 +2,11 @@
  <section class="community-section">
   <div class="full-width-banner">
     <picture>
-      <source srcset="{{site.data.settings.images.community_image | replace: "480", "2000"}}" media="(min-width: 801px)">
-      <source srcset="{{site.data.settings.images.community_image | replace: "480", "800"}}" media="(min-width: 800px)">
-      <source srcset="{{site.data.settings.images.community_image | replace: "480", "800"}}" media="(min-width: 768px)">
-      <source srcset="{{site.data.settings.images.community_image | replace: "480", "600"}}" media="(min-width: 600px)">
-      <img src="{{site.data.settings.images.community_image}}" class="responsive-img" loading="lazy" alt="Yogismile Community by Claudia Neumann">
+      <source data-srcset="{{site.data.settings.images.community_image | replace: "480", "2000"}}" media="(min-width: 801px)">
+      <source data-srcset="{{site.data.settings.images.community_image | replace: "480", "800"}}" media="(min-width: 800px)">
+      <source data-srcset="{{site.data.settings.images.community_image | replace: "480", "800"}}" media="(min-width: 768px)">
+      <source data-srcset="{{site.data.settings.images.community_image | replace: "480", "600"}}" media="(min-width: 600px)">
+      <img data-src="{{site.data.settings.images.community_image}}" class="responsive-img lazyload" alt="Yogismile Community by Claudia Neumann">
     </picture>
 
     <div class="padding-outer">
@@ -26,6 +26,6 @@
     </div>
   </div>
   <div class="logo-overlay-right">
-    <img src="{{site.data.settings.basic_settings.site_logo_image}}" loading="lazy" alt="Yogismile Logo">
+    <img data-src="{{site.data.settings.basic_settings.site_logo_image}}" class="lazyload" alt="Yogismile Logo">
   </div>
 </section>
