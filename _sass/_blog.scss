@@ -1,3 +1,5 @@
+@import "_transition";
+
 html {
   scroll-behavior: smooth;
 }
@@ -55,7 +57,8 @@ body.bg-blog {
   padding: 0 5%;
   img {
     border-radius: 2rem;
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
   }
 }
 
@@ -93,10 +96,14 @@ body.bg-blog {
   width: 120px;
   height: 120px;
   border: 5px solid $primary-color;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
   background-image: url('/assets/images/srcset/360/claudia-neumann-thumb.jpg');
   background-color: $light-color;
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
   background-position: center;
   overflow: hidden;
   margin: auto;
@@ -118,7 +125,9 @@ body.bg-blog {
   hr {
     background-color: $accent-color;
     border: none;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     height: 5px;
     margin-bottom: 1.5rem;
     margin-bottom: 2rem;
@@ -151,14 +160,18 @@ position: relative;
   }
 }
 .blog-thumb img.responsive-img {
-    border-radius: 2rem 2rem 0 0;
+    -webkit-border-radius: 2rem 2rem 0 0;
+       -moz-border-radius: 2rem 2rem 0 0;
+            border-radius: 2rem 2rem 0 0;
 }
 
 .blog-thumb-content {
   // position: absolute;
   padding: 1.5rem 3rem;
   background-color: $light-color;
-  border-radius: 0 0 2rem 2rem;
+  -webkit-border-radius: 0 0 2rem 2rem;
+     -moz-border-radius: 0 0 2rem 2rem;
+          border-radius: 0 0 2rem 2rem;
   margin-top: -4px;
 }
 
@@ -201,17 +214,18 @@ position: relative;
   margin-right: .5rem;
   background-color: $light-color;
   border: 1px solid $accent-color;
-  border-radius: 3px;
+          border-radius: 3px;
   font-size: .6rem;
-  transition: .3s all;
+  @include transition;
   &:hover {
     background-color: $accent-color;
     color: $light-color;
-    transition: .3s all;
+    @include transition;
   }
 }
 
 .about-column div.sticky {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -221,10 +235,10 @@ position: relative;
   margin-bottom: 5rem;
   h3 {
     padding: .5rem 0;
-    transition: .3s all;
+    @include transition;
     &:hover {
       color: $accent-color;
-      transition: .3s all;
+      @include transition;
     }
   }
   p {
@@ -241,10 +255,10 @@ position: relative;
   .read-more {
     text-transform: uppercase;
     margin-left: .3rem;
-    transition: .3s all;
+    @include transition;
     &:hover {
       color: $accent-color;
-      transition: .3s all;
+      @include transition;
     }
   }
 }
@@ -269,7 +283,7 @@ position: relative;
   }
   a:hover {
     color: $accent-color;
-    transition: .3s all;
+    @include transition;
   }
   h3 {
     font-weight: $regular_font;
@@ -294,11 +308,11 @@ position: relative;
     border-radius: 5px;
     color: $light-color;
     background-color: $accent-color;
-    transition: .3s all;
+    @include transition;
     &:hover {
       background-color: $light-color;
       color: $accent-color;
-      transition: .3s all;
+      @include transition;
     }
   }
 }
@@ -314,7 +328,8 @@ position: relative;
 }
 
 .vertical-ad-banner {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 400px;
   padding: 0px 5rem;
 }

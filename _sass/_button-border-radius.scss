@@ -1,0 +1,5 @@
+@mixin button-border-radius {
+  -webkit-border-radius: $button-border-radius;
+  -moz-border-radius: $button-border-radius;
+  border-radius: $button-border-radius;
+}

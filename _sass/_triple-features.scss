@@ -1,3 +1,5 @@
+@import "_transition";
+
 .box-content {
   text-align: center;
   padding: 6rem;
@@ -25,12 +27,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    filter: brightness(0.7);
-    transition: all .3s ease;
+    -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+    @include transition;
   }
 }
 
 .feature-box:hover img {
-  transform: scale(1.03);
-  transition: all .3s ease;
+  -webkit-transform: scale(1.03);
+     -moz-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+       -o-transform: scale(1.03);
+          transform: scale(1.03);
+  @include transition;
 }

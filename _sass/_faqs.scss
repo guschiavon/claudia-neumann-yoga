@@ -1,3 +1,5 @@
+@import "_transition";
+
 .faq {
   background-color: $accent-shade;
   border: none;
@@ -6,9 +8,9 @@
   max-width: 80%;
   margin: auto;
   margin-bottom: 1rem;
-  transition: .3s all;
+  @include transition;
   &:hover {
-    transition: .3s all;
+    @include transition;
     color: $light-color;
     background-color: $accent-color;
   }

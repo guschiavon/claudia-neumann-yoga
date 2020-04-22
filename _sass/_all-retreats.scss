@@ -118,7 +118,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  object-position: center;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .location-thumb:hover .zoom,

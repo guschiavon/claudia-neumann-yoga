@@ -1,3 +1,5 @@
+@import "_transition";
+
 footer {
   // height: 450px;
   background-color: #3e3e3e;
@@ -29,10 +31,10 @@ footer {
   font-family: $header-font-family;
   font-size: 1rem;
   color: $light-color;
-  transition: .3s all;
+  @include transition;
   &:hover {
     color: $accent-color;
-    transition: .3s all;
+    @include transition;
   }
 }
 
@@ -43,13 +45,13 @@ footer {
     font-size: 2.5rem;
     padding: .3rem;
     color: $light-color;
-    transition: .3s all;
+    @include transition;
   }
 }
 
 .fab:hover {
   color: $primary-color;
-  transition: .3s all;
+  @include transition;
 }
 
 form {
@@ -74,7 +76,9 @@ form {
   }
   input {
     padding: .8rem;
-    border-radius: 5px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
     border: none;
     width: inherit;
     margin-bottom: 1rem;

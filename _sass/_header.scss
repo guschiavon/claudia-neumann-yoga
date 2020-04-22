@@ -19,7 +19,8 @@ header { margin-top: 90px; }
     background-size: cover;
   }
   img {
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 

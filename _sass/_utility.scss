@@ -1,3 +1,5 @@
+@import "_flex-align-center";
+
 .right  {text-align: right;}
 .left   {text-align: left;}
 .center {text-align: center;}
@@ -10,25 +12,35 @@
 .responsive-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-align-center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flex-right {
-  display: flex;
-  align-items: center;
-  justify-content: right;
+  @include flex-align-center;
+  -webkit-box-pack: right;
+  -webkit-justify-content: right;
+     -moz-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .flex-left {
-  display: flex;
-  align-items: center;
-  justify-content: left;
+  @include flex-align-center;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+     -moz-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
 .padding-inner    { padding: 3%; }
@@ -82,6 +94,12 @@ div.hide {
   width:100%;
   height:100%;
   display:inline-block;
+  background: -webkit-gradient(linear, right top, left top, color-stop(60%, rgba(60,60,60,0.4)), color-stop(95%, #f1f1f1));
+  background: -webkit-linear-gradient(right, rgba(60,60,60,0.4) 60%, #f1f1f1 95%);
+  background: -moz-linear-gradient(right, rgba(60,60,60,0.4) 60%, #f1f1f1 95%);
+  background: -o-linear-gradient(right, rgba(60,60,60,0.4) 60%, #f1f1f1 95%);
   background: linear-gradient(to left, rgba(60,60,60,0.4) 60%, #f1f1f1 95%);
-  background-size: cover;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+          background-size: cover;
 }

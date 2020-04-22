@@ -1,4 +1,7 @@
 .testimonials {
+  background-image: -webkit-radial-gradient($accent-color 0%, $primary-color 100%);
+  background-image: -moz-radial-gradient($accent-color 0%, $primary-color 100%);
+  background-image: -o-radial-gradient($accent-color 0%, $primary-color 100%);
   background-image: radial-gradient($accent-color 0%, $primary-color 100%);
 }
 

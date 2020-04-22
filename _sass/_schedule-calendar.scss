@@ -1,3 +1,5 @@
+@import "_flex-align-center";
+
 .schedule-calendar, .cal-column {
   text-align: center;
 
@@ -53,13 +55,18 @@
 div.cal-column.col-2_md-12-middle,
 div.cal-column.col-2_md-3-middle
  {
-  align-self: stretch;
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
 }
 
 div.cal-column.col-2_md-12-middle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-align-center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cal-column a {

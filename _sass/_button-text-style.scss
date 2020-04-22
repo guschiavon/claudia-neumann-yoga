@@ -1,0 +1,6 @@
+@mixin button-text-style {
+  font-family: $header-font-family;
+  font-weight: $light-font;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

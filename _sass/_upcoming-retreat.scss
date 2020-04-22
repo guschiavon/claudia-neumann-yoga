@@ -14,7 +14,8 @@
   position: absolute;
   left: 10%;
   top: 8%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
 
