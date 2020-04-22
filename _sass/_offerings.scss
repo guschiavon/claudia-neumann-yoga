@@ -1,7 +1,13 @@
 .highlight-icon {
-  font-size: 2rem;
-  padding: 2rem 0;
-  color: #777;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.intro-section .highlight-icon {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .highlights {
