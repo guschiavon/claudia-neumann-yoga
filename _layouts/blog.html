@@ -22,7 +22,7 @@ layout: compress
       {{category | first }}
       {% endcapture %}
 
-      <a href="/yogismile/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
+      <a href="/yogismile/categories#{{ category_name | slugify }}"> {{ category_name }} </a>
       {% endfor %}
 
       <a href="/">
@@ -47,7 +47,7 @@ layout: compress
         {{category | first }}
         {% endcapture %}
 
-        <a href="/yogismile/categories/#{{ category_name | slugify }}"> {{ category_name }} </a>
+        <a href="/yogismile/categories#{{ category_name | slugify }}"> {{ category_name }} </a>
         {% endfor %}
 
         <a href="/">
