@@ -112,7 +112,6 @@
   }
   .blog-thumb {
     padding-right: 0;
-    height: 150px;
   }
   .blog-description {
     width: 100%;
@@ -157,6 +156,9 @@
 @media (max-width: 768px) {
   .header-banner {
     height: 45vh;
+  }
+  .blog-latest-banner img {
+    height: 450px;
   }
 }
 

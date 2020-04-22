@@ -12,7 +12,13 @@ _hidden_styles: blog
 <div class="blog-preview">
   <a href="{{post.url}}">
     <div class="blog-thumb flex-left">
-      <img src="{{post.banner_image}}" class="responsive-img" alt="">
+      <picture>
+        <source data-srcset="{{post.banner_image | replace: "480", "2000"}}" media="(min-width: 2000px)">
+        <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 800px)">
+        <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 768px)">
+        <source data-srcset="{{post.banner_image | replace: "480", "600"}}" media="(min-width: 600px)">
+        <img data-src="{{post.banner_image}}" class="responsive-img lazyload" alt="{{post.title}}" />
+      </picture>
     </div>
   </a>
   <div class="blog-thumb-content">

@@ -57,10 +57,16 @@ layout: compress
       </div>
     </div>
   </header>
-  <section class="padded-outer">
+  <section class="padding-outer">
 
     <div class="blog-latest-banner flex-left">
-      <img src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img" alt="" />
+      <picture>
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "2000"}} {% else %} {{page.banner_image | replace: "480", "2000"}} {% endif %}" media="(min-width: 801px)">
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "800"}} {% else %} {{page.banner_image | replace: "480", "800"}} {% endif %}" media="(min-width: 800px)">
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "800"}} {% else %} {{page.banner_image | replace: "480", "800"}} {% endif %}" media="(min-width: 768px)">
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "600"}} {% else %} {{page.banner_image | replace: "480", "600"}} {% endif %}" media="(min-width: 600px)">
+        <img data-src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img lazyload" alt="Yogismile Community by Claudia Neumann">
+      </picture>
       <div class="blog-banner-content">
         <h3>
           {% if page._hidden_blog == true %}
@@ -150,7 +156,13 @@ layout: compress
                   <div class="related-preview">
                     <a href="{{ post.url }}">
                       <div class="blog-thumb">
-                        <img data-src="{{post.banner_image}}" class="responsive-img lazyload" alt="" />
+                        <picture>
+                          <source data-srcset="{{post.banner_image | replace: "480", "2000"}}" media="(min-width: 801px)">
+                          <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 800px)">
+                          <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 768px)">
+                          <source data-srcset="{{post.banner_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                          <img data-src="{{post.banner_image}}" class="responsive-img lazyload" alt="{{post.title}}" />
+                        </picture>
                       </div>
                       <div class="related-preview-content">
                         <h3>

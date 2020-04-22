@@ -53,14 +53,17 @@ body.bg-blog {
 
 .blog-latest-banner {
   position: relative;
-  height: 400px;
-  padding: 0 5%;
+  height: 500px;
+  max-width: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
   img {
     border-radius: 2rem;
     -o-object-position: center;
        object-position: center;
   }
 }
+
 
 .blog-banner-content {
   position: absolute;
@@ -148,8 +151,10 @@ body.bg-blog {
 }
 
 .blog-thumb {
-height: 250px;
-position: relative;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem 2rem 0 0;
 
   h2 {
     font-weight: $regular_font;
