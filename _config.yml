@@ -56,6 +56,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-srcset
+  
 jekyll-archives:
   enabled: []
   layout: archive

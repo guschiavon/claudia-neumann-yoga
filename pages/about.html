@@ -3,21 +3,24 @@ page_title: About Me
 permalink: /about
 header_image: /assets/images/srcset/600/claudia-neumann.jpg
 certifications:
-  - certification-name: Embodied Vinyasa Flow 200hr
-    certification-provider: Yoga Alliance
+  - certification-name: Embodied Vinyasa Flow
+    certification-provider: Yoga Nadi (Queenstown, NZ)
+    certification-duration: 200hrs
     certification-logo_image: /assets/images/srcset/360/yoga-alliance.png
-    certification-date:
-    certification-teacher:
-  - certification-name: Yin Yoga and Mental Health Approach 50hrs
-    certification-provider:
+    certification-date: 2018
+    certification-teacher: Sarsha Hope / Sandy Murphy
+  - certification-name: Yin Yoga and Mental Health Approach
+    certification-provider: Self-Agency Academy (online)
+    certification-duration: 50hrs
     certification-logo_image:
-    certification-date:
-    certification-teacher:
-  - certification-name: Reiki Level II
-    certification-provider:
+    certification-date: 2020
+    certification-teacher: Amanda Hanna
+  - certification-name: Reiki Second Degree
+    certification-provider: Queenstown, NZ
+    certification-duration: Level II
     certification-logo_image:
-    certification-date:
-    certification-teacher:
+    certification-date: 2017
+    certification-teacher: Reiki Master Dave Pollock
 affiliates:
   - affiliate-name: Doterra
     affiliate-description: Organic essential oils
@@ -55,7 +58,6 @@ affiliates:
           </p>
           <div class="about-logo">
             {% image_tag src=site.data.settings.basic_settings.site_logo_image width="600" %}
-            <!-- <img src="{{site.data.settings.basic_settings.site_logo_image}}" alt=""> -->
           </div>
         </div>
       </div>
@@ -74,7 +76,7 @@ affiliates:
             {{certification.certification-name}}
           </h2>
           <p>
-            {{certification.certification-provider}}
+            {{certification.certification-provider}}, {{certification.certification-duration}}
           </p>
           <p>
             {{certification.certification-date}}
