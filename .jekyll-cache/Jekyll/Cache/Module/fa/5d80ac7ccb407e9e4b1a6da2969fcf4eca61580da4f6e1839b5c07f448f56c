@@ -1,16 +1,16 @@
-I"´<footer id="footer" class="padding-outer">
+I" <footer id="footer" class="padding-outer">
   <div class="grid-reverse-noGutter-spaceBetween form-container">
     <div class="col-5_md-12 footer-form">
       <h2 class="editable">
-        Grow together
-      </h2>
+ 	Grow together
+ </h2>
       <p class="editable">
-        Want to receive some happy letters from me? Put your email below and sign up for my newsletter!
-      </p>
+ 	Want to receive some happy letters from me? Put your email below and sign up for my newsletter!
+ </p>
       <form action="/thank-you" method="get">
         <input type="text" name="name" value="" placeholder="NAME" />
         <input type="email" name="email" value="" placeholder="EMAIL" />
-        <input type="submit" name="button" value="join me" class="form-send-button">
+        <input type="submit" name="button" value="join me" class="form-send-button" />
       </form>
     </div>
     <div class="col-5_md-12-bottom footer-branding">

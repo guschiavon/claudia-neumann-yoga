@@ -32,14 +32,14 @@ nav a {
 }
 
 .navbar span {
-  font-weight: $bold-font;
+  font-weight: $light-font;
   font-family: $paragraph-font-family;
   text-transform: uppercase;
 }
 
 .navbar-link {
   h2, img {
-    max-width: 100px;
+    max-width: 80px;
     display: inline;
     padding: .5rem 1rem;
   }

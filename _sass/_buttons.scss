@@ -1,114 +1,114 @@
-@import "_button-text-style";
-@import "_transition";
-@import "_button-border-radius";
+@import
+  "_button-text-style",
+  "_button-border-radius",
+  "_transition";
 
 .banner-cta-button {
-  color: $light-color;
-  border: 1px solid $light-color;
-  font-size: $cta-button-font-size;
-  padding: 1rem 2rem;
-  display: inline-block;
-  @include button-border-radius;
-  @include button-text-style;
+  @include    button-border-radius;
+  @include    button-text-style;
+  display   : inline-block;
+  padding   : 1rem 2rem;
+  color     : $light-color;
+  border    : 1px solid $light-color;
+  font-size : $cta-button-font-size;
 }
 
 .bg-secondary .banner-cta-button {
-  color: $accent-color;
-  font-size: $cta-button-font-size;
-  background-color: $light-color;
-  border: 1px solid $light-color;
-  padding: 1rem 2rem;
-  display: inline-block;
-  @include button-border-radius;
-  @include button-text-style;
+  @include           button-border-radius;
+  @include           button-text-style;
+  display          : inline-block;
+  padding          : 1rem 2rem;
+  color            : $accent-color;
+  border           : 1px solid $light-color;
+  background-color : $light-color;
+  font-size        : $cta-button-font-size;
 }
 
-.banner-cta-button:hover,
-.banner-cta-button:focus, {
-  background-color: $accent-color;
-  @include transition;
+.banner-cta-button:focus,
+.banner-cta-button:hover {
+  @include           transition;
+  background-color : $accent-color;
 }
-.bg-secondary .banner-cta-button:hover,
-.bg-secondary .banner-cta-button:focus,
+
+.bg-primary .banner-cta-button:focus,
 .bg-primary .banner-cta-button:hover,
-.bg-primary .banner-cta-button:focus, {
-  color: $light-color;
-  @include transition;
+.bg-secondary .banner-cta-button:focus,
+.bg-secondary .banner-cta-button:hover {
+  @include   transition;
+  color    : $light-color;
 }
 
 .learn-more-button {
-  color: $light-color;
-  border: 1px solid $light-color;
-  font-size: $learn-more-button-font-size;
-  padding: .7rem .9rem;
-  display: inline-block;
-  @include transition;
-  @include button-border-radius;
-  @include button-text-style;
+  @include    button-border-radius;
+  @include    button-text-style;
+  @include    transition;
+  display   : inline-block;
+  padding   : .7rem .9rem;
+  color     : $light-color;
+  border    : 1px solid $light-color;
+  font-size : $learn-more-button-font-size;
 }
 
 .section-feature .learn-more-button {
-  color: $dark-color;
-  border-color: $dark-color;
+  color        : $dark-color;
+  border-color : $dark-color;
 }
 
 .bg-blog .learn-more-button {
-  color: $dark-color;
-  border: 1px solid $dark-color;
-  font-size: $learn-more-button-font-size;
-  padding: .7rem .9rem;
-  display: inline-block;
-  @include transition;
-  @include button-border-radius;
-  @include button-text-style;
+  @include    button-border-radius;
+  @include    button-text-style;
+  @include    transition;
+  display   : inline-block;
+  padding   : .7rem .9rem;
+  color     : $dark-color;
+  border    : 1px solid $dark-color;
+  font-size : $learn-more-button-font-size;
 }
-
 
 .bg-light .learn-more-button,
 .retreat-card .learn-more-button {
-  background-color: $accent-color;
-  border: 1px solid $accent-color;
+  border           : 1px solid $accent-color;
+  background-color : $accent-color;
+
   &:hover {
-    color: $accent-color;
+    color : $accent-color;
   }
 }
 
-.learn-more-button:hover,
-.learn-more-button:focus {
-  color: $primary-color;
-  background-color: $light-color;
-  @include transition;
+.learn-more-button:focus,
+.learn-more-button:hover {
+  @include           transition;
+  color            : $primary-color;
+  background-color : $light-color;
 }
 
 .schedule-button {
-  color: $light-color;
-  border: 1px solid $light-color;
-  background-color: $primary-color;
-  padding: 1rem 2rem;
-  display: inline-block;
-  @include transition;
-  @include button-border-radius;
-  @include button-text-style;
-  &:hover,
-  &:focus {
-    background-color: $light-color;
-    color: $primary-color;
-    border-color: $primary-color;
-    @include transition;
+  @include           button-border-radius;
+  @include           button-text-style;
+  @include           transition;
+  display          : inline-block;
+  padding          : 1rem 2rem;
+  color            : $light-color;
+  border           : 1px solid $light-color;
+  background-color : $primary-color;
+
+  &:focus,
+  &:hover {
+    @include           transition;
+    color            : $primary-color;
+    border-color     : $primary-color;
+    background-color : $light-color;
   }
 }
 
 .form-send-button {
-  padding: .8rem;
-  color: $light-color;
-  font-size: $cta-button-font-size;
-  background-color: $accent-color;
-  border: none;
-  width: inherit;
-  @include button-border-radius;
-  @include button-text-style;
-  &:hover {
-    -webkit-filter: brightness(1.2);
-            filter: brightness(1.2);
-  }
+  @include           button-border-radius;
+  @include           button-text-style;
+  width            : inherit;
+  padding          : .8rem;
+  color            : $light-color;
+  border           : none;
+  background-color : $accent-color;
+  font-size        : $cta-button-font-size;
+
 }

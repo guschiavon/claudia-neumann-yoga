@@ -2,87 +2,98 @@
 
 footer {
   // height: 450px;
-  background-color: #3e3e3e;
+  background-color : #3e3e3e;
 }
 
-.footer-brand-link { display: block; }
+.footer-brand-link {
+  display : block;
+}
 
 .footer-logo {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
+  width         : 80px;
+  height        : 80px;
+  margin-bottom : 1rem;
 }
 
 .footer-title {
-  font-size: 1.5rem;
-  margin-bottom: 3rem;
-  color: $light-color;
-  font-weight: $light_font;
+  margin-bottom : 3rem;
+  color         : $light-color;
+  font-size     : 1.5rem;
+  font-weight   : $light_font;
 }
 
 .social-box {
-  display: inline-block;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
+  display       : inline-block;
+  margin-right  : 1rem;
+  margin-bottom : 1rem;
 }
 
 .email-link {
-  display: block;
-  font-family: $header-font-family;
-  font-size: 1rem;
-  color: $light-color;
-  @include transition;
+  @include      transition;
+  display     : block;
+  color       : $light-color;
+  font-family : $header-font-family;
+  font-size   : 1rem;
+
   &:hover {
-    color: $accent-color;
-    @include transition;
+    @include   transition;
+    color    : $accent-color;
   }
 }
 
 .footer-social-icon {
-  width: 50px;
-  height: auto;
+  width  : 50px;
+  height : auto;
+
   .fab {
-    font-size: 2.5rem;
-    padding: .3rem;
-    color: $light-color;
-    @include transition;
+    @include    transition;
+    padding   : .3rem;
+    color     : $light-color;
+    font-size : 2.5rem;
   }
 }
 
 .fab:hover {
-  color: $primary-color;
-  @include transition;
+  @include   transition;
+  color    : $primary-color;
 }
 
 form {
-  width: 80%;
+  width  : 80%;
+  margin : auto;
   // using margin:auto; centered the content to the div
-  margin: auto;
 }
 
-.footer-form, .cta-form {
-  text-align: center;
-  color: $light-color;
+.cta-form,
+.footer-form {
+  color      : $light-color;
+  text-align : center;
+
   h2 {
-    font-weight: $light_font;
-    margin-bottom: 1rem;
+    margin-bottom : 1rem;
+    font-weight   : $light_font;
   }
+
   p {
-    margin-bottom: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    font-size: 1rem;
+    width         : 70%;
+    margin-right  : auto;
+    margin-bottom : 1.5rem;
+    margin-left   : auto;
+    font-size     : 1rem;
   }
+
   input {
-    padding: .8rem;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    border: none;
-    width: inherit;
-    margin-bottom: 1rem;
-    font-size: .9rem;
+    width                 : inherit;
+    margin-bottom         : 1rem;
+    padding               : .8rem;
+    border                : none;
+    -moz-border-radius    : 5px;
+    -webkit-border-radius : 5px;
+    border-radius         : 5px;
+    font-size             : .9rem;
   }
-  .message {height: 4rem;}
+
+  .message {
+    height : 4rem;
+  }
 }
