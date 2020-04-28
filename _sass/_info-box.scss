@@ -35,6 +35,15 @@
     font-size: 1.3rem;
   }
 }
+.practical-info p a {
+  font-family: $paragraph-font-family;
+  text-decoration: underline;
+  @include transition;
+  &:hover {
+    @include transition;
+    color: $accent-color;
+  }
+}
 
 .intro-section,
 .overview {

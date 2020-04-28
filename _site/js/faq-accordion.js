@@ -1,5 +1,5 @@
-var clics = 0;
 
+var clics = 0;
 $(document).ready(function() {
 
 // Accordion script by @SebaGarcia

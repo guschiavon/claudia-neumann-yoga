@@ -23,7 +23,7 @@
 
 .full-width-banner {
   position : relative;
-  height   : auto;
+  min-height   : 600px;
   overflow : hidden;
 
   img {
@@ -34,7 +34,7 @@
 .full-width-banner-content {
   z-index   : 1;
   position  : absolute;
-  max-width : 75%;
+  max-width : 90%;
   color     : $light-color;
 
   h2 {
