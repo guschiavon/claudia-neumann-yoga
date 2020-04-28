@@ -4,11 +4,25 @@
 
 .responsive-frame {
   padding: 20px;
-  width: 300px;
-  height: 400px;
   background-color: $accent-color;
   position: relative;
   margin: auto;
+}
+
+.offset-frame {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background-color: $primary-color;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.offset-frame,
+.responsive-frame {
+  height: 31.25rem;
+  width: 25rem;
 }
 
 .about-logo {
@@ -25,15 +39,6 @@
   }
 }
 
-.offset-frame {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  background-color: $primary-color;
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  z-index: -1;
-}
 
 .about-header {
   h2, p {

@@ -35,15 +35,17 @@ affiliates:
     {% include desktop-navbar.html %}
     {% include mobile-nav.html %}
     <section class="about-header padding-outer center">
-      <div class="grid-noGutter-middle">
-        <div class="col-6_sm-12">
+      <div class="grid-noGutter">
+        <div class="col-6_md-12-top">
           <!-- Put the frame inside the column otherwise Gridlex overrides the padding values -->
-          <div class="responsive-frame">
-            <svg class="offset-frame" height="400" width="300">
-            </svg>
-            <!-- Give the size to the image, not the container. Using 100% for width and height makes it fill the whole space responsively -->
-            <!-- <img src="{{page.header_image}}" class="responsive-img" alt=""> -->
-            {% image_tag src=page.header_image width="600" class="responsive-img" %}
+          <div class="padding-outer">
+            <div class="responsive-frame">
+              <svg class="offset-frame">
+              </svg>
+              <!-- Give the size to the image, not the container. Using 100% for width and height makes it fill the whole space responsively -->
+              <!-- <img src="{{page.header_image}}" class="responsive-img" alt=""> -->
+              {% image_tag src=page.header_image width="600" class="responsive-img" %}
+            </div>            
           </div>
         </div>
         <div class="col-6_sm-12 center padding-inner">
@@ -67,7 +69,7 @@ affiliates:
     <div class="grid-noGutter-spaceAround">
       <h2 class="col-12 center">Certifications</h2>
       {% for certification in page.certifications %}
-      <div class="col-4 certification-item">
+      <div class="col-5 certification-item">
         <div class="certification-content center">
           <div class="cert-logo">
             <img data-src="{{certification.certification-logo_image}}" class="lazyload" alt="" />

@@ -160,6 +160,11 @@
   .blog-latest-banner img {
     height: 450px;
   }
+  .offset-frame,
+  .responsive-frame {
+    height: 18rem;
+    width: 14rem;
+  }
 }
 
 @media (max-width: 812px) {
