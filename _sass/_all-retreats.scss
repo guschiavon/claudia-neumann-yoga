@@ -17,6 +17,20 @@
     letter-spacing: 2px;
   }
 }
+
+.retreats-intro {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: center;
+  color: $light-color;
+  img {
+    padding-bottom: 2rem;
+    width: 4rem;
+    height: auto;
+    opacity: 0.6;
+  }
+}
+
 .retreat-box {
   padding: 5%;
 }
@@ -39,6 +53,11 @@
 
 .retreats-background {
   background-image: linear-gradient(to bottom, #55898e 0%, rgba(255,255,255, 1) 100%);
+  hr {
+    width: 8rem;
+    margin: auto;
+    fill: $light-color;
+  }
 }
 
 .date {
