@@ -26,6 +26,7 @@ img.community-banner-logo {
 .event-description,
 .facilitator,
 .practical-info {
+
   h3 {
     margin-bottom: 1.5rem;
     font-weight: $light_font;
@@ -35,6 +36,12 @@ img.community-banner-logo {
     margin: auto;
     margin-bottom: 2rem;
   }
+}
+
+.practical-info .learn-more-button,
+.practical-info {
+  color: $dark-color;
+  border-color: $dark-color;
 }
 
 .facilitator {
