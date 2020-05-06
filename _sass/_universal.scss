@@ -20,3 +20,10 @@ a {
 .credits {
   p, a { font-size: .5rem; }
 }
+
+#CybotCookiebotDialog {
+  font-family: $paragraph-font-family !important;
+  img#CybotCookiebotDialogPoweredbyImage{
+    display: none !important;
+  }
+}
