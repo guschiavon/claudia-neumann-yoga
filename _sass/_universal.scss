@@ -21,7 +21,10 @@ a {
   p, a { font-size: .5rem; }
 }
 
-#CybotCookiebotDialog {
+#CybotCookiebotDialog a,
+#CybotCookiebotDialog div,
+#CybotCookiebotDialogBodyContentControls,
+#CybotCookiebotDialogBodyContentTitle {
   font-family: $paragraph-font-family !important;
   img#CybotCookiebotDialogPoweredbyImage{
     display: none !important;
