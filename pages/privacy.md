@@ -306,6 +306,7 @@ Unless otherwise specified, all references made within this document to the Euro
 
 #### Cookies
 Small sets of data stored in the User's device.
+<script type="text/javascript" charset="UTF-8" data-cookiescriptreport="report" src="//report.cookie-script.com/r/a77a4d8ca28965b733d9037046d2e39b.js"></script>
 
 #### Legal information
 This privacy statement has been prepared based on provisions of multiple legislations, including Art. 13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).
