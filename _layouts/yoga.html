@@ -20,7 +20,6 @@ layout: default
           <source srcset="{{page.box-1_image | replace: "480", "2000"}}" media="(min-width: 801px)">
           <img src="{{page.box-1_image}}" class="responsive-img" alt="{{page.box-1-image-alt-text}}">
         </picture>
-        <!-- <img src="{{page.box-1_image}}" class="responsive-img" alt=""> -->
       </div>
     </div>
     {% include info-box.html%}
@@ -32,7 +31,9 @@ layout: default
 {% endif %}
 
 {% if page.show_private_section == false %}
-    {% include yoga-schedule-list.html %}
+    {% if page.add_schedule == true %}
+      {% include yoga-schedule-list.html %}
+    {% endif %}
     {% include private-session-section.html %}
   {% elsif page.show_private_section == true %}
     {% include book-private-session.html %}

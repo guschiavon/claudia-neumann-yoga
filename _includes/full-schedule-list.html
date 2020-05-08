@@ -62,7 +62,7 @@
           <!-- for all classes in the class array 'classes', print this code -->
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
@@ -135,7 +135,7 @@
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
@@ -207,7 +207,7 @@
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
@@ -280,7 +280,7 @@
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
@@ -352,7 +352,7 @@
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
@@ -424,7 +424,7 @@
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
@@ -496,7 +496,7 @@
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
               <h3>
-                {{class.time}}
+                {{class.time-bracket}}
               </h3>
             {% endfor %}
           {% endif %}
