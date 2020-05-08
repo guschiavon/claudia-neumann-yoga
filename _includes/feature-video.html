@@ -1,6 +1,13 @@
-<section class="half-height mobile-hide">
+<section class="half-height mobile-hide bg-dark">
 
-    <iframe width="100%" height="100%" src="{{page.feature-video_url}}" data-src="{{page.feature-video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen defer loading="lazy">
+    <div class="cookieconsent-optout-marketing video-placeholder padding-outer">
+      <p class="padding-outer">You must agree to <a href="javascript:Cookiebot.renew()"> cookies</a> to watch this video.</p>
+      <div class="yt-logo">
+        <img src="assets/icons/007-youtube.svg" alt="">
+      </div>
+    </div>
+    <iframe width="100%" height="100%" src="{{page.feature-video_url}}" data-src="{{page.feature-video_url}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen defer loading="lazy" data-cookieconsent="marketing">
     </iframe>
+
 
 </section>

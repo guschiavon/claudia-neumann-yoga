@@ -1,4 +1,6 @@
 ---
+layout: default
+banner_image: assets/images/srcset/2000/aileen-david-rae-unsplash.jpg
 permalink: /privacy
 ---
 

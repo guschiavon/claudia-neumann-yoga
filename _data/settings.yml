@@ -26,8 +26,6 @@ fonts:
   regular_font: 400
   bold_font: 600
   extra_bold_font: 700
-forms:
-  # formspree_url: 'https://formspree.io/xzbaoyal'
 buttons:
   button-border-radius: 5px
   cta-button-font-size: 1rem
