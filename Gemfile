@@ -8,4 +8,5 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   gem 'jekyll-sitemap'
   gem 'jekyll-srcset'
+  gem 'jekyll-responsive-image'
 end
