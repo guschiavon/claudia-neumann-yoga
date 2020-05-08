@@ -21,6 +21,29 @@ a {
   p, a { font-size: .5rem; }
 }
 
+blockquote {
+  text-align: center;
+  font-style: italic;
+  font-weight: $bold_font;
+  padding: 1.2rem;
+  background-color: $light-color;
+  margin-bottom: 1rem;
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+ul,
+ol {
+  li {
+    list-style-position: inside;
+    font-family: $paragraph-font-family;
+    &:last-of-type {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
 #CybotCookiebotDialog a,
 #CybotCookiebotDialog div,
 #CybotCookiebotDialogBodyContentControls,
