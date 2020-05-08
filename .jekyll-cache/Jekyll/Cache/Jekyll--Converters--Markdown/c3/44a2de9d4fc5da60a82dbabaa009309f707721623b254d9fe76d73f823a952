@@ -1,4 +1,4 @@
-I"¬<h2 id="essential-things-to-do-after-a-reiki-session">Essential things to do after a reiki session</h2>
+I" <h2 id="essential-things-to-do-after-a-reiki-session">Essential things to do after a reiki session</h2>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -24,5 +24,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 </blockquote>
 
-<p><img src="/assets/images/srcset/2000/christin-hume-unsplash.jpg" alt="" width="2000" height="1333" /></p>
+<div class="markdown-image">  
+  <img src="/assets/images/srcset/2000/christin-hume-unsplash.jpg" alt="" srcset="            /assets/images/srcset/480/christin-hume-unsplash.jpg 480w,            /assets/images/srcset/800/christin-hume-unsplash.jpg 800w,            /assets/images/srcset/1400/christin-hume-unsplash.jpg 1400w,    " load="lazy" />
+</div>
 :ET
