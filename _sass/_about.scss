@@ -76,9 +76,16 @@
 }
 
 .affiliate-info {
+  flex-direction: column;
   h3 {
     font-weight: $regular_font;
     color: $primary-color;
+    font-size: 1rem;
+  }
+  a img {
+    width: 110px;
+    margin: auto;
+    filter: grayscale(1);
   }
   a:hover {
     text-decoration: underline;

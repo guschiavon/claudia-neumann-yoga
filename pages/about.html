@@ -12,7 +12,7 @@ certifications:
   - certification-name: Yin Yoga and Mental Health Approach
     certification-provider: Self-Agency Academy (online)
     certification-duration: 50hrs
-    certification-logo_image:
+    certification-logo_image: /assets/images/saa-logo.png
     certification-date: 2020
     certification-teacher: Amanda Hanna
   - certification-name: Reiki Second Degree
@@ -22,9 +22,9 @@ certifications:
     certification-date: 2017
     certification-teacher: Reiki Master Dave Pollock
 affiliates:
-  - affiliate-name: Doterra
-    affiliate-description: Organic essential oils
-    affiliate-link_url: 'https://www.doterra.com'
+  - affiliate-name: Forever Living Products
+    logo_image: /assets/images/forever-living-2.png
+    affiliate-link_url: 'https://www.forever-living.com'
 ---
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ affiliates:
               <svg class="offset-frame">
               </svg>
               <!-- Give the size to the image, not the container. Using 100% for width and height makes it fill the whole space responsively -->
-              <!-- <img src="{{page.header_image}}" class="responsive-img" alt=""> -->
+
               {% image_tag src=page.header_image width="600" class="responsive-img" %}
             </div>
           </div>
@@ -69,7 +69,7 @@ affiliates:
     <div class="grid-noGutter-spaceAround">
       <h2 class="col-12 center">Certifications</h2>
       {% for certification in page.certifications %}
-      <div class="col-4_md-5_sm-12 certification-item">
+      <div class="col-4_md-5_sm-12-middle certification-item">
         <div class="certification-content center">
           <div class="cert-logo">
             <img data-src="{{certification.certification-logo_image}}" class="lazyload" alt="" />
@@ -139,15 +139,13 @@ affiliates:
               These are some of the brands and products that I support due to their sustainable approach to business and therapeutical properties:
           </p>
           {% for affiliate in page.affiliates %}
-          <div class="affiliate-info">
+          <div class="affiliate-info flex-center">
             <a href="{{affiliate.affiliate-link_url}}">
-              <h3>
-                {{affiliate.affiliate-name}}
-              </h3>
+              <img src="{{affiliate.logo_image}}" alt="" styles="width: 80px;">
             </a>
-            <p>
-              {{affiliate.affiliate-description}}
-            </p>
+            <h3>
+              {{affiliate.affiliate-name}}
+            </h3>
           </div>
           {% endfor %}
         </div>

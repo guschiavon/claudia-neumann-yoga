@@ -109,7 +109,7 @@ defaults:
       class-flow-type_html:
       class-recommended-for_html:
       show_private_section: false
-      box-1_image: /assets/images/srcset/480/claudia-neumann-yoga-121.jpg
+      box-1_image: 
       add_testimonials: true
       testimonials:
         - content:
@@ -156,4 +156,4 @@ defaults:
       location-description_html: >-
       highlight-1:
       highlight-2:
-      highlight-3: 
+      highlight-3:
