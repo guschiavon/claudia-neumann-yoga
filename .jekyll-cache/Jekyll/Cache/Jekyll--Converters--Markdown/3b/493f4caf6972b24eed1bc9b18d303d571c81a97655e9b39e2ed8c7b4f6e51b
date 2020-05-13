@@ -1,9 +1,4 @@
----
-layout: legal
-banner_image: assets/images/srcset/2000/aileen-david-rae-unsplash.jpg
-permalink: /privacy
----
-
+I"‹_<div class="padding-outer">
 # Policy summary
 
 Personal Data collected for the following purposes and using the following services:
@@ -308,9 +303,11 @@ Unless otherwise specified, all references made within this document to the Euro
 
 #### Cookies
 Small sets of data stored in the User's device.
-<script id="CookieDeclaration" src="https://consent.cookiebot.com/5f57412c-37c9-4db6-b77d-7dea518766e2/cd.js" type="text/javascript" async></script>
+<script id="CookieDeclaration" src="https://consent.cookiebot.com/5f57412c-37c9-4db6-b77d-7dea518766e2/cd.js" type="text/javascript" async=""></script>
 
 #### Legal information
 This privacy statement has been prepared based on provisions of multiple legislations, including Art. 13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).
 
 This privacy policy relates solely to this Website, if not stated otherwise within this document.
+</div>
+:ET
