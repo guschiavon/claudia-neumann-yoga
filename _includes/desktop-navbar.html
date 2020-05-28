@@ -19,10 +19,13 @@
             {{site.data.settings.nav-menu.menu-2-name}}
           </a>
           <div class="dropdown-content left">
-            <a href="/yoga/vinyasa-yoga"> Vinyasa </a>
-            <a href="/yoga/yin-yoga"> Yin </a>
-            <a href="/yoga/corporate-yoga"> Corporate </a>
-            <a href="/yoga/private-session"> Private </a>
+            {% for yoga in site.yoga %}
+            <a href="{{yoga.url}}">{{yoga.yoga-style}}</a>
+            {% endfor %}
+            <!-- <a href="/yoga/vinyasa-yoga"> Vinyasa </a> -->
+            <!-- <a href="/yoga/yin-yoga"> Yin </a> -->
+            <!-- <a href="/yoga/corporate-yoga"> Corporate </a> -->
+            <!-- <a href="/yoga/private-session"> Private </a> -->
           </div>
         </div>
         <a href="{{site.data.settings.nav-menu.menu-3-link_url}}">

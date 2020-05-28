@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <!-- Function scripts -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5f57412c-37c9-4db6-b77d-7dea518766e2" type="text/javascript" async></script>
     <meta charset="utf-8">
     <title>
@@ -76,10 +77,17 @@
             Yoga
           </a>
           <div class="dropdown-content left">
-            <a href="/yoga/vinyasa-yoga"> Vinyasa </a>
-            <a href="/yoga/yin-yoga"> Yin </a>
-            <a href="/yoga/corporate-yoga"> Corporate </a>
-            <a href="/yoga/private-session"> Private </a>
+            
+            <a href="/yoga/private-session.html">Private</a>
+            
+            <a href="/yoga/vinyasa-yoga.html">Vinyasa</a>
+            
+            <a href="/yoga/yin-yoga.html">Yin</a>
+            
+            <!-- <a href="/yoga/vinyasa-yoga"> Vinyasa </a> -->
+            <!-- <a href="/yoga/yin-yoga"> Yin </a> -->
+            <!-- <a href="/yoga/corporate-yoga"> Corporate </a> -->
+            <!-- <a href="/yoga/private-session"> Private </a> -->
           </div>
         </div>
         <a href="/offerings/reiki">
@@ -317,9 +325,9 @@
  	Want to receive some happy letters from me? Put your email below and sign up for my newsletter!
  </p>
       <form id="newsletter_form" action="/thank-you" method="get">
-        <input type="text" name="name" value="" placeholder="NAME" />
-        <input type="email" name="email" value="" placeholder="EMAIL" />
-        <input type="submit" name="button" value="join me" class="form-send-button" />
+        <input type="text" name="name" value="" placeholder="Name" />
+        <input type="email" name="email" value="" placeholder="Email" />
+        <input data-sitekey="6LdcHv0UAAAAAFrT1uMDb24CSVO6XvJrd1dL7KqZ" data-callback="'onSubmit'" type="submit" name="button" value="join me" class="form-send-button g-recaptcha" />
       </form>
     </div>
     <div class="col-5_md-12-bottom footer-branding">
