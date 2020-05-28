@@ -12,15 +12,50 @@ layout: default
       </div>
       <div class="col-12 center">
         <h2 class="editable">
- 	Overview
- </h2>
-          {{content}}
+ 	        Overview
+        </h2>
+        {{content}}
       </div>
     </div>
   </section>
+  
 </main>
-
 {% include highlights.html %}
+<section>
+  <div class="padding-outer center">
+    <h3 class="editable">
+      Additional benefits
+    </h3>
+    <div class="grid-noGutter">
+      <div class="col-6_sm-12">
+        <ul>
+          <li class="editable">
+            Some content here
+          </li><li class="editable">
+            Some content here
+          </li><li class="editable">
+            Some content here
+          </li><li class="editable">
+            Some content here
+          </li>
+        </ul>
+      </div>
+      <div class="col-6_sm-12">
+        <ul>
+          <li class="editable">
+            Some content here
+          </li><li class="editable">
+            Some content here
+          </li><li class="editable">
+            Some content here
+          </li><li class="editable">
+            Some content here
+          </li>
+        </ul>
+      </div>
+  </div>
+  </div>
+</section>
 
 {% if page.add_testimonials == true %}
   {% include testimonials.html %}

@@ -36,6 +36,7 @@ blockquote {
 ul,
 ol {
   li {
+    list-style: '\2666\A0';
     list-style-position: inside;
     font-family: $paragraph-font-family;
     &:last-of-type {
