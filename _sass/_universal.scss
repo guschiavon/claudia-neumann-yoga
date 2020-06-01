@@ -37,6 +37,7 @@ ul,
 ol {
   li {
     list-style: '\2666\A0';
+    color: $dark-color;
     list-style-position: inside;
     font-family: $paragraph-font-family;
     &:last-of-type {
