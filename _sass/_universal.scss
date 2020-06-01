@@ -43,6 +43,10 @@ ol {
     &:last-of-type {
       margin-bottom: 1.2rem;
     }
+    &:hover {
+      color: $accent-color;
+      transition: 0.3s all;
+    }
   }
 }
 
