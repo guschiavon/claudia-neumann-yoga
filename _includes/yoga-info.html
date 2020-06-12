@@ -18,7 +18,11 @@
 </p>
 <h3 class="editable">
  	Class Price:
- </h3>
-<p>
- {{page.class-price}}
-</p>
+</h3>
+<ul>
+  {% for price in page.class-prices %}
+  <li>
+    {{price.class-price}}
+  </li>
+  {% endfor %}
+</ul>
