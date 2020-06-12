@@ -32,6 +32,36 @@ defaults:
           width: 600
         feature-retreat_image:
           width: 800
+  -
+    scope:
+      path: "/yoga"
+      values:
+        layout: yoga
+        _hidden_info-box: yoga
+        page_title:
+        banner_heading:
+        banner_image:
+        banner_image-alt-text:
+        yoga-style:
+        class-duration:
+        class-flow-type_html:
+        class-recommended-for_html:
+        class-price:
+        show_private_section: false
+        box-1_image: 
+        add_testimonials: true
+        testimonials:
+          - content:
+            reviewer:
+        add_schedule: true
+        schedule:
+          - day:
+            classes:
+              - time-bracket:
+                style:
+                studio:
+                studio_url:
+                add-to-cal:
 
 faqs: []
 _array_structures:
@@ -109,7 +139,7 @@ defaults:
       class-flow-type_html:
       class-recommended-for_html:
       show_private_section: false
-      box-1_image: 
+      box-1_image:
       add_testimonials: true
       testimonials:
         - content:
