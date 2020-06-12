@@ -48,7 +48,7 @@ defaults:
         class-recommended-for_html:
         class-price:
         show_private_section: false
-        box-1_image: 
+        box-1_image:
         add_testimonials: true
         testimonials:
           - content:
@@ -62,6 +62,32 @@ defaults:
                 studio:
                 studio_url:
                 add-to-cal:
+  -
+    scope:
+      path: "/retreats"
+      values:
+        layout: retreat
+        _hidden_info-box: retreat
+        display:
+        page_title:
+        banner_heading:
+        banner_image:
+        banner_image-alt-text:
+        add_banner_button: true
+        banner-cta-button_url:
+        banner-cta-button_text:
+        box-1_image:
+        retreat-date:
+        retreat-location:
+        retreat-price:
+        retreat-recommended-for_html: >-
+        faqs:
+        location-highlights-background_image:
+        location-highlights-background-image-alt-text:
+        location-description_html: >-
+        highlight-1:
+        highlight-2:
+        highlight-3:
 
 faqs: []
 _array_structures:
