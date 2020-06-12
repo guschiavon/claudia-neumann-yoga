@@ -30,11 +30,12 @@ layout: default
   {% include testimonials.html %}
 {% endif %}
 
+{% if page.add_schedule == true %}
+  {% include yoga-schedule-list.html %}
+{% endif %}
+
 {% if page.show_private_section == false %}
-    {% if page.add_schedule == true %}
-      {% include yoga-schedule-list.html %}
-    {% endif %}
-    {% include private-session-section.html %}
-  {% elsif page.show_private_section == true %}
-    {% include book-private-session.html %}
+      {% include private-session-section.html %}
+{% elsif page.show_private_section == true %}
+      {% include book-private-session.html %}
 {% endif %}
