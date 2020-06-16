@@ -34,61 +34,85 @@ defaults:
           width: 800
   -
     scope:
-      path: "/yoga"
-      values:
-        layout: yoga
-        _hidden_info-box: yoga
-        page_title:
-        banner_heading:
-        banner_image:
-        banner_image-alt-text:
-        yoga-style:
-        class-duration:
-        class-flow-type_html:
-        class-recommended-for_html:
-        class-price:
-        show_private_section: false
-        box-1_image:
-        add_testimonials: true
-        testimonials:
-          - content:
-            reviewer:
-        add_schedule: true
-        schedule:
-          - day:
-            classes:
-              - time-bracket:
-                style:
-                studio:
-                studio_url:
-                add-to-cal:
+      path: "/posts" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "blog"
+      title:
+      author: Claudia
+      banner_image:
+      categories: []
+      tags: []
+      keywords: []
+      description: This is a very important section for SEO as it is the part where the Google search crawlers scan when indexing pages; make it descriptive of the page content thinking it's the first thing people will read when searching online        
   -
     scope:
       path: "/retreats"
-      values:
-        layout: retreat
-        _hidden_info-box: retreat
-        display:
-        page_title:
-        banner_heading:
-        banner_image:
-        banner_image-alt-text:
-        add_banner_button: true
-        banner-cta-button_url:
-        banner-cta-button_text:
-        box-1_image:
-        retreat-date:
-        retreat-location:
-        retreat-price:
-        retreat-recommended-for_html: >-
-        faqs:
-        location-highlights-background_image:
-        location-highlights-background-image-alt-text:
-        location-description_html: >-
-        highlight-1:
-        highlight-2:
-        highlight-3:
-
+    values:
+      layout: retreat
+      _hidden_info-box: retreat
+      display:
+      page_title:
+      banner_heading:
+      banner_image:
+      banner_image-alt-text:
+      add_banner_button: true
+      banner-cta-button_url:
+      banner-cta-button_text:
+      box-1_image:
+      retreat-date:
+      retreat-location:
+      retreat-price:
+      retreat-recommended-for_html:
+      faqs:
+      location-highlights-background_image:
+      location-highlights-background-image-alt-text:
+      location-description_html:
+      highlight-1:
+      highlight-2:
+      highlight-3:
+  -
+    scope:
+      path: "/yoga" 
+      type: "pages" 
+    values:
+      layout: "yoga"
+      _hidden_info-box: yoga
+      page_title:
+      banner_heading:
+      banner_image:
+      banner_image-alt-text:
+      class-duration:
+      class-flow-type_html:
+      class-recommended-for_html:
+      class-prices:
+      show_private_section: false
+      box-1_image:
+      add_testimonials: true
+      testimonials:
+        - content:
+          reviewer:
+      add_schedule: true
+      schedule:
+        - day:
+          classes:
+            - time-bracket:
+              style:
+              studio:
+              studio_url:
+              add-to-cal:
+        - day:
+          classes:
+            - time-bracket:
+              style:
+              studio:
+              studio_url:
+              add-to-cal:
+  
+    
+_comments:
+  event-location_url: Place the map link here
+  event-map_embed_code_block: Place the Google Maps Embed code here
 faqs: []
 _array_structures:
   faqs:
@@ -135,81 +159,5 @@ jekyll-archives:
     day: '/:year/:month/:day/'
     tag: '/yogismile/tag/:name/'
     category: '/yogismile/category/:name/'
-
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "blog"
-      title:
-      author: Claudia
-      banner_image:
-      categories: []
-      tags: []
-      keywords: []
-      description: This is a very important section for SEO as it is the part where the Google search crawlers scan when indexing pages; make it descriptive of the page content thinking it's the first thing people will read when searching online
-  -
-    scope:
-      path: "yoga/" # an empty string here means all files in the project
-      type: "pages" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "yoga"
-      _hidden_info-box: yoga
-      page_title:
-      banner_heading:
-      banner_image:
-      banner_image-alt-text:
-      class-duration:
-      class-flow-type_html:
-      class-recommended-for_html:
-      show_private_section: false
-      box-1_image:
-      add_testimonials: true
-      testimonials:
-        - content:
-          reviewer:
-      add_schedule: true
-      schedule:
-        - day:
-          classes:
-            - time-bracket:
-              style:
-              studio:
-              studio_url:
-              add-to-cal:
-        - day:
-          classes:
-            - time-bracket:
-              style:
-              studio:
-              studio_url:
-              add-to-cal:
-  -
-    scope:
-      path: "retreats/" # an empty string here means all files in the project
-      type: "pages" # previously `post` in Jekyll 2.2.
-    values:
-      layout: "retreat"
-      _hidden_info-box: retreat
-      display:
-      page_title:
-      banner_heading:
-      banner_image:
-      banner_image-alt-text:
-      add_banner_button: true
-      banner-cta-button_url:
-      banner-cta-button_text:
-      box-1_image:
-      retreat-date:
-      retreat-location:
-      retreat-price:
-      retreat-recommended-for_html: >-
-      faqs:
-      location-highlights-background_image:
-      location-highlights-background-image-alt-text:
-      location-description_html: >-
-      highlight-1:
-      highlight-2:
-      highlight-3:
+  
+  

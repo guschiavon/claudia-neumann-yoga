@@ -7,13 +7,14 @@ banner_heading: Yogismile Community Events
 banner_image: /assets/images/srcset/2000/claudia-neumann-yoga-120.jpg
 confirmation-button_url: 'https://www.calendly.com'
 event-location_url: 'https://goo.gl/maps/2hvwNPjKZEsV44qJ9'
-event-map_url: 'https://goo.gl/maps/2hvwNPjKZEsV44qJ9'
+event-map_embed_code_block: 
 add_testimonials: false
+add_video: false
 feature-video_url:
 facilitators:
   - name: Claudia
     thumb: /assets/images/srcset/480/claudia-neumann-yoga-002.jpg
-    bio: >-
+    bio_html: >-
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua.
 ---
@@ -62,11 +63,10 @@ facilitators:
           {{facilitator.name}}
         </h3>
         <p>
-          {{facilitator.bio}}
+          {{facilitator.bio_html}}
         </p>
       </div>
     </div>
-
     {% endfor %}
   </div>
 </section>
@@ -83,19 +83,19 @@ facilitators:
  	Time: 5 pm
  </h3>
     <h3 class="center editable">
- 	<a href="https://www.google.com/maps/place/Fr%C3%BChlingsanlagen,+M%C3%BCnchen/@48.1253071,11.5722516,16z/data=!4m13!1m7!3m6!1s0x479ddf65e27b9cad:0x10367501693119bf!2zRnLDvGhsaW5nc2FubGFnZW4sIE3DvG5jaGVu!3b1!8m2!3d48.1250439!4d11.5744687!3m4!1s0x479ddf65e27b9cad:0x10367501693119bf!8m2!3d48.1250439!4d11.5744687">Location: </a>&nbsp;Isar (U-Bahn: Fraunhoferstrasse)
+ 	<a href="{{page.event-location_url}}">Location: </a>&nbsp;Isar (U-Bahn: Fraunhoferstrasse)
  </h3>
-    <a href="https://www.calendly.com" class="learn-more-button editable"> Let's do it! </a>
+    <a href="{{page.confirmation-button_url}}" class="learn-more-button editable"> Let's do it! </a>
   </div>
 </section>
 <map>
-  <iframe src="{{page.event-map_url}}" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy" aria-hidden="false" tabindex="0"></iframe>
+  {{page.event-map_embed_code_block}}
 </map>
 
 {% if page.add_testimonials == true %}
   {% include testimonials.html %}
 {% endif %}
 
-{% unless page.feature-video_url == empty %}
+{% if page.add_video %}
   {% include feature-video.html%}
-{% endunless %}
+{% endif %}
