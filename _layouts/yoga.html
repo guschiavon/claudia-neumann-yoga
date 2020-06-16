@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <main>
   <section class="bg-light">
     <div class="grid-noGutter">
@@ -15,10 +16,10 @@ layout: default
       <div class="col-6_sm-12 flex-center overview-img-box mobile-hide">
         <span class="gradient-r-l mobile-hide"></span>
         <picture>
-          <source srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 600px)">
-          <source srcset="{{page.box-1_image | replace: "480", "800"}}" media="(max-width: 800px)">
-          <source srcset="{{page.box-1_image | replace: "480", "2000"}}" media="(min-width: 801px)">
-          <img src="{{page.box-1_image}}" class="responsive-img" alt="{{page.box-1-image-alt-text}}">
+          <source srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 600px)" />
+          <source srcset="{{page.box-1_image | replace: "480", "800"}}" media="(max-width: 800px)" />
+          <source srcset="{{page.box-1_image | replace: "480", "2000"}}" media="(min-width: 801px)" />
+          <img src="{{page.box-1_image}}" class="responsive-img" alt="{{page.box-1-image-alt-text}}" />
         </picture>
       </div>
     </div>
