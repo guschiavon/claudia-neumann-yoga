@@ -73,8 +73,7 @@ defaults:
       highlight-3:
   -
     scope:
-      path: "/yoga" 
-      type: "pages" 
+      path: "/yoga"
     values:
       layout: "yoga"
       _hidden_info-box: yoga
