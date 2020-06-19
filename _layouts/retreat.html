@@ -30,17 +30,21 @@ layout: default
 {% endif %}
 
 <!-- FAQ section -->
-<section class="grid-reverse-noGutter-spaceAround bg-light padding-outer">
-  <div class="col-6_md-12-middle center">
-    <h2 class="editable">
-      FAQ
-    </h2>
-    <p class="editable">
-      Click on the item to learn more
-    </p>
+<section class="grid-reverse-noGutter-spaceAround bg-light">
+  <div class="col-6_md-12-middle center faq-overview">
+    <span class="gradient mobile-hide">
+    </span>
   </div>
   <div class="col-6_md-12-middle faqs-section">
     <div class="padding-inner">
+      <div class="padding-inner center">
+        <h2 class="editable">
+          FAQ
+        </h2>
+        <p class="editable">
+          Click on the item to learn more
+        </p>
+      </div>
       {% for faq in page.faqs %}
       {% case faq._id %}
       {% when 'faq' %}

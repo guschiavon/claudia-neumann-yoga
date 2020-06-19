@@ -1,5 +1,21 @@
 @import "_transition";
 
+.faq-overview {
+  background-image: url('/assets/images/srcset/2000/artem-beliaikin-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  position: relative;
+  .gradient {
+    background: linear-gradient(to left, #3c3c3c66 18%, #f2f2f2 95%);
+  }
+}
+
 .faq {
   @include           transition;
   max-width        : 80%;
