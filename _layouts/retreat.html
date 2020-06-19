@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <main>
   <section class="bg-light">
     <div class="grid-noGutter">
@@ -15,10 +16,10 @@ layout: default
       <div class="col-6_sm-12 flex-center overview-img-box mobile-hide">
         <span class="gradient-r-l"></span>
         <picture>
-          <source data-srcset="{{page.box-1_image | replace: "480", "800"}}" media="(min-width: 800px)">
-          <source data-srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 768px)">
-          <source data-srcset="{{page.box-1_image | replace: "480", "600"}}" media="(min-width: 600px)">
-          <img data-src="{{page.box-1_image}}" class="responsive-img lazyload" alt="">
+          <source data-srcset="{{page.box-1_image | replace: "480", "800"}}" media="(min-width: 800px)" />
+          <source data-srcset="{{page.box-1_image | replace: "480", "600"}}" media="(max-width: 768px)" />
+          <source data-srcset="{{page.box-1_image | replace: "480", "600"}}" media="(min-width: 600px)" />
+          <img data-src="{{page.box-1_image}}" class="responsive-img lazyload" alt="" />
         </picture>
       </div>
     </div>
@@ -58,13 +59,13 @@ layout: default
 <!-- About Location section -->
 <section id="location" class="location-highlights">
   <div class="full-width-banner">
-    <img data-src="{{page.location-highlights-background_image}}" alt="{{page.location-highlights-background-image-alt-text}}" class="responsive-img lazyload">
+    <img data-src="{{page.location-highlights-background_image}}" alt="{{page.location-highlights-background-image-alt-text}}" class="responsive-img lazyload" />
     <div class="padding-outer">
       <div class="full-width-banner-content padding-inner">
         <h2>
           About {{page.retreat-location}}
         </h2>
-        <hr>
+        <hr />
         <p>
           {{page.location-description_html}}
         </p>
@@ -90,11 +91,11 @@ layout: default
   <div class="flex-center">
     <div class="cta-section-content center">
       <h2 class="editable">
-        Join me now
-      </h2>
+ 	Join me now
+ </h2>
       <p class="editable">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-      </p>
+ 	Come and sail with me through the Mediterranean Sea, enjoying healthy food, daily yoga classes and lots of fun activities on and off the water.
+ </p>
       {% include banner-cta-button.html %}
     </div>
   </div>
