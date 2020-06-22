@@ -55,8 +55,8 @@ nav-menu:
   menu-6-link_url: /impressum
 blog-settings:
   blog-owner: Claudia Neumann
-  profile-picture_image: assets/images/srcset/360/claudia-neumann-thumb.jpg
-  ad_image: 'https://via.placeholder.com/300x400'
+  profile-picture_image: /assets/images/srcset/800/claudia-profile-pic.jpg
+  ad_image: /assets/images/srcset/2000/claudia-neumann-yoga-125.jpg
   colors:
     primary_color: '#479aa1'
     secondary_color: '#f5aea8'
