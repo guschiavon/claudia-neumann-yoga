@@ -3,7 +3,7 @@ basic_settings:
   site_logo_image: /assets/images/yogismile-logo.png
   contact-email: happy@claudianeumann.yoga
 images:
-  community_image: /assets/images/srcset/480/claudia-neumann-yoga-124.jpg
+  community_image: /assets/images/srcset/2000/claudia-neumann-yoga-128.jpg
   private-section_image: /assets/images/srcset/2000/claudia-neumann-yoga-143.jpg
 colors:
   primary_color: '#479aa1'
