@@ -336,5 +336,10 @@ body.bg-blog {
   -o-object-fit: cover;
      object-fit: cover;
   height: 400px;
-  padding: 0px 5rem;
+  width: 80%;
+  margin: auto;
+  img {
+    border-radius: 50px;
+  }
+  
 }

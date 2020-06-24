@@ -200,8 +200,8 @@ layout: compress
                   <h3>
                     {{page.author}}
                   </h3>
-                  <p class="center">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <p class="center editable">
+                    This is a biography description
                   </p>
                 </div>
               </div>
@@ -219,8 +219,10 @@ layout: compress
                   {% endfor %}
                 </div>
               </div>
-              <div class="col-12 vertical-ad-banner">
-                <img data-src="{% if page.vertical-ad_image %}{{page.vertical-ad_image}} {%else%} {{site.data.settings.blog-settings.ad_image}}{%endif%}" class="responsive-img lazyload" alt="" />
+              <div class="col-12">
+                <div class="vertical-ad-banner">
+                  <img data-src="{% if page.vertical-ad_image != nil %} {{page.vertical-ad_image}} {% else %} {{site.data.settings.blog-settings.ad_image}} {% endif %}" class="responsive-img lazyload" alt="" />
+                </div>
               </div>
             </div>
           </div>

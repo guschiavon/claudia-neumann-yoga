@@ -45,11 +45,14 @@ img.community-banner-logo {
 }
 
 .facilitator {
-  background-color: $light-color;
-  border-radius: 5px;
   margin-bottom: 2rem;
   .facilitator-card {
-    padding: 8%;
+    padding : 2rem;
+    width   : 80%;
+    margin  : auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px 3px #70707029;
+    background-color: $light-color;
   }
   p {
     padding: 1rem 1.3rem;
