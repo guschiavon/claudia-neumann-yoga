@@ -30,8 +30,8 @@ add_testimonials: false
   <hr>
   <section class="retreats-showcase">
     <div class="grid-noGutter-spaceBetween center">
-
-      {% for retreat in site.retreats %}
+      {% assign retreats = (site.retreats | sort: 'date') | reverse %}
+      {% for retreat in retreats %}
         {% if retreat.display == true %}
           {% include retreat-card.html %}
         {% endif %}
