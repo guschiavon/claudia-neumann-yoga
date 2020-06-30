@@ -61,11 +61,11 @@ layout: compress
 
     <div class="blog-latest-banner flex-left">
       <picture>
-        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "2000"}} {% else %} {{page.banner_image | replace: "480", "2000"}} {% endif %}" media="(min-width: 801px)">
-        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "800"}} {% else %} {{page.banner_image | replace: "480", "800"}} {% endif %}" media="(min-width: 800px)">
-        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "800"}} {% else %} {{page.banner_image | replace: "480", "800"}} {% endif %}" media="(min-width: 768px)">
-        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "600"}} {% else %} {{page.banner_image | replace: "480", "600"}} {% endif %}" media="(min-width: 600px)">
-        <img data-src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img lazyload" alt="Yogismile Community by Claudia Neumann">
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "2000"}} {% else %} {{page.banner_image | replace: "480", "2000"}} {% endif %}" media="(min-width: 801px)" />
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "800"}} {% else %} {{page.banner_image | replace: "480", "800"}} {% endif %}" media="(min-width: 800px)" />
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "800"}} {% else %} {{page.banner_image | replace: "480", "800"}} {% endif %}" media="(min-width: 768px)" />
+        <source data-srcset="{% if page._hidden_blog == true %} {{site.posts.first.banner_image | replace: "480", "600"}} {% else %} {{page.banner_image | replace: "480", "600"}} {% endif %}" media="(min-width: 600px)" />
+        <img data-src="{% if page._hidden_blog == true %} {{site.posts.first.banner_image}} {% else %} {{page.banner_image}} {% endif %}" class="responsive-img lazyload" alt="Yogismile Community by Claudia Neumann" />
       </picture>
       <div class="blog-banner-content">
         <h3>
@@ -83,9 +83,7 @@ layout: compress
           {% endif %}
         </h2>
         {% if page._hidden_blog == true %}
-        <a href=" {{site.posts.first.url}}" class="learn-more-button editable">
-            Read more
-        </a>
+        <a href=" /yogismile/2020/yoga-for-better-health" class="learn-more-button editable"> Read more </a>
       </div>
       {% endif %}
     </div>
@@ -157,10 +155,10 @@ layout: compress
                     <a href="{{ post.url }}">
                       <div class="blog-thumb">
                         <picture>
-                          <source data-srcset="{{post.banner_image | replace: "480", "2000"}}" media="(min-width: 801px)">
-                          <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 800px)">
-                          <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 768px)">
-                          <source data-srcset="{{post.banner_image | replace: "480", "600"}}" media="(min-width: 600px)">
+                          <source data-srcset="{{post.banner_image | replace: "480", "2000"}}" media="(min-width: 801px)" />
+                          <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 800px)" />
+                          <source data-srcset="{{post.banner_image | replace: "480", "800"}}" media="(min-width: 768px)" />
+                          <source data-srcset="{{post.banner_image | replace: "480", "600"}}" media="(min-width: 600px)" />
                           <img data-src="{{post.banner_image}}" class="responsive-img lazyload" alt="{{post.title}}" />
                         </picture>
                       </div>
@@ -181,9 +179,7 @@ layout: compress
             </div>
             {% endunless %}
             <div class="col-12 flex-center">
-              <a href="#top" class="learn-more-button editable">
-                Back to top
-              </a>
+              <a href="#top" class="learn-more-button editable"> Back to top </a>
             </div>
 
           </div>
@@ -201,8 +197,8 @@ layout: compress
                     {{page.author}}
                   </h3>
                   <p class="center editable">
-                    This is a biography description
-                  </p>
+ 	In this blog I share recent articles that inspired me and helped me and my students to find a better lifestyle fulfilled with more happiness, ultimately leading to positive thinking, better health and well-being.
+ </p>
                 </div>
               </div>
               <div class="col-12">
