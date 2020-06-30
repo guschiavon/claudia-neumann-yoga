@@ -5,14 +5,17 @@ author: Claudia
 banner_image: /assets/images/srcset/2000/claudia-neumann-yoga-025.jpg
 categories:
   - health
+  - Routine
+  - Ayurveda
+  - Ancient Practice
 tags:
   - visualisation
   - grounding
   - habits
 description: >-
-  This is a very important section for SEO as it is the part where the Google
-  search crawlers scan when indexing pages; make it descriptive of the page
-  content thinking it's the first thing people will read when searching online
+  This articles describes how you can change your morning routine into a healthy
+  habit and get a better start into your day. By practicing this regularly you
+  will feel more energized and happier when you start your day.
 ---
 
 In our society most people get up and first thing in the morning drink a coffee, have a cigeratte and rush to work. Is this the way you'd like to start to your day? Or is it something you just got used to? However, isn't the start of the day how all of your day envolves?
