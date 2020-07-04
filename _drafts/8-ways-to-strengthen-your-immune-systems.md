@@ -49,6 +49,8 @@ Sleep has the power to affect your immune system, both good and bad. Studies sho
 * Commit to regular exercise.
 * Reduce screen time within the last couple of hours before bed.
 
+![](/assets/images/srcset/2000/kate-stone-matheson-uy5t-CJuIK4-unsplash.jpg){: width="4032" height="2720"}
+
 ### Physical activity
 
 Studies have shown that people who follow a moderately energetic lifestyle, benefit most from starting (and sticking to) an exercise program.&nbsp;
