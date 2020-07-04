@@ -51,6 +51,8 @@ Sleep has the power to affect your immune system, both good and bad. Studies sho
 
 ![](/assets/images/srcset/2000/kate-stone-matheson-uy5t-CJuIK4-unsplash.jpg){: width="4032" height="2720"}
 
+### &nbsp;
+
 ### Physical activity
 
 Studies have shown that people who follow a moderately energetic lifestyle, benefit most from starting (and sticking to) an exercise program.&nbsp;
@@ -68,6 +70,8 @@ Exercise slows down the release of stress hormones. Stress increases the chance 
 Commitment to regular physical activity/exercise can also reduce the risk of chronic health conditions such as cancer, cardiovascular disease, and other chronic inflammatory disorders, so it’s important to add physical activity into your permanent routine.
 
 ![](/assets/images/srcset/2000/claudia-neumann-yoga-067.jpg){: width="2000" height="1333"}
+
+# &nbsp;
 
 # What foods can strengthen your immune system?
 
@@ -101,8 +105,6 @@ Besides taking a vitamin C supplements, these natural sources of Vitamin C can e
 * Spinach, cabbage, turnip greens, and other leafy greens
 * Sweet and white potatoes
 * Tomatoes and tomato juice
-
-### ![](/assets/images/brooke-lark-jupoxxrndca-unsplash.jpg){: width="5503" height="3745"}
 
 ### Zinc
 
@@ -145,6 +147,8 @@ Turmeric has a long history in Indian, Chinese and Southeast Asian cultures. Stu
 In short, consume turmeric with black pepper\!&nbsp;
 
 ![](/assets/images/turmeric.jpg){: width="3920" height="2940"}
+
+### &nbsp;
 
 ### Omega 3 & Omega 6
 
