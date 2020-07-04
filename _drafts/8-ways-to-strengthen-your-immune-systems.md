@@ -9,11 +9,10 @@ categories:
   - Food
 tags:
   - Health
+  - habits
+  - Food
 keywords: HealthyLife
-description: >-
-  This is a very important section for SEO as it is the part where the Google
-  search crawlers scan when indexing pages; make it descriptive of the page
-  content thinking it's the first thing people will read when searching online
+description: 8 ways to strengthen your immune system naturally
 ---
 
 # 8 Tips to strengthen your immune system naturally
@@ -29,9 +28,7 @@ description: >-
 
 ## Being ready to fight off anything that comes your way
 
-Today we find ourselves in unprecedented times, the worldwide Covid-19 Pandemic has breached our borders and is sweeping through our communities, so you wouldn't be alone if you said you’re feeling a bit helpless to combat this ‘war’.
-
-However, control is not entirely out of your hands. Besides following the government’s safety guidelines, you also have the power to prepare your body to go into any fight. Not only are we faced with the threat of Covid-19, we are also at risk of the seasonal flu, as we’ve all begun to feel the arrival of Autumn in the air. &nbsp;
+Today we find ourselves in unprecedented times, the worldwide Covid-19 Pandemic has breached our borders and is sweeping through our communities, so you wouldn't be alone if you said you’re feeling a bit helpless to combat this ‘war’. However, control is not entirely out of your hands. Besides following the government’s safety guidelines, you also have the power to prepare your body to go into any fight.&nbsp;
 
 ## Boosting your immunity
 
@@ -51,8 +48,6 @@ Sleep has the power to affect your immune system, both good and bad. Studies sho
 * Avoid nicotine completely.
 * Commit to regular exercise.
 * Reduce screen time within the last couple of hours before bed.
-
-###
 
 ### Physical activity
 
