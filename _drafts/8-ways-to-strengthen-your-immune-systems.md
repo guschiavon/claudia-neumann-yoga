@@ -2,7 +2,7 @@
 layout: blog
 title: 8 Ways to strengthen your immune systems
 author: Claudia
-banner_image:
+banner_image: /assets/images/srcset/2000/toa-heftiba-RrMBp-__zlk-unsplash.jpg
 categories:
   - health
   - ImmuneSystem
