@@ -51,7 +51,7 @@ defaults:
     values:
       layout: retreat
       _hidden_info-box: retreat
-      display:
+      display: true
       page_title:
       banner_heading:
       banner_image:
