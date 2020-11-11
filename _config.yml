@@ -97,17 +97,12 @@ defaults:
           classes:
             - time-bracket:
               style:
+              is_link: false
               studio:
               studio_url:
+              is_bookable: false
               add-to-cal:
-        - day:
-          classes:
-            - time-bracket:
-              style:
-              studio:
-              studio_url:
-              add-to-cal:
-  
+        
     
 _comments:
   event-location_url: Place the map link here
