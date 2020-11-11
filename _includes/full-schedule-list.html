@@ -89,11 +89,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
+              {% if class.is_link %}
               <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
               </a>
+              {% else %}
+              <h3>
+                {{class.studio}}
+              </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -105,11 +111,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Monday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+                {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -162,11 +174,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
+              {% if class.is_link %}
               <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
               </a>
+              {% else %}
+              <h3>
+                {{class.studio}}
+              </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -178,11 +196,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Tuesday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+                {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -234,11 +258,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
+             {% if class.is_link %}
               <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
               </a>
+              {% else %}
+              <h3>
+                {{class.studio}}
+              </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -250,11 +280,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Wednesday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+                {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -307,11 +343,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
+              {% if class.is_link %}
               <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
               </a>
+              {% else %}
+              <h3>
+                {{class.studio}}
+              </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -323,11 +365,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Thursday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+                {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -379,11 +427,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
-              <a href="{{class.studio_url}}" target="_blank">
-                <h3>
-                  {{class.studio}}
-                </h3>
-              </a>
+              {% if class.is_link %}
+                <a href="{{class.studio_url}}" target="_blank">
+                  <h3>
+                    {{class.studio}}
+                  </h3>
+                </a>
+               {% else %}
+               <h3>
+                {{class.studio}}
+               </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -395,11 +449,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Friday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+                {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -451,11 +511,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
+              {% if class.is_link %}
               <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
               </a>
+              {% else %}
+              <h3>
+                {{class.studio}}
+              </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -467,11 +533,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Saturday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+              {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -523,11 +595,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
+              {% if class.is_link %}
               <a href="{{class.studio_url}}" target="_blank">
                 <h3>
                   {{class.studio}}
                 </h3>
               </a>
+              {% else %}
+              <h3>
+                {{class.studio}}
+              </h3>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
@@ -539,11 +617,17 @@
         {% for class in yoga.schedule %}
           {% if class.day == 'Sunday' %}
             {% for class in class.classes %}
-              <a href="{{class.add-to-cal}}" target="_blank">
-                <h3>
-                  Book now
+                {% if class.is_bookable %}
+                <a href="{{class.add-to-cal}}" target="_blank">
+                  <h3>
+                    Book now
+                  </h3>
+                </a>
+                {% else %}
+                <h3 class="editable">
+                  Closed group
                 </h3>
-              </a>
+              {% endif %}
             {% endfor %}
           {% endif %}
         {% endfor %}
